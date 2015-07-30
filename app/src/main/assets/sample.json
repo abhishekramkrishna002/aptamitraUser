@@ -1,0 +1,472 @@
+{
+    "civic_issues": {
+        "bbmp": [
+            {
+                "key": "footpath"
+            },
+            {
+                "key": "garbage"
+            },
+            {
+                "key": "drainage"
+            },
+            {
+                "key": "dead bird"
+            },
+            {
+                "key": "dead animal"
+            },
+            {
+                "key": "mosquitoes"
+            },
+            {
+                "key": "Road Damage"
+            },
+            {
+                "key": "Storm water drainage"
+            },
+            {
+                "key": "Potholes"
+            },
+            {
+                "key": "Site Cleaning"
+            },
+            {
+                "key": "Road asphalt"
+            },
+            {
+                "key": "incomplete road repairs"
+            },
+            {
+                "key": "Pavement stone slab"
+            },
+            {
+                "key": "Debris of buildings"
+            },
+            {
+                "key": "Pavement is broken"
+            },
+            {
+                "key": "play ground maintenance"
+            },
+            {
+                "key": "Storm water drainage"
+            },
+            {
+                "key": "Potholes"
+            },
+            {
+                "key": "Site Cleaning"
+            },
+            {
+                "key": "Road asphalt"
+            },
+            {
+                "key": "incomplete road repairs"
+            },
+            {
+                "key": "Pavement stone slab"
+            },
+            {
+                "key": "Debris of buildings"
+            },
+            {
+                "key": "Pavement is broken"
+            },
+            {
+                "key": "play ground maintenance"
+            },
+            {
+                "key": "Storm water drainage"
+            },
+            {
+                "key": "Potholes"
+            },
+            {
+                "key": "Site Cleaning"
+            },
+            {
+                "key": "Road asphalt"
+            },
+            {
+                "key": "incomplete road repairs"
+            },
+            {
+                "key": "Pavement stone slab"
+            },
+            {
+                "key": "Debris of buildings"
+            },
+            {
+                "key": "Pavement is broken"
+            },
+            {
+                "key": "play ground maintenance"
+            },
+            {
+                "key": "Food adulteration"
+            },
+            {
+                "key": "Shops Licenses"
+            },
+            {
+                "key": "Street Vendor Management"
+            },
+            {
+                "key": "Food vendor on footpath"
+            },
+            {
+                "key": "dog menace"
+            },
+            {
+                "key": "stray animals"
+            },
+            {
+                "key": "dead animals"
+            },
+            {
+                "key": "dead bird"
+            },
+            {
+                "key": "Mosquitoes"
+            },
+            {
+                "key": "garbage"
+            },
+            {
+                "key": "Remove tree litter"
+            },
+            {
+                "key": "illegal advertisments"
+            },
+            {
+                "key": "Property tax"
+            },
+            {
+                "key": "voter id"
+            },
+            {
+                "key": "khatha transfer"
+            },
+            {
+                "key": "banner permissions"
+            },
+            {
+                "key": "illegal banners"
+            },
+            {
+                "key": "illegal advertisments"
+            },
+            {
+                "key": "Property tax"
+            },
+            {
+                "key": "voter id"
+            },
+            {
+                "key": "khatha transfer"
+            },
+            {
+                "key": "banner permissions"
+            },
+            {
+                "key": "illegal banners"
+            },
+            {
+                "key": "Park Maintainence"
+            },
+            {
+                "key": "Divider plants maintainence"
+            },
+            {
+                "key": "Street Light Maintainence"
+            },
+            {
+                "key": "switch for street light"
+            },
+            {
+                "key": "Timer for streetlight"
+            },
+            {
+                "key": "Tree cutting"
+            },
+            {
+                "key": "Tree pruning"
+            },
+            {
+                "key": "Tree saplings plantation"
+            },
+            {
+                "key": "Tree Maintainence"
+            },
+            {
+                "key": "broken tree"
+            }
+        ],
+        "bwssb": [
+            {
+                "key": "Blocked Storm Water drain"
+            },
+            {
+                "key": "overflow of storm water drain"
+            },
+            {
+                "key": "Water supply "
+            },
+            {
+                "key": "Under ground drainage"
+            },
+            {
+                "key": "Blocked Storm Water drain"
+            },
+            {
+                "key": "overflow of storm water drain"
+            },
+            {
+                "key": "Water supply "
+            },
+            {
+                "key": "Under ground drainage"
+            },
+            {
+                "key": "Meter"
+            },
+            {
+                "key": "Meter damage"
+            },
+            {
+                "key": "Other"
+            },
+            {
+                "key": "New connection"
+            },
+            {
+                "key": "Other"
+            },
+            {
+                "key": "Billing complaints"
+            },
+            {
+                "key": "Other"
+            },
+            {
+                "key": "Pipe damage"
+            },
+            {
+                "key": "Other"
+            },
+            {
+                "key": "Sanitary manhole damage"
+            },
+            {
+                "key": "sanitary pipe damage"
+            },
+            {
+                "key": "water pipe damage"
+            },
+            {
+                "key": "Sewerage"
+            },
+            {
+                "key": "Other"
+            },
+            {
+                "key": "Sanitary blocked"
+            },
+            {
+                "key": "Sanitary manhole cover damage"
+            },
+            {
+                "key": "Sanitary manholecover missing"
+            },
+            {
+                "key": "Sanitary manhole damage"
+            },
+            {
+                "key": "Sanitary obstruction to traffic"
+            },
+            {
+                "key": "Sanitary overflow"
+            },
+            {
+                "key": "Sanitary road damage by BWSSB"
+            },
+            {
+                "key": "Water"
+            },
+            {
+                "key": "Contaminated water"
+            },
+            {
+                "key": "Low water pressure"
+            },
+            {
+                "key": "night time water release"
+            },
+            {
+                "key": "No water"
+            },
+            {
+                "key": "Other"
+            },
+            {
+                "key": "Request to change water timing"
+            },
+            {
+                "key": "Water leakage"
+            }
+        ],
+        "bescom": [
+            {
+                "key": "Failure of power supply"
+            },
+            {
+                "key": "Fuse of call, Line Breakdown, Pole Broken"
+            },
+            {
+                "key": "Voltage"
+            },
+            {
+                "key": "Voltage variation where no expantion or enhancement of network is involved"
+            },
+            {
+                "key": "Voltage variation where up-gradation of distribution systemis required"
+            },
+            {
+                "key": "Opening of neutral"
+            },
+            {
+                "key": "Meter complaints"
+            },
+            {
+                "key": "Inspect and check correctness"
+            },
+            {
+                "key": "Replace slow creeping or stuck meters"
+            },
+            {
+                "key": "Replace Burnt meters if cause not attributable to consumer"
+            },
+            {
+                "key": "Replace burnt meter in all other places"
+            },
+            {
+                "key": "Billing issues"
+            },
+            {
+                "key": "Where field report is not requires"
+            },
+            {
+                "key": "allegations on staff"
+            },
+            {
+                "key": "Where field report is required"
+            },
+            {
+                "key": "Reconnection of supply following disconnection"
+            },
+            {
+                "key": "Safety issue"
+            },
+            {
+                "key": "Straighting of bent pole"
+            },
+            {
+                "key": "Replacment of damaged pole"
+            },
+            {
+                "key": "Shifting of poles"
+            },
+            {
+                "key": "Tree trimming"
+            },
+            {
+                "key": "TC Failure complaints"
+            },
+            {
+                "key": "Water supply"
+            },
+            {
+                "key": "domestic"
+            },
+            {
+                "key": "industry"
+            },
+            {
+                "key": "mixed load"
+            },
+            {
+                "key": "irrigation"
+            },
+            {
+                "key": "Theft"
+            },
+            {
+                "key": "Theft"
+            },
+            {
+                "key": "Hooking under niranthara jothiyojane"
+            },
+            {
+                "key": "Allegations on staff"
+            },
+            {
+                "key": "allegation on staff"
+            },
+            {
+                "key": "New connection/additional load"
+            },
+            {
+                "key": "Release of supply where service is fesable from existing network"
+            },
+            {
+                "key": "Release of supply where network expansion/enhancement required for provding connection"
+            },
+            {
+                "key": "IP sets"
+            },
+            {
+                "key": "Phase conversion"
+            },
+            {
+                "key": "Conversion of LT single phase to LT 3 phase"
+            },
+            {
+                "key": "Conversion from LT to HT"
+            },
+            {
+                "key": "Transfer of ownership and conversion"
+            },
+            {
+                "key": "Title transfer of ownership"
+            },
+            {
+                "key": "Change of category"
+            },
+            {
+                "key": "Refund/ issue of certificate"
+            },
+            {
+                "key": "Refund of deposits"
+            },
+            {
+                "key": "Issue of certificate"
+            },
+            {
+                "key": "Additional TC / Enhancement"
+            },
+            {
+                "key": "Additional TC"
+            },
+            {
+                "key": "Enhancement of TC"
+            },
+            {
+                "key": "General"
+            },
+            {
+                "key": "Complaints that is not covered under the above category"
+            }
+        ]
+    }
+}

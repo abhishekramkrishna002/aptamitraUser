@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:id="@+id/app_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Register Form"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/register_profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/upload_button" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+                android:ems="10"
+                android:layout_margin="20dp"
+                android:hint="Name"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:background="@drawable/gray_border"
+                android:id="@+id/editTextName" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="Email"
+                android:background="@drawable/gray_border"
+                android:id="@+id/editTextEmail" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+
+                    android:layout_weight="0.5"
+                    android:padding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/orange_fill"
+                    android:id="@+id/gender_male"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:padding="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/gender_female"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/orange_border" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:layout_margin="20dp"
+                android:hint="Mobile"
+                android:padding="10dp"
+                android:background="@drawable/gray_border"
+                android:id="@+id/editMobile" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/gray_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:hint="City"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/gray_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:hint="locality"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="Door Number"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:id="@+id/editDoor"
+                android:background="@drawable/gray_border" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="Address"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:id="@+id/editAddress"
+                android:background="@drawable/gray_border" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="PinCode"
+                android:fontFamily="sans-serif"
+                android:inputType="number"
+                android:padding="10dp"
+                android:id="@+id/editPin"
+                android:background="@drawable/gray_border" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="password"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/editTextPassword"
+                android:layout_margin="20dp"
+                android:background="@drawable/gray_border" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif"
+                android:text="*Choose a password other than your email" />
+
+
+            <Button
+                android:id="@+id/register_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/orange"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif"
+                android:text="Verify me!" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
