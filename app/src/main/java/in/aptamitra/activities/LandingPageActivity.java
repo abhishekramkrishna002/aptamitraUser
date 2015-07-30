@@ -71,7 +71,7 @@ public class LandingPageActivity extends ActionBarActivity {
         activity = this;
         ButterKnife.bind(this);
         initilaiseMenuSystem();
-        drawer=((GlobalClass)getApplicationContext()).navigationDrawer(this);
+        drawer = ((GlobalClass) getApplicationContext()).navigationDrawer(this);
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -113,7 +113,7 @@ public class LandingPageActivity extends ActionBarActivity {
             progress.show();
         }
 
-       //drawer = navigationDrawer(this);
+        //drawer = navigationDrawer(this);
         ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon_navigation);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,21 +140,26 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.icon_bescom, "B E S C O M", "Bangalore Electricity Supply Company "));
             }}));
             add(new HorizontalScrollItem("My Booking", new ArrayList<HorizontalScrollItem.Item>() {{
-                add(new HorizontalScrollItem.Item(R.drawable.icon_beauty, "Beautician"));
+
+                add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "House Keeping"));
+                add(new HorizontalScrollItem.Item(R.drawable.icon_saloon_women, "Beautician"));
+                add(new HorizontalScrollItem.Item(R.drawable.laundry, "Laundry"));
+                //add(new HorizontalScrollItem.Item(R.drawable.icon_saloon_women, "Laundry"));
+
                 add(new HorizontalScrollItem.Item(R.drawable.icon_electrician, "Electrician"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_plumbing, "Plumber"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_carpenter, "Carpenter"));
-                add(new HorizontalScrollItem.Item(R.drawable.laundry, "Laundry"));
-                add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
                 add(new HorizontalScrollItem.Item(R.drawable.mobile_repair, "Mobile-PC repair"));
                 add(new HorizontalScrollItem.Item(R.drawable.chartered_accountant, "Accountant"));
-                add(new HorizontalScrollItem.Item(R.drawable.company_secretery, "Secretery"));
+                add(new HorizontalScrollItem.Item(R.drawable.company_secretery, "Secretary"));
                 add(new HorizontalScrollItem.Item(R.drawable.trademark_copyright, "Trademark"));
-                add(new HorizontalScrollItem.Item(R.drawable.wedding_phptpgraphy, "Wedding"));
-                add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
+                add(new HorizontalScrollItem.Item(R.drawable.wedding_phptpgraphy, "Wedding Photography"));
                 add(new HorizontalScrollItem.Item(R.drawable.flute, "Flute"));
                 add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar"));
-                add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "House Keeping"));
+                add(new HorizontalScrollItem.Item(R.drawable.yoga, "Yoga "));
+//                add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
+                add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
+
             }}));
             add(new HorizontalScrollItem("My Delivery", new ArrayList<HorizontalScrollItem.Item>() {{
 
@@ -174,7 +179,6 @@ public class LandingPageActivity extends ActionBarActivity {
         recyclerView.setLayoutManager(layoutManager);
 
     }
-
 
 
     private boolean checkPlayServices() {
@@ -209,7 +213,6 @@ public class LandingPageActivity extends ActionBarActivity {
         super.onResume();
         LocalBroadcastManager.getInstance(activity).registerReceiver(mRegistrationBroadcastReceiver,
                 new IntentFilter(QuickstartPreferences.REGISTRATION_COMPLETE));
-
 
 
     }

@@ -128,13 +128,13 @@
                     android:layout_height="150dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:src="@drawable/icon_bus" />
+                    android:src="@drawable/icon_notification_aptamitra" />
 
                 <ImageView
                     android:id="@+id/complaint_image_2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/icon_bus" />
+                    android:src="@drawable/icon_notification_aptamitra" />
             </LinearLayout>
         </HorizontalScrollView>
 

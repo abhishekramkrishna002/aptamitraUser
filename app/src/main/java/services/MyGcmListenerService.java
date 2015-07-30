@@ -138,7 +138,7 @@ public class MyGcmListenerService extends GcmListenerService {
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setStyle(notiStyle)
-                .setSmallIcon(R.drawable.logo)
+                .setSmallIcon(R.drawable.icon_notification_aptamitra)
                 .setContentTitle(title)
                 .setContentText(message)
                 .setAutoCancel(true)
