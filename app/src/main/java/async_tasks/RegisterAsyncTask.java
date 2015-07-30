@@ -1,7 +1,10 @@
 package async_tasks;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentTransaction;
@@ -20,12 +23,14 @@ import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.Random;
 
 import in.aptamitra.R;
+import in.aptamitra.activities.MainActivity;
 
 
 /**
@@ -111,7 +116,49 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String,String>, Integer
         super.onPostExecute(result);
         progress.hide();
 
-        Toast.makeText(activity, result, Toast.LENGTH_SHORT).show();
+        try
+        {
+            JSONObject resultJson=new JSONObject(result);
+            if(resultJson.getString("code").trim().contentEquals("200"))
+            {
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                        activity);
+                builder1.setMessage("Registration sucessfull.PLease login");
+                builder1.setCancelable(true);
+                builder1.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                                activity.finish();
+                            }
+                        });
+                AlertDialog alert11 = builder1.create();
+                alert11.show();
+            }
+            else
+            {
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                        activity);
+                builder1.setMessage("Registration failed.Try Again");
+                builder1.setCancelable(true);
+                builder1.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                                activity.finish();
+                            }
+                        });
+                AlertDialog alert11 = builder1.create();
+                alert11.show();
+            }
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+       // Toast.makeText(activity, result, Toast.LENGTH_SHORT).show();
 
 
     }

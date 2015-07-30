@@ -102,9 +102,7 @@ public class ServiceBookingAyncTask extends AsyncTask<HashMap<String, String>, I
                             public void onClick(DialogInterface dialog,
                                                 int id) {
                                 dialog.cancel();
-                                Intent intent = new Intent(activity, LandingPageActivity.class);
-                                activity.startActivity(intent);
-                                        ((ActionBarActivity) activity).getSupportFragmentManager().popBackStack();
+                                activity.finish();
 
                             }
                         });

@@ -43,6 +43,7 @@ import adapters.LandingPageAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import custom_objects.HorizontalScrollItem;
+import globalclass.GlobalClass;
 import in.aptamitra.R;
 import services.QuickstartPreferences;
 import services.RegistrationIntentService;
@@ -61,7 +62,7 @@ public class LandingPageActivity extends ActionBarActivity {
     private BroadcastReceiver mRegistrationBroadcastReceiver;
 
     ArrayList<HorizontalScrollItem> items;
-    Drawer drawer;
+    public static Drawer drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,7 @@ public class LandingPageActivity extends ActionBarActivity {
         activity = this;
         ButterKnife.bind(this);
         initilaiseMenuSystem();
-        //drawer=((GlobalClass)getApplicationContext()).navigationDrawer(this);
+        drawer=((GlobalClass)getApplicationContext()).navigationDrawer(this);
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -112,13 +113,14 @@ public class LandingPageActivity extends ActionBarActivity {
             progress.show();
         }
 
-
-        drawer = navigationDrawer(this);
+       //drawer = navigationDrawer(this);
         ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon_navigation);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawer.openDrawer();
+                if (drawer != null) {
+                    drawer.openDrawer();
+                }
             }
         });
 
@@ -132,19 +134,19 @@ public class LandingPageActivity extends ActionBarActivity {
 
     public void initilaiseMenuSystem() {
         items = new ArrayList<HorizontalScrollItem>() {{
-            add(new HorizontalScrollItem("My City Services", new ArrayList<HorizontalScrollItem.Item>() {{
+            add(new HorizontalScrollItem("My City", new ArrayList<HorizontalScrollItem.Item>() {{
                 add(new HorizontalScrollItem.Item(R.drawable.icon_bbmp, "B B M P", "Bruhat Bangalore Mahanagara Palike"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_bwssb, "B W S S B", "Bangalore Water Supply and Sewerage Board"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_bescom, "B E S C O M", "Bangalore Electricity Supply Company "));
             }}));
-            add(new HorizontalScrollItem("My Services", new ArrayList<HorizontalScrollItem.Item>() {{
+            add(new HorizontalScrollItem("My Booking", new ArrayList<HorizontalScrollItem.Item>() {{
                 add(new HorizontalScrollItem.Item(R.drawable.icon_beauty, "Beautician"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_electrician, "Electrician"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_plumbing, "Plumber"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_carpenter, "Carpenter"));
                 add(new HorizontalScrollItem.Item(R.drawable.laundry, "Laundry"));
                 add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
-                add(new HorizontalScrollItem.Item(R.drawable.mobile_repair, "Mobile"));
+                add(new HorizontalScrollItem.Item(R.drawable.mobile_repair, "Mobile-PC repair"));
                 add(new HorizontalScrollItem.Item(R.drawable.chartered_accountant, "Accountant"));
                 add(new HorizontalScrollItem.Item(R.drawable.company_secretery, "Secretery"));
                 add(new HorizontalScrollItem.Item(R.drawable.trademark_copyright, "Trademark"));
@@ -152,7 +154,7 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
                 add(new HorizontalScrollItem.Item(R.drawable.flute, "Flute"));
                 add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar"));
-                add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "Keeping"));
+                add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "House Keeping"));
             }}));
             add(new HorizontalScrollItem("My Delivery", new ArrayList<HorizontalScrollItem.Item>() {{
 
@@ -173,131 +175,7 @@ public class LandingPageActivity extends ActionBarActivity {
 
     }
 
-    public Drawer navigationDrawer(final Activity activity) {
-        Drawer result = null;
-        /*
-        get data from shared prefs::start
-         */
-        try {
-            SharedPreferences sharedPreferences = getSharedPreferences("cache", Context.MODE_PRIVATE);
-            JSONObject profileJsonObject = new JSONObject(sharedPreferences.getString("profile", null));
-            /*
-        get data from shared prefs::end
-         */
-            AccountHeader headerResult = new AccountHeaderBuilder()
-                    .withActivity(activity)
-                    .withHeaderBackground(R.drawable.icon_profile_bg)
-                    .addProfiles(
-                            new ProfileDrawerItem().withName(profileJsonObject.getString("name")).
-                                    withEmail(profileJsonObject.getString("email")).
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_profile))
-                    )
 
-                    .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
-                        @Override
-                        public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
-                            Intent intent = new Intent(activity, ProfileActivity.class);
-                            activity.startActivity(intent);
-                            return true;
-                        }
-                    })
-                    .build();
-
-
-            result = new DrawerBuilder()
-                    .withActivity(activity)
-                            //.withToolbar(toolbar)
-                    .withAccountHeader(headerResult)
-                    .addDrawerItems(
-                            new PrimaryDrawerItem().
-                                    withName(profileJsonObject.getString("locality")).
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_location)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)).
-                                    setEnabled(false)
-
-                            ,
-                            new DividerDrawerItem(),
-                            new SecondaryDrawerItem().
-                                    withName("Home").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_home)).
-                                    withTextColor(activity.getResources().getColor(R.color.white))
-                            ,
-                            new DividerDrawerItem(),
-                            new SecondaryDrawerItem().
-                                    withName("My Complaints").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_post_cpmplaint)).
-                                    withTextColor(activity.getResources().getColor(R.color.white))
-                            ,
-                            new DividerDrawerItem(),
-                            new SecondaryDrawerItem().
-                                    withName("My Notifications").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_notification)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
-                            new DividerDrawerItem(),
-                            new SecondaryDrawerItem().
-                                    withName("Contact Us").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_contact_us)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
-                            new DividerDrawerItem(),
-                            new SecondaryDrawerItem().
-                                    withName("FAQ").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_faq)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
-                            new DividerDrawerItem(),
-                            new SecondaryDrawerItem().
-                                    withName("Logout").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_logout)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
-                            new DividerDrawerItem()
-
-                    )
-                    .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                        @Override
-                        public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
-                            // do something with the clicked item :D
-
-                            Intent intent;
-                            switch (position) {
-                                case 2:
-                                    intent = new Intent(activity, LandingPageActivity.class);
-                                    activity.startActivity(intent);
-                                    break;
-                                case 4:
-                                    intent = new Intent(activity, ComplaintsListActivity.class);
-                                    activity.startActivity(intent);
-                                    break;
-                                case 6:
-                                    intent = new Intent(activity, NotificationsListActivity.class);
-                                    activity.startActivity(intent);
-                                    break;
-                                case 8:
-
-                                    break;
-                                case 10:
-                                    break;
-                                case 12:
-                                    intent = new Intent(activity, MainActivity.class);
-                                    activity.startActivity(intent);
-                                    finish();
-                                    break;
-                                case 14:
-                                    break;
-                            }
-                            return true;
-                        }
-                    })
-                    .withDrawerGravity(Gravity.START)
-                    .build();
-            result.closeDrawer();
-            return result;
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            return result;
-        }
-
-
-    }
 
     private boolean checkPlayServices() {
         int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(activity);
@@ -331,6 +209,7 @@ public class LandingPageActivity extends ActionBarActivity {
         super.onResume();
         LocalBroadcastManager.getInstance(activity).registerReceiver(mRegistrationBroadcastReceiver,
                 new IntentFilter(QuickstartPreferences.REGISTRATION_COMPLETE));
+
 
 
     }

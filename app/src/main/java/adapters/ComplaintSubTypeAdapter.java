@@ -33,12 +33,16 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
         this.problems = problems;
         this.cacheProblems = problems;
         problemsBoolean = new boolean[problems.length];
-        staticHeader=ComplaintSubTypeActivity.header.getText().toString();
+        staticHeader = ComplaintSubTypeActivity.header.getText().toString();
     }
 
     @Override
     public int getCount() {
-        return problems.length;
+        if(problems!=null)
+        {
+            return problems.length;
+        }
+        return  0;
     }
 
     @Override
@@ -53,22 +57,14 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
 
     @Override
     public View getView(final int position, View convertView, final ViewGroup parent) {
-
         View view;
-
-
-
         view = LayoutInflater.from(activity).inflate(R.layout.complaints_sub_type_item, parent, false);
-        if(problemsBoolean[position])
-        {
+        if (problemsBoolean[position]) {
             view.setBackgroundColor(activity.getResources().getColor(R.color.gray));
-        }
-        else {
+        } else {
             view.setBackgroundColor(activity.getResources().getColor(R.color.white));
         }
-
-            ((TextView) view.findViewById(R.id.sub_type_text_view)).setText(problems[position].name.toLowerCase());
-
+        ((TextView) view.findViewById(R.id.sub_type_text_view)).setText(problems[position].name.toLowerCase());
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,11 +80,10 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
                     ((GlobalClass) activity.getApplicationContext()).subMenu = problems[position].name;
                     problemsBoolean[position] = !problemsBoolean[position];
                 }
-
-
             }
         });
         return view;
+
     }
 
     @Override
@@ -97,34 +92,47 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
         Filter filter = new Filter() {
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
-
-                Speciality[] results = new Speciality[cacheProblems.length];
+                Speciality[] results= new Speciality[0];
                 int j = 0;
                 if (constraint.toString().trim().contentEquals("")) {
+                    results = new Speciality[cacheProblems.length];
                     results = cacheProblems;
-                }
-                Log.e("cache",cacheProblems.toString());
-                if(cacheProblems.length!=0) {
+                    j=cacheProblems.length;
+                } else {
+                    results = new Speciality[cacheProblems.length];
                     for (int i = 0; i < cacheProblems.length; i++) {
-                        if (cacheProblems[i].getName().toLowerCase().contains(constraint.toString().trim())) {
+                        if (cacheProblems[i].getName().toLowerCase().contains(constraint.toString().trim().toLowerCase())) {
                             results[j++] = cacheProblems[i];
                         }
                     }
                 }
-
-                FilterResults filterResults = new FilterResults();
-                filterResults.values = results;
-                Log.e("value",results.toString());
-                filterResults.count = results.length;
-                return filterResults;
+                if (j == 0) {
+                    FilterResults filterResults = new FilterResults();
+                    filterResults.values = null;
+                    Log.e("value::zero", results.length + "");
+                    filterResults.count = 0;
+                    return filterResults;
+                } else {
+                    FilterResults filterResults = new FilterResults();
+                    filterResults.values = results;
+                    Log.e("value", results.length + "");
+                    filterResults.count = results.length;
+                    return filterResults;
+                }
             }
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-                problems = (Speciality[]) results.values;
-                notifyDataSetChanged();
-                Log.e("problem",problems.toString());
-
+                if (results.values != null && results.count > 0) {
+                    Log.e("publish results",""+results.values);
+                    problems = (Speciality[]) results.values;
+                    notifyDataSetChanged();
+                } else {
+                    Log.e("publish results::zero",""+results.values);
+                    problems = null;
+                    notifyDataSetChanged();
+                }
+               // Log.e("problem", problems.length + "");
             }
 
         };

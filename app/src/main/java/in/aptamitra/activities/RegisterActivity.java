@@ -21,7 +21,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-
 import java.util.HashMap;
 
 import async_tasks.RegisterAsyncTask;
@@ -34,33 +33,34 @@ import in.aptamitra.R;
 public class RegisterActivity extends ActionBarActivity {
 
     Activity activity;
-    EditText name, email, mobile, address,pincode,doornumber,  password;
+
+
+    EditText name, email, mobile, address, pincode, doornumber, password;
     Button male, female, register;
     ImageView profileImage;
     String gender = new String("male");
     Bitmap profileImageBitmap;
     Spinner s1, s2;
+    ImageView backButton;
     boolean flagMale = false, flagFemale = false;
 
-    private String[] state = { "Bellandur", "BrigadeRoad","Brookefield", "Byatarayanapura", "C.V. Raman Nagar","Domlur Layout" +
-            "Dooravani Nagar","HRBR Layout","Indira Nagar","ITPL Road","Jayamahal Road","Jeevan Bheema", "Kadugodi", "Kodihalli",
-            "Krishnaraja Puram","Mahadevapura", "Marathahalli", "Old Airport Road" ,"Ramamurthy",
-            "Adugodi", "Austin Town","Avenue Road", "Balepet", "Basavanagudi", "Benson Town", "Chickpet",
-            "Chikpet", "Church Street", "Commercial Street", "Cox Town" ,"Crescent Road", "Cunningham High Grounds",
+    private String[] state = {"Bellandur", "BrigadeRoad", "Brookefield", "Byatarayanapura", "C.V. Raman Nagar", "Domlur Layout" +
+            "Dooravani Nagar", "HRBR Layout", "Indira Nagar", "ITPL Road", "Jayamahal Road", "Jeevan Bheema", "Kadugodi", "Kodihalli",
+            "Krishnaraja Puram", "Mahadevapura", "Marathahalli", "Old Airport Road", "Ramamurthy",
+            "Adugodi", "Austin Town", "Avenue Road", "Balepet", "Basavanagudi", "Benson Town", "Chickpet",
+            "Chikpet", "Church Street", "Commercial Street", "Cox Town", "Crescent Road", "Cunningham High Grounds",
             "Infantry Road", "Kumara Krupa Road", "Lady Curzon Road", "Lavelle Road", "Magadi Road Palace",
-            "R.T. Nagar", "Rajaji Nagar", "Richmond Road" ,"Richmond Town", "Seshadri Road", "Shivajinagar", "Sri Chatram Road" ,"Vasanth Nagar", "Vittal Mallya Road",
-            "Banaswadi","Hebbal","Frazer Town","Devanahalli","Yeshwanthpur","Mathikere","Ganga Nagar","Sanjay Nagar","Jalahalli",
-            "Hennur","Yelahanka","Mahatma Gandhi Road","Electronics City","Koramangala","Bannerghatta Road","Hosur Road","Banashankari","BTM Layout","Ulsoor","" +
-            "Kumaraswamy Layout","Jaya Nagar","Kanakapura","Basaveshwara Nagar"};
-    private String[] city = {"Bangalore","Others"};
+            "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Seshadri Road", "Shivajinagar", "Sri Chatram Road", "Vasanth Nagar", "Vittal Mallya Road",
+            "Banaswadi", "Hebbal", "Frazer Town", "Devanahalli", "Yeshwanthpur", "Mathikere", "Ganga Nagar", "Sanjay Nagar", "Jalahalli",
+            "Hennur", "Yelahanka", "Mahatma Gandhi Road", "Electronics City", "Koramangala", "Bannerghatta Road", "Hosur Road", "Banashankari", "BTM Layout", "Ulsoor", "" +
+            "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar"};
+    private String[] city = {"Bangalore", "Others"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
         setup();
-
-
 
 
     }
@@ -70,9 +70,9 @@ public class RegisterActivity extends ActionBarActivity {
 //        mAwesomeValidation.setContext(this);
         name = (EditText) findViewById(R.id.editTextName);
         email = (EditText) findViewById(R.id.editTextEmail);
-        pincode = (EditText)findViewById(R.id.editPin);
-        doornumber = (EditText)findViewById(R.id.editDoor);
-        male = (Button)findViewById(R.id.gender_male);
+        pincode = (EditText) findViewById(R.id.editPin);
+        doornumber = (EditText) findViewById(R.id.editDoor);
+        male = (Button) findViewById(R.id.gender_male);
         female = (Button) findViewById(R.id.gender_female);
         profileImage = (ImageView) findViewById(R.id.register_profile_image);
 //        mAwesomeValidation.addValidation(name, "[a-zA-Z\\s]+", "Type a human name");
@@ -122,13 +122,13 @@ public class RegisterActivity extends ActionBarActivity {
         });
 
 
-        s1 = (Spinner)findViewById(R.id.spinner1);
+        s1 = (Spinner) findViewById(R.id.spinner1);
         s2 = (Spinner) findViewById(R.id.spinner2);
-        mobile = (EditText)findViewById(R.id.editMobile);
-       // mAwesomeValidation.addValidation(pincode, "[0-9]{10}", "Enter proper mobile number");
-        address = (EditText)findViewById(R.id.editAddress);
+        mobile = (EditText) findViewById(R.id.editMobile);
+        // mAwesomeValidation.addValidation(pincode, "[0-9]{10}", "Enter proper mobile number");
+        address = (EditText) findViewById(R.id.editAddress);
 
-        password = (EditText)findViewById(R.id.editTextPassword);
+        password = (EditText) findViewById(R.id.editTextPassword);
         ArrayAdapter<String> adapter_state = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, state);
         adapter_state
@@ -172,109 +172,96 @@ public class RegisterActivity extends ActionBarActivity {
         });
 
 
-
-        register = (Button)findViewById(R.id.register_submit_button);
+        register = (Button) findViewById(R.id.register_submit_button);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String nameText, emailText, mobileText, addressText,doorNumber, cityText, pincodeText, passwordText, confirmPasswordText,zoneText,localityText;
+                String nameText, emailText, mobileText, addressText, doorNumber, cityText, pincodeText, passwordText, confirmPasswordText, localityText;
                 nameText = name.getText().toString().trim();
-                emailText =null;
-                if(isValidEmailAddress(email.getText().toString().trim())){
+                emailText = null;
+                if (isValidEmailAddress(email.getText().toString().trim())) {
                     emailText = email.getText().toString().trim();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Please enter a valid email id",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Please enter a valid email id", Toast.LENGTH_LONG).show();
                 }
 
                 mobileText = mobile.getText().toString().trim();
                 addressText = address.getText().toString().trim();
 
-                cityText = (String)s1.getSelectedItem();
+                cityText = (String) s1.getSelectedItem();
                 pincodeText = pincode.getText().toString().trim();
                 doorNumber = doornumber.getText().toString().trim();
                 passwordText = password.getText().toString().trim();
 
-                localityText=(String)s2.getSelectedItem();
+                localityText = (String) s2.getSelectedItem();
 
-                Log.e("name",nameText +mobileText+" "+ addressText+" "+ cityText+" "+doorNumber);
+                Log.e("name", nameText + mobileText + " " + addressText + " " + cityText + " " + doorNumber);
 
 
-                /*
-                check if all the fields are filled
-                 */
-//                if (nameText.contentEquals("") ||
-//                        emailText.contentEquals("") ||
-//                        mobileText.contentEquals("") ||
-//                        addressText.contentEquals("") ||
-//                        cityText.contentEquals("") ||
-//                        passwordText.contentEquals("")
-//                        ) {
-//                    AlertDialog.Builder builder1 = new AlertDialog.Builder(
-//                    RegisterActivity.this);
-//                    builder1.setMessage("Please fill all the fields!");
-//                    builder1.setCancelable(true);
-//                    builder1.setPositiveButton("Ok",
-//                            new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog,
-//                                                    int id) {
-//                                    dialog.cancel();
-//                                }
-//                            });
-//                    AlertDialog alert11 = builder1.create();
-//                    alert11.show();
-//                }
 
-                /*
-                check for password and confirm password
-                 */
-//                else if (!passwordText.contentEquals(confirmPasswordText)) {
-//                    AlertDialog.Builder builder1 = new AlertDialog.Builder(
-//                            activity);
-//                    builder1.setMessage("Passwords do not match");
-//                    builder1.setCancelable(true);
-//                    builder1.setPositiveButton("Ok",
-//                            new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog,
-//                                                    int id) {
-//                                    dialog.cancel();
-//                                }
-//                            });
-//                    AlertDialog alert11 = builder1.create();
-//                    alert11.show();
-//                }
-
-                /*
-                call the async task
-                 */
 
                     /*
                     build the hashmap
                      */
 
-                    HashMap<String, String> data = new HashMap<String, String>();
-                    data.put("name", nameText);
-                    data.put("password", passwordText);
-                    data.put("address",doorNumber+addressText+pincodeText);
-                    //data.put("zone",zoneText);
-                    data.put("locality",localityText);
-                    if (flagMale) {
-                        data.put("gender", "male");
-                    } else {
-                        data.put("gender", "female");
-                    }
-                    data.put("city", cityText);
-                    data.put("mobile", mobileText);
-                    data.put("email", emailText);
+                HashMap<String, String> data = new HashMap<String, String>();
+                data.put("name", nameText);
+                data.put("password", passwordText);
+                data.put("address", doorNumber + addressText + pincodeText);
+                //data.put("zone",zoneText);
+                data.put("locality", localityText);
+                if (flagMale) {
+                    data.put("gender", "male");
+                } else {
+                    data.put("gender", "female");
+                }
+                data.put("city", cityText);
+                data.put("mobile", mobileText);
+                data.put("email", emailText);
 
                     /*
                     call the registe async task
                      */
+                if (nameText.trim().toLowerCase().toString().contentEquals("") ||
+                        nameText.trim().toLowerCase().toString().contentEquals("") ||
+                        passwordText.trim().toLowerCase().toString().contentEquals("") ||
+                        doorNumber.trim().toLowerCase().toString().contentEquals("") ||
+                        addressText.trim().toLowerCase().toString().contentEquals("") ||
+                        pincodeText.trim().toLowerCase().toString().contentEquals("") ||
+                        localityText.trim().toLowerCase().toString().contentEquals("") ||
+                        cityText.trim().toLowerCase().toString().contentEquals("") ||
+                        mobileText.trim().toLowerCase().toString().contentEquals("") ||
+                        emailText.trim().toLowerCase().toString().contentEquals("")
+
+                        ) {
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                            RegisterActivity.this);
+                    builder1.setMessage("Fill all the fields");
+                    builder1.setCancelable(true);
+                    builder1.setPositiveButton("Ok",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int id) {
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+
+                } else {
                     new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
+                }
 
-                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                startActivity(intent);
 
+            }
+        });
+
+        backButton = (ImageView) findViewById(R.id.bt_back);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
@@ -308,6 +295,7 @@ public class RegisterActivity extends ActionBarActivity {
         }
 
     }
+
     public boolean isValidEmailAddress(String email) {
         String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
         java.util.regex.Pattern p = java.util.regex.Pattern.compile(ePattern);

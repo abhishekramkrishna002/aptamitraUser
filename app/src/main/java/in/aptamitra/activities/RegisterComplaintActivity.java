@@ -91,7 +91,7 @@ public class RegisterComplaintActivity extends ActionBarActivity {
         setContentView(R.layout.complaint_register_layout);
         ButterKnife.bind(this);
         activity = this;
-       backButton = (ImageView) findViewById(R.id.bt_back);
+        backButton = (ImageView) findViewById(R.id.bt_back);
 
         setUpMapIfNeeded();
         header.setText(getIntent().getStringExtra("data"));
@@ -155,12 +155,12 @@ public class RegisterComplaintActivity extends ActionBarActivity {
 
             }
         });
-backButton.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        finish();
-    }
-});
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
         /*
@@ -326,7 +326,7 @@ backButton.setOnClickListener(new View.OnClickListener() {
             userData.put("profile_user",
                     profileJson.replace("\"", "\\\""));
             userData.put("profile_id", profile.getString("profile_id"));
-            userData.put("zone", profile.getString("zone"));
+           // userData.put("zone", profile.getString("zone"));
             userData.put("locality", profile.getString("locality"));
 //            ((TextView) activity.findViewById(R.id.etComplaintAddress))
 //                    .setText(profile.getString("address"));
@@ -361,19 +361,44 @@ backButton.setOnClickListener(new View.OnClickListener() {
                     .findViewById(R.id.etComplaintAddress)).getText()
                     .toString();
             userData.put("complaint_address", address);
+            /*
+            validation begin
+             */
+
+            if (title.trim().contentEquals("") ||
+                    description.contentEquals("") ||
+                    address.contentEquals("") ||
+                    landmark.contentEquals("")
+                    ) {
+                android.app.AlertDialog.Builder builder1 = new android.app.AlertDialog.Builder(
+                        activity);
+                builder1.setMessage("Fill all the details");
+                builder1.setCancelable(true);
+                builder1.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                            }
+                        });
+                android.app.AlertDialog alert11 = builder1.create();
+                alert11.show();
+            }
+            /*
+            validation end
+             */
 
 
-            new ComplaintUploadAyncTask(activity, imageOneBitmap, imageTwoBitmap).execute(userData);
+            else {
+                new ComplaintUploadAyncTask(activity, imageOneBitmap, imageTwoBitmap).execute(userData);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
 
         }
-//        finally {
-//            finish();
-//        }
-    }
 
+    }
 
 
 }

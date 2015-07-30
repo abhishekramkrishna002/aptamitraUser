@@ -60,7 +60,7 @@
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text|textPersonName"
+                android:inputType="textPersonName"
                 android:ems="10"
                 android:layout_margin="20dp"
                 android:hint="Name"
@@ -117,7 +117,7 @@
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text|number"
+                android:inputType="number"
                 android:ems="10"
                 android:fontFamily="sans-serif"
                 android:layout_margin="20dp"
@@ -183,6 +183,7 @@
                 android:fontFamily="sans-serif"
                 android:padding="10dp"
                 android:id="@+id/editDoor"
+                android:inputType="number"
                 android:background="@drawable/gray_border" />
 
             <EditText

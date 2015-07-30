@@ -79,7 +79,7 @@ public class ComplaintUploadAyncTask extends AsyncTask<HashMap<String, String>, 
             entityBuilder.addTextBody("landmark", params[0].get("complaint_landmark"));
             entityBuilder.addTextBody("location", params[0].get("complaint_address"));
             entityBuilder.addTextBody("profile_id", params[0].get("profile_id"));
-            entityBuilder.addTextBody("zone", params[0].get("zone"));
+            //entityBuilder.addTextBody("zone", params[0].get("zone"));
             entityBuilder.addTextBody("locality", params[0].get("locality"));
             entityBuilder.addTextBody("status", "open");
             entityBuilder.addTextBody("profile_user", params[0].get("profile_user"));

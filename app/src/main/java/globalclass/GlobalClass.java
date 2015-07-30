@@ -33,6 +33,7 @@ import custom_objects.Speciality;
 import in.aptamitra.R;
 import in.aptamitra.activities.ComplaintsListActivity;
 import in.aptamitra.activities.LandingPageActivity;
+import in.aptamitra.activities.MainActivity;
 import in.aptamitra.activities.NotificationsListActivity;
 import in.aptamitra.activities.ProfileActivity;
 import in.aptamitra.activities.RegisterComplaintActivity;
@@ -45,6 +46,7 @@ public class GlobalClass extends com.orm.SugarApp {
     public String subMenu;
     public ArrayList<String> searches;
     public HashMap<String, Speciality[]> services = new HashMap<>();
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -154,54 +156,54 @@ public class GlobalClass extends com.orm.SugarApp {
             load the bescom specs::start
              */
         Speciality[] bescomService = {
-                new Speciality("Failure of power supply",false),
-                new Speciality("Fuse of call, Line Breakdown, Pole Broken",false),
-                new Speciality("Voltage",false),
-                new Speciality("Voltage variation where no expantion or enhancement of network is involved",false),
-                new Speciality("Voltage variation where up-gradation of distribution systemis required",false),
-                new Speciality("Opening of neutral",false),
-                new Speciality("Meter complaints",false),
-                new Speciality("Inspect and check correctness",false),
-                new Speciality("Replace slow creeping or stuck meters",false),
-                new Speciality("Replace Burnt meters if cause not attributable to consumer",false),
-                new Speciality("Replace burnt meter in all other places",false),
-                new Speciality("Billing issues",false),
-                new Speciality("Where field report is not requires",false),
-                new Speciality("allegations on staff",false),
-                new Speciality("Where field report is required",false),
-                new Speciality("Reconnection of supply following disconnection",false),
-                new Speciality("Safety issue",false),
-                new Speciality("Straighting of bent pole",false),
-                new Speciality("Replacment of damaged pole",false),
-                new Speciality("Shifting of poles",false),
-                new Speciality("Tree trimming",false),
-                new Speciality("TC Failure complaints",false),
-                new Speciality("Water supply",false),
-                new Speciality("domestic",false),
-                new Speciality("industry",false),
-                new Speciality("mixed load",false),
-                new Speciality("irrigation",false),
-                new Speciality("Theft",false),
-                new Speciality("Hooking under niranthara jothiyojane",false),
-                new Speciality("Allegations on staff",false),
-                new Speciality("New connection/additional load",false),
-                new Speciality("Release of supply where service is fesable from existing network",false),
-                new Speciality("Release of supply where network expansion/enhancement required for provding connection",false),
-                new Speciality("IP sets",false),
-                new Speciality("Phase conversion",false),
-                new Speciality("Conversion of LT single phase to LT 3 phase",false),
-                new Speciality("Conversion from LT to HT",false),
-                new Speciality("Transfer of ownership and conversion",false),
-                new Speciality("Title transfer of ownership",false),
-                new Speciality("Change of category",false),
-                new Speciality("Refund/ issue of certificate",false),
-                new Speciality("Refund of deposits",false),
-                new Speciality("Issue of certificate",false),
-                new Speciality("Additional TC / Enhancement",false),
-                new Speciality("Additional TC",false),
-                new Speciality("Enhancement of TC",false),
-                new Speciality("General",false),
-                new Speciality("Complaints that is not covered under the above category",false)
+                new Speciality("Failure of power supply", false),
+                new Speciality("Fuse of call, Line Breakdown, Pole Broken", false),
+                new Speciality("Voltage", false),
+                new Speciality("Voltage variation where no expantion or enhancement of network is involved", false),
+                new Speciality("Voltage variation where up-gradation of distribution systemis required", false),
+                new Speciality("Opening of neutral", false),
+                new Speciality("Meter complaints", false),
+                new Speciality("Inspect and check correctness", false),
+                new Speciality("Replace slow creeping or stuck meters", false),
+                new Speciality("Replace Burnt meters if cause not attributable to consumer", false),
+                new Speciality("Replace burnt meter in all other places", false),
+                new Speciality("Billing issues", false),
+                new Speciality("Where field report is not requires", false),
+                new Speciality("allegations on staff", false),
+                new Speciality("Where field report is required", false),
+                new Speciality("Reconnection of supply following disconnection", false),
+                new Speciality("Safety issue", false),
+                new Speciality("Straighting of bent pole", false),
+                new Speciality("Replacment of damaged pole", false),
+                new Speciality("Shifting of poles", false),
+                new Speciality("Tree trimming", false),
+                new Speciality("TC Failure complaints", false),
+                new Speciality("Water supply", false),
+                new Speciality("domestic", false),
+                new Speciality("industry", false),
+                new Speciality("mixed load", false),
+                new Speciality("irrigation", false),
+                new Speciality("Theft", false),
+                new Speciality("Hooking under niranthara jothiyojane", false),
+                new Speciality("Allegations on staff", false),
+                new Speciality("New connection/additional load", false),
+                new Speciality("Release of supply where service is fesable from existing network", false),
+                new Speciality("Release of supply where network expansion/enhancement required for provding connection", false),
+                new Speciality("IP sets", false),
+                new Speciality("Phase conversion", false),
+                new Speciality("Conversion of LT single phase to LT 3 phase", false),
+                new Speciality("Conversion from LT to HT", false),
+                new Speciality("Transfer of ownership and conversion", false),
+                new Speciality("Title transfer of ownership", false),
+                new Speciality("Change of category", false),
+                new Speciality("Refund/ issue of certificate", false),
+                new Speciality("Refund of deposits", false),
+                new Speciality("Issue of certificate", false),
+                new Speciality("Additional TC / Enhancement", false),
+                new Speciality("Additional TC", false),
+                new Speciality("Enhancement of TC", false),
+                new Speciality("General", false),
+                new Speciality("Complaints that is not covered under the above category", false)
 
         };
         services.put("B E S C O M", bescomService);
@@ -300,6 +302,10 @@ public class GlobalClass extends com.orm.SugarApp {
                             case 8:
                                 break;
                             case 10:
+                                activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                intent = new Intent(activity, MainActivity.class);
+                                activity.startActivity(intent);
+                                activity.finish();
                                 break;
                             case 12:
                                 break;
@@ -315,8 +321,7 @@ public class GlobalClass extends com.orm.SugarApp {
 
     }
 
-    public void setupuniversalLoader()
-    {
+    public void setupuniversalLoader() {
         // UNIVERSAL IMAGE LOADER SETUP::start
         DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
                 .cacheOnDisc(true).cacheInMemory(true)

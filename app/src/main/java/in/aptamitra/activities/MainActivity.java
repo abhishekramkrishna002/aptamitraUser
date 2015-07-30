@@ -9,6 +9,7 @@ import android.media.MediaRecorder;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -82,9 +83,11 @@ public class MainActivity extends ActionBarActivity {
         /*
         check for username and password::start
          */
+        Log.d("login",email.getText().toString());
+        Log.d("login",password.getText().toString());
 
-        if (email.getText().toString().trim() == "" ||
-                password.getText().toString().trim() == "") {
+        if (email.getText().toString().trim().contentEquals("") ||
+                password.getText().toString().trim().contentEquals("")) {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(
                     this);
             builder1.setMessage("Fill all the fields");

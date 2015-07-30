@@ -91,6 +91,7 @@
             android:textColor="@color/white"
             android:id="@+id/forgot_password_text_view"
             android:textSize="15sp"
+            android:visibility="gone"
             android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif" />
         <TextView

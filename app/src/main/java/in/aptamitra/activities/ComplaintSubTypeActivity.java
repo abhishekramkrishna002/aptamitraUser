@@ -1,5 +1,7 @@
 package in.aptamitra.activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -46,6 +48,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complaints_sub_type);
         ButterKnife.bind(this);
+        ((GlobalClass) getApplicationContext()).subMenu = null;
         header = (TextView) findViewById(R.id.header);
 
         //String data=((GlobalClass)getApplicationContext()).mainMenu+"";
@@ -80,22 +83,36 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
     }
 
     @OnClick(R.id.back_button)
-    void goToHomePage()
-    {
+    void goToHomePage() {
         finish();
     }
 
 
     @OnClick(R.id.continue_button)
+    void showRegisterComplaintPage(View view) {
 
-    void showRegisterComplaintPage(View view){
+        if (((GlobalClass) getApplicationContext()).subMenu != null) {
+            Intent intent = new Intent(this, RegisterComplaintActivity.class);
+            intent.putExtra("data", header.getText());
+            startActivity(intent);
+            finish();
+        } else {
+            AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                    ComplaintSubTypeActivity.this);
+            builder1.setMessage("Please select a type");
+            builder1.setCancelable(true);
+            builder1.setPositiveButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog,
+                                            int id) {
+                            dialog.cancel();
 
-        Intent intent = new Intent(this, RegisterComplaintActivity.class);
-        intent.putExtra("data", header.getText());
-        startActivity(intent);
-        finish();
+                        }
+                    });
+            AlertDialog alert11 = builder1.create();
+            alert11.show();
         }
-
+    }
 
 
 }

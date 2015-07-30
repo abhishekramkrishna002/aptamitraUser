@@ -1,7 +1,9 @@
 package in.aptamitra.activities;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -132,11 +134,37 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
             String profileJson = prefs.getString("profile", null);
             JSONObject profile=new JSONObject(profileJson);
             HashMap<String, String> params = new HashMap<String, String>();
-            params.put("type", (((GlobalClass) getApplicationContext())).mainMenu);
+            params.put("type", etService.getText().toString());
             params.put("profile_id", profile.getString("profile_id"));
             params.put("profile_user", profileJson);
             params.put("mobile",((EditText)findViewById(R.id.etNumber)).getText().toString());
-            new ServiceBookingAyncTask(this).execute(params);
+            params.put("time",ettime.getText().toString());
+            params.put("date",etdate.getText().toString());
+            if(etService.getText().toString().trim().contentEquals("") ||
+                    ((EditText)findViewById(R.id.etNumber)).getText().toString().trim().contentEquals("") ||
+                    ettime.getText().toString().trim().contentEquals("") ||
+                    etdate.getText().toString().trim().contentEquals("")
+                    )
+            {
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                        this);
+                builder1.setMessage("Fill all the fields");
+                builder1.setCancelable(true);
+                builder1.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog alert11 = builder1.create();
+                alert11.show();
+            }
+            else
+            {
+                new ServiceBookingAyncTask(this).execute(params);
+            }
+
         }
         catch(Exception e)
         {
