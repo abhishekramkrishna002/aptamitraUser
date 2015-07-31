@@ -51,6 +51,7 @@ public class ViewPagerFragmentActivity extends FragmentActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(ViewPagerFragmentActivity.this,MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

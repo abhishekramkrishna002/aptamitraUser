@@ -26,6 +26,8 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -224,7 +226,16 @@ public class GlobalClass extends com.orm.SugarApp {
             /*
             readfrom shared prefs::start
              */
-                //sactivity.getSharedPreferences("cache",activity.)
+        SharedPreferences prefs = activity.getSharedPreferences("cache", Context.MODE_PRIVATE);
+        String name = null;
+        String email = null;
+        try {
+            JSONObject profile = new JSONObject(prefs.getString("profile", null));
+            name = profile.getString("name");
+            email = profile.getString("email");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
             /*
             readfrom shared prefs::end
              */
@@ -232,7 +243,7 @@ public class GlobalClass extends com.orm.SugarApp {
                 .withActivity(activity)
                 .withHeaderBackground(R.drawable.icon_profile_bg)
                 .addProfiles(
-                        new ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com").withIcon(activity.getResources().getDrawable(R.drawable.icon_profile))
+                        new ProfileDrawerItem().withName(name).withEmail(email).withIcon(activity.getResources().getDrawable(R.drawable.icon_profile))
                 )
 
                 .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {

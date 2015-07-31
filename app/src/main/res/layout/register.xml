@@ -123,6 +123,7 @@
                 android:fontFamily="sans-serif"
                 android:layout_margin="20dp"
                 android:hint="Mobile"
+                android:maxLength="10"
                 android:padding="10dp"
                 android:background="@drawable/gray_border"
                 android:id="@+id/editMobile" />
@@ -184,6 +185,7 @@
                 android:fontFamily="sans-serif"
                 android:padding="10dp"
                 android:id="@+id/editDoor"
+                android:maxLength="6"
                 android:inputType="number"
                 android:background="@drawable/gray_border" />
 
@@ -204,6 +206,7 @@
                 android:layout_margin="20dp"
                 android:ems="10"
                 android:hint="PinCode"
+                android:maxLength="6"
                 android:fontFamily="sans-serif"
                 android:inputType="number"
                 android:padding="10dp"
@@ -218,6 +221,7 @@
                 android:ems="10"
                 android:hint="password"
                 android:padding="10dp"
+                android:maxLength="10"
                 android:textColor="@color/black"
                 android:id="@+id/editTextPassword"
                 android:layout_margin="20dp"
