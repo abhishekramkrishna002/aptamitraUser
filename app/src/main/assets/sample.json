@@ -1,4 +1,51 @@
 {
+    "services": [
+        {
+            "key": "house keeping"
+        },
+        {
+            "key": "beautician"
+        },
+        {
+            "key": "laundry"
+        },
+        {
+            "key": "electrician"
+        },
+        {
+            "key": "plumber"
+        },
+        {
+            "key": "carpenter"
+        },
+        {
+            "key": "mobile or pc repair"
+        },
+        {
+            "key": "accountant"
+        },
+        {
+            "key": "secretary"
+        },
+        {
+            "key": "trademark"
+        },
+        {
+            "key": "wedding photography"
+        },
+        {
+            "key": "flute"
+        },
+        {
+            "key": "guitar"
+        },
+        {
+            "key": "yoga"
+        },
+        {
+            "key": "driver"
+        }
+    ],
     "civic_issues": {
         "bbmp": [
             {

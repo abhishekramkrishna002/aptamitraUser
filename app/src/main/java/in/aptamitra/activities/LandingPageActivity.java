@@ -20,7 +20,9 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -42,6 +44,7 @@ import java.util.ArrayList;
 import adapters.LandingPageAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import custom_objects.HorizontalScrollItem;
 import globalclass.GlobalClass;
 import in.aptamitra.R;
@@ -55,6 +58,8 @@ public class LandingPageActivity extends ActionBarActivity {
     public static Activity activity;
     @Bind(R.id.my_recycler_view)
     RecyclerView recyclerView;
+    @Bind(R.id.search_bar)
+    EditText searchBar;
     @Bind(R.id.app_bar)
     Toolbar toolbar;
     ProgressDialog progress;
@@ -124,6 +129,15 @@ public class LandingPageActivity extends ActionBarActivity {
             }
         });
 
+        searchBar.setClickable(true);
+
+    }
+
+    @OnClick(R.id.search_bar)
+    void showSearchPage(View view) {
+        Intent intent = new Intent(LandingPageActivity.activity, SearchActivity.class);
+        startActivity(intent);
+
     }
 
     @Override
@@ -135,21 +149,29 @@ public class LandingPageActivity extends ActionBarActivity {
     public void initilaiseMenuSystem() {
         items = new ArrayList<HorizontalScrollItem>() {{
             add(new HorizontalScrollItem("My City", new ArrayList<HorizontalScrollItem.Item>() {{
-                add(new HorizontalScrollItem.Item(R.drawable.icon_bbmp, "B B M P", "Bruhat Bangalore Mahanagara Palike"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_bwssb, "B W S S B", "Bangalore Water Supply and Sewerage Board"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_bescom, "B E S C O M", "Bangalore Electricity Supply Company "));
+                add(new HorizontalScrollItem.Item(R.drawable.bbmp, "B B M P"));
+                add(new HorizontalScrollItem.Item(R.drawable.bwssb, "B W S S B"));
+                add(new HorizontalScrollItem.Item(R.drawable.bescom, "B E S C O M"));
+                add(new HorizontalScrollItem.Item(R.drawable.bmtc, "B M T C"));
+//                add(new HorizontalScrollItem.Item(R.drawable.bda, "B D A"));
+                add(new HorizontalScrollItem.Item(R.drawable.ambulance, "Ambulance"));
+                add(new HorizontalScrollItem.Item(R.drawable.blood, "Blood"));
+                add(new HorizontalScrollItem.Item(R.drawable.fire, "Fire"));
+                add(new HorizontalScrollItem.Item(R.drawable.law_and_order, "Law & Order"));
+                add(new HorizontalScrollItem.Item(R.drawable.mortuary, "Mortuary"));
+
+
             }}));
             add(new HorizontalScrollItem("My Booking", new ArrayList<HorizontalScrollItem.Item>() {{
 
                 add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "House Keeping"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_saloon_women, "Beautician"));
                 add(new HorizontalScrollItem.Item(R.drawable.laundry, "Laundry"));
-                //add(new HorizontalScrollItem.Item(R.drawable.icon_saloon_women, "Laundry"));
-
                 add(new HorizontalScrollItem.Item(R.drawable.icon_electrician, "Electrician"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_plumbing, "Plumber"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_carpenter, "Carpenter"));
-                add(new HorizontalScrollItem.Item(R.drawable.mobile_repair, "Mobile-PC repair"));
+                add(new HorizontalScrollItem.Item(R.drawable.mobile_repair, "Mobile repair"));
+                add(new HorizontalScrollItem.Item(R.drawable.pc_repair, "PC repair"));
                 add(new HorizontalScrollItem.Item(R.drawable.chartered_accountant, "Accountant"));
                 add(new HorizontalScrollItem.Item(R.drawable.company_secretery, "Secretary"));
                 add(new HorizontalScrollItem.Item(R.drawable.trademark_copyright, "Trademark"));
@@ -157,8 +179,19 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.flute, "Flute"));
                 add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar"));
                 add(new HorizontalScrollItem.Item(R.drawable.yoga, "Yoga "));
-//                add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
                 add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
+                add(new HorizontalScrollItem.Item(R.drawable.appliances, "Appliances"));
+                add(new HorizontalScrollItem.Item(R.drawable.architecture, "Architecture"));
+                add(new HorizontalScrollItem.Item(R.drawable.chef, "Chef"));
+                add(new HorizontalScrollItem.Item(R.drawable.civil_work, "Civil work"));
+                add(new HorizontalScrollItem.Item(R.drawable.dance_classes, "Dance class"));
+                add(new HorizontalScrollItem.Item(R.drawable.driving_school, "Driving School"));
+                add(new HorizontalScrollItem.Item(R.drawable.financial_services, "Financial Service"));
+                add(new HorizontalScrollItem.Item(R.drawable.gardening, "Gardening"));
+                add(new HorizontalScrollItem.Item(R.drawable.leagal_services, "Legal Service"));
+                add(new HorizontalScrollItem.Item(R.drawable.tank_cleaning, "Tank Cleaning"));
+                add(new HorizontalScrollItem.Item(R.drawable.tutor, "Tutor"));
+                add(new HorizontalScrollItem.Item(R.drawable.web_desingner, "Web Designer"));
 
             }}));
             add(new HorizontalScrollItem("My Delivery", new ArrayList<HorizontalScrollItem.Item>() {{
@@ -167,11 +200,14 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.icon_groceries, "Groceries"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_fruits, "Fruits"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_flowers, "Flowers"));
+                add(new HorizontalScrollItem.Item(R.drawable.bakery, "Bakery"));
+                add(new HorizontalScrollItem.Item(R.drawable.bill_payment, "Bill Payment"));
+                add(new HorizontalScrollItem.Item(R.drawable.insta_courier, "Insta Courier"));
+                add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
             }}));
 
         }};
-//        HomeHorizontalScrollAdapter homeHorizontalScrollAdapter = new HomeHorizontalScrollAdapter(this, items);
-//        listView.setAdapter(homeHorizontalScrollAdapter);
+
         LandingPageAdapter landingPageAdapter = new LandingPageAdapter(this, items);
         recyclerView.setAdapter(landingPageAdapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

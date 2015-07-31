@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_blue">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:background="@drawable/aptalogo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</LinearLayout>

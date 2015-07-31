@@ -23,4 +23,35 @@
     <string name="gcm_key_register">http://aptamitra.in/service_app/gcm_register.php</string>
     <string name="book_service">http://aptamitra.in/service_app/book_service.php</string>
     <string name="chat_link">http://aptamitra.in/service_app/user_to_admin.php</string>
+
+    <!-- How It Works Texts ::start -->
+
+    <string name="text1">One Who makes his life better,\n by making others life better is\n an <b>Aptamitra</b></string>
+    <string name="text2">Aptamitra will guide you to find\n the right professional for your\n essential needs.</string>
+    <string name="text3">Aptamitra will bridge between\n the delivery network and your\n local favourite stores</string>
+    <string name="text4">No More calls. Just message and\n Get more things accomplished with\n a message via Aptamitra Linkup.\n
+    Make reservations, book\n appointmrnts find prices and\n availabillity of products/services at your local favourite\n businesses with Aptanitra Linup</string>
+    <string name="text5">Aptanitra will help you to create a\n better place around you by\n assigning your CIVIC issue\n to the right service profrssional\n from Government agencies</string>
+    <!-- How It Works Texts ::end-->
+
+    <!-- About Us Text-->
+
+    <string name="abt1">We have found many people finding it difficult </string>
+    <string name="abt2">1)	To know the right contact to report a civic issue. </string>
+    <string name="abt3">2)	To find a plumber / electrician / carpenter who is reliable and can do a quality job. </string>
+    <string name="abt4">3)	To get a door delivery of essential needs. </string>
+    <string name="abt5">As a solution to the above, Aptamitra was born.</string>
+    <string name="abt6">\t\t\t\tAptamitra is an online platform which connects users with certified service providers nearest to the user who can ensure availability, quality, reliability and diligent service. </string>
+    <string name="abt7">How we do it </string>
+    <string name="abt8">\t\t\t\tWe work with the bureaucrats of the civic agencies like BBMP, BESCOM, BWSSB, BMTC, BDA, Fire , Emergency etc so that just by a click an issue is directed to the inbox of the concerned personnel.</string>
+    <string name="abt9">\t\t\t\tWe aggregate quality suppliers and ensure availability, quality and reliability.</string>
+    <string name="abt10">\t\t\t\tWe ensure that each service provider has a testimonial of accomplishments and is certified for skills by a third party.</string>
+    <string name="abt11">\t\t\t\tWe do a thorough background check of our service providers for address verification and police verification check to ensure customer safety.</string>
+    <string name="abt12">\t\t\t\tWe are working on a Mobile Application platform for service providers to accept your requests and to reach your location on time. The customer is able to track the movement of the service provider and know exactly the estimated time of arrival.</string>
+    <string name="abt13">\t\t\t\tThe service charges are mentioned ahead of the Task. Product cost would be charged on actuals and has to be borne by the customer.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="ranklabel">"Rank : "</string>
+    <string name="countrylabel">"Country : "</string>
+    <string name="populationlabel">"Population : "</string>
+
 </resources>

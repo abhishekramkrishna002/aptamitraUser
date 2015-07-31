@@ -26,6 +26,8 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -207,6 +209,60 @@ public class GlobalClass extends com.orm.SugarApp {
 
         };
         services.put("B E S C O M", bescomService);
+
+        Speciality[] bmtcService = new Speciality[]{
+
+                new Speciality("RESTART BMTC ROUTE ", false),
+                new Speciality("Issues with a Bus Route", false),
+                new Speciality("Bus Timing Issue", false),
+                new Speciality("Bus Frequency", false),
+                new Speciality("Lost and Found", false),
+                new Speciality("Bus Staff Behaviour", false),
+                new Speciality("Bus Condition", false),
+                new Speciality("Bus Cleanliness", false),
+                new Speciality("Bus Pass Issues", false)
+        };
+        services.put("B M T C", bmtcService);
+
+        Speciality[] ambulanceServices = new Speciality[]{
+
+                new Speciality("Request for An Ambulance service ", false)
+        };
+        services.put("Ambulance", ambulanceServices);
+        Speciality[] fireServices = new Speciality[]{
+
+                new Speciality("Report a Fire issue ", false)
+        };
+        services.put("Fire", fireServices);
+        Speciality[] mortuaryServices = new Speciality[]{
+
+                new Speciality("Need Mortuary Vehicle ", false),
+                new Speciality("Need cremation centre address ", false)
+        };
+        services.put("Mortuary", mortuaryServices);
+        Speciality[] lawAndOrderServices = new Speciality[]{
+
+                new Speciality("Eve Teasing", false),
+                new Speciality("Murder", false),
+                new Speciality("theft", false),
+                new Speciality("neighbour conflicts", false)
+        };
+        services.put("Law & Order", lawAndOrderServices);
+        Speciality[] bloodServices = new Speciality[]{
+
+                new Speciality("Need B+Ve", false),
+                new Speciality("Need B-ve", false),
+                new Speciality("Need O+ve", false),
+                new Speciality("Need O-ve", false),
+                new Speciality("Need AB+", false),
+                new Speciality("Need AB-ve", false),
+                new Speciality("Need A+ve", false),
+                new Speciality("Need A-ve", false),
+                new Speciality("Enrol Me as a Donor", false)
+        };
+        services.put("Blood", bloodServices);
+
+
             /*
             load the bescom specs::end
              */
@@ -221,11 +277,27 @@ public class GlobalClass extends com.orm.SugarApp {
         /*
         get data from shared prefs::end
          */
+            /*
+            readfrom shared prefs::start
+             */
+        SharedPreferences prefs = activity.getSharedPreferences("cache", Context.MODE_PRIVATE);
+        String name = null;
+        String email = null;
+        try {
+            JSONObject profile = new JSONObject(prefs.getString("profile", null));
+            name = profile.getString("name");
+            email = profile.getString("email");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+            /*
+            readfrom shared prefs::end
+             */
         AccountHeader headerResult = new AccountHeaderBuilder()
                 .withActivity(activity)
                 .withHeaderBackground(R.drawable.icon_profile_bg)
                 .addProfiles(
-                        new ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com").withIcon(activity.getResources().getDrawable(R.drawable.icon_profile))
+                        new ProfileDrawerItem().withName(name).withEmail(email).withIcon(activity.getResources().getDrawable(R.drawable.icon_profile))
                 )
 
                 .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
