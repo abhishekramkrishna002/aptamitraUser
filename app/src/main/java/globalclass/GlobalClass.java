@@ -221,6 +221,13 @@ public class GlobalClass extends com.orm.SugarApp {
         /*
         get data from shared prefs::end
          */
+            /*
+            readfrom shared prefs::start
+             */
+                //sactivity.getSharedPreferences("cache",activity.)
+            /*
+            readfrom shared prefs::end
+             */
         AccountHeader headerResult = new AccountHeaderBuilder()
                 .withActivity(activity)
                 .withHeaderBackground(R.drawable.icon_profile_bg)

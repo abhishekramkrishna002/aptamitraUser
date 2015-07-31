@@ -257,7 +257,7 @@ public class RegisterActivity extends ActionBarActivity {
             }
         });
 
-        backButton = (ImageView) findViewById(R.id.bt_back);
+        backButton = (ImageView) findViewById(R.id.icon_back);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

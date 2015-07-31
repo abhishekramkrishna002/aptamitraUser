@@ -20,7 +20,9 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -42,6 +44,7 @@ import java.util.ArrayList;
 import adapters.LandingPageAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import custom_objects.HorizontalScrollItem;
 import globalclass.GlobalClass;
 import in.aptamitra.R;
@@ -55,6 +58,8 @@ public class LandingPageActivity extends ActionBarActivity {
     public static Activity activity;
     @Bind(R.id.my_recycler_view)
     RecyclerView recyclerView;
+    @Bind(R.id.search_bar)
+    EditText searchBar;
     @Bind(R.id.app_bar)
     Toolbar toolbar;
     ProgressDialog progress;
@@ -123,6 +128,15 @@ public class LandingPageActivity extends ActionBarActivity {
                 }
             }
         });
+
+        searchBar.setClickable(true);
+
+    }
+
+    @OnClick(R.id.search_bar)
+    void showSearchPage(View view) {
+        Intent intent = new Intent(LandingPageActivity.activity, SearchActivity.class);
+        startActivity(intent);
 
     }
 
