@@ -11,6 +11,7 @@ import android.widget.Filterable;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import custom_objects.Speciality;
@@ -38,11 +39,10 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
 
     @Override
     public int getCount() {
-        if(problems!=null)
-        {
+        if (problems != null) {
             return problems.length;
         }
-        return  0;
+        return 0;
     }
 
     @Override
@@ -64,24 +64,26 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
         } else {
             view.setBackgroundColor(activity.getResources().getColor(R.color.white));
         }
-        ((TextView) view.findViewById(R.id.sub_type_text_view)).setText(problems[position].name.toLowerCase());
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!problemsBoolean[position]) {
-                    for (int j = 0; j < problems.length; j++) {
+        if (problems[position] != null) {
+            ((TextView) view.findViewById(R.id.sub_type_text_view)).setText(problems[position].name.toLowerCase());
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (!problemsBoolean[position]) {
+                        for (int j = 0; j < problems.length; j++) {
 
-                        problemsBoolean[j] = false;
-                        ComplaintSubTypeActivity.header.setText(staticHeader);
-                        notifyDataSetChanged();
+                            problemsBoolean[j] = false;
+                            ComplaintSubTypeActivity.header.setText(staticHeader);
+                            notifyDataSetChanged();
+                        }
+                        v.setBackgroundColor(activity.getResources().getColor(R.color.gray));
+                        ComplaintSubTypeActivity.header.setText(ComplaintSubTypeActivity.header.getText() + problems[position].name);
+                        ((GlobalClass) activity.getApplicationContext()).subMenu = problems[position].name;
+                        problemsBoolean[position] = !problemsBoolean[position];
                     }
-                    v.setBackgroundColor(activity.getResources().getColor(R.color.gray));
-                    ComplaintSubTypeActivity.header.setText(ComplaintSubTypeActivity.header.getText() + problems[position].name);
-                    ((GlobalClass) activity.getApplicationContext()).subMenu = problems[position].name;
-                    problemsBoolean[position] = !problemsBoolean[position];
                 }
-            }
-        });
+            });
+        }
         return view;
 
     }
@@ -92,19 +94,24 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
         Filter filter = new Filter() {
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
-                Speciality[] results= new Speciality[0];
+                Speciality[] results ;//= new Speciality[0];
                 int j = 0;
                 if (constraint.toString().trim().contentEquals("")) {
                     results = new Speciality[cacheProblems.length];
                     results = cacheProblems;
-                    j=cacheProblems.length;
+                    j = cacheProblems.length;
                 } else {
-                    results = new Speciality[cacheProblems.length];
+                    // results = new Speciality[cacheProblems.length];
+                    ArrayList<Speciality> arrayListSpeciality = new ArrayList<>();
+                    // results = new Speciality[]{};
                     for (int i = 0; i < cacheProblems.length; i++) {
                         if (cacheProblems[i].getName().toLowerCase().contains(constraint.toString().trim().toLowerCase())) {
-                            results[j++] = cacheProblems[i];
+                            //results[j] = cacheProblems[i];
+                            j++;
+                            arrayListSpeciality.add(cacheProblems[i]);
                         }
                     }
+                    results = arrayListSpeciality.toArray(new Speciality[arrayListSpeciality.size()]);
                 }
                 if (j == 0) {
                     FilterResults filterResults = new FilterResults();
@@ -124,15 +131,15 @@ public class ComplaintSubTypeAdapter extends BaseAdapter implements Filterable {
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
                 if (results.values != null && results.count > 0) {
-                    Log.e("publish results",""+results.values);
+                    Log.e("publish results", "" + results.values);
                     problems = (Speciality[]) results.values;
                     notifyDataSetChanged();
                 } else {
-                    Log.e("publish results::zero",""+results.values);
+                    Log.e("publish results::zero", "" + results.values);
                     problems = null;
                     notifyDataSetChanged();
                 }
-               // Log.e("problem", problems.length + "");
+                // Log.e("problem", problems.length + "");
             }
 
         };
