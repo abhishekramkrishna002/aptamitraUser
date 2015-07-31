@@ -44,7 +44,6 @@ public class LandingPageAdapter
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         View view = layoutInflater.inflate(R.layout.landing_page_item, viewGroup, false);
         MyViewHolder myViewHolder = new MyViewHolder(view);
-
         return myViewHolder;
     }
 
@@ -60,23 +59,38 @@ public class LandingPageAdapter
         LayoutInflater layoutInflater = LayoutInflater.from(activity);
         if (position == 0) {
             for (int i = 0; i < items.size(); i++) {
-                View cardView = layoutInflater.inflate(
-                        R.layout.landing_page_horizontal_list_item_1,
-                        viewHolder.horizontalListContainer,
-                        false);
+//                View cardView = layoutInflater.inflate(
+//                        R.layout.landing_page_horizontal_list_item_1,
+//                        viewHolder.horizontalListContainer,
+//                        false);
+//                HorizontalScrollItem.Item item = items.get(i);
+//                ((ImageView) cardView.findViewById(R.id.image)).setImageResource(item.image);
+//                ((TextView) cardView.findViewById(R.id.description)).setText(item.description);
+//                ((TextView) cardView.findViewById(R.id.shorthand)).setText(item.name);
+//                viewHolder.horizontalListContainer.addView(cardView);
+//                cardView.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        String data = ((TextView) v.findViewById(R.id.shorthand)).getText().toString();
+//                        //Toast.makeText(activity,data,Toast.LENGTH_LONG).show();
+//                        startActivity(data);
+//                    }
+//                });
+                View cardView = layoutInflater.inflate(R.layout.landing_page_horizontal_list_item_2, viewHolder.horizontalListContainer, false);
                 HorizontalScrollItem.Item item = items.get(i);
                 ((ImageView) cardView.findViewById(R.id.image)).setImageResource(item.image);
-                ((TextView) cardView.findViewById(R.id.description)).setText(item.description);
-                ((TextView) cardView.findViewById(R.id.shorthand)).setText(item.name);
-                viewHolder.horizontalListContainer.addView(cardView);
+                ((TextView) cardView.findViewById(R.id.title)).setText(item.name);
                 cardView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String data = ((TextView) v.findViewById(R.id.shorthand)).getText().toString();
+                        // String data= ((TextView) v.findViewById(R.id.shorthand)).getText().toString();
                         //Toast.makeText(activity,data,Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(activity, ComplaintSubTypeActivity.class);
+                        String data = ((TextView) v.findViewById(R.id.title)).getText().toString();
                         startActivity(data);
                     }
                 });
+                viewHolder.horizontalListContainer.addView(cardView);
             }
         } else if (position == 2) {
             for (int i = 0; i < items.size(); i++) {
@@ -115,24 +129,7 @@ public class LandingPageAdapter
             }
         }
 
-//        if (position == 0) {
-//            for (int index = 0; index < viewHolder.horizontalListContainer.getChildCount(); index++) {
-//                View cardView = viewHolder.horizontalListContainer.getChildAt(index);
-//                HorizontalScrollItem.Item item = items.get(index);
-//                ((ImageView) cardView.findViewById(R.id.image)).setImageResource(item.image);
-//                ((TextView) cardView.findViewById(R.id.description)).setText(item.description);
-//                ((TextView) cardView.findViewById(R.id.shorthand)).setText(item.name);
-//
-//            }
-//        } else {
-//            for (int index = 0; index < viewHolder.horizontalListContainer.getChildCount(); index++) {
-//                View cardView = viewHolder.horizontalListContainer.getChildAt(index);
-//                HorizontalScrollItem.Item item = items.get(index);
-//                ((ImageView) cardView.findViewById(R.id.image)).setImageResource(item.image);
-//                //((TextView) cardView.findViewById(R.id.title)).setText(item.name);
-//
-//            }
-//        }
+
         /*
         add dynamic cards::end
          */

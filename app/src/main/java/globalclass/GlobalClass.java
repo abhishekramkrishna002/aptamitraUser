@@ -209,6 +209,60 @@ public class GlobalClass extends com.orm.SugarApp {
 
         };
         services.put("B E S C O M", bescomService);
+
+        Speciality[] bmtcService = new Speciality[]{
+
+                new Speciality("RESTART BMTC ROUTE ", false),
+                new Speciality("Issues with a Bus Route", false),
+                new Speciality("Bus Timing Issue", false),
+                new Speciality("Bus Frequency", false),
+                new Speciality("Lost and Found", false),
+                new Speciality("Bus Staff Behaviour", false),
+                new Speciality("Bus Condition", false),
+                new Speciality("Bus Cleanliness", false),
+                new Speciality("Bus Pass Issues", false)
+        };
+        services.put("B M T C", bmtcService);
+
+        Speciality[] ambulanceServices = new Speciality[]{
+
+                new Speciality("Request for An Ambulance service ", false)
+        };
+        services.put("Ambulance", ambulanceServices);
+        Speciality[] fireServices = new Speciality[]{
+
+                new Speciality("Report a Fire issue ", false)
+        };
+        services.put("Fire", fireServices);
+        Speciality[] mortuaryServices = new Speciality[]{
+
+                new Speciality("Need Mortuary Vehicle ", false),
+                new Speciality("Need cremation centre address ", false)
+        };
+        services.put("Mortuary", mortuaryServices);
+        Speciality[] lawAndOrderServices = new Speciality[]{
+
+                new Speciality("Eve Teasing", false),
+                new Speciality("Murder", false),
+                new Speciality("theft", false),
+                new Speciality("neighbour conflicts", false)
+        };
+        services.put("Law & Order", lawAndOrderServices);
+        Speciality[] bloodServices = new Speciality[]{
+
+                new Speciality("Need B+Ve", false),
+                new Speciality("Need B-ve", false),
+                new Speciality("Need O+ve", false),
+                new Speciality("Need O-ve", false),
+                new Speciality("Need AB+", false),
+                new Speciality("Need AB-ve", false),
+                new Speciality("Need A+ve", false),
+                new Speciality("Need A-ve", false),
+                new Speciality("Enrol Me as a Donor", false)
+        };
+        services.put("Blood", bloodServices);
+
+
             /*
             load the bescom specs::end
              */
