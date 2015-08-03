@@ -10,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
@@ -61,14 +62,14 @@ public class RegisterActivity extends ActionBarActivity {
             "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Seshadri Road", "Shivajinagar", "Sri Chatram Road", "Vasanth Nagar", "Vittal Mallya Road",
             "Banaswadi", "Hebbal", "Frazer Town", "Devanahalli", "Yeshwanthpur", "Mathikere", "Ganga Nagar", "Sanjay Nagar", "Jalahalli",
             "Hennur", "Yelahanka", "Mahatma Gandhi Road", "Electronics City", "Koramangala", "Bannerghatta Road", "Hosur Road", "Banashankari", "BTM Layout", "Ulsoor", "" +
-            "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar","Vidhyaranyapura"};
+            "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar", "Vidhyaranyapura"};
     private String[] city = {"Bangalore", "Others"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
-        activity=this;
+        activity = this;
         setup();
 
 
@@ -91,7 +92,7 @@ public class RegisterActivity extends ActionBarActivity {
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // open();
+                // open();
 
                 android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(activity);
                 builder.setTitle("Choose Image Source");
@@ -102,14 +103,28 @@ public class RegisterActivity extends ActionBarActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 switch (which) {
                                     case 0:
-                                        Intent intent = new Intent();
-                                        intent.setType("image/*");
-                                        intent.setAction(Intent.ACTION_GET_CONTENT);
-                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-                                                COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        if (Build.VERSION.SDK_INT < 19) {
+                                            Intent intent = new Intent();
+                                            intent.setType("image/*");
+                                            intent.setAction(Intent.ACTION_GET_CONTENT);
+                                            // startActivityForResult(Intent.createChooser(intent, "Select Picture",COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY));
+                                            startActivityForResult(Intent.createChooser(intent, "Select Picture"),
+                                                    COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        } else {
+                                            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                                            intent.addCategory(Intent.CATEGORY_OPENABLE);
+                                            intent.setType("image/*");
+                                            //startActivityForResult(intent, GALLERY_KITKAT_INTENT_CALLED);
+                                            startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        }
+//                                        Intent intent = new Intent();
+//                                        intent.setType("image/*");
+//                                        intent.setAction(Intent.ACTION_GET_CONTENT);
+//                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
+//                                                COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
                                         break;
                                     case 1:
-                                        intent = new Intent(
+                                        Intent intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE);
                                         break;
@@ -249,21 +264,21 @@ public class RegisterActivity extends ActionBarActivity {
 //                        nameText + " " + mobileText + " " + addressText + " " +
 //                                cityText + " " + emailText + " " + doorNumber, Toast.LENGTH_LONG).show();
 
-               //new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
+                //new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
 
                     /*
                     call the registe async task
                      */
                 if (
                         nameText.trim().toLowerCase().toString().contentEquals("") ||
-                        passwordText.trim().toLowerCase().toString().contentEquals("") ||
-                        doorNumber.trim().toLowerCase().toString().contentEquals("") ||
-                        addressText.trim().toLowerCase().toString().contentEquals("") ||
-                        pincodeText.trim().toLowerCase().toString().contentEquals("") ||
-                        localityText.trim().toLowerCase().toString().contentEquals("") ||
-                        cityText.trim().toLowerCase().toString().contentEquals("") ||
-                        mobileText.trim().toLowerCase().toString().contentEquals("") ||
-                        emailText.trim().toLowerCase().toString().contentEquals("")
+                                passwordText.trim().toLowerCase().toString().contentEquals("") ||
+                                doorNumber.trim().toLowerCase().toString().contentEquals("") ||
+                                addressText.trim().toLowerCase().toString().contentEquals("") ||
+                                pincodeText.trim().toLowerCase().toString().contentEquals("") ||
+                                localityText.trim().toLowerCase().toString().contentEquals("") ||
+                                cityText.trim().toLowerCase().toString().contentEquals("") ||
+                                mobileText.trim().toLowerCase().toString().contentEquals("") ||
+                                emailText.trim().toLowerCase().toString().contentEquals("")
 
                         ) {
                     AlertDialog.Builder builder1 = new AlertDialog.Builder(
@@ -280,10 +295,7 @@ public class RegisterActivity extends ActionBarActivity {
                     AlertDialog alert11 = builder1.create();
                     alert11.show();
 
-                }
-
-                else if( mobileText.length()!=10)
-                {
+                } else if (mobileText.length() != 10) {
                     AlertDialog.Builder builder1 = new AlertDialog.Builder(
                             RegisterActivity.this);
                     builder1.setMessage("Mobile number is in appropriate");
@@ -297,9 +309,7 @@ public class RegisterActivity extends ActionBarActivity {
                             });
                     AlertDialog alert11 = builder1.create();
                     alert11.show();
-                }
-                else if(pincodeText.length()!=6)
-                {
+                } else if (pincodeText.length() != 6) {
                     AlertDialog.Builder builder1 = new AlertDialog.Builder(
                             RegisterActivity.this);
                     builder1.setMessage("pincode is in appropriate");
@@ -313,9 +323,7 @@ public class RegisterActivity extends ActionBarActivity {
                             });
                     AlertDialog alert11 = builder1.create();
                     alert11.show();
-                }
-
-                else {
+                } else {
                     new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
                 }
 
@@ -348,17 +356,13 @@ public class RegisterActivity extends ActionBarActivity {
 //        profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
 //        profileImage.setImageBitmap(profileImageBitmap);
 
-        if(profileImageBitmap!=null)
-        {
+        if (profileImageBitmap != null) {
             profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
-        }
-        else
-        {
+        } else {
             if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE) {
                 profileImageBitmap = (Bitmap) data.getExtras().get("data");
                 profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
-            }
-            else if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY) {
+            } else if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY) {
                 Uri selectedImage = data.getData();
 
                 Log.i("image_gallery", data.toString());

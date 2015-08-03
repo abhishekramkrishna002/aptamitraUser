@@ -13,6 +13,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
@@ -109,14 +110,23 @@ public class RegisterComplaintActivity extends ActionBarActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 switch (which) {
                                     case 0:
-                                        Intent intent = new Intent();
-                                        intent.setType("image/*");
-                                        intent.setAction(Intent.ACTION_GET_CONTENT);
-                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-                                                COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        if (Build.VERSION.SDK_INT < 19) {
+                                            Intent intent = new Intent();
+                                            intent.setType("image/*");
+                                            intent.setAction(Intent.ACTION_GET_CONTENT);
+                                            // startActivityForResult(Intent.createChooser(intent, "Select Picture",COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY));
+                                            startActivityForResult(Intent.createChooser(intent, "Select Picture"),
+                                                    COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        } else {
+                                            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                                            intent.addCategory(Intent.CATEGORY_OPENABLE);
+                                            intent.setType("image/*");
+                                            //startActivityForResult(intent, GALLERY_KITKAT_INTENT_CALLED);
+                                            startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        }
                                         break;
                                     case 1:
-                                        intent = new Intent(
+                                       Intent  intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE);
                                         break;
@@ -139,14 +149,28 @@ public class RegisterComplaintActivity extends ActionBarActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 switch (which) {
                                     case 0:
-                                        Intent intent = new Intent();
-                                        intent.setType("image/*");
-                                        intent.setAction(Intent.ACTION_GET_CONTENT);
-                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-                                                COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
+//                                        Intent intent = new Intent();
+//                                        intent.setType("image/*");
+//                                        intent.setAction(Intent.ACTION_GET_CONTENT);
+//                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
+//                                                COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
+                                        if (Build.VERSION.SDK_INT < 19) {
+                                            Intent intent = new Intent();
+                                            intent.setType("image/*");
+                                            intent.setAction(Intent.ACTION_GET_CONTENT);
+                                            // startActivityForResult(Intent.createChooser(intent, "Select Picture",COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY));
+                                            startActivityForResult(Intent.createChooser(intent, "Select Picture"),
+                                                    COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
+                                        } else {
+                                            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                                            intent.addCategory(Intent.CATEGORY_OPENABLE);
+                                            intent.setType("image/*");
+                                            //startActivityForResult(intent, GALLERY_KITKAT_INTENT_CALLED);
+                                            startActivityForResult(intent, COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
+                                        }
                                         break;
                                     case 1:
-                                        intent = new Intent(
+                                        Intent intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_TWO_REQUEST_CODE_IMAGE);
                                         break;
