@@ -59,6 +59,7 @@
                 android:gravity="center"
                 android:editable="false"
                 android:hint="Select Date"
+                android:focusable="false"
                 android:padding="10dp" />
 
 
@@ -69,6 +70,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:editable="false"
+                android:focusable="false"
                 android:hint="Select Time"
                 android:padding="10dp" />
 
