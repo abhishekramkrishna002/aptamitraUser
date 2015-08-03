@@ -179,12 +179,7 @@ public class RegisterActivity extends ActionBarActivity {
 
                 String nameText, emailText, mobileText, addressText, doorNumber, cityText, pincodeText, passwordText, confirmPasswordText, localityText;
                 nameText = name.getText().toString().trim();
-                emailText = null;
-                if (isValidEmailAddress(email.getText().toString().trim())) {
-                    emailText = email.getText().toString().trim();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Please enter a valid email id", Toast.LENGTH_LONG).show();
-                }
+                emailText = email.getText().toString().trim();
 
                 mobileText = mobile.getText().toString().trim();
                 addressText = address.getText().toString().trim();
@@ -195,11 +190,6 @@ public class RegisterActivity extends ActionBarActivity {
                 passwordText = password.getText().toString().trim();
 
                 localityText = (String) s2.getSelectedItem();
-
-                Log.e("name", nameText + mobileText + " " + addressText + " " + cityText + " " + doorNumber);
-
-
-
 
                     /*
                     build the hashmap
@@ -219,11 +209,16 @@ public class RegisterActivity extends ActionBarActivity {
                 data.put("city", cityText);
                 data.put("mobile", mobileText);
                 data.put("email", emailText);
+//                Toast.makeText(RegisterActivity.this,
+//                        nameText + " " + mobileText + " " + addressText + " " +
+//                                cityText + " " + emailText + " " + doorNumber, Toast.LENGTH_LONG).show();
+
+               //new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
 
                     /*
                     call the registe async task
                      */
-                if (nameText.trim().toLowerCase().toString().contentEquals("") ||
+                if (
                         nameText.trim().toLowerCase().toString().contentEquals("") ||
                         passwordText.trim().toLowerCase().toString().contentEquals("") ||
                         doorNumber.trim().toLowerCase().toString().contentEquals("") ||
@@ -294,13 +289,6 @@ public class RegisterActivity extends ActionBarActivity {
 
         }
 
-    }
-
-    public boolean isValidEmailAddress(String email) {
-        String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
-        java.util.regex.Pattern p = java.util.regex.Pattern.compile(ePattern);
-        java.util.regex.Matcher m = p.matcher(email);
-        return m.matches();
     }
 
 

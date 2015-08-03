@@ -21,7 +21,7 @@ import in.aptamitra.R;
  * Created by abhishek on 25-07-2015.
  */
 public class ChatActivity extends ActionBarActivity {
-   // @Bind(R.id.chat_list_container)
+    // @Bind(R.id.chat_list_container)
     public static LinearLayout chatListView;
 
     @Bind(R.id.message_edit_text)
@@ -31,16 +31,17 @@ public class ChatActivity extends ActionBarActivity {
     ImageView sendImage;
 
     public static Activity activity;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat_layout);
         ButterKnife.bind(this);
-        activity=this;
-        chatListView=(LinearLayout)findViewById(R.id.chat_list_container);
+        activity = this;
+        chatListView = (LinearLayout) findViewById(R.id.chat_list_container);
         ImageView back = (ImageView) findViewById(R.id.icon_navigation);
 
-        Toast.makeText(getApplicationContext(),"Welcome",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_LONG).show();
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,9 +51,14 @@ public class ChatActivity extends ActionBarActivity {
     }
 
     @OnClick(R.id.send_message)
-    void sendMessage(View view)
-    {
-        new ChatAsyncTask(activity).execute(messageEditText.getText().toString());
+    void sendMessage(View view) {
+        if (messageEditText.getText().toString().equals("")) {
+            Toast.makeText(getApplicationContext(), "Enter some Text", Toast.LENGTH_SHORT).show();
+        } else {
+            new ChatAsyncTask(activity).execute(messageEditText.getText().toString());
+            messageEditText.setText("");
+        }
+
     }
 
 

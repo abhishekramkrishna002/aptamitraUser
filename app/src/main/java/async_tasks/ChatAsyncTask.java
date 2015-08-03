@@ -41,7 +41,7 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
 
     @Override
     protected String doInBackground(String... params) {
-        publishProgress(0);
+        //publishProgress(0);
         HttpClient httpclient = new DefaultHttpClient();
 
         HttpPost httppost = new HttpPost(activity.getResources().getString(R.string.chat_link));
@@ -94,7 +94,7 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
 
         super.onPostExecute(s);
         Log.d("chat",s);
-        progress.hide();
+//        progress.hide();
         try {
             LayoutInflater layoutInflater = LayoutInflater.from(activity);
             View view = layoutInflater.inflate(R.layout.chat_list_item_1, ChatActivity.chatListView, false);

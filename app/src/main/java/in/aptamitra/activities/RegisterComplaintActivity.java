@@ -91,6 +91,8 @@ public class RegisterComplaintActivity extends ActionBarActivity {
         setContentView(R.layout.complaint_register_layout);
         ButterKnife.bind(this);
         activity = this;
+        ((EditText) activity
+                .findViewById(R.id.etComplaintTitle)).setText(((GlobalClass) getApplicationContext()).subMenu);
         backButton = (ImageView) findViewById(R.id.bt_back);
 
         setUpMapIfNeeded();
@@ -326,7 +328,7 @@ public class RegisterComplaintActivity extends ActionBarActivity {
             userData.put("profile_user",
                     profileJson.replace("\"", "\\\""));
             userData.put("profile_id", profile.getString("profile_id"));
-           // userData.put("zone", profile.getString("zone"));
+            // userData.put("zone", profile.getString("zone"));
             userData.put("locality", profile.getString("locality"));
 //            ((TextView) activity.findViewById(R.id.etComplaintAddress))
 //                    .setText(profile.getString("address"));
