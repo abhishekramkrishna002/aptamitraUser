@@ -269,9 +269,11 @@ public class ComplaintsListActivity extends ActionBarActivity {
                         try {
                             profile_id = data.getString("profile_id");
 
-                            AddCommentActivity addCommentsFragment = new AddCommentActivity();
-                            addCommentsFragment.setComplaintId(Integer.parseInt(data.getString("complaint_id")));
+                            AddCommentActivity addComments = new AddCommentActivity();
+                            //addComments.setComplaintId(Integer.parseInt(data.getString("complaint_id")));
+                            Log.e("id",data.getString("complaint_id"));
                             Intent i = new Intent(ComplaintsListActivity.this,AddCommentActivity.class);
+                            i.putExtra("complaint_id",data.getString("complaint_id"));
                             startActivity(i);
 
                         }catch (JSONException e) {

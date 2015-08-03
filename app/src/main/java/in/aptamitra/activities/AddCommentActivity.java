@@ -1,5 +1,6 @@
 package in.aptamitra.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -19,15 +20,19 @@ import in.aptamitra.R;
  */
 public class AddCommentActivity extends ActionBarActivity {
     HashMap<String, String> params;
-    public void setComplaintId(int complaintId) {
-        this.complaintId = complaintId;
-    }
-    private int  complaintId;
+//    public void setComplaintId(int complaintId) {
+//        this.complaintId = complaintId;
+//    }
+
+    //private int  complaintId;
     String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_comment);
+        Intent intent = getIntent();
+       final String complaint_id = intent.getStringExtra("complaint_id");
+
         params = new HashMap<String, String>();
         Button add = (Button) findViewById(R.id.add_comment);
         add.setOnClickListener(new View.OnClickListener() {
@@ -40,17 +45,18 @@ public class AddCommentActivity extends ActionBarActivity {
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
-                params.put("complaint_id", complaintId+"");
+                params.put("complaint_id", complaint_id+"");
                 params.put("profile_id", ComplaintsListActivity.profile_id);
 
 
                 Log.e("text", text);
 
                 Log.e("profile_id", ComplaintsListActivity.profile_id);
-                Log.e("complaint_id", complaintId+"");
+                Log.e("complaint_id", complaint_id+"");
                 AddCommentsAsyncTask addAsyncTask = new AddCommentsAsyncTask(AddCommentActivity.this);
 
                 addAsyncTask.execute(params);
+
             }
         });
     }
