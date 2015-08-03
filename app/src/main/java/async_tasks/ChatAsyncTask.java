@@ -41,7 +41,7 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
 
     @Override
     protected String doInBackground(String... params) {
-        publishProgress(0);
+        //publishProgress(0);
         HttpClient httpclient = new DefaultHttpClient();
 
         HttpPost httppost = new HttpPost(activity.getResources().getString(R.string.chat_link));
