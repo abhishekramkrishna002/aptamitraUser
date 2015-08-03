@@ -71,39 +71,41 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="15dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/login_button"
-            android:layout_width="wrap_content"
-            android:paddingLeft="60dp"
-            android:paddingRight="60dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:background="@color/orange"
             android:text="Login"
+            android:textColor="@color/white"
             android:layout_margin="10dp"
             android:fontFamily="sans-serif" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot password?"
-            android:textColor="@color/white"
-            android:id="@+id/forgot_password_text_view"
-            android:textSize="15sp"
-            android:visibility="gone"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register Me"
+        <Button
             android:id="@+id/register_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:text="Register"
+            android:layout_margin="10dp"
             android:fontFamily="sans-serif" />
-
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/white"
+        android:id="@+id/forgot_password_text_view"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif" />
+
+
 </LinearLayout>
