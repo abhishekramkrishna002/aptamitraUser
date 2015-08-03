@@ -40,6 +40,7 @@ import java.util.Random;
 import entities.MyNotification;
 import in.aptamitra.R;
 import in.aptamitra.activities.ChatActivity;
+import in.aptamitra.activities.ComplaintsListActivity;
 import in.aptamitra.activities.LandingPageActivity;
 
 public class MyGcmListenerService extends GcmListenerService {
@@ -78,9 +79,7 @@ public class MyGcmListenerService extends GcmListenerService {
                             ((TextView) view.findViewById(R.id.message)).setText(new JSONObject(message).getJSONObject("message").getString("data"));
                             ChatActivity.chatListView.addView(view);
                             Log.d("message", "a new message inside ui thread");
-                        }
-                        catch(Exception e)
-                        {
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
@@ -123,13 +122,11 @@ public class MyGcmListenerService extends GcmListenerService {
      * @param message GCM message received.
      */
     private void sendNotification(String message, String title) {
-        Intent intent = new Intent(this, LandingPageActivity.class);
+        Intent intent = new Intent(this, ComplaintsListActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
-
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
         NotificationCompat.BigPictureStyle notiStyle = new
                 NotificationCompat.BigPictureStyle();
         notiStyle.setBigContentTitle(title);
