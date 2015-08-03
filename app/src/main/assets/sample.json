@@ -19,7 +19,10 @@
             "key": "carpenter"
         },
         {
-            "key": "mobile or pc repair"
+            "key": "mobile repair"
+        },
+        {
+            "key": "pc repair"
         },
         {
             "key": "accountant"
@@ -44,10 +47,46 @@
         },
         {
             "key": "driver"
+        },
+        {
+            "key": "appliances"
+        },
+        {
+            "key": "architecture"
+        },
+        {
+            "key": "chef"
+        },
+        {
+            "key": "civil work"
+        },
+        {
+            "key": "dance class"
+        },
+        {
+            "key": "driving school"
+        },
+        {
+            "key": "financial service"
+        },
+        {
+            "key": "gardening"
+        },
+        {
+            "key": "legal service"
+        },
+        {
+            "key": "tank cleaning"
+        },
+        {
+            "key": "tutor"
+        },
+        {
+            "key": "web designer"
         }
     ],
     "civic_issues": {
-        "bbmp": [
+        "B B M P": [
             {
                 "key": "footpath"
             },
@@ -250,66 +289,156 @@
                 "key": "broken tree"
             }
         ],
-        "bwssb": [
+        "B M T C": [
             {
-                "key": "Blocked Storm Water drain"
+                "key": "RESTART BMTC ROUTE"
             },
             {
-                "key": "overflow of storm water drain"
+                "key": "Issues with a Bus Route"
             },
             {
-                "key": "Water supply "
+                "key": "Bus Timing Issue"
             },
             {
-                "key": "Under ground drainage"
+                "key": "Bus Frequency"
             },
             {
-                "key": "Blocked Storm Water drain"
+                "key": "Lost and Found"
             },
             {
-                "key": "overflow of storm water drain"
+                "key": "Bus Staff Behaviour"
             },
             {
-                "key": "Water supply "
+                "key": "Bus Condition"
             },
             {
-                "key": "Under ground drainage"
+                "key": "Bus Cleanliness"
+            },
+            {
+                "key": "Bus Pass Issues"
+            }
+        ],
+        "Blood": [
+            {
+                "key": "Need B+Ve"
+            },
+            {
+                "key": "Need B-ve"
+            },
+            {
+                "key": "Need O+ve"
+            },
+            {
+                "key": "Need O-ve"
+            },
+            {
+                "key": "Need AB+"
+            },
+            {
+                "key": "Need AB-ve"
+            },
+            {
+                "key": "Need A+ve"
+            },
+            {
+                "key": "Need A-ve"
+            },
+            {
+                "key": "Enrol Me as a Donor"
+            }
+        ],
+        "Mortuary": [
+            {
+                "key": "Need Mortuary Vehicle"
+            },
+            {
+                "key": "Need cremation centre address"
+            }
+        ],
+        "Fire": [
+            {
+                "key": "Report a Fire issue"
+            }
+        ],
+        "Ambulance": [
+            {
+                "key": "Request for An Ambulance service"
+            }
+        ],
+        "Law & Order": [
+            {
+                "key": "EveTeasing"
+            },
+            {
+                "key": "Murder"
+            },
+            {
+                "key": "theft"
+            },
+            {
+                "key": "neighbourconflicts"
+            }
+        ],
+        "BWSSB": [
+            {
+                "key": "BlockedStormWaterdrain"
+            },
+            {
+                "key": "overflowofstormwaterdrain"
+            },
+            {
+                "key": "Watersupply"
+            },
+            {
+                "key": "Undergrounddrainage"
+            },
+            {
+                "key": "BlockedStormWaterdrain"
+            },
+            {
+                "key": "overflowofstormwaterdrain"
+            },
+            {
+                "key": "Watersupply"
+            },
+            {
+                "key": "Undergrounddrainage"
             },
             {
                 "key": "Meter"
             },
             {
-                "key": "Meter damage"
+                "key": "Meterdamage"
             },
             {
                 "key": "Other"
             },
             {
-                "key": "New connection"
+                "key": "Newconnection"
             },
             {
                 "key": "Other"
             },
             {
-                "key": "Billing complaints"
+                "key": "Billingcomplaints"
             },
             {
                 "key": "Other"
             },
             {
-                "key": "Pipe damage"
+                "key": "Pipedamage"
             },
             {
                 "key": "Other"
             },
             {
-                "key": "Sanitary manhole damage"
+                "key": "Sanitarymanholedamage"
             },
             {
-                "key": "sanitary pipe damage"
+                "key": "sanitarypipedamage"
             },
             {
-                "key": "water pipe damage"
+                "key": "waterpipedamage"
             },
             {
                 "key": "Sewerage"
@@ -318,120 +447,120 @@
                 "key": "Other"
             },
             {
-                "key": "Sanitary blocked"
+                "key": "Sanitaryblocked"
             },
             {
-                "key": "Sanitary manhole cover damage"
+                "key": "Sanitarymanholecoverdamage"
             },
             {
-                "key": "Sanitary manholecover missing"
+                "key": "Sanitarymanholecovermissing"
             },
             {
-                "key": "Sanitary manhole damage"
+                "key": "Sanitarymanholedamage"
             },
             {
-                "key": "Sanitary obstruction to traffic"
+                "key": "Sanitaryobstructiontotraffic"
             },
             {
-                "key": "Sanitary overflow"
+                "key": "Sanitaryoverflow"
             },
             {
-                "key": "Sanitary road damage by BWSSB"
+                "key": "SanitaryroaddamagebyBWSSB"
             },
             {
                 "key": "Water"
             },
             {
-                "key": "Contaminated water"
+                "key": "Contaminatedwater"
             },
             {
-                "key": "Low water pressure"
+                "key": "Lowwaterpressure"
             },
             {
-                "key": "night time water release"
+                "key": "nighttimewaterrelease"
             },
             {
-                "key": "No water"
+                "key": "Nowater"
             },
             {
                 "key": "Other"
             },
             {
-                "key": "Request to change water timing"
+                "key": "Requesttochangewatertiming"
             },
             {
-                "key": "Water leakage"
+                "key": "Waterleakage"
             }
         ],
-        "bescom": [
+        "BESCOM": [
             {
-                "key": "Failure of power supply"
+                "key": "Failureofpowersupply"
             },
             {
-                "key": "Fuse of call, Line Breakdown, Pole Broken"
+                "key": "Fuseofcall,LineBreakdown,PoleBroken"
             },
             {
                 "key": "Voltage"
             },
             {
-                "key": "Voltage variation where no expantion or enhancement of network is involved"
+                "key": "Voltagevariationwherenoexpantionorenhancementofnetworkisinvolved"
             },
             {
-                "key": "Voltage variation where up-gradation of distribution systemis required"
+                "key": "Voltagevariationwhereup-gradationofdistributionsystemisrequired"
             },
             {
-                "key": "Opening of neutral"
+                "key": "Openingofneutral"
             },
             {
-                "key": "Meter complaints"
+                "key": "Metercomplaints"
             },
             {
-                "key": "Inspect and check correctness"
+                "key": "Inspectandcheckcorrectness"
             },
             {
-                "key": "Replace slow creeping or stuck meters"
+                "key": "Replaceslowcreepingorstuckmeters"
             },
             {
-                "key": "Replace Burnt meters if cause not attributable to consumer"
+                "key": "ReplaceBurntmetersifcausenotattributabletoconsumer"
             },
             {
-                "key": "Replace burnt meter in all other places"
+                "key": "Replaceburntmeterinallotherplaces"
             },
             {
-                "key": "Billing issues"
+                "key": "Billingissues"
             },
             {
-                "key": "Where field report is not requires"
+                "key": "Wherefieldreportisnotrequires"
             },
             {
-                "key": "allegations on staff"
+                "key": "allegationsonstaff"
             },
             {
-                "key": "Where field report is required"
+                "key": "Wherefieldreportisrequired"
             },
             {
-                "key": "Reconnection of supply following disconnection"
+                "key": "Reconnectionofsupplyfollowingdisconnection"
             },
             {
-                "key": "Safety issue"
+                "key": "Safetyissue"
             },
             {
-                "key": "Straighting of bent pole"
+                "key": "Straightingofbentpole"
             },
             {
-                "key": "Replacment of damaged pole"
+                "key": "Replacmentofdamagedpole"
             },
             {
-                "key": "Shifting of poles"
+                "key": "Shiftingofpoles"
             },
             {
-                "key": "Tree trimming"
+                "key": "Treetrimming"
             },
             {
-                "key": "TC Failure complaints"
+                "key": "TCFailurecomplaints"
             },
             {
-                "key": "Water supply"
+                "key": "Watersupply"
             },
             {
                 "key": "domestic"
@@ -440,7 +569,7 @@
                 "key": "industry"
             },
             {
-                "key": "mixed load"
+                "key": "mixedload"
             },
             {
                 "key": "irrigation"
@@ -452,67 +581,67 @@
                 "key": "Theft"
             },
             {
-                "key": "Hooking under niranthara jothiyojane"
+                "key": "Hookingundernirantharajothiyojane"
             },
             {
-                "key": "Allegations on staff"
+                "key": "Allegationsonstaff"
             },
             {
-                "key": "allegation on staff"
+                "key": "allegationonstaff"
             },
             {
-                "key": "New connection/additional load"
+                "key": "Newconnection/additionalload"
             },
             {
-                "key": "Release of supply where service is fesable from existing network"
+                "key": "Releaseofsupplywhereserviceisfesablefromexistingnetwork"
             },
             {
-                "key": "Release of supply where network expansion/enhancement required for provding connection"
+                "key": "Releaseofsupplywherenetworkexpansion/enhancementrequiredforprovdingconnection"
             },
             {
-                "key": "IP sets"
+                "key": "IPsets"
             },
             {
-                "key": "Phase conversion"
+                "key": "Phaseconversion"
             },
             {
-                "key": "Conversion of LT single phase to LT 3 phase"
+                "key": "ConversionofLTsinglephasetoLT3phase"
             },
             {
-                "key": "Conversion from LT to HT"
+                "key": "ConversionfromLTtoHT"
             },
             {
-                "key": "Transfer of ownership and conversion"
+                "key": "Transferofownershipandconversion"
             },
             {
-                "key": "Title transfer of ownership"
+                "key": "Titletransferofownership"
             },
             {
-                "key": "Change of category"
+                "key": "Changeofcategory"
             },
             {
-                "key": "Refund/ issue of certificate"
+                "key": "Refund/issueofcertificate"
             },
             {
-                "key": "Refund of deposits"
+                "key": "Refundofdeposits"
             },
             {
-                "key": "Issue of certificate"
+                "key": "Issueofcertificate"
             },
             {
-                "key": "Additional TC / Enhancement"
+                "key": "AdditionalTC/Enhancement"
             },
             {
-                "key": "Additional TC"
+                "key": "AdditionalTC"
             },
             {
-                "key": "Enhancement of TC"
+                "key": "EnhancementofTC"
             },
             {
                 "key": "General"
             },
             {
-                "key": "Complaints that is not covered under the above category"
+                "key": "Complaintsthatisnotcoveredundertheabovecategory"
             }
         ]
     }

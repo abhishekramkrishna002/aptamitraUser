@@ -32,6 +32,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import custom_objects.Speciality;
+import custom_objects.StringDecoder;
 import in.aptamitra.R;
 import in.aptamitra.activities.ComplaintsListActivity;
 import in.aptamitra.activities.LandingPageActivity;
@@ -39,6 +40,7 @@ import in.aptamitra.activities.MainActivity;
 import in.aptamitra.activities.NotificationsListActivity;
 import in.aptamitra.activities.ProfileActivity;
 import in.aptamitra.activities.RegisterComplaintActivity;
+import views.CircleImageView;
 
 /**
  * Created by abhishek on 20-07-2015.
@@ -53,6 +55,11 @@ public class GlobalClass extends com.orm.SugarApp {
     public void onCreate() {
         super.onCreate();
         setupuniversalLoader();
+        init();
+
+    }
+
+    public void init() {
         Speciality[] bbmpService = {
 
                 new Speciality("Road", false),
@@ -280,6 +287,7 @@ public class GlobalClass extends com.orm.SugarApp {
             /*
             readfrom shared prefs::start
              */
+        Drawer result = null;
         SharedPreferences prefs = activity.getSharedPreferences("cache", Context.MODE_PRIVATE);
         String name = null;
         String email = null;
@@ -287,108 +295,120 @@ public class GlobalClass extends com.orm.SugarApp {
             JSONObject profile = new JSONObject(prefs.getString("profile", null));
             name = profile.getString("name");
             email = profile.getString("email");
+            ProfileDrawerItem profileDrawerItem;
+            if (!profile.getString("profile_image").trim().contentEquals("")) {
+                String url = StringDecoder.decode(profile.getString("profile_image"));
+                profileDrawerItem = new ProfileDrawerItem().withName(name).withEmail(email).withIcon(url);
+
+            } else {
+                profileDrawerItem = new ProfileDrawerItem().withName(name).withEmail(email).withIcon(activity.getResources().getDrawable(R.drawable.icon_profile));
+
+            }
+
+
+            AccountHeader headerResult = new AccountHeaderBuilder()
+                    .withActivity(activity)
+                    .withHeaderBackground(R.drawable.icon_profile_bg)
+                    .addProfiles(
+                            profileDrawerItem
+
+                    )
+
+                    .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
+                        @Override
+                        public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
+                            Intent intent = new Intent(activity, ProfileActivity.class);
+                            activity.startActivity(intent);
+                            return true;
+                        }
+                    })
+                    .build();
+
+
+            result = new DrawerBuilder()
+                    .withActivity(activity)
+                            //.withToolbar(toolbar)
+                    .withAccountHeader(headerResult)
+                    .addDrawerItems(
+                            new PrimaryDrawerItem().
+                                    withName("Home").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_home)).
+                                    withTextColor(activity.getResources().getColor(R.color.white))
+                            ,
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("My Complaints").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_post_cpmplaint)).
+                                    withTextColor(activity.getResources().getColor(R.color.white))
+                            ,
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("My Notifications").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_notification)).
+                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("Contact Us").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_contact_us)).
+                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("FAQ").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_faq)).
+                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("Logout").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_logout)).
+                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                            new DividerDrawerItem()
+
+                    )
+                    .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+                        @Override
+                        public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
+                            // do something with the clicked item :D
+                            Intent intent;
+                            switch (position) {
+                                case 0:
+                                    intent = new Intent(activity, LandingPageActivity.class);
+                                    activity.startActivity(intent);
+                                    break;
+                                case 2:
+                                    intent = new Intent(activity, ComplaintsListActivity.class);
+                                    activity.startActivity(intent);
+                                    break;
+                                case 4:
+                                    intent = new Intent(activity, NotificationsListActivity.class);
+                                    activity.startActivity(intent);
+                                    break;
+                                case 6:
+
+                                    break;
+                                case 8:
+                                    break;
+                                case 10:
+                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    intent = new Intent(activity, MainActivity.class);
+                                    activity.startActivity(intent);
+                                    activity.finish();
+                                    break;
+                                case 12:
+                                    break;
+                            }
+                            return true;
+                        }
+                    })
+                    .withDrawerGravity(Gravity.START)
+                    .build();
+            return result;
+
+
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
+
         }
-            /*
-            readfrom shared prefs::end
-             */
-        AccountHeader headerResult = new AccountHeaderBuilder()
-                .withActivity(activity)
-                .withHeaderBackground(R.drawable.icon_profile_bg)
-                .addProfiles(
-                        new ProfileDrawerItem().withName(name).withEmail(email).withIcon(activity.getResources().getDrawable(R.drawable.icon_profile))
-                )
-
-                .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
-                    @Override
-                    public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
-                        Intent intent = new Intent(activity, ProfileActivity.class);
-                        activity.startActivity(intent);
-                        return true;
-                    }
-                })
-                .build();
-
-
-        Drawer result = new DrawerBuilder()
-                .withActivity(activity)
-                        //.withToolbar(toolbar)
-                .withAccountHeader(headerResult)
-                .addDrawerItems(
-                        new PrimaryDrawerItem().
-                                withName("Home").
-                                withIcon(activity.getResources().getDrawable(R.drawable.icon_home)).
-                                withTextColor(activity.getResources().getColor(R.color.white))
-                        ,
-                        new DividerDrawerItem(),
-                        new PrimaryDrawerItem().
-                                withName("My Complaints").
-                                withIcon(activity.getResources().getDrawable(R.drawable.icon_post_cpmplaint)).
-                                withTextColor(activity.getResources().getColor(R.color.white))
-                        ,
-                        new DividerDrawerItem(),
-                        new PrimaryDrawerItem().
-                                withName("My Notifications").
-                                withIcon(activity.getResources().getDrawable(R.drawable.icon_notification)).
-                                withTextColor(activity.getResources().getColor(R.color.white)),
-                        new DividerDrawerItem(),
-                        new PrimaryDrawerItem().
-                                withName("Contact Us").
-                                withIcon(activity.getResources().getDrawable(R.drawable.icon_contact_us)).
-                                withTextColor(activity.getResources().getColor(R.color.white)),
-                        new DividerDrawerItem(),
-                        new PrimaryDrawerItem().
-                                withName("FAQ").
-                                withIcon(activity.getResources().getDrawable(R.drawable.icon_faq)).
-                                withTextColor(activity.getResources().getColor(R.color.white)),
-                        new DividerDrawerItem(),
-                        new PrimaryDrawerItem().
-                                withName("Logout").
-                                withIcon(activity.getResources().getDrawable(R.drawable.icon_logout)).
-                                withTextColor(activity.getResources().getColor(R.color.white)),
-                        new DividerDrawerItem()
-
-                )
-                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
-                        // do something with the clicked item :D
-                        Intent intent;
-                        switch (position) {
-                            case 0:
-                                intent = new Intent(activity, LandingPageActivity.class);
-                                activity.startActivity(intent);
-                                break;
-                            case 2:
-                                intent = new Intent(activity, ComplaintsListActivity.class);
-                                activity.startActivity(intent);
-                                break;
-                            case 4:
-                                intent = new Intent(activity, NotificationsListActivity.class);
-                                activity.startActivity(intent);
-                                break;
-                            case 6:
-
-                                break;
-                            case 8:
-                                break;
-                            case 10:
-                                activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
-                                intent = new Intent(activity, MainActivity.class);
-                                activity.startActivity(intent);
-                                activity.finish();
-                                break;
-                            case 12:
-                                break;
-                        }
-                        return true;
-                    }
-                })
-                .withDrawerGravity(Gravity.START)
-                .build();
-
-        return result;
 
 
     }
