@@ -94,7 +94,7 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
 
         super.onPostExecute(s);
         Log.d("chat",s);
-        progress.hide();
+//        progress.hide();
         try {
             LayoutInflater layoutInflater = LayoutInflater.from(activity);
             View view = layoutInflater.inflate(R.layout.chat_list_item_1, ChatActivity.chatListView, false);
