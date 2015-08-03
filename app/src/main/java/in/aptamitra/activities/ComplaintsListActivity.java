@@ -3,6 +3,7 @@ package in.aptamitra.activities;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -58,12 +59,14 @@ public class ComplaintsListActivity extends ActionBarActivity {
     @Bind(R.id.app_bar)
     Toolbar toolbar;
 
-    Activity activity;
 
+    Activity activity;
+    public static String profile_id=new String();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complaints_list);
+
         activity = this;
         ButterKnife.bind(this);
         drawer = ((GlobalClass) getApplicationContext()).navigationDrawer(this);
@@ -189,7 +192,7 @@ public class ComplaintsListActivity extends ActionBarActivity {
                 JSONObject profile = new JSONObject(prefs.getString("profile", null));
 
 
-                JSONObject data = complaintObjects.get(complaintObjects.size()-1-position);
+               final JSONObject data = complaintObjects.get(complaintObjects.size()-1-position);
 
                 ((TextView) row.findViewById(R.id.complaint_title))
                         .setText(data.getString("complaint_title"));
@@ -259,7 +262,23 @@ public class ComplaintsListActivity extends ActionBarActivity {
                 {
                     ((ViewGroup)row).removeView((HorizontalScrollView) row.findViewById(R.id.complaint_image_container));
                 }
+                TextView comment = (TextView) row.findViewById(R.id.textView5);
+                comment.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            profile_id = data.getString("profile_id");
 
+                            AddCommentActivity addCommentsFragment = new AddCommentActivity();
+                            addCommentsFragment.setComplaintId(Integer.parseInt(data.getString("complaint_id")));
+                            Intent i = new Intent(ComplaintsListActivity.this,AddCommentActivity.class);
+                            startActivity(i);
+
+                        }catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
 
             } catch (Exception e) {
                 e.printStackTrace();
