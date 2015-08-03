@@ -280,7 +280,42 @@ public class RegisterActivity extends ActionBarActivity {
                     AlertDialog alert11 = builder1.create();
                     alert11.show();
 
-                } else {
+                }
+
+                else if( mobileText.length()!=10)
+                {
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                            RegisterActivity.this);
+                    builder1.setMessage("Mobile number is in appropriate");
+                    builder1.setCancelable(true);
+                    builder1.setPositiveButton("Ok",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int id) {
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }
+                else if(pincodeText.length()!=6)
+                {
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                            RegisterActivity.this);
+                    builder1.setMessage("pincode is in appropriate");
+                    builder1.setCancelable(true);
+                    builder1.setPositiveButton("Ok",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int id) {
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+                }
+
+                else {
                     new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
                 }
 

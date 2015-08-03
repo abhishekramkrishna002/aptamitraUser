@@ -15,7 +15,7 @@
     generated Id's ::end
     -->
 
-    <!-- wen services url-->
+    <!-- web services url-->
     <string name="login_user_url">http://aptamitra.in/service_app/login.php</string>
     <string name="register_user_url">http://aptamitra.in/service_app/register.php</string>
     <string name="post_complaint">http://aptamitra.in/service_app/register_complaint.php</string>
@@ -23,6 +23,7 @@
     <string name="gcm_key_register">http://aptamitra.in/service_app/gcm_register.php</string>
     <string name="book_service">http://aptamitra.in/service_app/book_service.php</string>
     <string name="chat_link">http://aptamitra.in/service_app/user_to_admin.php</string>
+    <string name="verify_user">http://aptamitra.in/service_app/verify_user.php?otp=</string>
 
     <!-- How It Works Texts ::start -->
 

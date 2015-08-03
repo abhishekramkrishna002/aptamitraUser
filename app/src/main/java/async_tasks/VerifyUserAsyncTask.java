@@ -4,20 +4,14 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
-
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.HttpMultipartMode;
@@ -31,20 +25,17 @@ import java.util.HashMap;
 import java.util.Random;
 
 import in.aptamitra.R;
-import in.aptamitra.activities.MainActivity;
 
 
 /**
  * Created by abhishek on 25-06-2015.
  */
-public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Integer, String> {
+public class VerifyUserAsyncTask extends AsyncTask<String, Integer, String> {
 
-    Bitmap image = null;
     ProgressDialog progress = null;
     Activity activity;
 
-    public RegisterAsyncTask(Activity activity, Bitmap image) {
-        this.image = image;
+    public VerifyUserAsyncTask(Activity activity) {
         this.activity = activity;
     }
 
@@ -53,7 +44,7 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
         // TODO Auto-generated method stub
         super.onProgressUpdate(values);
         progress = new ProgressDialog(activity);
-        progress.setMessage("registering..... ");
+        progress.setMessage("verifying..... ");
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progress.setIndeterminate(true);
         progress.setCancelable(false);
@@ -62,43 +53,16 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
     }
 
     @Override
-    protected String doInBackground(HashMap<String, String>... parameters) {
+    protected String doInBackground(String... parameters) {
         publishProgress(0);
-        Log.d("register-hash-data", parameters[0].toString());
+        //Log.d("register-hash-data", parameters[0].toString());
         try {
             HttpClient client = new DefaultHttpClient();
 
-            HttpPost post = new HttpPost(activity.getResources().getString(R.string.register_user_url));
-
-            MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
-            entityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-
-            entityBuilder.addTextBody("name", parameters[0].get("name"));
-            entityBuilder.addTextBody("password", parameters[0].get("password"));
-            entityBuilder.addTextBody("address", parameters[0].get("address"));
-            entityBuilder.addTextBody("gender", parameters[0].get("gender"));
-            entityBuilder.addTextBody("city", parameters[0].get("city"));
-            entityBuilder.addTextBody("mobile", parameters[0].get("mobile"));
-            entityBuilder.addTextBody("email", parameters[0].get("email"));
-            // entityBuilder.addTextBody("zone",  parameters[0].get("zone"));
-            entityBuilder.addTextBody("locality", parameters[0].get("locality"));
-            if (image != null) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                image.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Random r = new Random();
-                entityBuilder.addBinaryBody("profile_image", byteArray, ContentType.create("image/png"), "image_" + r.nextInt() + ".png");
-            } else {
-                entityBuilder.addBinaryBody("profile_image", new byte[]{});
-            }
-
-            HttpEntity entity = entityBuilder.build();
-
-            post.setEntity(entity);
+            HttpGet get = new HttpGet(activity.getResources().getString(R.string.verify_user) + parameters[0]);
 
 
-            HttpResponse response = client.execute(post);
+            HttpResponse response = client.execute(get);
 
             HttpEntity httpEntity = response.getEntity();
 
@@ -121,23 +85,17 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
         try {
             JSONObject resultJson = new JSONObject(result);
             if (resultJson.getString("code").trim().contentEquals("200")) {
-                final AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(
                         activity);
-                final View view = activity.getLayoutInflater().inflate(R.layout.verify_dialog, null, false);
-                builder1.setView(view);
                 builder1.setTitle("Mobile Verification");
-
-                builder1.setCancelable(false);
-                builder1.setPositiveButton("Verify",
+                builder1.setMessage("Verification sucessfull.PLease login");
+                builder1.setCancelable(true);
+                builder1.setPositiveButton("Okay",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
                                                 int id) {
-
-                                String otpCode = ((EditText) view.findViewById(R.id.otp_code_edit_text)).getText().toString();
-                                new VerifyUserAsyncTask(activity).execute(otpCode);
-
                                 dialog.cancel();
-                                //activity.finish();
+                                activity.finish();
                             }
                         });
                 AlertDialog alert11 = builder1.create();
