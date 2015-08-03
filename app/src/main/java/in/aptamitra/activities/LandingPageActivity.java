@@ -180,7 +180,7 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar"));
                 add(new HorizontalScrollItem.Item(R.drawable.yoga, "Yoga "));
                 add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
-                add(new HorizontalScrollItem.Item(R.drawable.appliances, "Appliances"));
+                add(new HorizontalScrollItem.Item(R.drawable.appliances, "Electrical Appliances Repair"));
                 add(new HorizontalScrollItem.Item(R.drawable.architecture, "Architecture"));
                 add(new HorizontalScrollItem.Item(R.drawable.chef, "Chef"));
                 add(new HorizontalScrollItem.Item(R.drawable.civil_work, "Civil work"));

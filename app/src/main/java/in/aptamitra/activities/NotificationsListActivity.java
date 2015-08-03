@@ -45,19 +45,17 @@ public class NotificationsListActivity extends ActionBarActivity {
          */
         try {
             List<MyNotification> notificationList = MyNotification.listAll(MyNotification.class);
-            for (int position = 0; position < notificationList.size(); position++) {
+            for (int position = notificationList.size() - 1; position >= 0; position--) {
                 MyNotification myNotification = notificationList.get(position);
-                JSONObject complaintJsonObject=new JSONObject(myNotification.json);
+                JSONObject complaintJsonObject = new JSONObject(myNotification.json);
                 View row = layoutInflater.inflate(R.layout.notification_item, notificationsContainer, false);
                 ((TextView) row.findViewById(R.id.title)).setText(complaintJsonObject.getString("complaint_title"));
                 ((TextView) row.findViewById(R.id.description)).setText(complaintJsonObject.getString("description"));
                 Log.d("notification", myNotification.json);
                 notificationsContainer.addView(row);
             }
-        }
-        catch(Exception e)
-        {
-         e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         /*
