@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -368,7 +369,10 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.startActivity(intent);
                                     break;
                                 case 6:
-
+                                    Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                                    callIntent.setData(Uri.parse("tel:" + "08046665666"));
+                                    callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    activity.startActivity(callIntent);
                                     break;
                                 case 8:
                                     break;
