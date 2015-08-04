@@ -128,6 +128,32 @@
                 android:background="@drawable/gray_border"
                 android:id="@+id/editMobile" />
 
+
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="Door Number"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:id="@+id/editDoor"
+                android:maxLength="6"
+                android:inputType="number"
+                android:background="@drawable/gray_border" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="Address"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:id="@+id/editAddress"
+                android:background="@drawable/gray_border" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,31 +201,6 @@
                     android:fontFamily="sans-serif"
                     android:layout_marginTop="15dp" />
             </LinearLayout>
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:ems="10"
-                android:hint="Door Number"
-                android:fontFamily="sans-serif"
-                android:padding="10dp"
-                android:id="@+id/editDoor"
-                android:maxLength="6"
-                android:inputType="number"
-                android:background="@drawable/gray_border" />
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:ems="10"
-                android:hint="Address"
-                android:fontFamily="sans-serif"
-                android:padding="10dp"
-                android:id="@+id/editAddress"
-                android:background="@drawable/gray_border" />
-
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

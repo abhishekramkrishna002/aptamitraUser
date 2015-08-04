@@ -110,6 +110,8 @@
                 android:gravity="center"
                 android:hint="Address"
                 android:padding="10dp" />
+            
+
             <EditText
                 android:id="@+id/etLand"
                 android:layout_width="match_parent"
