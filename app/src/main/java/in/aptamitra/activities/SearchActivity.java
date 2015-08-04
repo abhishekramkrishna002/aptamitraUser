@@ -77,6 +77,12 @@ public class SearchActivity extends ActionBarActivity {
 
             }
         });
+        ((ImageView) findViewById(R.id.icon_back)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
     }

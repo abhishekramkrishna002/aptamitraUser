@@ -141,25 +141,6 @@ public class MyGcmListenerService extends GcmListenerService {
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
                 .setContentIntent(pendingIntent);
-//
-//        RemoteViews contentView = new RemoteViews(getPackageName(), R.layout.notification_view);
-//        contentView.setTextViewText(R.id.title,title);
-//        contentView.setTextViewText(R.id.description,message);
-//
-//
-//
-//
-//        int icon = R.drawable.logo;
-//        long when = System.currentTimeMillis();
-//        Notification notification = new Notification(icon, title, when);
-//
-//        notification.bigContentView=contentView;
-//
-//        notification.contentIntent=pendingIntent;
-//        notification.flags |= Notification.FLAG_NO_CLEAR; //Do not clear the notification
-//        notification.defaults |= Notification.DEFAULT_LIGHTS; // LED
-//        notification.defaults |= Notification.DEFAULT_VIBRATE; //Vibration
-//        notification.defaults |= Notification.DEFAULT_SOUND; // Sound
 
 
         NotificationManager notificationManager =

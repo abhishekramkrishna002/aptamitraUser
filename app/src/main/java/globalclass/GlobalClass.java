@@ -5,10 +5,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
@@ -20,6 +22,7 @@ import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
+import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -285,6 +288,34 @@ public class GlobalClass extends com.orm.SugarApp {
             if (!profile.getString("profile_image").trim().contentEquals("")) {
                 String url = StringDecoder.decode(profile.getString("profile_image"));
                 profileDrawerItem = new ProfileDrawerItem().withName(name).withEmail(email).withIcon(url);
+
+
+
+                /*
+                drawer profile icon::start
+                 */
+                DrawerImageLoader.init(new DrawerImageLoader.IDrawerImageLoader() {
+                    @Override
+                    public void set(ImageView imageView, Uri uri, Drawable placeholder) {
+                        ImageLoader imageLoader = ImageLoader.getInstance();
+                        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+                                .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+                        imageLoader.displayImage(String.valueOf(uri), imageView, options);
+                    }
+
+                    @Override
+                    public void cancel(ImageView imageView) {
+                        //Picasso.with(imageView.getContext()).cancelRequest(imageView);
+                    }
+
+                    @Override
+                    public Drawable placeholder(Context ctx) {
+                        return null;
+                    }
+                });
+                /*
+                drawer profile icon::end
+                 */
 
             } else {
                 profileDrawerItem = new ProfileDrawerItem().withName(name).withEmail(email).withIcon(activity.getResources().getDrawable(R.drawable.icon_profile));
