@@ -110,22 +110,7 @@
                 android:gravity="center"
                 android:hint="Address"
                 android:padding="10dp" />
-            <EditText
-                android:id="@+id/etLocality"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:hint="Locality"
-                android:padding="10dp" />
-            <EditText
-                android:id="@+id/etCity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:hint="City"
-                android:padding="10dp" />
+            
 
             <EditText
                 android:id="@+id/etLand"
