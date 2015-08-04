@@ -57,12 +57,10 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
         //Toast.makeText(this, data, Toast.LENGTH_LONG).show();
         Log.d("specialities", data);
         Speciality[] probs = ((GlobalClass) getApplicationContext()).services.get(data + "");
-//
-//        Log.d("specialities",probs.length+"");
+        header.setText("Civic Issues > " + data + " > ");
         final ComplaintSubTypeAdapter complaintSubTypeAdapter = new ComplaintSubTypeAdapter(this, probs);
 
         listView.setAdapter(complaintSubTypeAdapter);
-        header.setText("Civic Issues > " + data + " > ");
         searchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

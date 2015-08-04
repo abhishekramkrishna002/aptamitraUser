@@ -21,6 +21,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -40,6 +41,7 @@ import java.util.Random;
 import entities.MyNotification;
 import in.aptamitra.R;
 import in.aptamitra.activities.ChatActivity;
+import in.aptamitra.activities.ComplaintsListActivity;
 import in.aptamitra.activities.LandingPageActivity;
 
 public class MyGcmListenerService extends GcmListenerService {
@@ -63,9 +65,14 @@ public class MyGcmListenerService extends GcmListenerService {
         Log.d(TAG, "Message: " + message);
         try {
             final JSONObject gcmSentMessage = new JSONObject(message);
+            SharedPreferences prefs = getSharedPreferences("cache", Context.MODE_PRIVATE);
+            JSONObject profile = new JSONObject(prefs.getString("profile", null));
             if (gcmSentMessage.has("from_id")) {
                 // return;
-            } else if (gcmSentMessage.has("to_profile_id")) {
+            } else if (gcmSentMessage.has("to_profile_id") &&
+                    gcmSentMessage.getString("to_profile_id").trim().toLowerCase().
+                            contentEquals(profile.getString("profile_id").trim().toLowerCase())
+                    ) {
                 /*
                 update the adapter ::start
                  */
@@ -78,9 +85,7 @@ public class MyGcmListenerService extends GcmListenerService {
                             ((TextView) view.findViewById(R.id.message)).setText(new JSONObject(message).getJSONObject("message").getString("data"));
                             ChatActivity.chatListView.addView(view);
                             Log.d("message", "a new message inside ui thread");
-                        }
-                        catch(Exception e)
-                        {
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
@@ -123,13 +128,11 @@ public class MyGcmListenerService extends GcmListenerService {
      * @param message GCM message received.
      */
     private void sendNotification(String message, String title) {
-        Intent intent = new Intent(this, LandingPageActivity.class);
+        Intent intent = new Intent(this, ComplaintsListActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
-
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
         NotificationCompat.BigPictureStyle notiStyle = new
                 NotificationCompat.BigPictureStyle();
         notiStyle.setBigContentTitle(title);
@@ -144,25 +147,6 @@ public class MyGcmListenerService extends GcmListenerService {
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
                 .setContentIntent(pendingIntent);
-//
-//        RemoteViews contentView = new RemoteViews(getPackageName(), R.layout.notification_view);
-//        contentView.setTextViewText(R.id.title,title);
-//        contentView.setTextViewText(R.id.description,message);
-//
-//
-//
-//
-//        int icon = R.drawable.logo;
-//        long when = System.currentTimeMillis();
-//        Notification notification = new Notification(icon, title, when);
-//
-//        notification.bigContentView=contentView;
-//
-//        notification.contentIntent=pendingIntent;
-//        notification.flags |= Notification.FLAG_NO_CLEAR; //Do not clear the notification
-//        notification.defaults |= Notification.DEFAULT_LIGHTS; // LED
-//        notification.defaults |= Notification.DEFAULT_VIBRATE; //Vibration
-//        notification.defaults |= Notification.DEFAULT_SOUND; // Sound
 
 
         NotificationManager notificationManager =

@@ -10,13 +10,17 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.mikepenz.materialdrawer.Drawer;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import org.json.JSONObject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import custom_objects.StringDecoder;
 import globalclass.GlobalClass;
 import in.aptamitra.R;
+import views.CircleImageView;
 
 public class ProfileActivity extends ActionBarActivity {
     Drawer drawer;
@@ -29,6 +33,8 @@ public class ProfileActivity extends ActionBarActivity {
     EditText emailEditText;
     @Bind(R.id.mobile)
     EditText mobileEditText;
+    @Bind(R.id.icon_profile)
+    CircleImageView profileImageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +55,14 @@ public class ProfileActivity extends ActionBarActivity {
             nameEditText.setText(profile.getString("name"));
             emailEditText.setText(profile.getString("email"));
             mobileEditText.setText(profile.getString("mobile"));
+            String url = StringDecoder.decode(profile.getString("profile_image"));
+            if(!url.trim().contentEquals(""))
+            {
+                ImageLoader imageLoader = ImageLoader.getInstance();
+                DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+                        .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+                imageLoader.displayImage(url, profileImageView, options);
+            }
         }
         catch(Exception e)
         {

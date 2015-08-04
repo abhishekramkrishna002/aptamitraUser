@@ -176,11 +176,11 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.company_secretery, "Secretary"));
                 add(new HorizontalScrollItem.Item(R.drawable.trademark_copyright, "Trademark"));
                 add(new HorizontalScrollItem.Item(R.drawable.wedding_phptpgraphy, "Wedding Photography"));
-                add(new HorizontalScrollItem.Item(R.drawable.flute, "Flute"));
-                add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar"));
-                add(new HorizontalScrollItem.Item(R.drawable.yoga, "Yoga "));
+                add(new HorizontalScrollItem.Item(R.drawable.flute, "Flute Classes"));
+                add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar Classes"));
+                add(new HorizontalScrollItem.Item(R.drawable.yoga, "Yoga Classes "));
                 add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
-                add(new HorizontalScrollItem.Item(R.drawable.appliances, "Electrical Appliances Repair"));
+                add(new HorizontalScrollItem.Item(R.drawable.appliances, "Appliances Repair"));
                 add(new HorizontalScrollItem.Item(R.drawable.architecture, "Architecture"));
                 add(new HorizontalScrollItem.Item(R.drawable.chef, "Chef"));
                 add(new HorizontalScrollItem.Item(R.drawable.civil_work, "Civil work"));
