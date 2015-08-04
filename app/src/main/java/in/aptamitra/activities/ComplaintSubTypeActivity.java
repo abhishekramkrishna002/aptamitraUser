@@ -1,6 +1,7 @@
 package in.aptamitra.activities;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -90,8 +91,17 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
 
     @OnClick(R.id.continue_button)
     void showRegisterComplaintPage(View view) {
+        ProgressDialog progress;
+
+        progress = new ProgressDialog(this);
+        progress.setTitle("Please Wait!!");
+        progress.setMessage("Wait!!");
+        progress.setCancelable(true);
+        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progress.show();
 
         if (((GlobalClass) getApplicationContext()).subMenu != null) {
+
             Intent intent = new Intent(this, RegisterComplaintActivity.class);
             intent.putExtra("data", header.getText());
             startActivity(intent);
