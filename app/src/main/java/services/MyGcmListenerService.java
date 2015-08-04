@@ -21,6 +21,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -64,9 +65,14 @@ public class MyGcmListenerService extends GcmListenerService {
         Log.d(TAG, "Message: " + message);
         try {
             final JSONObject gcmSentMessage = new JSONObject(message);
+            SharedPreferences prefs = getSharedPreferences("cache", Context.MODE_PRIVATE);
+            JSONObject profile = new JSONObject(prefs.getString("profile", null));
             if (gcmSentMessage.has("from_id")) {
                 // return;
-            } else if (gcmSentMessage.has("to_profile_id")) {
+            } else if (gcmSentMessage.has("to_profile_id") &&
+                    gcmSentMessage.getString("to_profile_id").trim().toLowerCase().
+                            contentEquals(profile.getString("profile_id").trim().toLowerCase())
+                    ) {
                 /*
                 update the adapter ::start
                  */
