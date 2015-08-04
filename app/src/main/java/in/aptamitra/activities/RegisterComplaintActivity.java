@@ -241,20 +241,15 @@ public class RegisterComplaintActivity extends ActionBarActivity {
         if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE) {
             imageOneBitmap = (Bitmap) data.getExtras().get("data");
             imageOne = new BitmapDrawable(getResources(), imageOneBitmap);
-            // complaintImageContainer.removeAllViews();
             complaintImageOne.setBackground(imageOne);
-            //complaintImage.setImageBitmap(bp);
         }
         if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_TWO_REQUEST_CODE_IMAGE) {
             imageTwoBitmap = (Bitmap) data.getExtras().get("data");
             imageTwo = new BitmapDrawable(getResources(), imageTwoBitmap);
-            // complaintImageContainer.removeAllViews();
             complaintImageTwo.setBackground(imageTwo);
-            //complaintImage.setImageBitmap(bp);
         }
         if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY) {
             Uri selectedImage = data.getData();
-
             Log.i("image_gallery", data.toString());
 
             /*
