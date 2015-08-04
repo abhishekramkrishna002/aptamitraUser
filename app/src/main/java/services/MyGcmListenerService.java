@@ -38,6 +38,7 @@ import org.json.JSONObject;
 
 import java.util.Random;
 
+import custom_objects.StringDecoder;
 import entities.MyNotification;
 import in.aptamitra.R;
 import in.aptamitra.activities.ChatActivity;
@@ -63,10 +64,15 @@ public class MyGcmListenerService extends GcmListenerService {
         String title = data.getString("title");
         Log.d(TAG, "From: " + from);
         Log.d(TAG, "Message: " + message);
+
         try {
             final JSONObject gcmSentMessage = new JSONObject(message);
+
+
             SharedPreferences prefs = getSharedPreferences("cache", Context.MODE_PRIVATE);
             JSONObject profile = new JSONObject(prefs.getString("profile", null));
+            Log.d("profile-user", profile.toString());
+            Log.d("profile-user", profile.getInt("profile_id") + "");
             if (gcmSentMessage.has("from_id")) {
                 // return;
             } else if (gcmSentMessage.has("to_profile_id") &&
@@ -97,8 +103,16 @@ public class MyGcmListenerService extends GcmListenerService {
                 /*
                 update the adapter ::send
                  */
-            } else {
                 MyNotification myNotification = new MyNotification(message);
+                myNotification.save();
+
+                sendNotification(message, title);
+            } else if
+                    (new JSONObject(gcmSentMessage.getString("profile_user").replace("\\", "")).getInt("profile_id") ==
+                            profile.getInt("profile_id")) {
+
+                MyNotification myNotification = new MyNotification(message);
+
                 myNotification.save();
 
                 sendNotification(message, title);
@@ -106,6 +120,7 @@ public class MyGcmListenerService extends GcmListenerService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
         /**
          * Production applications would usually process the message here.
