@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.melnykov.fab.FloatingActionButton;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.HashMap;
@@ -34,7 +36,7 @@ public class AddCommentActivity extends ActionBarActivity {
        final String complaint_id = intent.getStringExtra("complaint_id");
 
         params = new HashMap<String, String>();
-        Button add = (Button) findViewById(R.id.add_comment);
+        FloatingActionButton add = (FloatingActionButton) findViewById(R.id.fab);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -93,7 +93,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
 
         progress = new ProgressDialog(this);
         progress.setTitle("Please Wait!!");
-        progress.setMessage("Wait!!");
+        progress.setMessage("Getting your current location");
         progress.setCancelable(true);
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progress.show();
