@@ -17,6 +17,7 @@
 package services;
 
 
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -143,31 +144,39 @@ public class MyGcmListenerService extends GcmListenerService {
      * @param message GCM message received.
      */
     private void sendNotification(String message, String title) {
-        Intent intent = new Intent(this, ComplaintsListActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
-                PendingIntent.FLAG_ONE_SHOT);
-        Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.BigPictureStyle notiStyle = new
-                NotificationCompat.BigPictureStyle();
-        notiStyle.setBigContentTitle(title);
-        notiStyle.setSummaryText(message);
+
+        try {
+
+            JSONObject complaint = new JSONObject(message);
+            Intent intent = new Intent(this, ComplaintsListActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
+                    PendingIntent.FLAG_ONE_SHOT);
+            Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
 
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                .setStyle(notiStyle)
-                .setSmallIcon(R.drawable.icon_notification_aptamitra)
-                .setContentTitle(title)
-                .setContentText(message)
-                .setAutoCancel(true)
-                .setSound(defaultSoundUri)
-                .setContentIntent(pendingIntent);
+            Notification.Builder notificationBuilder =
+                    new Notification.Builder(this)
+                    .setContentText(complaint.getString("description"))
+                    .setContentTitle(complaint.getString("complaint_title"))
+                    .setSmallIcon(R.drawable.notify_logo);
 
 
-        NotificationManager notificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            notificationBuilder.setStyle(new Notification.BigTextStyle(notificationBuilder)
+                    .bigText(complaint.getString("description"))
+                    .setBigContentTitle(complaint.getString("complaint_title"))
+                    .setSummaryText("New Complaint"))
+                    .setSmallIcon(R.drawable.notify_logo)
+                    .setContentIntent(pendingIntent);
 
 
-        notificationManager.notify(new Random().nextInt(5000) /* ID of notification */, notificationBuilder.build());
+            NotificationManager notificationManager =
+                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+
+            notificationManager.notify(new Random().nextInt(5000) /* ID of notification */, notificationBuilder.build());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
