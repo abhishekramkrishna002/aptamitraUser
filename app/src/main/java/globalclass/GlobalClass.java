@@ -38,6 +38,7 @@ import java.util.HashMap;
 import custom_objects.Speciality;
 import custom_objects.StringDecoder;
 import in.aptamitra.R;
+import in.aptamitra.activities.AboutusActivity;
 import in.aptamitra.activities.ComplaintsListActivity;
 import in.aptamitra.activities.LandingPageActivity;
 import in.aptamitra.activities.MainActivity;
@@ -378,6 +379,11 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withTextColor(activity.getResources().getColor(R.color.white)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
+                                    withName("About Us").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_faq)).
+                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
                                     withName("Logout").
                                     withIcon(activity.getResources().getDrawable(R.drawable.icon_logout)).
                                     withTextColor(activity.getResources().getColor(R.color.white)),
@@ -412,11 +418,17 @@ public class GlobalClass extends com.orm.SugarApp {
                                     break;
                                 case 10:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
-                                    intent = new Intent(activity, MainActivity.class);
+                                    intent = new Intent(activity, AboutusActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
                                 case 12:
+                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    intent = new Intent(activity, MainActivity.class);
+                                    activity.startActivity(intent);
+                                    activity.finish();
+                                    break;
+                                case 14:
                                     break;
                             }
                             return true;

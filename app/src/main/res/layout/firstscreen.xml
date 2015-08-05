@@ -3,26 +3,31 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
 
+
     android:orientation="vertical"
-    android:gravity="center">
+    >
 
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="215dip"
-        android:layout_height="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/aptalogo"
-        android:layout_marginTop="10dip"
+        android:layout_marginTop="20dip"
         android:layout_gravity="center"/>
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
     <TextView
         android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dip"
+        android:gravity="center"
+        android:layout_marginTop="140dp"
         android:text="@string/text1"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:gravity="center"/>
+        android:textSize="18sp"/>
+</LinearLayout>
 
 </LinearLayout>

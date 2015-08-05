@@ -5,13 +5,6 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="215dip"
-        android:layout_height="120dip"
-        android:layout_marginTop="10dip"
-        android:layout_gravity="center"
-        android:background="@drawable/aptalogo"/>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
@@ -28,12 +21,10 @@
 
     <ImageView
         android:id="@+id/icon1"
-        android:layout_width="match_parent"
-        android:layout_height="250dip"
-        android:layout_marginLeft="3dip"
-        android:layout_marginRight="3dip"
-        android:layout_marginTop="5dip"
-        android:background="@drawable/logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:background="@drawable/page5_icon"
         android:layout_gravity="center"/>
 
     <TextView
@@ -43,7 +34,7 @@
         android:text="@string/text5"
         android:textColor="#FFFFFF"
         android:layout_marginTop="5dip"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:gravity="center"/>
 
         </LinearLayout>
