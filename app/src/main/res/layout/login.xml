@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_blue"
+    android:background="@drawable/how_bg"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -32,11 +32,9 @@
             android:layout_height="40dp"
             android:ems="10"
             android:hint="Email"
-            android:textColorHint="@color/white"
             android:ellipsize="start"
             android:paddingTop="10dp"
             android:fontFamily="sans-serif"
-            android:textColor="@color/white"
             android:gravity="center_horizontal"
             android:background="@drawable/edit_text_bg_1"
             android:inputType="textEmailAddress" />
@@ -56,8 +54,6 @@
             android:layout_height="40dp"
             android:ems="10"
             android:hint="password"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
             android:background="@drawable/edit_text_bg_1"
             android:inputType="textPassword"
             android:ellipsize="start"
