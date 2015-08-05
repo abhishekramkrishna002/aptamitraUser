@@ -374,13 +374,13 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withTextColor(activity.getResources().getColor(R.color.white)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
-                                    withName("FAQ").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_faq)).
+                                    withName("Share").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.share)).
                                     withTextColor(activity.getResources().getColor(R.color.white)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("About Us").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_faq)).
+                                    withIcon(activity.getResources().getDrawable(R.drawable.about_us)).
                                     withTextColor(activity.getResources().getColor(R.color.white)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
@@ -415,6 +415,15 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.startActivity(callIntent);
                                     break;
                                 case 8:
+                                    Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
+
+                                    shareIntent.setType("text/plain");
+                                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Aptamitra");
+                                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Hey! Check out Aptamitra. Make reservations, find products & more with just a " +
+                                            "message. Chat with your local stores now - " +
+                                            "http://www.genieline.com/app/org_hemorvichampaneria_quadvision_mayur_Aptamitra.apk");
+                                    shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    activity.startActivity(Intent.createChooser(shareIntent, "Share Aptamitra"));
                                     break;
                                 case 10:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
