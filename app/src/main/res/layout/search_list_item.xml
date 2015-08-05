@@ -14,7 +14,6 @@
         android:gravity="center"
         android:text="Plumber"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:padding="10dip" />
 
 </LinearLayout>
