@@ -135,6 +135,9 @@ public class LandingPageActivity extends ActionBarActivity {
 
     @OnClick(R.id.search_bar)
     void showSearchPage(View view) {
+        if (drawer.isDrawerOpen()) {
+            drawer.closeDrawer();
+        }
         Intent intent = new Intent(LandingPageActivity.activity, SearchActivity.class);
         startActivity(intent);
 

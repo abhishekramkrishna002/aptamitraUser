@@ -336,6 +336,7 @@ public class GlobalClass extends com.orm.SugarApp {
                     .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
                         @Override
                         public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
+
                             Intent intent = new Intent(activity, ProfileActivity.class);
                             activity.startActivity(intent);
                             return true;

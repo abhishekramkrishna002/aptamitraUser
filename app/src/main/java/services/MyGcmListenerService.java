@@ -104,10 +104,10 @@ public class MyGcmListenerService extends GcmListenerService {
                 /*
                 update the adapter ::send
                  */
-                MyNotification myNotification = new MyNotification(message);
-                myNotification.save();
-
-                sendNotification(message, title);
+//                MyNotification myNotification = new MyNotification(message);
+//                myNotification.save();
+//
+//                sendNotification(message, title);
             } else if
                     (new JSONObject(gcmSentMessage.getString("profile_user").replace("\\", "")).getInt("profile_id") ==
                             profile.getInt("profile_id")) {
