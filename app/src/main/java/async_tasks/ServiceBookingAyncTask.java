@@ -43,7 +43,7 @@ public class ServiceBookingAyncTask extends AsyncTask<HashMap<String, String>, I
         // TODO Auto-generated method stub
         super.onProgressUpdate(values);
         progress = new ProgressDialog(activity);
-        progress.setMessage("uploading complaint..... ");
+        progress.setMessage("booking service..... ");
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progress.setIndeterminate(true);
         progress.setCancelable(false);

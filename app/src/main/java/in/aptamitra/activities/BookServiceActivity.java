@@ -123,7 +123,7 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
     public void onTimeRangeSelected(int startHour, int startMin, int endHour, int endMin) {
         String startTime = startHour + " : " + startMin;
         String endTime = endHour + " : " + endMin;
-        ettime.setText(startTime + "-->" + endTime);
+        ettime.setText(startTime + "->" + endTime);
     }
 
     @OnClick(R.id.continue_button)
