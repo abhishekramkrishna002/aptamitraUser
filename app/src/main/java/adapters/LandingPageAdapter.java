@@ -21,6 +21,7 @@ import in.aptamitra.activities.BookServiceActivity;
 import in.aptamitra.activities.ChatActivity;
 import in.aptamitra.activities.ComplaintSubTypeActivity;
 import in.aptamitra.activities.RegisterActivity;
+import in.aptamitra.activities.ServiceListActivity;
 
 /**
  * Created by abhishek on 18-07-2015.
@@ -70,7 +71,9 @@ public class LandingPageAdapter
                     if (position == 0) {
                         intent = new Intent(activity, ComplaintSubTypeActivity.class);
                         String data = ((TextView) v.findViewById(R.id.title)).getText().toString();
-                        startActivity(data);
+                        ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;
+                        intent.putExtra("data", data);
+                        activity.startActivity(intent);
                     } else if (position == 1) {
                         ((GlobalClass) activity.getApplicationContext()).mainMenu =
                                 ((TextView) v.findViewById(R.id.title)).getText().toString();
@@ -79,15 +82,19 @@ public class LandingPageAdapter
                     } else if (position == 2) {
                         intent = new Intent(activity, ChatActivity.class);
                         activity.startActivity(intent);
+                    }else if (position == 3) {
+                        intent = new Intent(activity, ServiceListActivity.class);
+                        String data = ((TextView) v.findViewById(R.id.title)).getText().toString();
+                        ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;
+                        intent.putExtra("data", data);
+                        activity.startActivity(intent);
                     }
+
 
                 }
             });
             viewHolder.horizontalListContainer.addView(cardView);
         }
-
-
-
 
         /*
         add dynamic cards::end
