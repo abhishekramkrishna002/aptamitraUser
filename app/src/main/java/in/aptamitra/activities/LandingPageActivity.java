@@ -209,6 +209,18 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
             }}));
 
+            add(new HorizontalScrollItem("My Aptamitra", new ArrayList<HorizontalScrollItem.Item>() {{
+                add(new HorizontalScrollItem.Item(R.drawable.gym, "gym"));
+                add(new HorizontalScrollItem.Item(R.drawable.bank, "bank"));
+                add(new HorizontalScrollItem.Item(R.drawable.atm, "atm"));
+                add(new HorizontalScrollItem.Item(R.drawable.music_classes, "music class"));
+                add(new HorizontalScrollItem.Item(R.drawable.textiles, "textile"));
+                add(new HorizontalScrollItem.Item(R.drawable.photo_studio, "photo studio"));
+                add(new HorizontalScrollItem.Item(R.drawable.driving_school, "driving class"));
+                add(new HorizontalScrollItem.Item(R.drawable.medical_shop, "medical store"));
+                add(new HorizontalScrollItem.Item(R.drawable.home_appliances, "home appliance"));
+            }}));
+
         }};
 
         LandingPageAdapter landingPageAdapter = new LandingPageAdapter(this, items);

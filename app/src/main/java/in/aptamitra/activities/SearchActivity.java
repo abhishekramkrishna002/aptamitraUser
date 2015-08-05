@@ -53,7 +53,6 @@ public class SearchActivity extends ActionBarActivity {
         makeJsonDataForSearch();
         makeList(searchJson, new String());
         listView = (ListView) findViewById(R.id.search_list);
-        // ArrayList<String> searches = ((GlobalClass) getApplicationContext()).searches;
         searchAdapter = new SeearchAdapter(this, R.layout.search_list_item, searches);
         listView.setAdapter(searchAdapter);
         searchText = (EditText) findViewById(R.id.search_bar);

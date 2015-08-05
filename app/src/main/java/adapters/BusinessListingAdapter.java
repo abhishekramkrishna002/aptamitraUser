@@ -2,8 +2,6 @@ package adapters;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +23,7 @@ import in.aptamitra.activities.RegisterComplaintActivity;
 /**
  * Created by abhishek on 02-07-2015.
  */
-public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
+public class BusinessListingAdapter extends ArrayAdapter<String> implements Filterable {
 
     public List<String> searches = null;
     public List<String> cacheSearches = null;
@@ -33,8 +31,8 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
     int itemLayout;
     Activity activity;
 
-    public SeearchAdapter(Activity activity, int resource,
-                          List<String> objects) {
+    public BusinessListingAdapter(Activity activity, int resource,
+                                  List<String> objects) {
         super(activity, resource, objects);
         this.searches = objects;
         this.cacheSearches = objects;
@@ -69,11 +67,8 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 false);
         try {
             String search = searches.get(position);
-
-            String[] matches=search.split(">");
-
             ((TextView) row.findViewById(R.id.service_name))
-                    .setText(matches[matches.length-1]);
+                    .setText(search);
             /*
             set up appropriate click listener::start
              */
