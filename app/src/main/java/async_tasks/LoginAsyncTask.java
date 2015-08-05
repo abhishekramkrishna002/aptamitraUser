@@ -48,32 +48,21 @@ public class LoginAsyncTask extends AsyncTask<String, Integer, String> {
             loginObject.put("email", params[0]);
             loginObject.put("password", params[1]);
             httpPost.setEntity(new StringEntity(loginObject.toString()));
-
-
-        } catch (Exception e) {
-            // writing error to Log
-            e.printStackTrace();
-        }
-        HttpResponse response = null;
-        String result = null;
-        // Making HTTP Request
-        try {
+            HttpResponse response = null;
+            String result = null;
             response = httpClient.execute(httpPost);
 
             // writing response to log
             result = EntityUtils.toString(response.getEntity());
             Log.d("Http Response:", result);
 
-        } catch (ClientProtocolException e) {
-            // writing exception to log
-            e.printStackTrace();
-
-        } catch (IOException e) {
-            // writing exception to log
+            return result;
+        } catch (Exception e) {
+            // writing error to Log
             e.printStackTrace();
         }
 
-        return result;
+        return null;
     }
 
     @Override

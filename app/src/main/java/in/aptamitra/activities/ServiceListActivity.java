@@ -4,7 +4,10 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -19,6 +22,7 @@ import adapters.BusinessListingAdapter;
 import adapters.SeearchAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import in.aptamitra.R;
 
 
@@ -26,6 +30,10 @@ public class ServiceListActivity extends ActionBarActivity {
 
     @Bind(R.id.service_list)
     ListView serviceListView;
+    @Bind(R.id.title)
+    TextView titleTextView;
+    @Bind(R.id.icon_back)
+    ImageView backButton;
     JSONObject json;
     private ArrayList<String> listItems = new ArrayList<>();
 
@@ -36,7 +44,8 @@ public class ServiceListActivity extends ActionBarActivity {
         ButterKnife.bind(this);
         String data = getIntent().getStringExtra("data");
         makeJsonDataForSearch();
-        makeList(json, new String(),data);
+        titleTextView.setText(data.toUpperCase());
+        makeList(json, new String(), data);
 //        for (int j = 0; j < listItems.size(); j++) {
 //            Log.d("business_item", listItems.get(j));
 //        }
@@ -45,6 +54,10 @@ public class ServiceListActivity extends ActionBarActivity {
 
     }
 
+    @OnClick(R.id.icon_back)
+    void kill(View v) {
+        finish();
+    }
 
     @Override
     protected void onDestroy() {

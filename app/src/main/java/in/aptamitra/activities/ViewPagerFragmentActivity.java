@@ -121,10 +121,7 @@ public class ViewPagerFragmentActivity extends FragmentActivity {
                     img5.setImageResource(R.drawable.full_circle);
                 }
 
-                //Toast.makeText(getApplication(),"Page Selected", Toast.LENGTH_SHORT).show();
-                /*if (pos == 5) {
-                    //show Toast here
-                }*/
+
 
             }
 

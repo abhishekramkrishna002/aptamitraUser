@@ -67,47 +67,21 @@ public class BusinessListingAdapter extends ArrayAdapter<String> implements Filt
                 false);
         try {
             String search = searches.get(position);
-            ((TextView) row.findViewById(R.id.service_name))
-                    .setText(search);
-            /*
-            set up appropriate click listener::start
-             */
             final String[] results = search.trim().split(">");
             Log.d("search-result-spilt", search);
             Log.d("search-result-spilt", results[1]);
-            if (results[1].contains("civic_issues")) {
-                row.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());
-                        globalClass.mainMenu = (results[2].toUpperCase());
-                        globalClass.subMenu = (results[3]);
-                        Intent intent = new Intent(activity, RegisterComplaintActivity.class);
-                        intent.putExtra("data", "Civic Issues > " + results[2] + " > " + results[3]);
-                        activity.startActivity(intent);
-                        activity.finish();
-                    }
-                });
+
+            ((TextView) row.findViewById(R.id.service_name))
+                    .setText(results[results.length - 3]);
+            ((TextView) row.findViewById(R.id.service_address))
+                    .setText(results[results.length - 2]);
+            ((TextView) row.findViewById(R.id.service_phone))
+                    .setText(results[results.length - 1]);
 
 
-            } else if (results[1].contains("services")) {
-                row.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());globalClass.mainMenu = null;
-                        globalClass.mainMenu = (results[2]);
-                        for(int k=0;k<results.length;k++)
-                        {
-                            Log.d("resuts",k+" "+ results[k]);
-                        }
-                        Intent intent = new Intent(activity, BookServiceActivity.class);
-                        activity.startActivity(intent);
-                        activity.finish();
-
-                    }
-                });
-
-            }
+            /*
+            set up appropriate click listener::start
+             */
 
 
 

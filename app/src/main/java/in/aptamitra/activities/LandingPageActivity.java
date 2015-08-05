@@ -168,7 +168,7 @@ public class LandingPageActivity extends ActionBarActivity {
             add(new HorizontalScrollItem("My Booking", new ArrayList<HorizontalScrollItem.Item>() {{
 
                 add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "House Keeping"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_saloon_women, "Beautician"));
+                add(new HorizontalScrollItem.Item(R.drawable.beautician, "Beautician"));
                 add(new HorizontalScrollItem.Item(R.drawable.laundry, "Laundry"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_electrician, "Electrician"));
                 add(new HorizontalScrollItem.Item(R.drawable.icon_plumbing, "Plumber"));
@@ -219,6 +219,8 @@ public class LandingPageActivity extends ActionBarActivity {
                 add(new HorizontalScrollItem.Item(R.drawable.driving_school, "driving class"));
                 add(new HorizontalScrollItem.Item(R.drawable.medical_shop, "medical store"));
                 add(new HorizontalScrollItem.Item(R.drawable.home_appliances, "home appliance"));
+                add(new HorizontalScrollItem.Item(R.drawable.automobile, "automobile"));
+                add(new HorizontalScrollItem.Item(R.drawable.ayurveda, "ayurveda"));
             }}));
 
         }};

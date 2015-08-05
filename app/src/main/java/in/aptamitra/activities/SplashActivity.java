@@ -33,27 +33,6 @@ public class SplashActivity extends Activity implements AnimationListener{
         animZoomIn.setAnimationListener(this);
 
         logo.startAnimation(animZoomIn);
-
-        /*Thread background = new Thread() {
-            public void run() {
-
-                try {
-                    // Thread will sleep for 5 seconds
-                    sleep(4 * 1000);
-
-                    logo.startAnimation(animZoomIn);
-                    // After 5 seconds redirect to another intent
-                    //Intent i = new Intent(getBaseContext(), LoginActivity.class);
-                    Intent i = new Intent(SplashActivity.this, LoginActivity.class);
-                    startActivity(i);
-                    finish();
-                } catch (Exception e) {
-
-                }
-            }
-        };
-        // start thread
-        background.start();*/
     }
 
     @Override

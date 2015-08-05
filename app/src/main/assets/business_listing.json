@@ -2153,5 +2153,521 @@
             "contact": "(91)-9008177557",
             "address": "292, 6th Cross, 2nd Block, HMT Layout, Vidyaranyapura, Bell Layout, Bangalore - 560097 "
         }
+    ],
+    "automobile": [
+        {
+            "name": "Smart automobile",
+            "contact": "9742077633",
+            "address": "23, KHB colony , Yelahanka, Bangalore - 560064, Behind Prakash theatre"
+        },
+        {
+            "name": "Mohans Auto Parts",
+            "contact": "+(91)-80-28462410, 23439137",
+            "address": "No.3, B B Rd, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": " Navrang Hardware & Auto Accessories",
+            "contact": "+(91)-80-28461054, 28566522",
+            "address": "B B Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": " Eagle Automobiles",
+            "contact": "+(91)-9886325470",
+            "address": "B B Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": "Mandeep Motors",
+            "contact": "+(91)-80-28462185",
+            "address": "B B Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": "Shree Auto Spares",
+            "contact": "+(91)-9342877627+(91)-80-41757245",
+            "address": "Amrut Complex, B B Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": " HKGN Automobiles",
+            "contact": "+(91)-9916204501, 9739754225",
+            "address": "BB road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": " Shakthi Automobiles",
+            "contact": "+(91)-80-41756013",
+            "address": "No. 2, Siddappa Building, B B Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": "New Bangalore Automobiles",
+            "contact": "+(91)-9008762478",
+            "address": "Yelahanka, Bangalore, B B Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": "Sri Devi Automobiles",
+            "contact": "+(91)-9972394652+(91)-80-41218626",
+            "address": "No.14/28, Padma Complex, B B Road, Gandhi Nagar, Yelahanka, Bangalore - 560064, Opposite To Ram Motors, Opp KTM Bike Showroom"
+        },
+        {
+            "name": "Bangalore Motor Owners Consumers Coperative Soc",
+            "contact": "+(91)-80-22960308+(91)-80-26612680",
+            "address": "1350, 4th Main Gandhi Nagar, Yelahanka, Bangalore - 560064, Opposite Sri Ram Motors"
+        },
+        {
+            "name": "Mahalaxmi Automobiles",
+            "contact": "9845639972",
+            "address": "No.275, Raitara Santhe Main Road, Jakur Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": " Mohans Auto Parts",
+            "contact": "",
+            "address": "No.3, B B Rd, Yelahanka, Bangalore - 560064, Opp.sbt & C"
+        },
+        {
+            "name": "Nema Auto Spares",
+            "contact": "",
+            "address": "#61 Govindappa Garden, Shivannahalli Main Road, Jakkur Main Road, Yelahanka Old Town, Bangalore - 560064, Next to HP gas office"
+        },
+        {
+            "name": " ESTEM AUTO SPARES",
+            "contact": "-9686246603",
+            "address": "#481/1 1st floor, Kogilu road, MARUTHI nagar above ICICI ATM YELAHANKA BANGALORE , kogilu road, Yelahanka Old Town, Bangalore - 560064, opp MUTHOOT fincorp"
+        },
+        {
+            "name": "N R Automobiles",
+            "contact": "-9880068314",
+            "address": "B B Road, Khb Colony, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": " Dwaraka Enterprises",
+            "contact": "-28920130",
+            "address": "No.764/681, Airport Road, Yelahanka, Bangalore - 560064, Opposite To Standard Tiles, Near Police Station"
+        },
+        {
+            "name": " SRI MANJUNATHA AUTOMOBILES",
+            "contact": "-9916932985",
+            "address": "Near NES Bus Stop, no 728, Doddaballapura Road, Bangalore, Doddaballapura Road, Bangalore, Yelahanka New Town, Bangalore - 560064, Near Seshadripuram College"
+        },
+        {
+            "name": "Heena Service Centre",
+            "contact": "+(91)-80-41756047, +(91)-9844169333",
+            "address": "B B Road, Yelahanka, Bangalore - 560064, Opp Standard Tiles Factory"
+        },
+        {
+            "name": " KGN Under Charce Engineering Works",
+            "contact": "+(91)-9900102876, 9902836785",
+            "address": "B B Road, Yelahanka, Bangalore - 560064, Near Karnataka Service Station"
+        },
+        {
+            "name": "Bhagyalakshmi Automobiles",
+            "contact": "(91)-80-39558484",
+            "address": "No.1334, East Sanitary Core, 16th Main, 3rd Phase, Yelahanka New Town, Bangalore - 560064, Near Kanthi Sweets! Near To Chikkbomsandra Cross"
+        },
+        {
+            "name": "Federal Mogul Goetze India Ltd (Distribution Office)",
+            "contact": "+(91)-8970650393, 8970650394, 8970650390, 8970650313",
+            "address": "Doddaballapur Road, Yelahanka New Town, Bangalore - 560064, Opposite Sheshadripuram College"
+        },
+        {
+            "name": "t Sai Automobiles",
+            "contact": "",
+            "address": "1871/1 & 2, Ground Floor, 11th B Main Road, 3rd Stage, Yelahanka New Town, Bangalore - 560064, Near hanuman Temple"
+        },
+        {
+            "name": "Ambika Automobiles",
+            "contact": "-7829810917",
+            "address": "#1931, 9th B cross, Yelahanka New Town, Bangalore - 560064, Near Anjaneya Temple "
+        },
+        {
+            "name": "S K Automobiles",
+            "contact": "-9900113444",
+            "address": "AMG Service Station, B B Road, Yelahanka, Bangalore - 560064, Next To Kendriya Vihar Apartments View Map"
+        },
+        {
+            "name": "S K Auto Mobiles",
+            "contact": "+(91)-9342562296",
+            "address": "No.2129, MIG, 3rd STG, Bus Stand Mn Rd, Yelahanka New Town, Bangalore - 560064"
+        },
+        {
+            "name": "Sri Ram Auto Works",
+            "contact": "-9886374617",
+            "address": "#38/7, MIG-D-707, 4th phase, Yelahanka New Town, Bangalore - 560064, Near Akshaya Daba"
+        },
+        {
+            "name": "Raghavendra Services",
+            "contact": "+(91)-9448713434, 9341295797",
+            "address": "No B 80, Sri Bhavani Nilaya, 4t Cross, B Sector, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": "Krishna Automobile",
+            "contact": "-9739216090",
+            "address": "No.1, 2nd Main, Vinayaka Nagar, Bugler Main Road, Yelahanka, Bangalore - 560064, Near Nitesh Aparment"
+        },
+        {
+            "name": " RAM AUTOMOBILES",
+            "contact": "+(91)-80-33491933",
+            "address": "#8, KOGILU MAIN ROAD, SRINIVASAPURA, Yelahanka, Bangalore - 560064, NEAR SHANIMAHATHMA TEMPLE"
+        },
+        {
+            "name": "Softec Precision Products",
+            "contact": "+(91)-80-55346441",
+            "address": "C1a, Ist Cross, Kiadb Area, Yelahanka New Town, Bangalore - 560064, Yelahanka New Town"
+        },
+        {
+            "name": " Syed Automobiles",
+            "contact": "-8050691685",
+            "address": "No.01, Ballali Cross Road, Yelahanka, Bangalore - 560064, Near Shamsu School"
+        },
+        {
+            "name": "SN Automobiles & Agencies",
+            "contact": "-9731829455",
+            "address": "No.10, Yelhanka Road, Kogilu Cross, Bangalore - 560064, Near Annapoorneshwari temple"
+        },
+        {
+            "name": " Maruthi Automobiles",
+            "contact": "-9060360591",
+            "address": "Doddaballapur Road, Rajanakunte, Bangalore - 560064, Rajanukunte"
+        },
+        {
+            "name": "Ashapura Automobiles",
+            "contact": "+(91)-9738945498, 9035173658",
+            "address": "No 3, Bombay complex, Srirampura main road, Amruthahalli, Bangalore - 560064, Near old amruthahalli police station"
+        },
+        {
+            "name": "MN AUTOMOBILES",
+            "contact": "-8867173698",
+            "address": "#155/55p/3, BELLAHLLI main road kogilu layout next to bridge north, kogilu main road, Kogilu Cross, Bangalore - 560064, near shams school"
+        },
+        {
+            "name": "Savin CNC Engineering",
+            "contact": "+(91)-80-7826227",
+            "address": "Plot No.4/A, 2nd PH,Jigni Indl Area, Jigani, Bangalore - 560106"
+        },
+        {
+            "name": " Saraswathi Helmet Palace",
+            "contact": "+(91)-7795698742, 8904989146",
+            "address": "No.29, Airport Road, Sahakara Nagar, Bangalore - 560092, Near Indian Oil Petrol Bunk"
+        },
+        {
+            "name": " Sridhar Automobiles",
+            "contact": "-9900817099",
+            "address": "No 52, Jakkur Main Road,Amruthhalli, Byataranyanapura, Bangalore - 560092, Byatarayanapura"
+        },
+        {
+            "name": "S.M.Battery House ",
+            "contact": "9449173031 / 9738365363",
+            "address": "#227 narsipura layout vidyaranyapura ban-97"
+        },
+        {
+            "name": "Ashupra automobiles",
+            "contact": "7204134559",
+            "address": "#1991,1st main road , narsipura layout vidyaranyapura ban-97"
+        },
+        {
+            "name": "Classic Motors",
+            "contact": "080-41610192 / 9844179596 / 9019424187",
+            "address": "#139 ,vidyaranyapura last us stop,ban-97"
+        },
+        {
+            "name": "RNS  Motors LTD",
+            "contact": "9538965835",
+            "address": "D.B.Sandraarch opp to surya bakery,vidyaranyapura main road ban-97"
+        }
+    ],
+    "ayurveda": [
+        {
+            "name": "Ayushman Ayurvedic Therapy Centre",
+            "contact": "080 30161234",
+            "address": "G 205 10th Cross, Sahakar Nagar Main Road, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Ayurvedalaya",
+            "contact": "9448713250, 7899156757",
+            "address": "No 2256, Shop No 4, Kodigehalli Main Road, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Kottakkal Arya Vaidya Sala",
+            "contact": "9448393930, 9916065704",
+            "address": "Building No.2268/69, Shop No.3 & 4, Kodigehalli Main Road, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Isha Sparsh",
+            "contact": "9632918808, 080 23638457",
+            "address": "No.502, 60 Feet Road, F Block, Sahakara Nagar, Bangalore - 560092, Near Airtel Office"
+        },
+        {
+            "name": "Shree Ayurvedics",
+            "contact": "9739369493, 9980851793",
+            "address": "No.803, Ground Floor, 6th Cross, A Block, Sahakara Nagar, Bangalore - 560092, Near Ganesha Temple"
+        },
+        {
+            "name": "Narayana Rao Joshi Dr",
+            "contact": "080 28460637",
+            "address": "333 1st Ph EWS 8th B Main,, Yelahanka, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+        },
+        {
+            "name": "Amurtha Krip Ayurvedic Clinic",
+            "contact": "080 28910384",
+            "address": "BDK Complex, Old Town, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Chinnus Ayurvedic Pharma",
+            "contact": "9242146764 28462589 66956474 41755025",
+            "address": "No.158, Sfs-208, Khb Colony, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Dr.Gangadharan G G",
+            "contact": "080 28460549",
+            "address": "#74/2, Jarakebande Kaval, Attur Post, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India560063"
+        },
+        {
+            "name": "H.K.G.N. Ayurvedic",
+            "contact": "080 33051555",
+            "address": "302/2, Cros Chokkanahalli Hegde Nagar Main Road Opp Sofia College of Nursing, Yelahanka Old Town,Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Indena India Private Limited",
+            "contact": "080 28567247 28567248 28567488",
+            "address": "No.353, 8th Cross, 13th Main, Sector A, New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Kottakkal Arya Vaidya Sala Agency",
+            "contact": "9886013354 28562797",
+            "address": "No.2066, Mig, 16th B Cross Road, 3rd Stage, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Dr.Jyothi",
+            "contact": "080 23643907",
+            "address": "#161, Abhiman Thinlu, Krishnappa Layout, Doddabommasandra, Vidyaranyapura, Bangalore, Karnataka, India560097"
+        },
+        {
+            "name": "Ayurvedalaya",
+            "contact": "8884833253",
+            "address": "No5, Nanjappa Road, Vidyaranyapura Main road, Vidyaranyapura, Next To Kehthams Hospital, Bangalore - 560097"
+        },
+        {
+            "name": "Vidhyaranya Ayurvedalaya ",
+            "contact": "(91)-80-25981152, +(91)-9845754123",
+            "address": "No.463/1, Durga Temple Arch, 3rd Block, HMT Layout, Vidyaranyapura, Inside Durga Temple Arch, Bangalore - 560097"
+        }
+    ],
+    "jewellery": [
+        {
+            "name": "Geethanjali Jewelers",
+            "contact": "9886088020",
+            "address": "32, Yelahanka Main Road, New Town Businees, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+        },
+        {
+            "name": "Mangalore Jewelery Works",
+            "contact": "9845730797",
+            "address": "921, Ews, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+        },
+        {
+            "name": "Sneha Jewel Paradise",
+            "contact": "9845998473",
+            "address": "976/1, Lig 2nd Phase, 16 Th B Cross, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India560064"
+        },
+        {
+            "name": "Srinath Jewelers",
+            "contact": "9448513625 28462691",
+            "address": "1930/a 16 B Main Road, Lig 2nd Phase New Town Yelahanka, Lig 2nd Phase, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+        },
+        {
+            "name": "Govind Jewellery",
+            "contact": "9986001318",
+            "address": "69/8, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India560063"
+        },
+        {
+            "name": "Gurunvana Jewellery",
+            "contact": "9945810693",
+            "address": "#34, Hunasamaranahalli, Hosahalli Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Jain Jewellers",
+            "contact": "080 22971913",
+            "address": "New #774, Yelahanka Bazar, Near Yelahanka Bus Stand, Yelahanka Old Town, Bangalore, Karnataka, India560063"
+        },
+        {
+            "name": "Mahaveer Jewelers And Bankers",
+            "contact": "080 28565581",
+            "address": "975, 2nd Cross16th B Cross, Nw Town, Yelahanka, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Mamatha Jeweller",
+            "contact": "9243484859",
+            "address": "17/21, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Mandal Jewellery",
+            "contact": "9986469939",
+            "address": "22, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Mathji Jewellery",
+            "contact": "9880124365",
+            "address": "79, Maruthi Nagar Main Road, Anna Street, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "M.Venkatagirapa Jewellery",
+            "contact": "9980658083",
+            "address": "#30, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Prapthana Jewellery",
+            "contact": "9845002913",
+            "address": "#84, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Rajputh jewellery",
+            "contact": "9886822590",
+            "address": "#88, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Sumathi Jewelers",
+            "contact": "080 22971915",
+            "address": "B Road, Ylnk- , Wheel & Axle, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Videozone Jewellery",
+            "contact": "9885808365",
+            "address": "#57, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Vishnu Jewellery",
+            "contact": "9900160485",
+            "address": "54, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+        },
+        {
+            "name": "Kalyan Jewellers",
+            "contact": "080 28561349",
+            "address": "No.13, B Main Road, Dairy Circle, Yelahanka New Town, Bangalore - 560064"
+        },
+        {
+            "name": "R R Gold Palace",
+            "contact": "",
+            "address": "Yelahanka Old Town, Bangalore - 560064, Near Yelahanka Market Circle"
+        },
+        {
+            "name": "Sri Krishna Jewellers",
+            "contact": "9880608832",
+            "address": "No.1931, MIG,16th B Cross, Yelahanka New Town, Bangalore - 560064, Opp New Town Bus Stand"
+        },
+        {
+            "name": "Sumathi Jewellers",
+            "contact": "080 33059591",
+            "address": "Plot No. 1224, Yelahanka Bus Stand, Govt Hospital Road, Yelahanka, Bangalore - 560064"
+        },
+        {
+            "name": "Santhosh Jewellers",
+            "contact": "9341217645",
+            "address": "No.955, Lig 2nd Phase, 16th B Cross, Yelahanka New Town"
+        },
+        {
+            "name": "Sheetal Jewels",
+            "contact": "9743533903",
+            "address": "No.113, Attur Main Road, Yelahanka, Bangalore - 560064,"
+        },
+        {
+            "name": "Shree Shantinath Jewellers",
+            "contact": "9845374103 23637465",
+            "address": "Krishnappa Bldg, Tindlu Main Road, Sahakaranagar, Kodigehalli, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "Mathaji Jewellers",
+            "contact": "080 25984517",
+            "address": "Jakkur Road (Konorappa Building), Byatarayanapura, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "National Jewellery",
+            "contact": "9945566990",
+            "address": "#183/1, 18th Cross, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "SK Jewellery",
+            "contact": "9448468916",
+            "address": "#79/2, 18th Cross, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "Sri Devnarayan Jewellery",
+            "contact": "9704679384",
+            "address": "#157/1, Amruthhalli, Yelhanka Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "SriKanti Jewellery",
+            "contact": "9906587988",
+            "address": "#113, 18th Cross, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "Sri Vinayaka Jewellery",
+            "contact": "9342718795",
+            "address": "#181/1, Amruthhalli, Yelhanka Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+        },
+        {
+            "name": "Vaibhav Jewels",
+            "contact": "9845879641",
+            "address": "No. 546, 14th cross, 14th main, F Block, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Shubham Jewellers",
+            "contact": "7795228717",
+            "address": "No.8, Sonne Gowda Complex, Kodigehalli Main Road, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Mahadev Jewellers",
+            "contact": "080 33055392",
+            "address": "No. 849/1, A Block, 13th Main Road, 80 Feet Road, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Shri Swathi Jewellers",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No.325/8, 60 Feet Main Road, F Block, Sahakara Nagar, Bangalore - 560092"
+        },
+        {
+            "name": "Vinayaka Jewellers",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No. 20, Sanjeevini Ngr, Byataranyanapura, Bangalore - 560092"
+        },
+        {
+            "name": "S K Jewellers",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No.79/2, 18th Cross, Byataranyanapura, Bangalore - 560092"
+        },
+        {
+            "name": "Pooja Jewellers & Bankers ",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No.11, Vidyaranyapura Main Road, Vidyaranyapura, Near Sri Durga Parameshwari Temple, Bangalore - 560097"
+        },
+        {
+            "name": "Sri Hari Jewellers ",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No.2 & 3, Ashwathappa Building, Dodda Bommasandra, Vidyaranyapura, Near Philomenas English School, Bangalore - 560097"
+        },
+        {
+            "name": "Rishab Jewellrs ",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "Doddabomsandra, Vidyaranyapura, Bangalore - 560097"
+        },
+        {
+            "name": "nakshtra jewels",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No. 59, krn complex, Bel layout., Vidyaranyapura Block 1, Opp.kanti sweets, Bangalore - 560097"
+        },
+        {
+            "name": "P K Jewellers & Bankers ",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "No.138, Narasipura Layout, Vidyaranyapura, Last Bus Stop, Bangalore - 560097"
+        },
+        {
+            "name": "M.D.Polish(gold n silver)",
+            "contact": "9480774997, 9036085990, 944834312",
+            "address": "#183,near P.K Jewellers near last bus stop narsipura layiut vidyaranyapura ban-97"
+        },
+        {
+            "name": "Heera Jewellers & bangalore",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "#52,narasipura layout,vidyaranyapura last bus stop bangalore-97"
+        },
+        {
+            "name": "R.K.Jwellers",
+            "contact": "9480774997, 9036085990, 9448343122",
+            "address": "#250,M.M Plaza,ground floor ,shop #3 narsipura layout vidyara.main road ban-97"
+        }
     ]
 }
