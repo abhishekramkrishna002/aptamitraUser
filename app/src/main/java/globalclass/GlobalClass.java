@@ -233,7 +233,9 @@ public class GlobalClass extends com.orm.SugarApp {
         Speciality[] mortuaryServices = new Speciality[]{
 
                 new Speciality("Need Mortuary Vehicle ", false),
-                new Speciality("Need cremation centre address ", false)
+                new Speciality("Need cremation centre address ", false),
+                new Speciality("Book a time slot for nearest cremation centre ", false),
+                new Speciality("Time extension for cremation", false)
         };
         services.put("Mortuary", mortuaryServices);
         Speciality[] lawAndOrderServices = new Speciality[]{
@@ -334,6 +336,7 @@ public class GlobalClass extends com.orm.SugarApp {
                     .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
                         @Override
                         public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
+
                             Intent intent = new Intent(activity, ProfileActivity.class);
                             activity.startActivity(intent);
                             return true;
