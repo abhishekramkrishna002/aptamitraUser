@@ -23,12 +23,7 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
-import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
 
@@ -59,7 +54,7 @@ public class GlobalClass extends com.orm.SugarApp {
     @Override
     public void onCreate() {
         super.onCreate();
-        setupuniversalLoader();
+//        setupuniversalLoader();
         init();
 
     }
@@ -300,10 +295,12 @@ public class GlobalClass extends com.orm.SugarApp {
                 DrawerImageLoader.init(new DrawerImageLoader.IDrawerImageLoader() {
                     @Override
                     public void set(ImageView imageView, Uri uri, Drawable placeholder) {
-                        ImageLoader imageLoader = ImageLoader.getInstance();
-                        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
-                                .cacheOnDisc(true).resetViewBeforeLoading(true).build();
-                        imageLoader.displayImage(String.valueOf(uri), imageView, options);
+//                        ImageLoader imageLoader = ImageLoader.getInstance();
+//                        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+//                                .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+//                        imageLoader.displayImage(String.valueOf(uri), imageView, options);
+
+                        Picasso.with(activity).load(uri).placeholder(R.drawable.lazy_loading).into(imageView);
                     }
 
                     @Override
@@ -448,21 +445,21 @@ public class GlobalClass extends com.orm.SugarApp {
 
     }
 
-    public void setupuniversalLoader() {
-        // UNIVERSAL IMAGE LOADER SETUP::start
-        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
-                .cacheOnDisc(true).cacheInMemory(true)
-                .imageScaleType(ImageScaleType.EXACTLY)
-                .displayer(new FadeInBitmapDisplayer(300)).build();
-
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
-                getApplicationContext())
-                .defaultDisplayImageOptions(defaultOptions)
-                .memoryCache(new WeakMemoryCache())
-                .discCacheSize(100 * 1024 * 1024).build();
-
-        ImageLoader.getInstance().init(config);
-        // UNIVERSAL IMAGE LOADER SETUP::end
-
-    }
+//    public void setupuniversalLoader() {
+//        // UNIVERSAL IMAGE LOADER SETUP::start
+//        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+//                .cacheOnDisc(true).cacheInMemory(true)
+//                .imageScaleType(ImageScaleType.EXACTLY)
+//                .displayer(new FadeInBitmapDisplayer(300)).build();
+//
+//        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+//                getApplicationContext())
+//                .defaultDisplayImageOptions(defaultOptions)
+//                .memoryCache(new WeakMemoryCache())
+//                .discCacheSize(100 * 1024 * 1024).build();
+//
+//        ImageLoader.getInstance().init(config);
+//        // UNIVERSAL IMAGE LOADER SETUP::end
+//
+//    }
 }

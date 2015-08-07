@@ -36,6 +36,7 @@ import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
 
@@ -76,6 +77,9 @@ public class LandingPageActivity extends ActionBarActivity {
         activity = this;
         ButterKnife.bind(this);
         initilaiseMenuSystem();
+
+
+
         drawer = ((GlobalClass) getApplicationContext()).navigationDrawer(this);
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -152,75 +156,76 @@ public class LandingPageActivity extends ActionBarActivity {
     public void initilaiseMenuSystem() {
         items = new ArrayList<HorizontalScrollItem>() {{
             add(new HorizontalScrollItem("My City", new ArrayList<HorizontalScrollItem.Item>() {{
-                add(new HorizontalScrollItem.Item(R.drawable.bbmp, "B B M P"));
-                add(new HorizontalScrollItem.Item(R.drawable.bwssb, "B W S S B"));
-                add(new HorizontalScrollItem.Item(R.drawable.bescom, "B E S C O M"));
-                add(new HorizontalScrollItem.Item(R.drawable.bmtc, "B M T C"));
-//                add(new HorizontalScrollItem.Item(R.drawable.bda, "B D A"));
-                add(new HorizontalScrollItem.Item(R.drawable.ambulance, "Ambulance"));
-                add(new HorizontalScrollItem.Item(R.drawable.blood, "Blood"));
-                add(new HorizontalScrollItem.Item(R.drawable.fire, "Fire"));
-                add(new HorizontalScrollItem.Item(R.drawable.law_and_order, "Law & Order"));
-                add(new HorizontalScrollItem.Item(R.drawable.mortuary, "Mortuary"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bbmp.jpg", "B B M P"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bwssb.jpg", "B W S S B"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bescom.jpg", "B E S C O M"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bmtc.jpg", "B M T C"));
+//                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bda, "B D A"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/ambulance.jpg", "Ambulance"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/blood.jpg", "Blood"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/fire.jpg", "Fire"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/law_and_order.jpg", "Law & Order"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/mortuary.jpg", "Mortuary"));
 
 
             }}));
             add(new HorizontalScrollItem("My Booking", new ArrayList<HorizontalScrollItem.Item>() {{
 
-                add(new HorizontalScrollItem.Item(R.drawable.house_keeping, "House Keeping"));
-                add(new HorizontalScrollItem.Item(R.drawable.beautician, "Beautician"));
-                add(new HorizontalScrollItem.Item(R.drawable.laundry, "Laundry"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_electrician, "Electrician"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_plumbing, "Plumber"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_carpenter, "Carpenter"));
-                add(new HorizontalScrollItem.Item(R.drawable.mobile_repair, "Mobile repair"));
-                add(new HorizontalScrollItem.Item(R.drawable.pc_repair, "PC repair"));
-                add(new HorizontalScrollItem.Item(R.drawable.chartered_accountant, "Accountant"));
-                add(new HorizontalScrollItem.Item(R.drawable.company_secretery, "Secretary"));
-                add(new HorizontalScrollItem.Item(R.drawable.trademark_copyright, "Trademark"));
-                add(new HorizontalScrollItem.Item(R.drawable.wedding_phptpgraphy, "Wedding Photography"));
-                add(new HorizontalScrollItem.Item(R.drawable.flute, "Flute Classes"));
-                add(new HorizontalScrollItem.Item(R.drawable.guitar, "Guitar Classes"));
-                add(new HorizontalScrollItem.Item(R.drawable.yoga, "Yoga Classes "));
-                add(new HorizontalScrollItem.Item(R.drawable.driver, "Driver"));
-                add(new HorizontalScrollItem.Item(R.drawable.appliances, "Appliances Repair"));
-                add(new HorizontalScrollItem.Item(R.drawable.architecture, "Architecture"));
-                add(new HorizontalScrollItem.Item(R.drawable.chef, "Chef"));
-                add(new HorizontalScrollItem.Item(R.drawable.civil_work, "Civil work"));
-                add(new HorizontalScrollItem.Item(R.drawable.dance_classes, "Dance class"));
-                add(new HorizontalScrollItem.Item(R.drawable.driving_school, "Driving School"));
-                add(new HorizontalScrollItem.Item(R.drawable.financial_services, "Financial Service"));
-                add(new HorizontalScrollItem.Item(R.drawable.gardening, "Gardening"));
-                add(new HorizontalScrollItem.Item(R.drawable.leagal_services, "Legal Service"));
-                add(new HorizontalScrollItem.Item(R.drawable.tank_cleaning, "Tank Cleaning"));
-                add(new HorizontalScrollItem.Item(R.drawable.tutor, "Tutor"));
-                add(new HorizontalScrollItem.Item(R.drawable.web_desingner, "Web Designer"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/house_keeping.jpg", "House Keeping"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/beautician.jpg", "Beautician"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/laundry.jpg", "Laundry"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_electrician.png", "Electrician"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_plumbing.png", "Plumber"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_carpenter.png", "Carpenter"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/mobile_repair.jpg", "Mobile repair"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/pc_repair.jpg", "PC repair"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/chartered_accountant.jpg", "Accountant"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/company_secretery.jpg", "Secretary"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/trademark_copyright.jpg", "Trademark"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/wedding_phptpgraphy.jpg", "Wedding Photography"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/flute.jpg", "Flute Classes"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/guitar.jpg", "Guitar Classes"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/yoga.jpg", "Yoga Classes "));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/driver.jpg", "Driver"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/appliances.jpg", "Appliances Repair"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/architecture.jpg", "Architecture"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/chef.jpg", "Chef"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/civil_work.jpg", "Civil work"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/dance_classes.jpg", "Dance class"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/driving_school.jpg", "Driving School"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/financial_services.jpg", "Financial Service"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/gardening.jpg", "Gardening"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/leagal_services.jpg", "Legal Service"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/tank_cleaning.jpg", "Tank Cleaning"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/tutor.jpg", "Tutor"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/web_desingner.jpg", "Web Designer"));
 
             }}));
             add(new HorizontalScrollItem("My Delivery", new ArrayList<HorizontalScrollItem.Item>() {{
 
-                add(new HorizontalScrollItem.Item(R.drawable.icon_food, "Food"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_groceries, "Groceries"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_fruits, "Fruits"));
-                add(new HorizontalScrollItem.Item(R.drawable.icon_flowers, "Flowers"));
-                add(new HorizontalScrollItem.Item(R.drawable.bakery, "Bakery"));
-                add(new HorizontalScrollItem.Item(R.drawable.bill_payment, "Bill Payment"));
-                add(new HorizontalScrollItem.Item(R.drawable.insta_courier, "Insta Courier"));
-                add(new HorizontalScrollItem.Item(R.drawable.medicine, "Medicine"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_food.png", "Food"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_groceries.png", "Groceries"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_fruits.png", "Fruits"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/icon_flowers.png", "Flowers"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bakery.jpg", "Bakery"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bill_payment.jpg", "Bill Payment"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/insta_courier.jpg", "Insta Courier"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/medicine.jpg", "Medicine"));
+
             }}));
 
             add(new HorizontalScrollItem("My Aptamitra", new ArrayList<HorizontalScrollItem.Item>() {{
-                add(new HorizontalScrollItem.Item(R.drawable.gym, "gym"));
-                add(new HorizontalScrollItem.Item(R.drawable.bank, "bank"));
-                add(new HorizontalScrollItem.Item(R.drawable.atm, "atm"));
-                add(new HorizontalScrollItem.Item(R.drawable.music_classes, "music class"));
-                add(new HorizontalScrollItem.Item(R.drawable.textiles, "textile"));
-                add(new HorizontalScrollItem.Item(R.drawable.photo_studio, "photo studio"));
-                add(new HorizontalScrollItem.Item(R.drawable.driving_school, "driving class"));
-                add(new HorizontalScrollItem.Item(R.drawable.medical_shop, "medical store"));
-                add(new HorizontalScrollItem.Item(R.drawable.home_appliances, "home appliance"));
-                add(new HorizontalScrollItem.Item(R.drawable.automobile, "automobile"));
-                add(new HorizontalScrollItem.Item(R.drawable.ayurveda, "ayurveda"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/gym.jpg", "gym"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/bank.jpg", "bank"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/atm.jpg", "atm"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/music_classes.jpg", "music class"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/textiles.jpg", "textile"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/photo_studio.jpg", "photo studio"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/driving_school.jpg", "driving class"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/medical_shop.jpg", "medical store"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/home_appliances.jpg", "home appliance"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/automobile.jpg", "automobile"));
+                add(new HorizontalScrollItem.Item("http://aptamitra.in/service_app/drawable/ayurveda.jpg", "ayurveda"));
             }}));
 
         }};

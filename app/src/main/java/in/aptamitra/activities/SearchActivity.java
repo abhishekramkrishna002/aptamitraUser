@@ -1,22 +1,15 @@
 package in.aptamitra.activities;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -28,11 +21,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import adapters.SeearchAdapter;
-import async_tasks.LoginAsyncTask;
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import globalclass.GlobalClass;
+import async_tasks.SearchAsyncTask;
 import in.aptamitra.R;
 
 
@@ -40,7 +29,7 @@ public class SearchActivity extends ActionBarActivity {
 
 
     private JSONObject searchJson;
-    ListView listView = null;
+    public static ListView listView = null;
     EditText searchText = null;
     SeearchAdapter searchAdapter;
     private ArrayList<String> searches;
@@ -52,6 +41,7 @@ public class SearchActivity extends ActionBarActivity {
         searches = new ArrayList<>();
         makeJsonDataForSearch();
         makeList(searchJson, new String());
+//        new SearchAsyncTask(this).execute(new String[]{});
         listView = (ListView) findViewById(R.id.search_list);
         searchAdapter = new SeearchAdapter(this, R.layout.search_list_item, searches);
         listView.setAdapter(searchAdapter);
@@ -96,7 +86,20 @@ public class SearchActivity extends ActionBarActivity {
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject obj = jsonArray.getJSONObject(i);
                     //Log.i("childs",tree+" > "+obj.getString("key"));
-                    searches.add(tree + ">" + obj.getString("key"));
+
+                    if (obj.has("key")) {
+                        tree = tree + " > " + obj.getString("key");
+                        searches.add(tree);
+                    }
+
+                    else  if (obj.has("name")) {
+                        Iterator<String> keys = obj.keys();
+                        while (keys.hasNext()) {
+                            tree += ">" + obj.getString("address") + ">" + obj.getString("contact") + ">" + obj.getString("name");
+                        }
+
+                    }
+
                 }
                 return;
             }
@@ -134,7 +137,7 @@ public class SearchActivity extends ActionBarActivity {
         InputStream inputStream = null;
         String jsonData = new String();
         try {
-            inputStream = assetManager.open("sample.json");
+            inputStream = assetManager.open("search.json");
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             String readLine;

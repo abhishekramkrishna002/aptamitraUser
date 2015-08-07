@@ -21,8 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.mikepenz.materialdrawer.Drawer;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
+import com.squareup.picasso.Picasso;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -61,7 +60,8 @@ public class ComplaintsListActivity extends ActionBarActivity {
 
 
     Activity activity;
-    public static String profile_id=new String();
+    public static String profile_id = new String();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -192,31 +192,30 @@ public class ComplaintsListActivity extends ActionBarActivity {
                 JSONObject profile = new JSONObject(prefs.getString("profile", null));
 
 
-               final JSONObject data = complaintObjects.get(complaintObjects.size()-1-position);
+                final JSONObject data = complaintObjects.get(complaintObjects.size() - 1 - position);
 
                 ((TextView) row.findViewById(R.id.complaint_title))
                         .setText(data.getString("complaint_title"));
 
                 int statusColor;
-                switch(data.getString("status"))
-                {
+                switch (data.getString("status")) {
                     case "open":
-                        statusColor=R.color.red;
+                        statusColor = R.color.red;
                         break;
                     case "on job":
-                        statusColor=R.color.orange;
+                        statusColor = R.color.orange;
                         break;
                     case "escalated":
-                        statusColor=R.color.blue;
+                        statusColor = R.color.blue;
                         break;
                     case "resolved":
-                        statusColor=R.color.green;
+                        statusColor = R.color.green;
                         break;
                     default:
-                        statusColor=R.color.red;
+                        statusColor = R.color.red;
                 }
 
-                ((TextView)row.findViewById(R.id.complaint_status)).setBackgroundColor(getResources().getColor(statusColor));
+                ((TextView) row.findViewById(R.id.complaint_status)).setBackgroundColor(getResources().getColor(statusColor));
                 ((TextView) row.findViewById(R.id.complaint_username))
                         .setText(profile.getString("name"));
                 ((TextView) row.findViewById(R.id.complaint_place))
@@ -228,39 +227,54 @@ public class ComplaintsListActivity extends ActionBarActivity {
                 ((TextView) row.findViewById(R.id.complaint_description))
                         .setText(data.getString("description"));
 
-                if(!profile.getString("profile_image").trim().contentEquals(""))
-                {
+                if (!profile.getString("profile_image").trim().contentEquals("")) {
                     String url = StringDecoder.decode(profile.getString("profile_image"));
+                    CircleImageView circleImageView = (CircleImageView) row.findViewById(R.id.profile_image);
+                    Picasso.with(activity).load(url).into(circleImageView);
 
-                    ImageLoader imageLoader = ImageLoader.getInstance();
-                    DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
-                            .cacheOnDisc(true).resetViewBeforeLoading(true).build();
-                    CircleImageView circleImageView=(CircleImageView) row.findViewById(R.id.profile_image);
-                    imageLoader.displayImage(url, circleImageView, options);
+//                    ImageLoader imageLoader = ImageLoader.getInstance();
+//                    DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+//                            .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+//                    CircleImageView circleImageView=(CircleImageView) row.findViewById(R.id.profile_image);
+//                    imageLoader.displayImage(url, circleImageView, options);
                 }
 
 
-                if(!data.getString("complaint_image_1").trim().contentEquals("")) {
+                if (!data.getString("complaint_image_1").trim().contentEquals("")) {
                     String url = StringDecoder.decode(data.getString("complaint_image_1"));
-
-                    ImageLoader imageLoader = ImageLoader.getInstance();
-                    DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
-                            .cacheOnDisc(true).resetViewBeforeLoading(true).build();
                     ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_1);
-                    imageLoader.displayImage(url, imageView, options);
+                    imageView.setVisibility(View.VISIBLE);
+                    Picasso.with(activity).load(url).placeholder(R.drawable.lazy_loading).into(imageView);
+//
+//                    ImageLoader imageLoader = ImageLoader.getInstance();
+//                    DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+//                            .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+//                    ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_1);
+//                    imageLoader.displayImage(url, imageView, options);
+                } else {
+                    ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_1);
+                    imageView.setVisibility(View.GONE);
+                    ((ViewGroup) row).removeView(imageView);
                 }
-                if(!data.getString("complaint_image_2").trim().contentEquals("")) {
-                    String url = StringDecoder.decode(data.getString("complaint_image_2"));
 
-                    ImageLoader imageLoader = ImageLoader.getInstance();
-                    DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
-                            .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+                if (!data.getString("complaint_image_2").trim().contentEquals("")) {
+                    String url = StringDecoder.decode(data.getString("complaint_image_2"));
                     ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_2);
-                    imageLoader.displayImage(url, imageView, options);
+                    imageView.setVisibility(View.VISIBLE);
+                    Picasso.with(activity).load(url).placeholder(R.drawable.lazy_loading).into(imageView);
+
+//                    ImageLoader imageLoader = ImageLoader.getInstance();
+//                    DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+//                            .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+//                    ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_2);
+//                    imageLoader.displayImage(url, imageView, options);
+                } else {
+                    ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_2);
+                    imageView.setVisibility(View.GONE);
+                    ((ViewGroup) row).removeView(imageView);
                 }
-                if(data.getString("complaint_image_1").trim().contentEquals("") && data.getString("complaint_image_2").trim().contentEquals(""))
-                {
-                    ((ViewGroup)row).removeView((HorizontalScrollView) row.findViewById(R.id.complaint_image_container));
+                if (data.getString("complaint_image_1").trim().contentEquals("") && data.getString("complaint_image_2").trim().contentEquals("")) {
+                    ((ViewGroup) row).removeView((HorizontalScrollView) row.findViewById(R.id.complaint_image_container));
                 }
                 TextView comment = (TextView) row.findViewById(R.id.textView5);
                 comment.setOnClickListener(new View.OnClickListener() {
@@ -271,12 +285,12 @@ public class ComplaintsListActivity extends ActionBarActivity {
 
                             AddCommentActivity addComments = new AddCommentActivity();
                             //addComments.setComplaintId(Integer.parseInt(data.getString("complaint_id")));
-                            Log.e("id",data.getString("complaint_id"));
-                            Intent i = new Intent(ComplaintsListActivity.this,AddCommentActivity.class);
-                            i.putExtra("complaint_id",data.getString("complaint_id"));
+                            Log.e("id", data.getString("complaint_id"));
+                            Intent i = new Intent(ComplaintsListActivity.this, AddCommentActivity.class);
+                            i.putExtra("complaint_id", data.getString("complaint_id"));
                             startActivity(i);
 
-                        }catch (JSONException e) {
+                        } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }

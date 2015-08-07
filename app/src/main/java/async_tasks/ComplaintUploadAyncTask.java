@@ -96,7 +96,7 @@ public class ComplaintUploadAyncTask extends AsyncTask<HashMap<String, String>, 
             }
             if (image2 != null) {
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                image2.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                image2.compress(Bitmap.CompressFormat.PNG,60, stream);
                 byte[] byteArray = stream.toByteArray();
                 Random r = new Random();
                 entityBuilder.addBinaryBody("complaint_image_2", byteArray, ContentType.create("image/png"), "image_" + r.nextInt() + ".png");

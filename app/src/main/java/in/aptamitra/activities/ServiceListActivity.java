@@ -8,18 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Iterator;
-
 import adapters.BusinessListingAdapter;
-import adapters.SeearchAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -34,7 +30,7 @@ public class ServiceListActivity extends ActionBarActivity {
     TextView titleTextView;
     @Bind(R.id.icon_back)
     ImageView backButton;
-    JSONObject json;
+    JSONArray json;
     private ArrayList<String> listItems = new ArrayList<>();
 
     @Override
@@ -43,7 +39,7 @@ public class ServiceListActivity extends ActionBarActivity {
         setContentView(R.layout.service_list);
         ButterKnife.bind(this);
         String data = getIntent().getStringExtra("data");
-        makeJsonDataForSearch();
+        makeJsonDataForSearch(data+".json");
         titleTextView.setText(data.toUpperCase());
         makeList(json, new String(), data);
 //        for (int j = 0; j < listItems.size(); j++) {
@@ -74,10 +70,11 @@ public class ServiceListActivity extends ActionBarActivity {
                 JSONArray jsonArray = (JSONArray) object;
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject obj = jsonArray.getJSONObject(i);
-                    Iterator<String> keys = obj.keys();
-                    while (keys.hasNext()) {
-                        tree += ">" + obj.getString(keys.next());
-                    }
+//                    Iterator<String> keys = obj.keys();
+                    tree+=">"+obj.getString("name")+">"+obj.getString("address")+">"+obj.getString("contact");
+//                    while (keys.hasNext()) {
+//                        tree += ">" + obj.getString(keys.next());
+//                    }
                     listItems.add(tree);
                 }
                 return;
@@ -118,12 +115,13 @@ applicable only for seacrh::end
         }
     }
 
-    public void makeJsonDataForSearch() {
+    public void makeJsonDataForSearch(String filename) {
         AssetManager assetManager = getAssets();
         InputStream inputStream = null;
         String jsonData = new String();
         try {
-            inputStream = assetManager.open("business_listing.json");
+            //inputStream = assetManager.open("business_listing.json");
+            inputStream = assetManager.open(filename);
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             String readLine;
@@ -131,7 +129,7 @@ applicable only for seacrh::end
                 jsonData += readLine.trim();
             }
             Log.d("json-file", jsonData);
-            json = new JSONObject(jsonData);
+            json = new JSONArray(jsonData);
             inputStream.close();
 
         } catch (Exception e) {

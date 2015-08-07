@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 import custom_objects.HorizontalScrollItem;
@@ -58,11 +60,19 @@ public class LandingPageAdapter
 
         ArrayList<HorizontalScrollItem.Item> items = menuItems.get(position).items;
         LayoutInflater layoutInflater = LayoutInflater.from(activity);
-        for (int i = 0; i < items.size(); i++) {
+        int i;
+        for (i = 0; i < items.size(); i++) {
 
             View cardView = layoutInflater.inflate(R.layout.landing_page_horizontal_list_item_2, viewHolder.horizontalListContainer, false);
             HorizontalScrollItem.Item item = items.get(i);
-            ((ImageView) cardView.findViewById(R.id.image)).setImageResource(item.image);
+            /*
+            load from server:start
+             */
+            Picasso.with(activity).load(item.image).placeholder(R.drawable.lazy_loading).into(((ImageView) cardView.findViewById(R.id.image)));
+            // ((ImageView) cardView.findViewById(R.id.image)).setImageResource(item.image);
+            /*
+            load from server:end
+             */
             ((TextView) cardView.findViewById(R.id.title)).setText(item.name);
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -82,7 +92,7 @@ public class LandingPageAdapter
                     } else if (position == 2) {
                         intent = new Intent(activity, ChatActivity.class);
                         activity.startActivity(intent);
-                    }else if (position == 3) {
+                    } else if (position == 3) {
                         intent = new Intent(activity, ServiceListActivity.class);
                         String data = ((TextView) v.findViewById(R.id.title)).getText().toString();
                         ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;

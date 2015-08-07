@@ -10,8 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.mikepenz.materialdrawer.Drawer;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
 
@@ -58,10 +57,13 @@ public class ProfileActivity extends ActionBarActivity {
             String url = StringDecoder.decode(profile.getString("profile_image"));
             if(!url.trim().contentEquals(""))
             {
-                ImageLoader imageLoader = ImageLoader.getInstance();
-                DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
-                        .cacheOnDisc(true).resetViewBeforeLoading(true).build();
-                imageLoader.displayImage(url, profileImageView, options);
+
+//                ImageView imageView = (ImageView) row.findViewById(R.id.complaint_image_1);
+                Picasso.with(ProfileActivity.this).load(url).into(profileImageView);
+//                ImageLoader imageLoader = ImageLoader.getInstance();
+//                DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
+//                        .cacheOnDisc(true).resetViewBeforeLoading(true).build();
+//                imageLoader.displayImage(url, profileImageView, options);
             }
         }
         catch(Exception e)

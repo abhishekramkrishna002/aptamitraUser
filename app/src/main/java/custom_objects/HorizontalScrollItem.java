@@ -30,14 +30,14 @@ public class HorizontalScrollItem {
      */
     public static class Item {
 
-        public int image;
+        public String image;
         public String name;
         public String description;
-        public Item(int image,String name) {
+        public Item(String image,String name) {
             this.image=image;
             this.name=name;
         }
-        public Item(int image,String name,String description) {
+        public Item(String image,String name,String description) {
             this.image=image;
             this.name=name;
             this.description=description;

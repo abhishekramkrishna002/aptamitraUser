@@ -24,6 +24,7 @@
     <string name="book_service">http://aptamitra.in/service_app/book_service.php</string>
     <string name="chat_link">http://aptamitra.in/service_app/user_to_admin.php</string>
     <string name="verify_user">http://aptamitra.in/service_app/verify_user.php?otp=</string>
+    <string name="search_db">http://aptamitra.in/service_app/search_db.php</string>
 
     <!-- How It Works Texts ::start -->
 
