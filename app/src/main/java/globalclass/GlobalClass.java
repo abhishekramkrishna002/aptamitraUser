@@ -39,8 +39,6 @@ import in.aptamitra.activities.LandingPageActivity;
 import in.aptamitra.activities.MainActivity;
 import in.aptamitra.activities.NotificationsListActivity;
 import in.aptamitra.activities.ProfileActivity;
-import in.aptamitra.activities.RegisterComplaintActivity;
-import views.CircleImageView;
 
 /**
  * Created by abhishek on 20-07-2015.
@@ -54,7 +52,6 @@ public class GlobalClass extends com.orm.SugarApp {
     @Override
     public void onCreate() {
         super.onCreate();
-//        setupuniversalLoader();
         init();
 
     }
@@ -454,21 +451,5 @@ public class GlobalClass extends com.orm.SugarApp {
 
     }
 
-//    public void setupuniversalLoader() {
-//        // UNIVERSAL IMAGE LOADER SETUP::start
-//        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
-//                .cacheOnDisc(true).cacheInMemory(true)
-//                .imageScaleType(ImageScaleType.EXACTLY)
-//                .displayer(new FadeInBitmapDisplayer(300)).build();
-//
-//        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
-//                getApplicationContext())
-//                .defaultDisplayImageOptions(defaultOptions)
-//                .memoryCache(new WeakMemoryCache())
-//                .discCacheSize(100 * 1024 * 1024).build();
-//
-//        ImageLoader.getInstance().init(config);
-//        // UNIVERSAL IMAGE LOADER SETUP::end
-//
-//    }
+
 }

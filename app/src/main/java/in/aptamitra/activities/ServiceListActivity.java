@@ -8,13 +8,16 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Iterator;
+
 import adapters.BusinessListingAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -39,12 +42,9 @@ public class ServiceListActivity extends ActionBarActivity {
         setContentView(R.layout.service_list);
         ButterKnife.bind(this);
         String data = getIntent().getStringExtra("data");
-        makeJsonDataForSearch(data+".json");
+        makeJsonDataForSearch(data.toLowerCase().trim() + ".json");
         titleTextView.setText(data.toUpperCase());
         makeList(json, new String(), data);
-//        for (int j = 0; j < listItems.size(); j++) {
-//            Log.d("business_item", listItems.get(j));
-//        }
         serviceListView.setAdapter(new BusinessListingAdapter(this, R.layout.business_list_item, listItems));
 
 
@@ -71,7 +71,7 @@ public class ServiceListActivity extends ActionBarActivity {
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject obj = jsonArray.getJSONObject(i);
 //                    Iterator<String> keys = obj.keys();
-                    tree+=">"+obj.getString("name")+">"+obj.getString("address")+">"+obj.getString("contact");
+                    tree += ">" + obj.getString("name") + ">" + obj.getString("address") + ">" + obj.getString("contact");
 //                    while (keys.hasNext()) {
 //                        tree += ">" + obj.getString(keys.next());
 //                    }

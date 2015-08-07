@@ -1,0 +1,230 @@
+{
+    "My City": [
+        {
+            "name": "B B M P",
+            "image_link": "bbmp.jpg"
+        },
+        {
+            "name": "B W S S B",
+            "image_link": "bwssb.jpg"
+        },
+        {
+            "name": "B E S C O M",
+            "image_link": "bescom.jpg"
+        },
+        {
+            "name": "B M T C",
+            "image_link": "bmtc.jpg"
+        },
+        {
+            "name": "Ambulance",
+            "image_link": "ambulance.jpg"
+        },
+        {
+            "name": "Blood",
+            "image_link": "blood.jpg"
+        },
+        {
+            "name": "Fire",
+            "image_link": "fire.jpg"
+        },
+        {
+            "name": "Law & Order",
+            "image_link": "law_and_order.jpg"
+        },
+        {
+            "name": "Mortuary",
+            "image_link": "mortuary.jpg"
+        }
+    ],
+    "My Booking": [
+        {
+            "name": "House Keeping",
+            "image_link": "house_keeping.jpg"
+        },
+        {
+            "name": "Beautician",
+            "image_link": "beautician.jpg"
+        },
+        {
+            "name": "Laundry",
+            "image_link": "laundry.jpg"
+        },
+        {
+            "name": "Electrician",
+            "image_link": "icon_electrician.png"
+        },
+        {
+            "name": "Plumber",
+            "image_link": "laundry.jpg"
+        },
+        {
+            "name": "Carpenter",
+            "image_link": "icon_carpenter.png"
+        },
+        {
+            "name": "Mobile repair",
+            "image_link": "mobile_repair.jpg"
+        },
+        {
+            "name": "PC repair",
+            "image_link": "pc_repair.jpg"
+        },
+        {
+            "name": "Accountant",
+            "image_link": "chartered_accountant.jpg"
+        },
+        {
+            "name": "Secretary",
+            "image_link": "company_secretery.jpg"
+        },
+        {
+            "name": "Trademark",
+            "image_link": "trademark_copyright.jpg"
+        },
+        {
+            "name": "Wedding Photography",
+            "image_link": "wedding_phptpgraphy.jpg"
+        },
+        {
+            "name": "Flute Classes",
+            "image_link": "flute.jpg"
+        },
+        {
+            "name": "Guitar Classes",
+            "image_link": "guitar.jpg"
+        },
+        {
+            "name": "Yoga Classes",
+            "image_link": "yoga.jpg"
+        },
+        {
+            "name": "Appliances Repair",
+            "image_link": "appliances.jpg"
+        },
+        {
+            "name": "Architecture",
+            "image_link": "architecture.jpg"
+        },
+        {
+            "name": "Driver",
+            "image_link": "driver.jpg"
+        },
+        {
+            "name": "Chef",
+            "image_link": "chef.jpg"
+        },
+        {
+            "name": "Dance class",
+            "image_link": "dance_classes.jpg"
+        },
+        {
+            "name": "Driving School",
+            "image_link": "driving_school.jpg"
+        },
+        {
+            "name": "Financial Service",
+            "image_link": "financial_services.jpg"
+        },
+        {
+            "name": "Gardening",
+            "image_link": "gardening.jpg"
+        },
+        {
+            "name": "Legal Service",
+            "image_link": "leagal_services.jpg"
+        },
+        {
+            "name": "Tank Cleaning",
+            "image_link": "tank_cleaning.jpg"
+        },
+        {
+            "name": "Tutor",
+            "image_link": "tutor.jpg"
+        },
+        {
+            "name": "Web Designer",
+            "image_link": "guitar.jpg"
+        }
+    ],
+    "My Delivery": [
+        {
+            "name": "Food",
+            "image_link": "icon_food.png"
+        },
+        {
+            "name": "Groceries",
+            "image_link": "icon_groceries.png"
+        },
+        {
+            "name": "Fruits",
+            "image_link": "icon_fruits.png"
+        },
+        {
+            "name": "Flowers",
+            "image_link": "icon_flowers.png"
+        },
+        {
+            "name": "Bakery",
+            "image_link": "bakery.jpg"
+        },
+        {
+            "name": "Bill Payment",
+            "image_link": "bill_payment.jpg"
+        },
+        {
+            "name": "Insta Courier",
+            "image_link": "insta_courier.jpg"
+        },
+        {
+            "name": "Medicine",
+            "image_link": "medicine.jpg"
+        }
+    ],
+    "My Aptamitra": [
+        {
+            "name": "Gym",
+            "image_link": "gym.jpg"
+        },
+        {
+            "name": "Bank",
+            "image_link": "bank.jpg"
+        },
+        {
+            "name": "Atm",
+            "image_link": "atm.jpg"
+        },
+        {
+            "name": "Music class",
+            "image_link": "music_classes.jpg"
+        },
+        {
+            "name": "Textile",
+            "image_link": "textiles.jpg"
+        },
+        {
+            "name": "Driving class",
+            "image_link": "driving_school.jpg"
+        },
+        {
+            "name": "Photo Studio",
+            "image_link": "photo_studio.jpg"
+        },
+        {
+            "name": "Medical store",
+            "image_link": "medical_shop.jpg"
+        },
+        {
+            "name": "home appliance",
+            "image_link": "home_appliances.jpg"
+        },
+        {
+            "name": "Automobile",
+            "image_link": "automobile.jpg"
+        },
+        {
+            "name": "Ayurveda",
+            "image_link": "ayurveda.jpg"
+        }
+    ]
+}

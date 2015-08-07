@@ -55,4 +55,11 @@
     <string name="countrylabel">"Country : "</string>
     <string name="populationlabel">"Population : "</string>
 
+    <string-array name="landing_page">
+        <item>My City</item>
+        <item>My Booking</item>
+        <item>My Delivery</item>
+        <item>My Aptamitra</item>
+    </string-array>
+
 </resources>
