@@ -8,10 +8,6 @@ import com.orm.SugarRecord;
 public class MyNotification extends SugarRecord<MyNotification> {
 
     public String json;
-    public MyNotification()
-    {
-
-    }
     public MyNotification(String json)
     {
         this.json=json;

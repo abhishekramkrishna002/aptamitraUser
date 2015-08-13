@@ -10,6 +10,8 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 import custom_objects.ChatMessage;
 import custom_objects.Speciality;
 import globalclass.GlobalClass;
@@ -21,36 +23,33 @@ import in.aptamitra.activities.ComplaintSubTypeActivity;
  */
 public class ChatListAdapter extends BaseAdapter {
     Activity activity;
-    public ChatMessage[] messages;
-    //Speciality[] cacheProblems;
-    //boolean[] problemsBoolean;
-    //String staticHeader;
+    public ArrayList<ChatMessage> messages;
 
-    public ChatListAdapter(Activity activity, ChatMessage[] messages) {
+    public ChatListAdapter(Activity activity, ArrayList<ChatMessage> messages) {
         this.activity = activity;
         this.messages = messages;
     }
 
     @Override
     public int getCount() {
-        return messages.length;
+        return messages.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return messages.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(final int position, View convertView, final ViewGroup parent) {
 
         View view;
-        if (messages[position].userPosted) {
+        if (messages.get(position).userPosted) {
             view = LayoutInflater.from(activity).inflate(R.layout.chat_list_item_1, parent, false);
         } else {
             view = LayoutInflater.from(activity).inflate(R.layout.chat_list_item_2, parent, false);
@@ -58,15 +57,18 @@ public class ChatListAdapter extends BaseAdapter {
         }
 
 
-        ((TextView) view.findViewById(R.id.message)).setText(messages[position].jsonMessage);
-        Log.d("messages",messages[position].toString());
+        ((TextView) view.findViewById(R.id.message)).setText(messages.get(position).message);
+        if (messages.get(position).sent) {
+            ((TextView) view.findViewById(R.id.message_status)).setText("sent");
+        }
+        // Log.d("messages",messages[position].toString());
 
 
         return view;
     }
 
     public void addMessage(ChatMessage message) {
-        messages[messages.length] = message;
+        messages.add(message);
         notifyDataSetChanged();
     }
 

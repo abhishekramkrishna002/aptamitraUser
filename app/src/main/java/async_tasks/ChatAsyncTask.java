@@ -25,6 +25,7 @@ import java.util.Date;
 
 import in.aptamitra.R;
 import in.aptamitra.activities.ChatActivity;
+import in.aptamitra.activities.ChatActivityService;
 
 /**
  * Created by abhishek on 25-07-2015.
@@ -35,22 +36,21 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
     String userMessage;
     ProgressDialog progress = null;
 
+
     public ChatAsyncTask(Activity activity) {
         this.activity = activity;
     }
 
     @Override
     protected String doInBackground(String... params) {
-        //publishProgress(0);
+        publishProgress(0);
         HttpClient httpclient = new DefaultHttpClient();
 
         HttpPost httppost = new HttpPost(activity.getResources().getString(R.string.chat_link));
         try {
             JSONObject requesJsonObject = new JSONObject();
-
             SharedPreferences prefs = activity.getSharedPreferences("cache", Context.MODE_PRIVATE);
             String profileJson = prefs.getString("profile", null);
-
             JSONObject profile = new JSONObject(profileJson);
             requesJsonObject.put("from_id", profile.getString("profile_id"));
             requesJsonObject.put("profile_user", profile);
@@ -64,10 +64,9 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
             httppost.setEntity(new StringEntity(requesJsonObject.toString()));
             HttpResponse result = httpclient.execute(httppost);
             HttpEntity resultEntity = result.getEntity();
-
             String resultFromChat = EntityUtils.toString(resultEntity);
-            return resultFromChat;
 
+            return resultFromChat;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -78,14 +77,18 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
 
     @Override
     protected void onProgressUpdate(Integer... values) {
-        // TODO Auto-generated method stub
         super.onProgressUpdate(values);
-        progress = new ProgressDialog(activity);
-        progress.setMessage("sending... ");
-        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        progress.setIndeterminate(true);
-        progress.setCancelable(false);
-        progress.show();
+//        progress = new ProgressDialog(activity);
+//        progress.setMessage("sending... ");
+//        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+//        progress.setIndeterminate(true);
+//        progress.setCancelable(false);
+//        progress.show();
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -93,17 +96,24 @@ public class ChatAsyncTask extends AsyncTask<String, Integer, String> {
     protected void onPostExecute(String s) {
 
         super.onPostExecute(s);
-        Log.d("chat",s);
-//        progress.hide();
+        Log.d("chat", s);
         try {
-            LayoutInflater layoutInflater = LayoutInflater.from(activity);
-            View view = layoutInflater.inflate(R.layout.chat_list_item_1, ChatActivity.chatListView, false);
-            ((TextView) view.findViewById(R.id.message)).setText(new JSONObject(userMessage).getJSONObject("message").getString("data"));
-            ChatActivity.chatListView.addView(view);
-        }
-        catch(Exception e)
-        {
+//            View view;
+//
+//            view=ChatActivity.chatListView.getChildAt(ChatActivity.chatListView.getChildCount());
+//            ((TextView) view.findViewById(R.id.complaint_status)).
+//                    setText("sent");
+            addMessage();
+        } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void addMessage() throws Exception {
+        LayoutInflater layoutInflater = LayoutInflater.from(activity);
+        View view = layoutInflater.inflate(R.layout.chat_list_item_1, ChatActivityService.chatListView, false);
+        ((TextView) view.findViewById(R.id.message)).setText(new JSONObject(userMessage).getJSONObject("message").getString("data"));
+        ChatActivityService.chatListView.addView(view);
+
     }
 }

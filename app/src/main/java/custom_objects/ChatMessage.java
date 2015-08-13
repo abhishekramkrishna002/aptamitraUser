@@ -5,16 +5,24 @@ package custom_objects;
  */
 public class ChatMessage {
 
-    public ChatMessage(String jsonMessage, boolean userPosted) {
-        this.jsonMessage = jsonMessage;
+
+    public String message;
+    public boolean userPosted;
+    public boolean sent;
+
+    public ChatMessage(String message, boolean userPosted) {
+        this.message = message;
         this.userPosted = userPosted;
+        this.sent=false;
+    }
+    public void setSent()
+    {
+            this.sent=true;
     }
 
-    public String jsonMessage;
-    public boolean userPosted;
 
     @Override
     public String toString() {
-        return jsonMessage+" userPosted::"+userPosted;
+        return message + " userPosted::" + userPosted;
     }
 }

@@ -292,10 +292,6 @@ public class GlobalClass extends com.orm.SugarApp {
                 DrawerImageLoader.init(new DrawerImageLoader.IDrawerImageLoader() {
                     @Override
                     public void set(ImageView imageView, Uri uri, Drawable placeholder) {
-//                        ImageLoader imageLoader = ImageLoader.getInstance();
-//                        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory(true)
-//                                .cacheOnDisc(true).resetViewBeforeLoading(true).build();
-//                        imageLoader.displayImage(String.valueOf(uri), imageView, options);
 
                         Picasso.with(activity).load(uri).placeholder(R.drawable.lazy_loading).into(imageView);
                     }
@@ -315,7 +311,8 @@ public class GlobalClass extends com.orm.SugarApp {
                  */
 
             } else {
-                profileDrawerItem = new ProfileDrawerItem().withName(name).withEmail(email).withIcon(activity.getResources().getDrawable(R.drawable.icon_profile));
+                profileDrawerItem = new ProfileDrawerItem().withName(name).withEmail(email).
+                        withIcon(activity.getResources().getDrawable(R.drawable.icon_profile));
 
             }
 
@@ -391,6 +388,7 @@ public class GlobalClass extends com.orm.SugarApp {
                             Intent intent;
                             switch (position) {
                                 case 0:
+
                                     intent = new Intent(activity, LandingPageActivity.class);
                                     activity.startActivity(intent);
                                     break;
@@ -439,6 +437,7 @@ public class GlobalClass extends com.orm.SugarApp {
                     })
                     .withDrawerGravity(Gravity.START)
                     .build();
+
             return result;
 
 

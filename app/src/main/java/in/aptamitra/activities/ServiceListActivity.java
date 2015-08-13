@@ -48,6 +48,7 @@ public class ServiceListActivity extends ActionBarActivity {
         serviceListView.setAdapter(new BusinessListingAdapter(this, R.layout.business_list_item, listItems));
 
 
+
     }
 
     @OnClick(R.id.icon_back)

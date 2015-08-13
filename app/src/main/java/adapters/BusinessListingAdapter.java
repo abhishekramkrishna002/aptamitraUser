@@ -17,6 +17,7 @@ import java.util.List;
 import globalclass.GlobalClass;
 import in.aptamitra.R;
 import in.aptamitra.activities.BookServiceActivity;
+import in.aptamitra.activities.ChatActivityService;
 import in.aptamitra.activities.RegisterComplaintActivity;
 
 
@@ -63,7 +64,7 @@ public class BusinessListingAdapter extends ArrayAdapter<String> implements Filt
                 .getLayoutInflater();
 
 
-        View row = inflater.inflate(itemLayout, parent,
+        final View row = inflater.inflate(itemLayout, parent,
                 false);
         try {
             String search = searches.get(position);
@@ -82,7 +83,14 @@ public class BusinessListingAdapter extends ArrayAdapter<String> implements Filt
             /*
             set up appropriate click listener::start
              */
-
+            row.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(activity, ChatActivityService.class);
+                    intent.putExtra("data", ((TextView) row.findViewById(R.id.service_name)).getText());
+                    activity.startActivity(intent);
+                }
+            });
 
 
             /*
