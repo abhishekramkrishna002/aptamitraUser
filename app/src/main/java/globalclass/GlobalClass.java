@@ -111,7 +111,8 @@ public class GlobalClass extends com.orm.SugarApp {
             load the bwssb specs::start
              */
         Speciality[] bwssbService = {
-
+                new Speciality("Blocked Storm Water drain", false),
+                new Speciality("overflow of storm water drain", false),
                 new Speciality("Water supply ", false),
                 new Speciality("Under ground drainage", false),
                 new Speciality("Meter", false),
@@ -147,10 +148,12 @@ public class GlobalClass extends com.orm.SugarApp {
             load the bescom specs::start
              */
         Speciality[] bescomService = {
-
+                new Speciality("Failure of power supply", false),
                 new Speciality("Fuse of call, Line Breakdown, Pole Broken", false),
+                new Speciality("Voltage", false),
                 new Speciality("Voltage variation where no expantion or enhancement of network is involved", false),
                 new Speciality("Voltage variation where up-gradation of distribution systemis required", false),
+                new Speciality("Opening of neutral", false),
                 new Speciality("Meter complaints", false),
                 new Speciality("Inspect and check correctness", false),
                 new Speciality("Replace slow creeping or stuck meters", false),
@@ -233,8 +236,7 @@ public class GlobalClass extends com.orm.SugarApp {
                 new Speciality("Eve Teasing", false),
                 new Speciality("Murder", false),
                 new Speciality("theft", false),
-                new Speciality("neighbour conflicts", false),
-                new Speciality("Mortuary Box",false)
+                new Speciality("neighbour conflicts", false)
         };
         services.put("Law & Order", lawAndOrderServices);
         Speciality[] bloodServices = new Speciality[]{
@@ -317,7 +319,7 @@ public class GlobalClass extends com.orm.SugarApp {
 
             AccountHeader headerResult = new AccountHeaderBuilder()
                     .withActivity(activity)
-                    .withHeaderBackground(R.drawable.icon_profile_bg)
+                    .withHeaderBackground(R.drawable.material)
                     .addProfiles(
                             profileDrawerItem
 
@@ -342,41 +344,41 @@ public class GlobalClass extends com.orm.SugarApp {
                     .addDrawerItems(
                             new PrimaryDrawerItem().
                                     withName("Home").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_home)).
-                                    withTextColor(activity.getResources().getColor(R.color.white))
+                                    withIcon(activity.getResources().getDrawable(R.drawable.home)).
+                                    withTextColor(activity.getResources().getColor(R.color.black))
 
                             ,
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("My Complaints").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_post_cpmplaint)).
-                                    withTextColor(activity.getResources().getColor(R.color.white))
+                                    withIcon(activity.getResources().getDrawable(R.drawable.my_complaints)).
+                                    withTextColor(activity.getResources().getColor(R.color.black))
                             ,
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("My Notifications").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_notification)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                                    withIcon(activity.getResources().getDrawable(R.drawable.notification)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("Contact Us").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_contact_us)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                                    withIcon(activity.getResources().getDrawable(R.drawable.call)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("Share").
                                     withIcon(activity.getResources().getDrawable(R.drawable.share)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("About Us").
                                     withIcon(activity.getResources().getDrawable(R.drawable.about_us)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("Logout").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.icon_logout)).
-                                    withTextColor(activity.getResources().getColor(R.color.white)),
+                                    withIcon(activity.getResources().getDrawable(R.drawable.logout)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem()
 
                     )
@@ -406,7 +408,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.startActivity(callIntent);
                                     break;
                                 case 8:
-                                    Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
+                                    Intent shareIntent = new Intent(Intent.ACTION_SEND);
 
                                     shareIntent.setType("text/plain");
                                     shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Aptamitra");

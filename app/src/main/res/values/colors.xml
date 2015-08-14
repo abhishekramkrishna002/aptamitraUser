@@ -18,7 +18,7 @@
     <!-- OVERWRITE THESE COLORS FOR A LIGHT THEME -->
     <!-- MaterialDrawer DEFAULT colors -->
     <!--<color name="material_drawer_background">#F9F9F9</color>-->
-    <color name="material_drawer_background">#828282</color>
+    <color name="material_drawer_background">#f2f2f2</color>
     <!-- Material DEFAULT text / items colors -->
     <!--<color name="material_drawer_icons">#FFF</color>-->
     <color name="material_drawer_icons">#d3d3d3</color>
@@ -27,7 +27,7 @@
     <color name="material_drawer_secondary_text">#8A000000</color>
     <color name="material_drawer_hint_text">#42000000</color>
     <!--<color name="material_drawer_divider">#1F000000</color>-->
-    <color name="material_drawer_divider">#ffffff</color>
+    <color name="material_drawer_divider">#d3d3d3</color>
     <!-- Material DEFAULT drawer colors -->
     <color name="material_drawer_selected">#E8E8E8</color>
     <color name="material_drawer_selected_text">#0288d1</color>
@@ -69,4 +69,8 @@
     <color name="mycolor3">#cccccc</color>
     <color name="mycolor4">#e7e7e7</color>
     <!-- matyur colors:end-->
+
+    <color name="header1">#db4920</color>
+    <color name="header2">#fab001</color>
+
 </resources>
