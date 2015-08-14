@@ -346,6 +346,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withName("Home").
                                     withIcon(activity.getResources().getDrawable(R.drawable.icon_home)).
                                     withTextColor(activity.getResources().getColor(R.color.white))
+
                             ,
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
