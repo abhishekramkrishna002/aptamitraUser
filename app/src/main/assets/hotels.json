@@ -1,0 +1,512 @@
+[
+    {
+        "name": "Samrat Hotel",
+        "contact": "9342867842",
+        "address": "#226, 28th Cross, 19th Main Road, 2nd Block, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Cant Hotel",
+        "contact": "9739603300",
+        "address": "#163/1, Jakkuru Main Road, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Ganesh Hotel",
+        "contact": "9343639421",
+        "address": "#8, Srirampura Main Road, Amrutahalli, Jakkuru Cross, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Ganesh Veg Hotel",
+        "contact": "9845311703",
+        "address": "#37, Jakkuru Main Road, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Hotel Swathi Gardnia",
+        "contact": "080 23624299",
+        "address": "Sahakara Nagar, Near U.T.I. Bank, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Jayashankar hotel",
+        "contact": "9342179834",
+        "address": "#171/1, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Kamal Veg Hotel",
+        "contact": "9900817190",
+        "address": "#112/1, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Manjunath Hotel",
+        "contact": "9342694424",
+        "address": "#176/1, Jakkuru Main Road, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Modern Hotel",
+        "contact": "9845544523",
+        "address": "#109, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Naga Hotel",
+        "contact": "",
+        "address": "#101, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Parashd Hotel",
+        "contact": "9880559019",
+        "address": "136/2, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Patiala Punjabi Dhaba",
+        "contact": "080 28462111",
+        "address": "Kodigehalli, B, Bellary Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Riya Hotel",
+        "contact": "080 23436344",
+        "address": "#104/2, Amrutahalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sachi Hotel",
+        "contact": "9945698888",
+        "address": "#64, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sanjay Panjabi Dhaba",
+        "contact": "080 23434252",
+        "address": "Kodigehalli Gate, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Shafi Hotel",
+        "contact": "9343165721",
+        "address": "#21, Srirampura Main Road, Amrutahalli, Jakkuru Cross, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Shan Hotel",
+        "contact": "9900819977",
+        "address": "#83/1, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Shivaji Military Hotel",
+        "contact": "9845149217 28462602",
+        "address": "Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Venkateshwara Hotel",
+        "contact": "9900817177 23370155",
+        "address": "#178, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Hotel Sharvathi",
+        "contact": "080 28461930",
+        "address": "15, Rudreshwara Chambers, ,Near Canara Bank, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Ahmed Hotel",
+        "contact": "080 5430156",
+        "address": "296, K.H.B. Complex Behind R.J.O. New Town Area-B, Yelahanka Old Town, Bangalore, Karnataka, India560063"
+    },
+    {
+        "name": "Ahmed Tea Hotel",
+        "contact": "9845237844",
+        "address": "63/1, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Anand Hotel",
+        "contact": "9886290229",
+        "address": "#37/1, Hunasamaranahalli, Hosahalli Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "",
+        "contact": "",
+        "address": ""
+    },
+    {
+        "name": "Bishmilha Hotel",
+        "contact": "9845640572",
+        "address": "3/3, K.H.B. Complex Behind R.J.O. New Town Area-B, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Diesels Hotel",
+        "contact": "9945810699",
+        "address": "#23, Hunasamaranahalli, Hosahalli Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Ganesh hotel",
+        "contact": "9341657947",
+        "address": "#52, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Geetha Hotel",
+        "contact": "9880658083",
+        "address": "#72, Hunasamaranahalli, Bangalore Bellary Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Kumar Hotel Mysore Style",
+        "contact": "080 32506183",
+        "address": "69/3, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India560063"
+    },
+    {
+        "name": "Laxmi Hotel",
+        "contact": "9341704421",
+        "address": "#67, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Manjanathe Hotel",
+        "contact": "9845540010",
+        "address": "280/19, K.H.B. Complex, New Town Area-B, Behind R.J.O., Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Manjunath Veg-Non Veg Hotel",
+        "contact": "974063530",
+        "address": "69/7, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Promodh hotel(Hotels)",
+        "contact": "9886228603",
+        "address": "#35, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Radika Hotel Andra Style",
+        "contact": "99809745319",
+        "address": "45/1, 44, Tippu Nagar Kogilu Lyout Yelahaka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Rahin Hotel",
+        "contact": "080 3545216",
+        "address": "58, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Royal Orchid Hotel",
+        "contact": "9844245000 28560670 28560669",
+        "address": "Doddis Resort, Bellary Road, Allalsandra, Near Jakkur Flying Club, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Savi Sagar",
+        "contact": "9241910913",
+        "address": "327, K.H.B. Complex Behind R.J.O. New Town Area-B, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Shalini Pork Hotel",
+        "contact": "9342415999",
+        "address": "17/16, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Shanthi Sagar Veg Hotel",
+        "contact": "080 65436105",
+        "address": "15, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sharma Hotel Non-Veg",
+        "contact": "9844695168",
+        "address": "41/1, Tippu Nagar Kogilu Lyout Yelahaka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Shivakumar Hotel",
+        "contact": "9845508596",
+        "address": "#52/1, Hunasamaranahalli, Hosahalli Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sreenidhi Hotels",
+        "contact": "080 23657940",
+        "address": "#25, Hunasamaranahalli, B.B.Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Lakshmi Hotel",
+        "contact": "9342567943",
+        "address": "#13, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Venkateshwara Hotel",
+        "contact": "9342413270",
+        "address": "#39, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Taj Hotel",
+        "contact": "9980754152",
+        "address": "280/2, Yamaha, Horo Honda, Activa, Many, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Umesh Hotel",
+        "contact": "9747051765",
+        "address": "287, K.H.B. Complex Behind R.J.O. New Town Area-B, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Prakash Hindu Military Hotel",
+        "contact": "080 26714698",
+        "address": "Sarakki Kanakapura Main, Road, Thindlu main Road, Bangalore, Karnataka, India 560097"
+    },
+    {
+        "name": "Sai Leela Hotel",
+        "contact": "080 33092600",
+        "address": "No.3/1, Singanayakanahalli, 4th Mile, Doddaballapur Main Road, Yelahanka, Bangalore - 560064 "
+    },
+    {
+        "name": "Hoppers Stop Luxury Service Apartments",
+        "contact": "080 33563493",
+        "address": "No.12,Krishnaja Avenue, International Airport Road,Nh-7, Yelahanka, Bangalore - 56006"
+    },
+    {
+        "name": "Goldfinch Retreat",
+        "contact": "080 33619618",
+        "address": "Tarabanahalli,Chikkajala,Navarathna Agrahara, Yelahanka, Bangalore - 560064, Near International Airport"
+    },
+    {
+        "name": "S R Comfort",
+        "contact": "080 33537327",
+        "address": "No.73/36, 4th Cross,Chandramouleshwara Layout,Hunasamaranahalli Village,Kempegowda International Airport Road, Yelahanka, Bangalore - 560064, Near Viva Toyota Showroom"
+    },
+    {
+        "name": "SES Residency",
+        "contact": "080 33568292",
+        "address": "No.8601,Prestige Monte Carlo, Doddaballapur Road, Yelahanka, Bangalore - 560064, Next Ramanashri California Resort"
+    },
+    {
+        "name": "Angsana Oasis Spa & Resort",
+        "contact": "080 33054369",
+        "address": "Doddaballapur Main Road, Rajankunte, Yelahanka, Bangalore - 560064"
+    },
+    {
+        "name": "The Country Club India Ltd",
+        "contact": "9164349933",
+        "address": "No.67/A, Sathanur Village, Yelahanka, Bangalore - 560064, Near Delhi Public School"
+    },
+    {
+        "name": "Shreyas Residency Hotel",
+        "contact": "080 33057776",
+        "address": "No.9/8, N H-7,Bellary Road, Yelahanka, Bangalore - 560064, Near Kogilu Circle"
+    },
+    {
+        "name": "HotelTap Paradise",
+        "contact": "9986488794, 080 22280522, 22263843",
+        "address": "No.104, Hospital Road Avenue road cross parallel to kG road, Hospital Main Road, Bangalore - 560064"
+    },
+    {
+        "name": "Hotel Taj",
+        "contact": "9844438768",
+        "address": "Maruthinagar, Yelahanka, Bangalore, Kogil Main Road, Yelahanka, Bangalore - 560064"
+    },
+    {
+        "name": "Vishnu Upahar",
+        "contact": "8105570309",
+        "address": "#38/6, MIG 707, 4th phase, Yelahanka New Town, Bangalore - 560064, Near Akshaya Daba"
+    },
+    {
+        "name": "Tharun Raj Hotel",
+        "contact": "9972114924",
+        "address": "D.b. Pura Main Road, Yelahanka, Bangalore - 560064"
+    },
+    {
+        "name": "Yeshaan Hospitality Services",
+        "contact": "080 33563528",
+        "address": "No.14/9, JAI Ram Nagar, JAI Ram Nagar, Jakkur Layout, Bangalore - 560064"
+    },
+    {
+        "name": "Sri Bramhalingeswara Upahar",
+        "contact": "080 28564463",
+        "address": "Maruthinagar, Yelahanka, Bangalore, Bazar Road, Yelahanka, Bangalore - 560064"
+    },
+    {
+        "name": "Kamakshi Hotel",
+        "contact": "9901042265",
+        "address": "1st Cross Rd Gavipuram Extension , Yelahanka New Town, Bangalore - 560064"
+    },
+    {
+        "name": "Sri Hotel Annapoorneshwari",
+        "contact": "9986555609",
+        "address": "Maruthinagar, Yelahanka, Bangalore, Maruthinagar, Yelahanka, Bangalore - 560064"
+    },
+    {
+        "name": "Hotel NK Residency Lodging",
+        "contact": "9900486367, 9900486368",
+        "address": "No.7, Opp KNS College, Thirumenahalli-Yelahanka, Bangalore - 560064, Near Haj House"
+    },
+    {
+        "name": "Spectrum Hotels",
+        "contact": "9482936322",
+        "address": "No.1, 8th Crs, Adithiya Nagar, Yelahanka New Town, Bangalore - 560106, Nr Mother Dairy Circle"
+    },
+    {
+        "name": "Ganesh Bhawan",
+        "contact": "7411873354",
+        "address": "Amruthahalli, Bangalore, 18th Cross Road, Amruthahalli, Bangalore - 560064"
+    },
+    {
+        "name": "Durga Darshini hotel",
+        "contact": "9901806468",
+        "address": "Dwaraknager, Air Force Station Yelahanka, Bangalore - 560063, Near Brundavan College"
+    },
+    {
+        "name": "Janani Fast Food",
+        "contact": "9845568631",
+        "address": "No. 1, 4th Cross Bagalur Main Road, Air Force Station Yelahanka-Dwaraka Nagar, Bangalore - 560063"
+    },
+    {
+        "name": "Somannavara Thatte Idli",
+        "contact": "9036453402",
+        "address": "#36, Attur Layout, Yelahanka New Town, Bangalore - 560106, Near Attur Bustop "
+    },
+    {
+        "name": "SJ Grany House",
+        "contact": "9483436427",
+        "address": "Attur Main Rd, Yelahanka New Town, Bangalore - 560106, Near Shaniappa temple"
+    },
+    {
+        "name": "May Flower Villa",
+        "contact": "9945234785",
+        "address": "No.8,Mapple Villas, International Airport Road, Amruthahalli, Bangalore - 560064"
+    },
+    {
+        "name": "Rio The Hotel",
+        "contact": "080 33722317",
+        "address": "No.31,32 And 33, 2nd Cross,1st Main,E Block, Sahakara Nagar, Bangalore - 560092"
+    },
+    {
+        "name": "Bangalore Inn",
+        "contact": "9945735755, 9945920277",
+        "address": "No.1629, C Block,80feet,Railway Parallel Road, Sahakara Nagar, Bangalore - 560092, Near Railway Gate"
+    },
+    {
+        "name": "Nirmal Homes",
+        "contact": "080 33531270",
+        "address": "No.45, 12th Mn, Cqal Lyt, Sahakara Nagar, Bangalore - 560092, Nr Ganesha Temple"
+    },
+    {
+        "name": "Sai Residence",
+        "contact": "080 33673276",
+        "address": "No.F1,1st Floor, Tindlu,Kodigehalli, Sahakara Nagar, Bangalore - 560092, Next To Bhupathi Tennis Villag"
+    },
+    {
+        "name": " Satya Comforts",
+        "contact": "080 33054837",
+        "address": "B-31, Chitrakut Century Apartment, Sahakara Nagar, Bangalore - 560092, Behind Shanthi Sagar Hotel"
+    },
+    {
+        "name": "Vasavi Tiffin Center",
+        "contact": "9663315858",
+        "address": "#21/A, Munegouda Building, Airport Main Road, Byataranyanapura, Bangalore - 560092"
+    },
+    {
+        "name": "Southern Comforts",
+        "contact": "080 33722550",
+        "address": "No.301,Eco Royale Apartment, Sahakara Nagar, Bangalore - 560092"
+    },
+    {
+        "name": "Vinayaka Hotel",
+        "contact": "9535046156",
+        "address": "Tata Nager Circle, Kodigehalli, Bangalore - 560092, Near Iyenger Bakery"
+    },
+    {
+        "name": "New Hotel Rajani Mess",
+        "contact": "9448366449, 9535322838",
+        "address": "87,B-Sector,Amrut Nagar, Dasarahalli Main Road, Kodigehalli, Bangalore - 560092,"
+    },
+    {
+        "name": "Sri Durga Hindu Military Hotel",
+        "contact": "9448039968, 9880939315",
+        "address": "No. 23, Sanjeevani Nagar, Kodigehalli Main Road, Kodigehalli, Bangalore - 560092"
+    },
+    {
+        "name": "Suvarna Samphala Inn ",
+        "contact": "+(91)-80-23646324, +(91)-8892395158",
+        "address": "No 1, 8th Crs, Aditya Nagar, Major Sandeep Unni Krishna Rd, Vidyaranyapura, Bangalore - 560098"
+    },
+    {
+        "name": "Donne Biriyani mane ",
+        "contact": "+(91)-9035500217, 9880780078",
+        "address": "#15/b, Doddabaomasandra, Vidyaranyapura, Near indian oil petrol bunk, Bangalore - 560097 "
+    },
+    {
+        "name": "Gangotri Hotel ",
+        "contact": "9972293376",
+        "address": "Kodigehalli Main Road, Vidyaranyapura, Thindlu, Bangalore - 560097"
+    },
+    {
+        "name": "Spectrum hospitality ",
+        "contact": "+(91)-80-23646324, +(91)-8892395158",
+        "address": "No 1, 8th cross, Aditiya nagara yelahanaka main road, Vidyaranyapura, Near MS Palya Circle, Bangalore - 560097"
+    },
+    {
+        "name": "Gangotri Hotel ",
+        "contact": "9972293376",
+        "address": "Kodigehalli Main Road, Vidyaranyapura, Thindlu, Bangalore - 560097"
+    },
+    {
+        "name": "Hotel Ayesha ",
+        "contact": "9986859461",
+        "address": "M S Palya Yelahanka Main Road, Vidyaranyapura, Bangalore - 560097 "
+    },
+    {
+        "name": "Sri Ashwani hotel ",
+        "contact": "8892756236",
+        "address": "Thindlu main road, Vidyaranyapura, Near thindlu circle, Bangalore - 560097"
+    },
+    {
+        "name": "Veggies",
+        "contact": "9620359610",
+        "address": ""
+    },
+    {
+        "name": "sri manjunath vybhav",
+        "contact": "9481772675",
+        "address": ""
+    },
+    {
+        "name": "Rotti mane",
+        "contact": "8971187999",
+        "address": ""
+    },
+    {
+        "name": "OM condiments",
+        "contact": "9945973417",
+        "address": ""
+    },
+    {
+        "name": "Five star chicken",
+        "contact": "9008194999",
+        "address": ""
+    },
+    {
+        "name": "Hegde fast food",
+        "contact": "9343718872",
+        "address": ""
+    },
+    {
+        "name": "S.K Upahar",
+        "contact": "9686921636",
+        "address": ""
+    },
+    {
+        "name": "sai ram food points",
+        "contact": "9241091509",
+        "address": ""
+    },
+    {
+        "name": "Annaporneshwari mess",
+        "contact": "8880092397",
+        "address": ""
+    },
+    {
+        "name": "A.V hotel",
+        "contact": "9686921636",
+        "address": ""
+    },
+    {
+        "name": "Bhanashankari resturant",
+        "contact": "8884823499",
+        "address": ""
+    },
+    {
+        "name": "Shahi(biryani & kabab center)",
+        "contact": "9620727972",
+        "address": "narsipura layout,vidyaranyapura,main road bangalore-97"
+    },
+    {
+        "name": "MRL Ratna hotel",
+        "contact": "5,virupakshapura ,thindlu main road,kodigehalli,ban-97",
+        "address": ""
+    },
+    {
+        "name": "Moti mahal delux",
+        "contact": "45105000 / 9632213035",
+        "address": "2nd floor,red shore plaza,behind esteem mall,chiranjeevi layout,kempapura , hebbal,ban"
+    }
+]

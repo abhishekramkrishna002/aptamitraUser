@@ -111,8 +111,7 @@ public class GlobalClass extends com.orm.SugarApp {
             load the bwssb specs::start
              */
         Speciality[] bwssbService = {
-                new Speciality("Blocked Storm Water drain", false),
-                new Speciality("overflow of storm water drain", false),
+
                 new Speciality("Water supply ", false),
                 new Speciality("Under ground drainage", false),
                 new Speciality("Meter", false),
@@ -148,12 +147,10 @@ public class GlobalClass extends com.orm.SugarApp {
             load the bescom specs::start
              */
         Speciality[] bescomService = {
-                new Speciality("Failure of power supply", false),
+
                 new Speciality("Fuse of call, Line Breakdown, Pole Broken", false),
-                new Speciality("Voltage", false),
                 new Speciality("Voltage variation where no expantion or enhancement of network is involved", false),
                 new Speciality("Voltage variation where up-gradation of distribution systemis required", false),
-                new Speciality("Opening of neutral", false),
                 new Speciality("Meter complaints", false),
                 new Speciality("Inspect and check correctness", false),
                 new Speciality("Replace slow creeping or stuck meters", false),
@@ -236,7 +233,8 @@ public class GlobalClass extends com.orm.SugarApp {
                 new Speciality("Eve Teasing", false),
                 new Speciality("Murder", false),
                 new Speciality("theft", false),
-                new Speciality("neighbour conflicts", false)
+                new Speciality("neighbour conflicts", false),
+                new Speciality("Mortuary Box",false)
         };
         services.put("Law & Order", lawAndOrderServices);
         Speciality[] bloodServices = new Speciality[]{

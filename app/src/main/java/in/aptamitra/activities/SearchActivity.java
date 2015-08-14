@@ -46,12 +46,14 @@ public class SearchActivity extends ActionBarActivity {
         searchAdapter = new SeearchAdapter(this, R.layout.search_list_item, searches);
         listView.setAdapter(searchAdapter);
         searchText = (EditText) findViewById(R.id.search_bar);
+
         searchText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
 
             }
+
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
