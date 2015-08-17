@@ -139,16 +139,7 @@
         "address": "Shop No. 27A, Raj Mahal Vilas, R.M.V. Extn. 2nd Stage, Bangalore - 560094",
         "contact": "080 - 23416597"
     },
-    {
-        "name": "HDFC Bank LTD",
-        "address": "Narasipura, Vidyaranyapura",
-        "contact": "+(91)-80-61606161, 66224332"
-    },
-    {
-        "name": "HDFC Bank LTD",
-        "address": "Narasipura, Vidyaranyapura",
-        "contact": "+(91)-80-61606161, 66224332"
-    },
+
     {
         "name": "HDFC Bank LTD",
         "address": "Narasipura, Vidyaranyapura",
@@ -177,7 +168,7 @@
     {
         "name": "Indian Bank",
         "address": "No.164/7, Thindlu Main Road, Virupakshapura Entrance, Kodigehalli, Vidyaranyapura, Bangalore - 560097",
-        "contact": ""
+        "contact": "-----------------------------------------"
     },
     {
         "name": "KarnatakaBank",
@@ -217,7 +208,7 @@
     {
         "name": "Central Bank Of India",
         "address": "No.20, Kempegowdanagar Road, Virupakshapura Post, Kodigehalli, Vidyaranyapura, Near Venugopal Flour Mill, Bangalore - 560097",
-        "contact": ""
+        "contact": "----------------------------------"
     },
     {
         "name": "Andhra Bank",

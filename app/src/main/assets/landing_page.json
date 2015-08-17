@@ -144,7 +144,7 @@
         },
         {
             "name": "Web Designer",
-            "image_link": "guitar.jpg"
+            "image_link": "web_designer.jpg"
         }
     ],
     "My Delivery": [
@@ -215,7 +215,7 @@
             "image_link": "medical_shop.jpg"
         },
         {
-            "name": "home appliance",
+            "name": "Home appliance",
             "image_link": "home_appliances.jpg"
         },
         {
@@ -225,6 +225,71 @@
         {
             "name": "Ayurveda",
             "image_link": "ayurveda.jpg"
-        }
+        },
+        {
+            "name": "Jewellery",
+            "image_link": "jewellery.jpg"
+         },
+         {
+            "name": "Hospitals",
+            "image_link": "hospital.jpg"
+         },
+         {
+             "name": "Stationary",
+             "image_link": "stationery.jpg"
+         },
+         {
+             "name": "PG for Men",
+             "image_link": "pg_for_boys.jpg"
+         },
+         {
+             "name": "PG for Ladies",
+             "image_link": "pg_for_girls.jpg"
+         },
+         {
+             "name": "Optical",
+             "image_link": "optical.jpg"
+         },
+         {
+             "name": "Hardware",
+             "image_link": "hardware.jpg"
+         },
+         {
+             "name": "BeautyParlour and Salon",
+             "image_link": "beautyparlour_saloon.jpg"
+         },
+         {
+             "name": "Hotels",
+             "image_link": "hotel.jpg"
+         },
+         {
+             "name": "Furnitures",
+             "image_link": "furniture_shop.jpg"
+         },
+         {
+             "name": "Laundry",
+             "image_link": "laundry.jpg"
+         },
+         {
+             "name": "Foot Wear",
+             "image_link": "footware.jpg"
+         },
+         {
+             "name": "Real Estate",
+             "image_link": "real_estate.jpg"
+         },
+         {
+             "name": "Packers and Movers",
+             "image_link": "packers_movers.jpg"
+         },
+         {
+             "name": "Taxi Service",
+             "image_link": "taxi_service.jpg"
+         },
+         {
+             "name": "Schools",
+             "image_link": "schools.jpg"
+         }
+
     ]
 }

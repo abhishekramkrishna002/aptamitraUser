@@ -77,7 +77,6 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
         etService.setText((((GlobalClass) getApplicationContext())).mainMenu);
 
 
-
         etdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

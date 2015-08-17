@@ -1,0 +1,447 @@
+[
+    {
+        "name": "Adesha Real Estate Agents",
+        "contact": "080 23624628",
+        "address": "319, 60ft, Road, Coal Layout, Sahakar Nagar, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Karthik Realtors",
+        "contact": "9448413546",
+        "address": "864, D Block Behind Keveri School, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Venkateshwara Real Estate Agent",
+        "contact": "9845382818, 080  25924689",
+        "address": "Venkateshwara Floor Mill, Patel Nanjegowda Layout Kodigehalli Main Road C Block, Sahakar Nagar, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Gammon India Ltd",
+        "contact": "080 23636965",
+        "address": "Plot 1271 A Block, 2nd Cross,, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "M & M Bangalore",
+        "contact": "944 966 9711 080 2362 6999",
+        "address": "#3, 8th Cross, Sector- A,Public School, Amruthanagar, Behind Green Country, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Ravitheja Constructions Pvt Ltd",
+        "contact": "080 23621822",
+        "address": "13/1 Suraj Brigde G Block, 2nd Floor,, Sahakara Nagar, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Ambika Real Estate",
+        "contact": "9343190234",
+        "address": "#35, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Amruth Enterprises",
+        "contact": "080 28914047",
+        "address": "Amruthalli Circle, Near Amrutha High School, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Balaji Promoters (r)",
+        "contact": "080 26746147",
+        "address": "1 K R Cmplx, Mysore Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Ballu Real Estate",
+        "contact": "080 32493422",
+        "address": "#16, Srirampura Main Road, Amruthhalli, Jakkuru Cross, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "B.V.N.Real Estate",
+        "contact": "080 23240702",
+        "address": "#204, Amrutahalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Dharmaram Real Estate",
+        "contact": "080 22567699",
+        "address": "#99/1, Amruthhalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Fakuruddin Real Estate",
+        "contact": "9944544321",
+        "address": "#69, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Himesh Real Estate",
+        "contact": "080 23966933",
+        "address": "#109, Amruthhalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "K.K.Real Estate",
+        "contact": "080 32409922",
+        "address": "#175, Jakkuru Main Road, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 5600"
+    },
+    {
+        "name": "K.R.Real Estate",
+        "contact": "9341243900",
+        "address": "#136/1, Amrutahalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Kumar's Real Estate",
+        "contact": "9341390332",
+        "address": "#171/2, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Manjunath Real Estate",
+        "contact": "9845544359",
+        "address": "#51, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Praveen Real Estate",
+        "contact": "080 23249789",
+        "address": "#118, Amruthhalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Raju Real Estate",
+        "contact": "9886455890",
+        "address": "#182, Jakkuru Main Road, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Santhosh Real Estates",
+        "contact": "080 23530500 23430500",
+        "address": "F Block, Sahakar Nagar, Near New India Motor Driving School, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Shamiul Real Estate",
+        "contact": "080 23406521",
+        "address": "#123, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sri Manjunath Enterprises",
+        "contact": "9880947163 51735006",
+        "address": "Sanjeevini Nagar, Kodigehalli Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Srinivasa Real Estate",
+        "contact": "9845829889",
+        "address": "Sector C, Sri Vinayaka Block, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sri Venkateshwara Real Estate",
+        "contact": "080 23431392",
+        "address": "#146, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sunil Real Estate",
+        "contact": "080 23409312",
+        "address": "#40, 8th Cross, Amrutahalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Surya Kiran Real Estate",
+        "contact": "9881631432",
+        "address": "#46/2, Srirampura Main Road Amruthhalli, Jakkuru Cross, Byatarayanapura, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sri Ram Real Estate",
+        "contact": "9845687407 23436159",
+        "address": "72, Talacauvery Housing Layout, 8th Cross, ,Near CMC Office, Amruthahalli, Bangalore, Karnataka, India 560092"
+    },
+    {
+        "name": "Sri Nidhi Real Estate Agency",
+        "contact": "9845587347",
+        "address": "2127, Bus South End Road, Yelahanka, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Keylink Estate Agents",
+        "contact": "080 28463908",
+        "address": "686 3Acrs Nwtown Yelahanka, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Mourya Enterprises",
+        "contact": "080 28461937",
+        "address": "4 1st A Main, Road,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Arunodaya Real Estate",
+        "contact": "9342862574",
+        "address": "21, Khb Shopping Complex, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Chandana Estate Links",
+        "contact": "080 28914688",
+        "address": "#22335, Lig 3rd Phase, 16 B Cross, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Key Link Real Estate Agents",
+        "contact": "8028463908",
+        "address": "686, 3rd A Cross, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Properties",
+        "contact": "080 28567245",
+        "address": "65, A Section, 9th A Cross,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Samatha Enterprises And Real Estate",
+        "contact": "9845060669",
+        "address": "Res # 65, 4th Cross, Goutham Nagar, Gkvk Post, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Sree Guru Real Estate",
+        "contact": "9341274172 41685427",
+        "address": "2067, 16th B Cross, Mig 3rd Stage, ,Near Mother Dairy Bus Stop, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Sri Sainath Estate Links",
+        "contact": "080 28560355",
+        "address": "3/4 Mother Diary Road,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Thirumala Real Estate",
+        "contact": "080 28910326",
+        "address": "#408, C.H.S.4th Phase, Opposite Nagarjuna Apartments, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Suresh Desai Realtors",
+        "contact": "080 28463345",
+        "address": "141 SFS 208 KHB Colony,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "AR Developers",
+        "contact": "080 28565044",
+        "address": "#1/1 N J Complex, Venkatappa Layout, Venkatala Yelahanka, Yelahanka New Town, Bangalore, Karnataka, India 560064"
+    },
+    {
+        "name": "Bharath Real Estate",
+        "contact": "9910567681",
+        "address": "82, K.A.B.C. Complex Behind R.J.o Yelahanka Net Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Capital Real Estates",
+        "contact": "080 28562081",
+        "address": "No.722, 16th A Main, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Chetan Enterprises",
+        "contact": "080 22711744",
+        "address": "1st Main Road, Attur Layout, Yelahanka Bazar, Near New Town Club, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Corporate Realtors",
+        "contact": "080 23622224",
+        "address": "#264, Jakkur Layout, Near B.G. National School, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Deepaka Read Estate",
+        "contact": "9964336458",
+        "address": "316, K.H.B. Complex Behind R.J.O. New Town Area-B, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Dharani Enterprises",
+        "contact": "080 28460907",
+        "address": "#1-MIG, 1st A Main, New Town, Yelahanka Bazar, Near Haravathy Hotel, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Gopalappa Real Estate",
+        "contact": "-------------------------------------",
+        "address": "40/30, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "GSL",
+        "contact": "080 23612140",
+        "address": "#305, Yelahanka Bazar, Near Bashyam Circle, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Home Crafts",
+        "contact": "916933555 28910915",
+        "address": "New #3, T.N.M. Complex, Dwaraka Nagar, Bagalur Main Road, Near Bagalur Cross, Yelahanka Old Town,Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "I.K.E. Real Estate",
+        "contact": "9341327824",
+        "address": "#55, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Iravaata Real Estate",
+        "contact": "9845268602 28460825 28461599 28460460 65989688",
+        "address": "No.34, Khb Shopping Complex, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Manasa Enterprises",
+        "contact": "9343111135 / +919343626363 9343606999",
+        "address": "No.1104, 15th B Cross, 1st B Main, 2nd Phase, Yelahanka New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Manjunatha Enterprises Xerox And Real Estates",
+        "contact": "25972546 25924617",
+        "address": "4th Cross, Jakkur Layout, Yelahanka Bazar, Near Hotel Janani, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Maury Enterprises",
+        "contact": "9448065416 65985455 28461932 28461937",
+        "address": "4, 1st A Main, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Shivas Real Estate",
+        "contact": "9845528767",
+        "address": "3rd Stage, Mother Dairy Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sree Guru Raghavendra Enterprises",
+        "contact": "9886502626",
+        "address": "Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Annapurneshwari Real Estate",
+        "contact": "9845538424 57765622",
+        "address": "Kogila Road, Maruthi Nagar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Balaji Real Estate",
+        "contact": "9342278437 28910016",
+        "address": "24th Cross, 1st Main Road,, ,560064, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Bhagawan Real Estates",
+        "contact": "9448046213 28561101 28910609 +919342866213",
+        "address": "No.2294, Mig, 16th Cross, 3rd Stage, B Sector, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Sai Real Estate",
+        "contact": "9916049993",
+        "address": "#70, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Shiva Real Estate",
+        "contact": "9343501567",
+        "address": "Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Veerabhadra Real Estate",
+        "contact": "9343178019",
+        "address": "#28, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sri Venkata Sai Real Estate",
+        "contact": "916933555 32901556",
+        "address": "New #4, Vinayakanagara, Bagalur Main Road, I.A.F.Post, Near Jayalakshmi Hospital, Yelahanka Old Town,Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sudish Enterprises",
+        "contact": "080 28460756",
+        "address": "No.25, 1st B Main, Sector B, New Twn, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Sumukha Realtors",
+        "contact": "9341972031",
+        "address": "68, New Town Main Road, Yelhanka, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Suresh Desai",
+        "contact": "9845125031",
+        "address": "#141, Sfs 208, Opp Mother Dairy, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Vadana Real Estate",
+        "contact": "9945846899",
+        "address": "#41, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Veerapa Real Estate",
+        "contact": "9886501276",
+        "address": "69/2, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Veerappa Complex Dealer",
+        "contact": "991601677",
+        "address": "61, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "Yogesh Real Estate",
+        "contact": "9901619181",
+        "address": "62, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
+    },
+    {
+        "name": "S L V And Real Estate",
+        "contact": "(91)-80-49608188",
+        "address": "No.1h, Ground Floor, Durga Shreyas Apartment, Vidyaranyapura, Bangalore - 560097 "
+    },
+    {
+        "name": "Om Sri Sathya Sai Land Cons",
+        "contact": "08066830477",
+        "address": "No.685, 6th Main,Bel Layout 3rd Block, Vidyaranyapura, Bangalore - 56009"
+    },
+    {
+        "name": "R Y Enterprises",
+        "contact": "8049358959",
+        "address": "No.139,Krishnappa Building, Narasimhapura, Vidyaranyapura, Near Last Bus Stop, Bangalore - 560097"
+    },
+    {
+        "name": "Srivaru Real Estate",
+        "contact": "+(91)-80-41207400, +(91)-9538794747",
+        "address": "No.17, 8th C Main Road,3rd Cross,Srinidhi Layout, Vidyaranyapura, Near A K N Provision Store, Bangalore - 560097"
+    },
+    {
+        "name": "Veeresh Real Estate",
+        "contact": "9019396600, 9900194715",
+        "address": "No.139,Krishnappa Building, Narasimhapura, Vidyaranyapura, Near Last Bus Stop, Bangalore - 560097"
+    },
+    {
+        "name": "Uday Real estates",
+        "contact": "+(91)-80-23641147, +(91)-9845539422",
+        "address": "No.956, 5th Blk,Bel Lyt,Kuvempu Mn Rd, Vidyaranyapura, Next Coffee Day Shp, Bangalore - 560097"
+    },
+    {
+        "name": "Kiran Real Estate ",
+        "contact": "9141753600, 9845718981",
+        "address": "No.954,shree Complex, 5th Block, Bel Layout, Vidyaranyapura, Near coffee day, Bangalore - 560097"
+    },
+    {
+        "name": "Sri Mahalaxmi Enterprises",
+        "contact": "8147298903",
+        "address": ""
+    },
+    {
+        "name": "Rohith enterprises",
+        "contact": "8904865606",
+        "address": ""
+    },
+    {
+        "name": "Laxmi enterprises",
+        "contact": "9019717348",
+        "address": ""
+    },
+    {
+        "name": "Raja enterprises",
+        "contact": "9844379523",
+        "address": ""
+    },
+    {
+        "name": "Srinidhi enterprises",
+        "contact": "9343721989",
+        "address": ""
+    },
+    {
+        "name": "City best properties",
+        "contact": "900322155/9686866611",
+        "address": "#2734,3rd floor,14th main,E-Block,Behind swathi gardenia,sahakarnagar,ban-97"
+    },
+    {
+        "name": "Sheetal constuctions",
+        "contact": "8867788777",
+        "address": "no 812 8th main 4th block bel layout vidyaranyapura bangalore 97"
+    },
+    {
+        "name": "Fortuna urbanscape",
+        "contact": "8088777000",
+        "address": "no 212 4th floor above herohond showroom sadashivnagar ballary road bangalore 80"
+    },
+    {
+        "name": "BML Builders",
+        "contact": "9741044449 / 8123484551",
+        "address": "#163,3rd cross,4rth phase,srinidhi layout,vidyaranyapura,ban-97"
+    },
+    {
+        "name": "Sri durga real estate",
+        "contact": "8971526272/9880731780",
+        "address": "#12,opp to vidyaranyapura last bus stop ban-97"
+    },
+    {
+        "name": "Lemon tree",
+        "contact": "9845093466 / 9880670123",
+        "address": "shrinidhi layout ,vidyaranyapura ban-97"
+    }
+]
