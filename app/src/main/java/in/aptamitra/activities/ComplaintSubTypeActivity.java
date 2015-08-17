@@ -262,8 +262,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Eve Teasing", false),
                 new Speciality("Murder", false),
                 new Speciality("theft", false),
-                new Speciality("neighbour conflicts", false),
-                new Speciality("Mortuary Box", false)
+                new Speciality("neighbour conflicts", false)
         };
         services.put("Law & Order".toLowerCase(), lawAndOrderServices);
         Speciality[] bloodServices = new Speciality[]{
@@ -276,7 +275,8 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Need AB-ve", false),
                 new Speciality("Need A+ve", false),
                 new Speciality("Need A-ve", false),
-                new Speciality("Enrol Me as a Donor", false)
+                new Speciality("Enrol Me as a Donor", false),
+                new Speciality("Mortuary Box", false)
         };
         services.put("Blood".toLowerCase(), bloodServices);
 
