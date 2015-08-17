@@ -54,6 +54,7 @@ public class GlobalClass extends com.orm.SugarApp {
         super.onCreate();
         init();
 
+
     }
 
     public void init() {
