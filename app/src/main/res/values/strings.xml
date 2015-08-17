@@ -55,6 +55,18 @@
     <string name="countrylabel">"Country : "</string>
     <string name="populationlabel">"Population : "</string>
 
+
+    <!-- Privacy Policy Titles-->
+    <string name="title1">"Your personal information"</string>
+    <string name="title2">"What information is/may be collected from you?"</string>
+    <string name="title3">"How do we collect the your information?"</string>
+    <string name="title4">"How do we use your information?"</string>
+    <string name="title5">"With whom will your information be shared"</string>
+    <string name="title6">"How do we safeguard your information?"</string>
+    <string name="title7">"How can you update/correct inaccuracies in your information?"</string>
+    <string name="title8">"Policy updates"</string>
+
+
     <string-array name="landing_page">
         <item>My City</item>
         <item>My Booking</item>

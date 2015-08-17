@@ -38,7 +38,9 @@ import in.aptamitra.activities.ComplaintsListActivity;
 import in.aptamitra.activities.LandingPageActivity;
 import in.aptamitra.activities.MainActivity;
 import in.aptamitra.activities.NotificationsListActivity;
+import in.aptamitra.activities.PrivacyActivity;
 import in.aptamitra.activities.ProfileActivity;
+import in.aptamitra.activities.TermsActivity;
 
 /**
  * Created by abhishek on 20-07-2015.
@@ -171,12 +173,21 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
+                                    withName("Privacy Policy").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.privacy)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("Terms and Conditions").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.terms_conditions)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
                                     withName("Logout").
                                     withIcon(activity.getResources().getDrawable(R.drawable.logout)).
-                                    withTextColor(activity.getResources().getColor(R.color.black)),
-                            new DividerDrawerItem()
+                                    withTextColor(activity.getResources().getColor(R.color.black))
 
-                    )
+                            )
                     .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                         @Override
                         public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
@@ -219,13 +230,26 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
+
                                 case 12:
+                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    intent = new Intent(activity, PrivacyActivity.class);
+                                    activity.startActivity(intent);
+                                    activity.finish();
+                                    break;
+                                case 14:
+                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    intent = new Intent(activity, TermsActivity.class);
+                                    activity.startActivity(intent);
+                                    activity.finish();
+                                    break;
+                                case 16:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, MainActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
-                                case 14:
+                                case 18:
                                     break;
                             }
                             return true;
