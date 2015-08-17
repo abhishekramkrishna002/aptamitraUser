@@ -80,7 +80,7 @@ public class LandingPageAdapter
                     Intent intent;
                     if (position == 0) {
                         intent = new Intent(activity, ComplaintSubTypeActivity.class);
-                        String data = ((TextView) v.findViewById(R.id.title)).getText().toString();
+                        String data = ((TextView) v.findViewById(R.id.title)).getText().toString().toLowerCase();
                         ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;
                         intent.putExtra("data", data);
                         activity.startActivity(intent);
