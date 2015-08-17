@@ -77,8 +77,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="sans-serif"
                     android:text="Full Name"
-
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20dp" />
 
                 <EditText
@@ -88,7 +87,7 @@
                     android:id="@+id/name"
                     android:ems="10"
                     android:hint="Abhishek Ramkrishna"
-                    android:textColorHint="@color/white" />
+                    android:textColorHint="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -97,7 +96,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="sans-serif"
                     android:text="Email"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20dp" />
 
                 <EditText
@@ -107,7 +106,7 @@
                     android:ems="10"
                     android:id="@+id/email"
                     android:hint="abhishek.ramkrishna002@gmail.com"
-                    android:textColorHint="@color/white" />
+                    android:textColorHint="@color/black" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -116,7 +115,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="sans-serif"
                     android:text="Mobile"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20dp" />
 
                 <EditText
@@ -126,7 +125,7 @@
                     android:ems="10"
                     android:id="@+id/mobile"
                     android:hint="8095764816"
-                    android:textColorHint="@color/white" />
+                    android:textColorHint="@color/black" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

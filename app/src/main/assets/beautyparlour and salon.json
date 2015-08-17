@@ -181,12 +181,12 @@
     },
     {
         "name": "Sun Shine Unisex Saloon",
-        "contact": "",
+        "contact": "-----------------------------------",
         "address": "No.1269/1, Bell Layout, Vidyaranyapura, Above More Super Market, Bangalore - 560097"
     },
     {
         "name": "Naturals Unisex Salon & Spa ",
-        "contact": "",
+        "contact": "-----------------------------------",
         "address": "No.27/23/26, Vidyaranyapura Main Road, Vidyaranyapura, Below Snap Fitness, Bangalore - 560097"
     },
     {
@@ -196,7 +196,7 @@
     },
     {
         "name": "Rituals Unisex Salon Spa ",
-        "contact": "",
+        "contact": "-----------------------------------",
         "address": "#845,2nd Floor, Vidyaranyapura main Road, Vidyaranyapura, Above Ammis Biryani,Opp Post Office, Bangalore - 560097 "
     },
     {
@@ -212,31 +212,31 @@
     {
         "name": "Royal hair style",
         "contact": "9902341457",
-        "address": ""
+        "address": "------------------------------------"
     },
     {
         "name": "lovely hair style",
         "contact": "7204938139",
-        "address": ""
+        "address": "------------------------------------"
     },
     {
         "name": "All Men Beauty Parlour",
         "contact": "9972488959",
-        "address": ""
+        "address": "------------------------------------"
     },
     {
         "name": "Y.S.V Gents parlour",
         "contact": "9590109093",
-        "address": ""
+        "address": "------------------------------------"
     },
     {
         "name": "Alankar mens saloon",
         "contact": "8197680519",
-        "address": ""
+        "address": "------------------------------------"
     },
     {
         "name": "Victory hair style",
         "contact": "997445587",
-        "address": ""
+        "address": "------------------------------------"
     }
 ]
