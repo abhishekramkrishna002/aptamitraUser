@@ -32,7 +32,7 @@ import in.aptamitra.R;
 
 
 public class ComplaintSubTypeActivity extends ActionBarActivity {
-    public  HashMap<String, Speciality[]> services ;
+    public HashMap<String, Speciality[]> services;
     @Bind(R.id.sub_types_list_view)
     ListView listView;
     @Bind(R.id.continue_button)
@@ -60,10 +60,9 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
         //Toast.makeText(this, data, Toast.LENGTH_LONG).show();
         Log.d("specialities", data);
 //        Speciality[] probs = ((GlobalClass) getApplicationContext()).services.get(data + "");
-        Speciality[] probs = services.get(data.toUpperCase());
+        Speciality[] probs = services.get(data.toLowerCase());
         header.setText("Civic Issues > " + data + " > ");
-        if(probs!=null && probs.length>0)
-        {
+        if (probs != null && probs.length > 0) {
             final ComplaintSubTypeAdapter complaintSubTypeAdapter = new ComplaintSubTypeAdapter(this, probs);
 
             listView.setAdapter(complaintSubTypeAdapter);
@@ -88,7 +87,8 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
 
 
     }
-    public  void init() {
+
+    public void init() {
         services = new HashMap<>();
         Speciality[] bbmpService = {
 
@@ -136,7 +136,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("broken tree", false)
         };
 
-        services.put("B B M P", bbmpService);
+        services.put("B B M P".toLowerCase(), bbmpService);
             /*
             load the bbmp specs::end
              */
@@ -144,8 +144,6 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
             load the bwssb specs::start
              */
         Speciality[] bwssbService = {
-                new Speciality("Blocked Storm Water drain", false),
-                new Speciality("overflow of storm water drain", false),
                 new Speciality("Water supply ", false),
                 new Speciality("Under ground drainage", false),
                 new Speciality("Meter", false),
@@ -172,21 +170,17 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Water leakage", false)
 
         };
-        services.put("B W S S B", bwssbService);
+        services.put("B W S S B".toLowerCase(), bwssbService);
             /*
             load the bbmo specs::end
              */
-
          /*
             load the bescom specs::start
              */
         Speciality[] bescomService = {
-                new Speciality("Failure of power supply", false),
                 new Speciality("Fuse of call, Line Breakdown, Pole Broken", false),
-                new Speciality("Voltage", false),
                 new Speciality("Voltage variation where no expantion or enhancement of network is involved", false),
                 new Speciality("Voltage variation where up-gradation of distribution systemis required", false),
-                new Speciality("Opening of neutral", false),
                 new Speciality("Meter complaints", false),
                 new Speciality("Inspect and check correctness", false),
                 new Speciality("Replace slow creeping or stuck meters", false),
@@ -221,7 +215,6 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Transfer of ownership and conversion", false),
                 new Speciality("Title transfer of ownership", false),
                 new Speciality("Change of category", false),
-                new Speciality("Refund/ issue of certificate", false),
                 new Speciality("Refund of deposits", false),
                 new Speciality("Issue of certificate", false),
                 new Speciality("Additional TC / Enhancement", false),
@@ -231,7 +224,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Complaints that is not covered under the above category", false)
 
         };
-        services.put("B E S C O M", bescomService);
+        services.put("B E S C O M".toLowerCase(), bescomService);
         Speciality[] bmtcService = new Speciality[]{
 
                 new Speciality("RESTART BMTC ROUTE ", false),
@@ -244,18 +237,18 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Bus Cleanliness", false),
                 new Speciality("Bus Pass Issues", false)
         };
-        services.put("B M T C", bmtcService);
+        services.put("B M T C".toLowerCase(), bmtcService);
 
         Speciality[] ambulanceServices = new Speciality[]{
 
                 new Speciality("Request for An Ambulance service ", false)
         };
-        services.put("Ambulance", ambulanceServices);
+        services.put("Ambulance".toLowerCase(), ambulanceServices);
         Speciality[] fireServices = new Speciality[]{
 
                 new Speciality("Report a Fire issue ", false)
         };
-        services.put("Fire", fireServices);
+        services.put("Fire".toLowerCase(), fireServices);
         Speciality[] mortuaryServices = new Speciality[]{
 
                 new Speciality("Need Mortuary Vehicle ", false),
@@ -263,15 +256,16 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Book a time slot for nearest cremation centre ", false),
                 new Speciality("Time extension for cremation", false)
         };
-        services.put("Mortuary", mortuaryServices);
+        services.put("Mortuary".toLowerCase(), mortuaryServices);
         Speciality[] lawAndOrderServices = new Speciality[]{
 
                 new Speciality("Eve Teasing", false),
                 new Speciality("Murder", false),
                 new Speciality("theft", false),
-                new Speciality("neighbour conflicts", false)
+                new Speciality("neighbour conflicts", false),
+                new Speciality("Mortuary Box", false)
         };
-        services.put("Law & Order", lawAndOrderServices);
+        services.put("Law & Order".toLowerCase(), lawAndOrderServices);
         Speciality[] bloodServices = new Speciality[]{
 
                 new Speciality("Need B+Ve", false),
@@ -284,7 +278,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Need A-ve", false),
                 new Speciality("Enrol Me as a Donor", false)
         };
-        services.put("Blood", bloodServices);
+        services.put("Blood".toLowerCase(), bloodServices);
 
 
             /*

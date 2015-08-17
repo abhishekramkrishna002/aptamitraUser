@@ -43,8 +43,10 @@ public class SearchActivity extends ActionBarActivity {
         makeList(searchJson, new String());
 //        new SearchAsyncTask(this).execute(new String[]{});
         listView = (ListView) findViewById(R.id.search_list);
+
         searchAdapter = new SeearchAdapter(this, R.layout.search_list_item, searches);
         listView.setAdapter(searchAdapter);
+
         searchText = (EditText) findViewById(R.id.search_bar);
 
         searchText.addTextChangedListener(new TextWatcher() {

@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.content.LocalBroadcastManager;
@@ -25,6 +26,7 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -52,6 +54,8 @@ import services.RegistrationIntentService;
 public class LandingPageActivity extends ActionBarActivity {
     final String TAG = "adapter";
     public static Activity activity;
+    @Bind(R.id.title)
+    TextView titleTextView;
     @Bind(R.id.my_recycler_view)
     RecyclerView recyclerView;
     @Bind(R.id.search_bar)
@@ -75,6 +79,8 @@ public class LandingPageActivity extends ActionBarActivity {
         activity = this;
         ButterKnife.bind(this);
         init();
+        Typeface typeface=Typeface.createFromAsset(getAssets(),"trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
         drawer = ((GlobalClass) getApplicationContext()).navigationDrawer(this);
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
