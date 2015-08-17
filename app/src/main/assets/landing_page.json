@@ -145,6 +145,74 @@
         {
             "name": "Web Designer",
             "image_link": "web_designer.jpg"
+        },
+        {
+             "name":"Car Wash",
+             "image_link":"car_wash.jpg"
+        },
+        {
+              "name":"Construction consultant",
+              "image_link":"construction_consultant.jpg"
+        },
+        {
+              "name":"DTH service",
+              "image_link":"dth.jpg"
+        },
+        {
+              "name":"Pet care",
+              "image_link":"pet_care.jpg"
+        },
+        {
+              "name":"Wifi Provider",
+              "image_link":"wifi_provider.jpg"
+        },
+        {
+              "name":"Vehicle Repair",
+              "image_link":"vehicle_repair.jpg"
+        },
+        {
+              "name":"Sump Cleaning",
+              "image_link":"sump_cleaning.jpg"
+        },
+        {
+              "name":"Battery Management",
+              "image_link":"batttery_managment.jpg"
+        },
+        {
+              "name":"Mason",
+              "image_link":"mason.jpg"
+        },
+       {
+              "name":"Insurance Advisor",
+              "image_link":"insurance_adviser.jpg"
+        },
+       {
+              "name":"Emission Test",
+              "image_link":"emission_test.jpg"
+        },
+       {
+              "name":"Tiffin Service",
+              "image_link":"teffin_service.jpg"
+        },
+        {
+              "name":"Drawing & Painting",
+              "image_link":"drawing_painting.jpg"
+        },
+        {
+              "name":"Taekwondo",
+              "image_link":"taekwondo.jpg"
+        },
+        {
+              "name":"Taichi Class",
+              "image_link":"taichi_class.jpg"
+        },
+        {
+              "name":"Basket Ball",
+              "image_link":"basketball.jpg"
+        },
+        {
+              "name":"Badminton",
+              "image_link":"badminton.jpg"
         }
     ],
     "My Delivery": [
@@ -247,7 +315,7 @@
              "image_link": "pg_for_girls.jpg"
          },
          {
-             "name": "Optical",
+             "name": "optical",
              "image_link": "optical.jpg"
          },
          {
