@@ -254,7 +254,8 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Need Mortuary Vehicle ", false),
                 new Speciality("Need cremation centre address ", false),
                 new Speciality("Book a time slot for nearest cremation centre ", false),
-                new Speciality("Time extension for cremation", false)
+                new Speciality("Time extension for cremation", false),
+                new Speciality("Mortuary Box",false)
         };
         services.put("Mortuary".toLowerCase(), mortuaryServices);
         Speciality[] lawAndOrderServices = new Speciality[]{
@@ -263,7 +264,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Murder", false),
                 new Speciality("theft", false),
                 new Speciality("neighbour conflicts", false),
-                new Speciality("Mortuary Box", false)
+
         };
         services.put("Law & Order".toLowerCase(), lawAndOrderServices);
         Speciality[] bloodServices = new Speciality[]{
