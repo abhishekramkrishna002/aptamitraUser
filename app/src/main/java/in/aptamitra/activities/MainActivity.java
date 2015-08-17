@@ -2,8 +2,10 @@ package in.aptamitra.activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaRecorder;
 import android.support.v4.app.FragmentTransaction;
@@ -64,8 +66,11 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
-        ButterKnife.bind(this);
+
+
+
+            setContentView(R.layout.login);
+            ButterKnife.bind(this);
 
 
     }
@@ -83,8 +88,8 @@ public class MainActivity extends ActionBarActivity {
         /*
         check for username and password::start
          */
-        Log.d("login",email.getText().toString());
-        Log.d("login",password.getText().toString());
+        Log.d("login", email.getText().toString());
+        Log.d("login", password.getText().toString());
 
         if (email.getText().toString().trim().contentEquals("") ||
                 password.getText().toString().trim().contentEquals("")) {

@@ -69,6 +69,8 @@ public class LandingPageActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        ((GlobalClass)getApplicationContext()).init();
+
         setContentView(R.layout.landing_page);
         activity = this;
         ButterKnife.bind(this);

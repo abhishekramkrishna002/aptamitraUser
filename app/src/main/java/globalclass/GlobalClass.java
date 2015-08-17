@@ -46,14 +46,12 @@ import in.aptamitra.activities.ProfileActivity;
 public class GlobalClass extends com.orm.SugarApp {
     public String mainMenu;
     public String subMenu;
-    public ArrayList<String> searches;
-    public HashMap<String, Speciality[]> services = new HashMap<>();
 
     @Override
     public void onCreate() {
         super.onCreate();
-        init();
 
+<<<<<<< HEAD
     }
 
     public void init() {
@@ -255,8 +253,11 @@ public class GlobalClass extends com.orm.SugarApp {
             /*
             load the bescom specs::end
              */
+=======
+>>>>>>> dffad221036b8d870b693e3bdaf4503bddd0761a
 
     }
+
 
     public static Drawer navigationDrawer(final Activity activity) {
         /*
