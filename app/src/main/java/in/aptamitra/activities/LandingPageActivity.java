@@ -13,6 +13,7 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -113,7 +114,7 @@ public class LandingPageActivity extends ActionBarActivity {
             progress.show();
         }
 
-        //drawer = navigationDrawer(this);
+
         ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon_navigation);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,6 +124,16 @@ public class LandingPageActivity extends ActionBarActivity {
                 }
             }
         });
+
+
+//        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_apps_white));
+//
+//        toolbar.setTitle("Aptamitra");
+//        setSupportActionBar(toolbar);
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setTitle("Aptamitra");
+
+
 
         searchBar.setClickable(true);
 
@@ -152,10 +163,6 @@ public class LandingPageActivity extends ActionBarActivity {
         {
             horizontalScrollItems.add(makeAdapter(verticals[i]));
         }
-//        horizontalScrollItems.add(makeAdapter("My City"));
-//        horizontalScrollItems.add(makeAdapter("My Booking"));
-//        horizontalScrollItems.add(makeAdapter("My Delivery"));
-//        horizontalScrollItems.add(makeAdapter("My Aptamitra"));
         LandingPageAdapter landingPageAdapter = new LandingPageAdapter(this, horizontalScrollItems);
         recyclerView.setAdapter(landingPageAdapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
