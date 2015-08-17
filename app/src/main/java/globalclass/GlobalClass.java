@@ -1,6 +1,48 @@
 package globalclass;
 
 
+<<<<<<< HEAD
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ImageView;
+
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
+import com.mikepenz.materialdrawer.accountswitcher.AccountHeaderBuilder;
+import com.mikepenz.materialdrawer.model.DividerDrawerItem;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IProfile;
+import com.mikepenz.materialdrawer.util.DrawerImageLoader;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import custom_objects.Speciality;
+import custom_objects.StringDecoder;
+import in.aptamitra.R;
+import in.aptamitra.activities.AboutusActivity;
+import in.aptamitra.activities.ComplaintsListActivity;
+import in.aptamitra.activities.LandingPageActivity;
+import in.aptamitra.activities.MainActivity;
+import in.aptamitra.activities.NotificationsListActivity;
+import in.aptamitra.activities.PrivacyActivity;
+import in.aptamitra.activities.ProfileActivity;
+import in.aptamitra.activities.TermsActivity;
+=======
         import android.app.Activity;
         import android.content.Context;
         import android.content.Intent;
@@ -39,6 +81,7 @@ package globalclass;
         import in.aptamitra.activities.MainActivity;
         import in.aptamitra.activities.NotificationsListActivity;
         import in.aptamitra.activities.ProfileActivity;
+>>>>>>> 2cf5a12ec48dcc2e2d178b08987784d957d1eaf5
 
 /**
  * Created by abhishek on 20-07-2015.
@@ -170,12 +213,21 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
+                                    withName("Privacy Policy").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.privacy)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
+                                    withName("Terms and Conditions").
+                                    withIcon(activity.getResources().getDrawable(R.drawable.terms_conditions)).
+                                    withTextColor(activity.getResources().getColor(R.color.black)),
+                            new DividerDrawerItem(),
+                            new PrimaryDrawerItem().
                                     withName("Logout").
                                     withIcon(activity.getResources().getDrawable(R.drawable.logout)).
-                                    withTextColor(activity.getResources().getColor(R.color.black)),
-                            new DividerDrawerItem()
+                                    withTextColor(activity.getResources().getColor(R.color.black))
 
-                    )
+                            )
                     .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                         @Override
                         public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
@@ -218,13 +270,26 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
+
                                 case 12:
+                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    intent = new Intent(activity, PrivacyActivity.class);
+                                    activity.startActivity(intent);
+                                    activity.finish();
+                                    break;
+                                case 14:
+                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    intent = new Intent(activity, TermsActivity.class);
+                                    activity.startActivity(intent);
+                                    activity.finish();
+                                    break;
+                                case 16:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, MainActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
-                                case 14:
+                                case 18:
                                     break;
                             }
                             return true;
