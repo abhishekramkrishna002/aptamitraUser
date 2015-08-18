@@ -265,6 +265,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
                 new Speciality("Murder", false),
                 new Speciality("theft", false),
                 new Speciality("neighbour conflicts", false),
+                new Speciality("neighbour conflicts", false),
                 new Speciality("neighbour conflicts", false)
         };
         services.put("Law & Order".toLowerCase(), lawAndOrderServices);

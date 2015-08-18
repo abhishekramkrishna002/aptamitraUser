@@ -70,7 +70,7 @@ public class RegisterActivity extends ActionBarActivity {
             "Kanakapura", "Kodihalli", "Koramangala", "Krishnaraja Puram", "Kumara Krupa Road", "Kumaraswamy Layout", "Lady Curzon Road",
             "Lavelle Road", "Magadi Road Palace", "Mahadevapura", "Mahatma Gandhi Road", "Marathahalli", "Mathikere","Old Airport Road",
             "Ramamurthy", "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Sanjay Nagar", "Seshadri Road", "Shivajinagar",
-            "Sri Chatram Road", "Vasanth Nagar", "Vidyaranyapura", "Vittal Mallya Road", "Ulsoor", "Yeshwanthpur", "Yelahanka"};
+            "Sri Chatram Road", "Vasanth Nagar", "Vidyaranyapura", "Vittal Mallya Road", "Ulsoor", "Yelahanka", "Yeshwanthpur"};
     private String[] city = {"Bengaluru", "Others"};
 
     @Override
