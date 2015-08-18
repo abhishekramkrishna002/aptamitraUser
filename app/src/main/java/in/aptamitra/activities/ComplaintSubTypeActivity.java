@@ -61,7 +61,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
         Log.d("specialities", data);
 //        Speciality[] probs = ((GlobalClass) getApplicationContext()).services.get(data + "");
         Speciality[] probs = services.get(data.toLowerCase());
-        header.setText("Civic Issues > " + data + " > ");
+        header.setText("My City > " + data + " > ");
         if (probs != null && probs.length > 0) {
             final ComplaintSubTypeAdapter complaintSubTypeAdapter = new ComplaintSubTypeAdapter(this, probs);
 

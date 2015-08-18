@@ -244,7 +244,9 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.finish();
                                     break;
                                 case 16:
-                                    activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
+                                    SharedPreferences.Editor editor=activity.getSharedPreferences("cache", MODE_PRIVATE).edit();
+                                    editor.clear();
+                                    editor.commit();
                                     intent = new Intent(activity, MainActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();

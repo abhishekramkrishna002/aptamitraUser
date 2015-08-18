@@ -149,11 +149,6 @@ public class RegisterComplaintActivity extends ActionBarActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 switch (which) {
                                     case 0:
-//                                        Intent intent = new Intent();
-//                                        intent.setType("image/*");
-//                                        intent.setAction(Intent.ACTION_GET_CONTENT);
-//                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-//                                                COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
                                         if (Build.VERSION.SDK_INT < 19) {
                                             Intent intent = new Intent();
                                             intent.setType("image/*");

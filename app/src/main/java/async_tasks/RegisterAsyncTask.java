@@ -84,9 +84,8 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
             entityBuilder.addTextBody("locality", parameters[0].get("locality"));
             if (image != null) {
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                image.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                image.compress(Bitmap.CompressFormat.PNG, 10, stream);
                 byte[] byteArray = stream.toByteArray();
-
                 Random r = new Random();
                 entityBuilder.addBinaryBody("profile_image", byteArray, ContentType.create("image/png"), "image_" + r.nextInt() + ".png");
             } else {
