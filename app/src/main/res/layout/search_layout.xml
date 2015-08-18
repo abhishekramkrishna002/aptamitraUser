@@ -31,7 +31,8 @@
         android:id="@+id/search_container"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue">
+        android:background="@color/blue"
+        android:elevation="20dp">
 
         <EditText
             android:id="@+id/search_bar"

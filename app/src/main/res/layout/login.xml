@@ -9,13 +9,13 @@
     <LinearLayout
         android:id="@+id/icon_wrapper"
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:orientation="vertical"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher" />
 
@@ -23,10 +23,9 @@
             android:id="@+id/titletext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-10dip"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:text="APTAMITRA"/>
 
         <!--<ImageView
@@ -45,13 +44,13 @@
         <EditText
             android:id="@+id/login_email"
             android:layout_width="fill_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
             android:ems="10"
             android:hint="Email"
             android:ellipsize="start"
-            android:paddingTop="10dp"
             android:fontFamily="sans-serif"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:background="@drawable/edit_text_design"
             android:inputType="textEmailAddress" />
     </LinearLayout>
@@ -67,15 +66,15 @@
         <EditText
             android:id="@+id/login_password"
             android:layout_width="fill_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
             android:ems="10"
             android:hint="Password"
             android:background="@drawable/edit_text_design"
             android:inputType="textPassword"
             android:ellipsize="start"
-            android:paddingTop="10dp"
             android:fontFamily="sans-serif"
-            android:gravity="center_horizontal" />
+            android:gravity="center" />
 
         <!--<Button
             android:id="@+id/forgot"
