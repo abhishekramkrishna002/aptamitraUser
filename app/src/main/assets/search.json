@@ -257,9 +257,7 @@
             {
                 "key": "Storm water drainage"
             },
-            {
-                "key": "Potholes"
-            },
+
             {
                 "key": "Site Cleaning"
             },
@@ -468,191 +466,184 @@
                 "key": "theft"
             },
             {
-                "key": "neighbourconflicts"
+                "key": "neighbour conflicts"
             }
         ],
         "BWSSB": [
             {
-                "key": "BlockedStormWaterdrain"
+                "key": "Blocked Storm Waterdrain"
             },
             {
-                "key": "overflowofstormwaterdrain"
+                "key": "overflow of storm water drain"
             },
             {
-                "key": "Watersupply"
+                "key": "Water supply"
             },
             {
-                "key": "Undergrounddrainage"
+                "key": "Underground drainage"
             },
             {
-                "key": "BlockedStormWaterdrain"
+                "key": "Blocked Storm Waterdrain"
             },
             {
-                "key": "overflowofstormwaterdrain"
+                "key": "overflow of storm waterdrain"
             },
             {
-                "key": "Watersupply"
+                "key": "Water supply"
             },
             {
-                "key": "Undergrounddrainage"
+                "key": "Underground drainage"
             },
             {
                 "key": "Meter"
             },
             {
-                "key": "Meterdamage"
+                "key": "Meter damage"
             },
             {
-                "key": "Other"
+                "key": "Others"
             },
             {
-                "key": "Newconnection"
+                "key": "New connection"
+            },
+
+            {
+                "key": "Billing complaints"
+            },
+
+            {
+                "key": "Pipe damage"
+            },
+
+            {
+                "key": "Sanitary man holedamage"
             },
             {
-                "key": "Other"
+                "key": "sanitary pipe damage"
             },
             {
-                "key": "Billingcomplaints"
-            },
-            {
-                "key": "Other"
-            },
-            {
-                "key": "Pipedamage"
-            },
-            {
-                "key": "Other"
-            },
-            {
-                "key": "Sanitarymanholedamage"
-            },
-            {
-                "key": "sanitarypipedamage"
-            },
-            {
-                "key": "waterpipedamage"
+                "key": "water pipe damage"
             },
             {
                 "key": "Sewerage"
             },
+
             {
-                "key": "Other"
+                "key": "Sanitary blocked"
             },
             {
-                "key": "Sanitaryblocked"
+                "key": "Sanitary manhole cover damage"
             },
             {
-                "key": "Sanitarymanholecoverdamage"
+                "key": "Sanitary manhole cover missing"
             },
             {
-                "key": "Sanitarymanholecovermissing"
+                "key": "Sanitary manhole damage"
             },
             {
-                "key": "Sanitarymanholedamage"
+                "key": "Sanitary obstruction to traffic"
             },
             {
-                "key": "Sanitaryobstructiontotraffic"
+                "key": "Sanitary overflow"
             },
             {
-                "key": "Sanitaryoverflow"
-            },
-            {
-                "key": "SanitaryroaddamagebyBWSSB"
+                "key": "Sanitary road damage by BWSSB"
             },
             {
                 "key": "Water"
             },
             {
-                "key": "Contaminatedwater"
+                "key": "Contaminated water"
             },
             {
-                "key": "Lowwaterpressure"
+                "key": "Low water pressure"
             },
             {
-                "key": "nighttimewaterrelease"
+                "key": "night time water release"
             },
             {
-                "key": "Nowater"
+                "key": "No water"
+            },
+
+            {
+                "key": "Request to change water timing"
             },
             {
-                "key": "Other"
-            },
-            {
-                "key": "Requesttochangewatertiming"
-            },
-            {
-                "key": "Waterleakage"
+                "key": "Water leakage"
             }
         ],
+        "Snake rescue": [
+                    {
+                        "key": "snake rescue"
+                    },
+                    {
+                        "key": "others"
+                    }
+         ],
         "BESCOM": [
             {
-                "key": "Failureofpowersupply"
+                "key": "Failure of power supply"
             },
             {
-                "key": "Fuseofcall,LineBreakdown,PoleBroken"
+                "key": "Fuse of call,Line Breakdown,PoleBroken"
             },
             {
                 "key": "Voltage"
             },
+
             {
-                "key": "Voltagevariationwherenoexpantionorenhancementofnetworkisinvolved"
+                "key": "Opening of neutral"
             },
             {
-                "key": "Voltagevariationwhereup-gradationofdistributionsystemisrequired"
+                "key": "Meter complaints"
             },
             {
-                "key": "Openingofneutral"
+                "key": "Inspect and check correctness"
             },
             {
-                "key": "Metercomplaints"
+                "key": "Replaces low creeping or stuckmeters"
             },
             {
-                "key": "Inspectandcheckcorrectness"
+                "key": "Replace Burnt meters if cause not attributable to consumer"
             },
             {
-                "key": "Replaceslowcreepingorstuckmeters"
+                "key": "Replace burnt meterinal other places"
             },
             {
-                "key": "ReplaceBurntmetersifcausenotattributabletoconsumer"
+                "key": "Billing issues"
             },
             {
-                "key": "Replaceburntmeterinallotherplaces"
+                "key": "Where field report is not required"
             },
             {
-                "key": "Billingissues"
+                "key": "allegations on staff"
             },
             {
-                "key": "Wherefieldreportisnotrequires"
+                "key": "Where field report is required"
             },
             {
-                "key": "allegationsonstaff"
+                "key": "Reconnection of supply following disconnection"
             },
             {
-                "key": "Wherefieldreportisrequired"
+                "key": "Safety issue"
             },
             {
-                "key": "Reconnectionofsupplyfollowingdisconnection"
+                "key": "Straighting of bentpole"
             },
             {
-                "key": "Safetyissue"
+                "key": "Replacment of damaged pole"
             },
             {
-                "key": "Straightingofbentpole"
+                "key": "Shifting of poles"
             },
             {
-                "key": "Replacmentofdamagedpole"
+                "key": "Tree trimming"
             },
             {
-                "key": "Shiftingofpoles"
+                "key": "TC Failure complaints"
             },
             {
-                "key": "Treetrimming"
-            },
-            {
-                "key": "TCFailurecomplaints"
-            },
-            {
-                "key": "Watersupply"
+                "key": "Water supply"
             },
             {
                 "key": "domestic"
@@ -661,7 +652,7 @@
                 "key": "industry"
             },
             {
-                "key": "mixedload"
+                "key": "mixed load"
             },
             {
                 "key": "irrigation"
@@ -670,70 +661,16 @@
                 "key": "Theft"
             },
             {
-                "key": "Theft"
+                "key": "Refund/issue of certificate"
             },
             {
-                "key": "Hookingundernirantharajothiyojane"
+                "key": "Refund of deposits"
             },
             {
-                "key": "Allegationsonstaff"
-            },
-            {
-                "key": "allegationonstaff"
-            },
-            {
-                "key": "Newconnection/additionalload"
-            },
-            {
-                "key": "Releaseofsupplywhereserviceisfesablefromexistingnetwork"
-            },
-            {
-                "key": "Releaseofsupplywherenetworkexpansion/enhancementrequiredforprovdingconnection"
-            },
-            {
-                "key": "IPsets"
-            },
-            {
-                "key": "Phaseconversion"
-            },
-            {
-                "key": "ConversionofLTsinglephasetoLT3phase"
-            },
-            {
-                "key": "ConversionfromLTtoHT"
-            },
-            {
-                "key": "Transferofownershipandconversion"
-            },
-            {
-                "key": "Titletransferofownership"
-            },
-            {
-                "key": "Changeofcategory"
-            },
-            {
-                "key": "Refund/issueofcertificate"
-            },
-            {
-                "key": "Refundofdeposits"
-            },
-            {
-                "key": "Issueofcertificate"
-            },
-            {
-                "key": "AdditionalTC/Enhancement"
-            },
-            {
-                "key": "AdditionalTC"
-            },
-            {
-                "key": "EnhancementofTC"
+                "key": "Issue of certificate"
             },
             {
                 "key": "General"
-            },
-            {
-                "key": "Complaintsthatisnotcoveredundertheabovecategory"
             }
         ]
     }
