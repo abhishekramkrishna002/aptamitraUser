@@ -35,7 +35,11 @@
         {
             "name": "Mortuary",
             "image_link": "mortuary.jpg"
-        }
+        },
+        {
+                "name": "Snake Rescue",
+                "image_link": "snake_rescue.jpg"
+       }
     ],
     "My Booking": [
         {
@@ -213,7 +217,11 @@
         {
               "name":"Badminton",
               "image_link":"badminton.jpg"
-        }
+        },
+     {
+                   "name":"Others",
+                   "image_link":"others.jpg"
+             }
     ],
     "My Delivery": [
         {
@@ -247,7 +255,24 @@
         {
             "name": "Medicine",
             "image_link": "medicine.jpg"
-        }
+        },
+
+        {
+               "name":"Stationary",
+               "image_link":"stationery.jpg"
+        },
+        {
+                  "name":"Water Can",
+                  "image_link":"water_can.jpg"
+        },
+        {
+                 "name":"Water Tanker",
+                 "image_link":"water_tanker.jpg"
+        },
+        {
+                  "name":"Others",
+                  "image_link":"others.jpg"
+         }
     ],
     "My Aptamitra": [
         {
