@@ -139,8 +139,8 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
             for (int i = 0; i < cacheSearches.size(); i++) {
                 String[] matches = cacheSearches.get(i).split(">");
                 String data = matches[matches.length - 1];
-                if (data.toLowerCase().contains(((String) constraint).toLowerCase()) ||
-                        ((String) constraint).toLowerCase().contains(data.toLowerCase())) {
+
+                if (data.toLowerCase().contains(((String) constraint).toLowerCase())) {
                     values.add(cacheSearches.get(i));
                 }
             }
