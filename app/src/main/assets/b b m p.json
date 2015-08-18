@@ -1,0 +1,133 @@
+{
+  "B B M P": [
+    {
+      "key": "Road"
+    },
+    {
+      "key": "footpath"
+    },
+    {
+      "key": "drainage"
+    },
+    {
+      "key": "dead bird"
+    },
+    {
+      "key": "dead animal"
+    },
+    {
+      "key": "mosquitoes"
+    },
+    {
+      "key": "Road Damage"
+    },
+    {
+      "key": "Storm water drainage"
+    },
+    {
+      "key": "Potholes"
+    },
+    {
+      "key": "Site Cleaning"
+    },
+    {
+      "key": "Road asphalt"
+    },
+    {
+      "key": "incomplete road repairs"
+    },
+    {
+      "key": "Pavement stone slab"
+    },
+    {
+      "key": "Debris of buildings"
+    },
+    {
+      "key": "Storm water drainage"
+    },
+    {
+      "key": "Site Cleaning"
+    },
+    {
+      "key": "Pavement is broken"
+    },
+    {
+      "key": "play ground maintenance"
+    },
+    {
+      "key": "Food adulteration"
+    },
+    {
+      "key": "Shops Licenses"
+    },
+    {
+      "key": "Street Vendor Management"
+    },
+    {
+      "key": "Food vendor on footpath"
+    },
+    {
+      "key": "dog menace"
+    },
+    {
+      "key": "stray animals"
+    },
+    {
+      "key": "garbage"
+    },
+    {
+      "key": "Remove tree litter"
+    },
+    {
+      "key": "illegal banners"
+    },
+    {
+      "key": "illegal advertisments"
+    },
+    {
+      "key": "Property tax"
+    },
+    {
+      "key": "voter id"
+    },
+    {
+      "key": "khatha transfer"
+    },
+    {
+      "key": "banner permissions"
+    },
+    {
+      "key": "Park Maintainence"
+    },
+    {
+      "key": "Divider plants maintainence"
+    },
+    {
+      "key": "Street Light Maintainence"
+    },
+    {
+      "key": "switch for street light"
+    },
+    {
+      "key": "Timer for streetlight"
+    },
+    {
+      "key": "Tree cutting"
+    },
+    {
+      "key": "Tree saplings plantation"
+    },
+    {
+      "key": "Tree pruning"
+    },
+    {
+      "key": "Tree Maintainence"
+    },
+    {
+      "key": "Broken Tree"
+    },
+    {
+      "key": "Others"
+    }
+  ]
+}

@@ -86,8 +86,6 @@ public class BusinessListingAdapter extends ArrayAdapter<String> implements Filt
             row.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
-
                     Intent intent = new Intent(activity, ChatActivityService.class);
                     intent.putExtra("data", ((TextView) row.findViewById(R.id.service_name)).getText());
                     activity.startActivity(intent);

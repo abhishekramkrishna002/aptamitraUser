@@ -18,12 +18,12 @@ import android.widget.TextView;
 
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Calendar;
 import java.util.HashMap;
 
+import async_tasks.DeliveryBookingAyncTask;
 import async_tasks.ServiceBookingAyncTask;
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -35,14 +35,14 @@ import me.tittojose.www.timerangepicker_library.TimeRangePickerDialog;
 /**
  * Created by abhishek on 25-07-2015.
  */
-public class BookServiceActivity extends ActionBarActivity implements DatePickerDialog.OnDateSetListener, TimeRangePickerDialog.OnTimeRangeSelectedListener {
+public class BookDeliveryActivity extends ActionBarActivity implements DatePickerDialog.OnDateSetListener, TimeRangePickerDialog.OnTimeRangeSelectedListener {
 
     @Bind(R.id.continue_button)
     Button continueButton;
 
     TextView timeTextView, dateTextView;
     Button btDate, btTime;
-    EditText etdate, ettime, etService, etName, etNumber, etAddress;
+    EditText etdate, ettime,etService,etName,etNumber,etAddress;
 
     Activity activity;
     public static final String TIMERANGEPICKER_TAG = "timerangepicker";
@@ -54,9 +54,10 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book_service);
+        setContentView(R.layout.book_delivery);
         ButterKnife.bind(this);
         activity = this;
+
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,23 +67,25 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
         });
         Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
         titleTextView.setTypeface(typeface);
+
         etName = (EditText) findViewById(R.id.etName);
         etNumber = (EditText) findViewById(R.id.etNumber);
         etAddress = (EditText) findViewById(R.id.etAddress);
 
         try {
-            SharedPreferences sharedPreferences = getSharedPreferences("cache", Context.MODE_PRIVATE);
-            JSONObject profileJsonObject = new JSONObject(sharedPreferences.getString("profile", null));
-            //JSONObject profile= null;
-            Log.e("pro", profileJsonObject.toString());
+        SharedPreferences sharedPreferences = getSharedPreferences("cache", Context.MODE_PRIVATE);
+        JSONObject profileJsonObject = new JSONObject(sharedPreferences.getString("profile", null));
+        //JSONObject profile= null;
+        Log.e("pro",profileJsonObject.toString());
 
 
             etName.setText(profileJsonObject.getString("name"));
-            etNumber.setText(profileJsonObject.getString("mobile"));
-            etAddress.setText(profileJsonObject.getString("address"));
+            etNumber.setText( profileJsonObject .getString("mobile"));
+            etAddress.setText( profileJsonObject .getString("address"));
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
         etdate = (EditText) findViewById(R.id.date);
         ettime = (EditText) findViewById(R.id.time);
@@ -96,7 +99,7 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
             public void onClick(View v) {
                 Calendar now = Calendar.getInstance();
                 DatePickerDialog dpd = DatePickerDialog.newInstance(
-                        BookServiceActivity.this,
+                        BookDeliveryActivity.this,
                         now.get(Calendar.YEAR),
                         now.get(Calendar.MONTH),
                         now.get(Calendar.DAY_OF_MONTH)
@@ -116,7 +119,7 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
             @Override
             public void onClick(View v) {
                 final TimeRangePickerDialog timePickerDialog = TimeRangePickerDialog.newInstance(
-                        BookServiceActivity.this, false);
+                        BookDeliveryActivity.this, false);
                 timePickerDialog.show(getSupportFragmentManager(), TIMERANGEPICKER_TAG);
             }
         });
@@ -135,23 +138,25 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
     }
 
     @OnClick(R.id.continue_button)
-    void bookService(View view) {
+    void bookService(View view)
+    {
         try {
             SharedPreferences prefs = activity.getSharedPreferences("cache", Context.MODE_PRIVATE);
             String profileJson = prefs.getString("profile", null);
-            JSONObject profile = new JSONObject(profileJson);
+            JSONObject profile=new JSONObject(profileJson);
             HashMap<String, String> params = new HashMap<String, String>();
             params.put("type", etService.getText().toString());
             params.put("profile_id", profile.getString("profile_id"));
             params.put("profile_user", profileJson);
-            params.put("mobile", ((EditText) findViewById(R.id.etNumber)).getText().toString());
-            params.put("time", ettime.getText().toString());
-            params.put("date", etdate.getText().toString());
-            if (etService.getText().toString().trim().contentEquals("") ||
-                    ((EditText) findViewById(R.id.etNumber)).getText().toString().trim().contentEquals("") ||
+            params.put("mobile",((EditText)findViewById(R.id.etNumber)).getText().toString());
+            params.put("time",ettime.getText().toString());
+            params.put("date",etdate.getText().toString());
+            if(etService.getText().toString().trim().contentEquals("") ||
+                    ((EditText)findViewById(R.id.etNumber)).getText().toString().trim().contentEquals("") ||
                     ettime.getText().toString().trim().contentEquals("") ||
                     etdate.getText().toString().trim().contentEquals("")
-                    ) {
+                    )
+            {
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(
                         this);
                 builder1.setMessage("Fill all the fields");
@@ -165,11 +170,15 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
                         });
                 AlertDialog alert11 = builder1.create();
                 alert11.show();
-            } else {
-                new ServiceBookingAyncTask(this).execute(params);
+            }
+            else
+            {
+                new DeliveryBookingAyncTask(this).execute(params);
             }
 
-        } catch (Exception e) {
+        }
+        catch(Exception e)
+        {
             e.printStackTrace();
         }
     }

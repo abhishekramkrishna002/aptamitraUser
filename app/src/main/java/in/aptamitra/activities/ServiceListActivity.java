@@ -1,8 +1,10 @@
 package in.aptamitra.activities;
 
 import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,18 +31,33 @@ public class ServiceListActivity extends ActionBarActivity {
 
     @Bind(R.id.service_list)
     ListView serviceListView;
-    @Bind(R.id.title)
-    TextView titleTextView;
-    @Bind(R.id.icon_back)
-    ImageView backButton;
+
+
     JSONArray json;
     private ArrayList<String> listItems = new ArrayList<>();
+
+    @Bind(R.id.app_bar)
+    Toolbar toolbar;
+    @Bind(R.id.title)
+    TextView titleTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.service_list);
         ButterKnife.bind(this);
+
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
+
+
         String data = getIntent().getStringExtra("data");
         makeJsonDataForSearch(data.toLowerCase().trim() + ".json");
         titleTextView.setText(data.toUpperCase());
@@ -49,10 +66,6 @@ public class ServiceListActivity extends ActionBarActivity {
 
     }
 
-    @OnClick(R.id.icon_back)
-    void kill(View v) {
-        finish();
-    }
 
     @Override
     protected void onDestroy() {

@@ -1,0 +1,22 @@
+{
+  "Mortuary": [
+    {
+      "key": "Need Mortuary Vehicle"
+    },
+    {
+      "key": "Need cremation centre address"
+    },
+    {
+      "key": "Book a time slot for nearest cremation centre"
+    },
+    {
+      "key": "Time extension for cremation"
+    },
+    {
+      "key": "Mortuary Box"
+    },
+    {
+      "key": "Others"
+    }
+  ]
+}

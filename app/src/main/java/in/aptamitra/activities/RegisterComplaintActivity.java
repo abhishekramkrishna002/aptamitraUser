@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
@@ -19,6 +20,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -53,7 +55,6 @@ public class RegisterComplaintActivity extends ActionBarActivity {
     Activity activity;
     private GoogleMap mMap;
     HashMap<String, String> userData = new HashMap<String, String>();
-    ImageView backButton;
     Drawable imageOne, imageTwo;
     Bitmap imageOneBitmap, imageTwoBitmap;
     @Bind(R.id.header)
@@ -66,6 +67,11 @@ public class RegisterComplaintActivity extends ActionBarActivity {
     EditText complaintAddress;
     @Bind(R.id.reister_in_complaint_view_button)
     Button complaintRegisterButton;
+
+    @Bind(R.id.app_bar)
+    Toolbar toolbar;
+    @Bind(R.id.title)
+    TextView titleTextView;
 
     private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
@@ -92,9 +98,21 @@ public class RegisterComplaintActivity extends ActionBarActivity {
         setContentView(R.layout.complaint_register_layout);
         ButterKnife.bind(this);
         activity = this;
+
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
+
+
         ((EditText) activity
                 .findViewById(R.id.etComplaintTitle)).setText(((GlobalClass) getApplicationContext()).subMenu);
-        backButton = (ImageView) findViewById(R.id.bt_back);
+
 
         setUpMapIfNeeded();
         header.setText(getIntent().getStringExtra("data"));
@@ -174,12 +192,7 @@ public class RegisterComplaintActivity extends ActionBarActivity {
 
             }
         });
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
 
 
         /*

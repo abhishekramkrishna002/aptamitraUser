@@ -1,0 +1,76 @@
+{
+  "B W S S B": [
+    {
+      "key": "Water supply"
+    },
+    {
+      "key": "Under ground drainage"
+    },
+    {
+      "key": "Meter"
+    },
+    {
+      "key": "New connection"
+    },
+    {
+      "key": "Billing complaints"
+    },
+    {
+      "key": "Pipe damage"
+    },
+    {
+      "key": "Sanitary manhole damage"
+    },
+    {
+      "key": "sanitary pipe damage"
+    },
+    {
+      "key": "water pipe damage"
+    },
+    {
+      "key": "Sewerage"
+    },
+    {
+      "key": "Others"
+    },
+    {
+      "key": "Sanitary blocked"
+    },
+    {
+      "key": "Sanitary manhole cover damage"
+    },
+    {
+      "key": "Sanitary manholecover missing"
+    },
+    {
+      "key": "Sanitary obstruction to traffic"
+    },
+    {
+      "key": "Sanitary overflow"
+    },
+    {
+      "key": "Sanitary road damage by BWSSB"
+    },
+    {
+      "key": "Water"
+    },
+    {
+      "key": "Contaminated water"
+    },
+    {
+      "key": "Low water pressure"
+    },
+    {
+      "key": "Night time water release"
+    },
+    {
+      "key": "No water"
+    },
+    {
+      "key": "Request to change water timing"
+    },
+    {
+      "key": "Water leakage"
+    }
+  ]
+}

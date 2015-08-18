@@ -19,6 +19,7 @@ import android.os.Bundle;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -34,7 +35,11 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 import async_tasks.RegisterAsyncTask;
 import butterknife.Bind;
@@ -56,11 +61,15 @@ public class RegisterActivity extends ActionBarActivity {
     String gender = new String("male");
     Bitmap profileImageBitmap;
     Spinner s1, s2;
-    ImageView backButton;
     boolean flagMale = false, flagFemale = false;
+    @Bind(R.id.app_bar)
+    Toolbar toolbar;
+    @Bind(R.id.title)
+    TextView titleTextView;
 
     Typeface face, face2;
 
+<<<<<<< HEAD
 
     private String[] state = {"Adugodi", "Austin Town", "Avenue Road", "Banaswadi", "Banashankari", "Balepet", "Bannerghatta Road",
             "Basavanagudi", "Basaveshwara Nagar", "Bellandur", "Benson Town", "BrigadeRoad", "Brookefield", "BTM Layout", "Byatarayanapura",
@@ -71,14 +80,42 @@ public class RegisterActivity extends ActionBarActivity {
             "Lavelle Road", "Magadi Road Palace", "Mahadevapura", "Mahatma Gandhi Road", "Marathahalli", "Mathikere","Old Airport Road",
             "Ramamurthy", "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Sanjay Nagar", "Seshadri Road", "Shivajinagar",
             "Sri Chatram Road", "Vasanth Nagar", "Vidyaranyapura", "Vittal Mallya Road", "Ulsoor", "Yelahanka", "Yeshwanthpur"};
+=======
+    private String[] state = {"Bellandur", "BrigadeRoad", "Brookefield", "Byatarayanapura", "C.V. Raman Nagar", "Domlur Layout" +
+            "Dooravani Nagar", "HRBR Layout", "Indira Nagar", "ITPL Road", "Jayamahal Road", "Jeevan Bheema", "Kadugodi", "Kodihalli",
+            "Krishnaraja Puram", "Mahadevapura", "Marathahalli", "Old Airport Road", "Ramamurthy",
+            "Adugodi", "Austin Town", "Avenue Road", "Balepet", "Basavanagudi", "Benson Town", "Chickpet",
+            "Chikpet", "Church Street", "Commercial Street", "Cox Town", "Crescent Road", "Cunningham High Grounds",
+            "Infantry Road", "Kumara Krupa Road", "Lady Curzon Road", "Lavelle Road", "Magadi Road Palace",
+            "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Seshadri Road", "Shivajinagar", "Sri Chatram Road", "Vasanth Nagar", "Vittal Mallya Road",
+            "Banaswadi", "Hebbal", "Frazer Town", "Devanahalli", "Yeshwanthpur", "Mathikere", "Ganga Nagar", "Sanjay Nagar", "Jalahalli",
+            "Hennur", "Yelahanka", "Mahatma Gandhi Road", "Electronics City", "Koramangala", "Bannerghatta Road", "Hosur Road", "Banashankari", "BTM Layout", "Ulsoor", "" +
+            "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar", "Vidyaranyapura"};
+
+
+
+>>>>>>> 3c1ad94b300ea8303755cd894a0a3c996aad9503
     private String[] city = {"Bengaluru", "Others"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
+        ButterKnife.bind(this);
         activity = this;
+        ArrayList<String> myList = new ArrayList<String>(Arrays.asList(state));
+        Collections.sort(myList, String.CASE_INSENSITIVE_ORDER);
+        state=myList.toArray(new String[myList.size()]);
         setup();
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
 
 
     }
@@ -338,13 +375,7 @@ public class RegisterActivity extends ActionBarActivity {
             }
         });
 
-        backButton = (ImageView) findViewById(R.id.icon_back);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
 
 
     }

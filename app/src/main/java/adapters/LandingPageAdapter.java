@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import custom_objects.HorizontalScrollItem;
 import globalclass.GlobalClass;
 import in.aptamitra.R;
+import in.aptamitra.activities.BookDeliveryActivity;
 import in.aptamitra.activities.BookServiceActivity;
 import in.aptamitra.activities.ChatActivity;
 import in.aptamitra.activities.ComplaintSubTypeActivity;
@@ -90,7 +91,11 @@ public class LandingPageAdapter
                         intent = new Intent(activity, BookServiceActivity.class);
                         activity.startActivity(intent);
                     } else if (position == 2) {
-                        intent = new Intent(activity, ChatActivity.class);
+//                        intent = new Intent(activity, ChatActivity.class);
+//                        activity.startActivity(intent);
+                        ((GlobalClass) activity.getApplicationContext()).mainMenu =
+                                ((TextView) v.findViewById(R.id.title)).getText().toString();
+                        intent = new Intent(activity, BookDeliveryActivity.class);
                         activity.startActivity(intent);
                     } else if (position == 3) {
                         intent = new Intent(activity, ServiceListActivity.class);
