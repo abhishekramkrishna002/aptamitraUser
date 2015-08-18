@@ -147,6 +147,7 @@ public class LandingPageActivity extends ActionBarActivity {
         }
         Intent intent = new Intent(LandingPageActivity.activity, SearchActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 
     }
 

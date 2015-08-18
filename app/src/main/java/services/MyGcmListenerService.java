@@ -159,14 +159,14 @@ public class MyGcmListenerService extends GcmListenerService {
                     new Notification.Builder(this)
                     .setContentText(complaint.getString("description"))
                     .setContentTitle(complaint.getString("complaint_title"))
-                    .setSmallIcon(R.drawable.notify_logo);
+                    .setSmallIcon(R.drawable.white_logo);
 
 
             notificationBuilder.setStyle(new Notification.BigTextStyle(notificationBuilder)
                     .bigText(complaint.getString("description"))
                     .setBigContentTitle(complaint.getString("complaint_title"))
                     .setSummaryText("New Complaint"))
-                    .setSmallIcon(R.drawable.notify_logo)
+                    .setSmallIcon(R.drawable.white_logo)
                     .setContentIntent(pendingIntent);
 
 

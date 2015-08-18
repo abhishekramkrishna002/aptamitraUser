@@ -121,12 +121,7 @@ public class LandingPageAdapter
          */
     }
 
-    public void startActivity(String data) {
-        Intent intent = new Intent(activity, ComplaintSubTypeActivity.class);
-        ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;
-        intent.putExtra("data", data);
-        activity.startActivity(intent);
-    }
+
 
     @Override
     public int getItemCount() {
