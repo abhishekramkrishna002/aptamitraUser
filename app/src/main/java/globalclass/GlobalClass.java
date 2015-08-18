@@ -151,11 +151,11 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withIcon(activity.getResources().getDrawable(R.drawable.my_complaints)).
                                     withTextColor(activity.getResources().getColor(R.color.black))
                             ,
-                            new DividerDrawerItem(),
-                            new PrimaryDrawerItem().
-                                    withName("My Notifications").
-                                    withIcon(activity.getResources().getDrawable(R.drawable.notification)).
-                                    withTextColor(activity.getResources().getColor(R.color.black)),
+//                            new DividerDrawerItem(),
+//                            new PrimaryDrawerItem().
+//                                    withName("My Notifications").
+//                                    withIcon(activity.getResources().getDrawable(R.drawable.notification)).
+//                                    withTextColor(activity.getResources().getColor(R.color.black)),
                             new DividerDrawerItem(),
                             new PrimaryDrawerItem().
                                     withName("Contact Us").
@@ -195,7 +195,6 @@ public class GlobalClass extends com.orm.SugarApp {
                             Intent intent;
                             switch (position) {
                                 case 0:
-
                                     intent = new Intent(activity, LandingPageActivity.class);
                                     activity.startActivity(intent);
                                     break;
@@ -204,16 +203,12 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.startActivity(intent);
                                     break;
                                 case 4:
-                                    intent = new Intent(activity, NotificationsListActivity.class);
-                                    activity.startActivity(intent);
-                                    break;
-                                case 6:
                                     Intent callIntent = new Intent(Intent.ACTION_DIAL);
                                     callIntent.setData(Uri.parse("tel:" + "08046665666"));
                                     callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(callIntent);
                                     break;
-                                case 8:
+                                case 6:
                                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
 
                                     shareIntent.setType("text/plain");
@@ -224,34 +219,32 @@ public class GlobalClass extends com.orm.SugarApp {
                                     shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(Intent.createChooser(shareIntent, "Share Aptamitra"));
                                     break;
-                                case 10:
+                                case 8:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, AboutusActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
 
-                                case 12:
+                                case 10:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, PrivacyActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
-                                case 14:
+                                case 12:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, TermsActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
                                     break;
-                                case 16:
+                                case 14:
                                     SharedPreferences.Editor editor=activity.getSharedPreferences("cache", MODE_PRIVATE).edit();
                                     editor.clear();
                                     editor.commit();
                                     intent = new Intent(activity, MainActivity.class);
                                     activity.startActivity(intent);
                                     activity.finish();
-                                    break;
-                                case 18:
                                     break;
                             }
                             return true;

@@ -82,8 +82,6 @@ public class RegisterActivity extends ActionBarActivity {
     }
 
     private void setup() {
-//        final AwesomeValidation mAwesomeValidation = new AwesomeValidation(ValidationStyle.UNDERLABEL);
-//        mAwesomeValidation.setContext(this);
         name = (EditText) findViewById(R.id.editTextName);
         email = (EditText) findViewById(R.id.editTextEmail);
         pincode = (EditText) findViewById(R.id.editPin);
@@ -91,10 +89,6 @@ public class RegisterActivity extends ActionBarActivity {
         male = (Button) findViewById(R.id.gender_male);
         female = (Button) findViewById(R.id.gender_female);
         profileImage = (ImageView) findViewById(R.id.register_profile_image);
-//        mAwesomeValidation.addValidation(name, "[a-zA-Z\\s]+", "Type a human name");
-//        mAwesomeValidation.addValidation(pincode, "[0-9]{6}", "Enter proper pincode");
-
-
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,7 +96,8 @@ public class RegisterActivity extends ActionBarActivity {
 
                 android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(activity);
                 builder.setTitle("Choose Image Source");
-                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
+//                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
+                builder.setItems(new CharSequence[]{"Camera"},
                         new DialogInterface.OnClickListener() {
 
                             @Override
@@ -110,23 +105,12 @@ public class RegisterActivity extends ActionBarActivity {
 
 
                                 switch (which) {
-                                    case 0:
-//                                        if (Build.VERSION.SDK_INT < 19) {
-//                                            Intent intent = new Intent();
-//                                            intent.setType("image/*");
-//                                            intent.setAction(Intent.ACTION_GET_CONTENT);
-//                                            startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-//                                                    COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
-//                                        } else {
-//                                            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-//                                            intent.addCategory(Intent.CATEGORY_OPENABLE);
-//                                            intent.setType("image/*");
-//                                            startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
-//                                        }
+                                    case 1:
+
                                         Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
                                         break;
-                                    case 1:
+                                    case 0:
                                         intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE);
@@ -323,7 +307,7 @@ public class RegisterActivity extends ActionBarActivity {
                     alert11.show();
                 } else {
 
-                    Drawable drawable=profileImage.getBackground();
+                    Drawable drawable = profileImage.getBackground();
                     if (drawable != null) {
 
                         new RegisterAsyncTask(RegisterActivity.this, drawableToBitmap(drawable)).execute(data);

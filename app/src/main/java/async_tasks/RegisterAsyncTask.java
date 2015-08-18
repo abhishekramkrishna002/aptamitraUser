@@ -3,8 +3,11 @@ package async_tasks;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentTransaction;
@@ -29,6 +32,7 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.StringTokenizer;
 
 import in.aptamitra.R;
 import in.aptamitra.activities.MainActivity;
@@ -80,14 +84,18 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
             entityBuilder.addTextBody("city", parameters[0].get("city"));
             entityBuilder.addTextBody("mobile", parameters[0].get("mobile"));
             entityBuilder.addTextBody("email", parameters[0].get("email"));
-            // entityBuilder.addTextBody("zone",  parameters[0].get("zone"));
             entityBuilder.addTextBody("locality", parameters[0].get("locality"));
             if (image != null) {
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                image.compress(Bitmap.CompressFormat.PNG, 10, stream);
+                image.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
-                Random r = new Random();
-                entityBuilder.addBinaryBody("profile_image", byteArray, ContentType.create("image/png"), "image_" + r.nextInt() + ".png");
+                if (byteArray == null) {
+                    Toast.makeText(activity, "image failed to be uploaded", Toast.LENGTH_LONG).show();
+                    entityBuilder.addBinaryBody("profile_image", new byte[]{});
+                } else {
+                    Random r = new Random();
+                    entityBuilder.addBinaryBody("profile_image", byteArray, ContentType.create("image/png"), "image_" + r.nextInt() + ".png");
+                }
             } else {
                 entityBuilder.addBinaryBody("profile_image", new byte[]{});
             }
@@ -117,6 +125,7 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
         super.onPostExecute(result);
         progress.hide();
 
+
         try {
             JSONObject resultJson = new JSONObject(result);
             if (resultJson.getString("code").trim().contentEquals("200")) {
@@ -124,10 +133,10 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
                         activity);
                 final View view = activity.getLayoutInflater().inflate(R.layout.verify_dialog, null, false);
                 builder1.setView(view);
-                builder1.setTitle("Mobile Verification");
+                builder1.setTitle("Mobile Verification Code");
 
                 builder1.setCancelable(false);
-                builder1.setPositiveButton("Verify",
+                builder1.setPositiveButton("verify",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
                                                 int id) {
@@ -141,6 +150,37 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
                         });
                 AlertDialog alert11 = builder1.create();
                 alert11.show();
+
+                IntentFilter intentFilter = new IntentFilter("SmsMessage.intent.MAIN");
+                BroadcastReceiver receiver = new BroadcastReceiver() {
+                    @Override
+                    public void onReceive(Context context, Intent intent) {
+                        String msg = intent.getStringExtra("get_msg");
+
+                        //Process the sms format and extract body &amp; phoneNumber
+                        msg = msg.replace("\n", "");
+                        String message = msg.substring(msg.lastIndexOf(":") + 1, msg.length());
+                        Log.d("Received Message Body :", message.toString());
+                        //String pNumber = msg.substring(0,msg.lastIndexOf(":"));
+                        // Add it to the list or do whatever you wish to
+
+                        StringTokenizer tokens = new StringTokenizer(message, ".");
+                        tokens.nextToken();
+                        tokens.nextToken();
+                        tokens.nextToken();
+                        // this will contain "Your Aptamitra verification code is"
+                        String code = tokens.nextToken();// this will contain "XXXX"
+                        tokens.nextToken();// this will contain "for any query visit aptamitra.in"
+                        ((EditText) view.findViewById(R.id.otp_code_edit_text)).setText(code);
+                        Log.d("otp:", code);
+
+
+                    }
+                };
+
+                activity.registerReceiver(receiver, intentFilter);
+
+
             } else if (resultJson.getString("code").trim().contentEquals("505")) {
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(
                         activity);

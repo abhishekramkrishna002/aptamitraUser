@@ -103,13 +103,13 @@ public class RegisterComplaintActivity extends ActionBarActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                 builder.setTitle("Choose Image Source");
-                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
+                builder.setItems(new CharSequence[]{"Camera"},
                         new DialogInterface.OnClickListener() {
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 switch (which) {
-                                    case 0:
+                                    case 1:
                                         if (Build.VERSION.SDK_INT < 19) {
                                             Intent intent = new Intent();
                                             intent.setType("image/*");
@@ -125,7 +125,7 @@ public class RegisterComplaintActivity extends ActionBarActivity {
                                             startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
                                         }
                                         break;
-                                    case 1:
+                                    case 0:
                                        Intent  intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE);
@@ -142,29 +142,27 @@ public class RegisterComplaintActivity extends ActionBarActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                 builder.setTitle("Choose Image Source");
-                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
+                builder.setItems(new CharSequence[]{ "Camera"},
                         new DialogInterface.OnClickListener() {
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 switch (which) {
-                                    case 0:
+                                    case 1:
                                         if (Build.VERSION.SDK_INT < 19) {
                                             Intent intent = new Intent();
                                             intent.setType("image/*");
                                             intent.setAction(Intent.ACTION_GET_CONTENT);
-                                            // startActivityForResult(Intent.createChooser(intent, "Select Picture",COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY));
                                             startActivityForResult(Intent.createChooser(intent, "Select Picture"),
                                                     COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
                                         } else {
                                             Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
                                             intent.addCategory(Intent.CATEGORY_OPENABLE);
                                             intent.setType("image/*");
-                                            //startActivityForResult(intent, GALLERY_KITKAT_INTENT_CALLED);
-                                            startActivityForResult(intent, COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
+                                           startActivityForResult(intent, COMPLAINT_IMAGE_TWO_REQUEST_CODE_GALLERY);
                                         }
                                         break;
-                                    case 1:
+                                    case 0:
                                         Intent intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_TWO_REQUEST_CODE_IMAGE);
