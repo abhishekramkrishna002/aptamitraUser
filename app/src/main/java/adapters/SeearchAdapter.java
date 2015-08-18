@@ -18,6 +18,7 @@ import java.util.List;
 
 import globalclass.GlobalClass;
 import in.aptamitra.R;
+import in.aptamitra.activities.BookDeliveryActivity;
 import in.aptamitra.activities.BookServiceActivity;
 import in.aptamitra.activities.RegisterComplaintActivity;
 
@@ -78,8 +79,6 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
             set up appropriate click listener::start
              */
             final String[] results = search.trim().split(">");
-            Log.d("search-result-spilt", search);
-            Log.d("search-result-spilt", results[1]);
             if (results[1].contains("civic_issues")) {
                 row.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -102,10 +101,23 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                         GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());
                         globalClass.mainMenu = null;
                         globalClass.mainMenu = (results[2]);
-                        for (int k = 0; k < results.length; k++) {
-                            Log.d("resuts", k + " " + results[k]);
-                        }
+
                         Intent intent = new Intent(activity, BookServiceActivity.class);
+                        activity.startActivity(intent);
+                        activity.finish();
+
+                    }
+                });
+
+            } else if (results[1].contains("delivery")) {
+                row.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());
+                        globalClass.mainMenu = null;
+                        globalClass.mainMenu = (results[2]);
+
+                        Intent intent = new Intent(activity, BookDeliveryActivity.class);
                         activity.startActivity(intent);
                         activity.finish();
 
@@ -140,8 +152,9 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 String[] matches = cacheSearches.get(i).split(">");
                 String data = matches[matches.length - 1];
 
-                if (data.toLowerCase().contains(((String) constraint).toLowerCase())) {
+                if (data.toLowerCase().contains(((constraint.toString()).toLowerCase()))) {
                     values.add(cacheSearches.get(i));
+                    Log.d("search", cacheSearches.get(i));
                 }
             }
             results.values = values;
@@ -155,16 +168,15 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 searches = cacheSearches;
                 notifyDataSetChanged();
             } else {
-                if (results.count == 0)
-                    notifyDataSetInvalidated();
-                else if (results.count > 0) {
+                if (results.count == 0) {
+                    searches = new ArrayList<String>(0);
+                    notifyDataSetChanged();
+                } else if (results.count > 0) {
                     searches = (List<String>) results.values;
                     notifyDataSetChanged();
                 }
             }
         }
-
-
     }
 
     @Override
