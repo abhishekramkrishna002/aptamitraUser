@@ -1,36 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+<app:android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/blue"
-    android:id="@+id/app_bar">
+    android:minHeight="?attr/actionBarSize">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <ImageView
-            android:id="@+id/icon_navigation"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:gravity="center"
-            android:src="@drawable/ic_apps_white"
-            />
+        android:layout_gravity="center"
+        android:text="Aptamitra"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
 
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:fontFamily="sans-serif"
-            android:id="@+id/title"
-            android:text="Aptamitra"
-            android:textColor="#fff"
-            android:textSize="20sp" />
-
-
-    </LinearLayout>
-</android.support.v7.widget.Toolbar>
+</app:android.support.v7.widget.Toolbar>

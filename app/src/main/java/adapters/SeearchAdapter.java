@@ -70,10 +70,10 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
         try {
             String search = searches.get(position);
 
-            String[] matches=search.split(">");
+            String[] matches = search.split(">");
 
             ((TextView) row.findViewById(R.id.service_name))
-                    .setText(matches[matches.length-1]);
+                    .setText(matches[matches.length - 1]);
             /*
             set up appropriate click listener::start
              */
@@ -99,11 +99,11 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 row.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());globalClass.mainMenu = null;
+                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());
+                        globalClass.mainMenu = null;
                         globalClass.mainMenu = (results[2]);
-                        for(int k=0;k<results.length;k++)
-                        {
-                            Log.d("resuts",k+" "+ results[k]);
+                        for (int k = 0; k < results.length; k++) {
+                            Log.d("resuts", k + " " + results[k]);
                         }
                         Intent intent = new Intent(activity, BookServiceActivity.class);
                         activity.startActivity(intent);
@@ -135,11 +135,13 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
         protected FilterResults performFiltering(CharSequence constraint) {
             FilterResults results = new FilterResults();
             ArrayList<String> values = new ArrayList<>();
+            values.clear();
             for (int i = 0; i < cacheSearches.size(); i++) {
-                String data = cacheSearches.get(i);
+                String[] matches = cacheSearches.get(i).split(">");
+                String data = matches[matches.length - 1];
                 if (data.toLowerCase().contains(((String) constraint).toLowerCase()) ||
                         ((String) constraint).toLowerCase().contains(data.toLowerCase())) {
-                    values.add(data);
+                    values.add(cacheSearches.get(i));
                 }
             }
             results.values = values;

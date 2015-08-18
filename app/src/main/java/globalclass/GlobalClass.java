@@ -49,6 +49,7 @@ import in.aptamitra.activities.TermsActivity;
 public class GlobalClass extends com.orm.SugarApp {
     public String mainMenu;
     public String subMenu;
+    public static Drawer result;
 
     @Override
     public void onCreate() {
@@ -68,7 +69,7 @@ public class GlobalClass extends com.orm.SugarApp {
             /*
             readfrom shared prefs::start
              */
-        Drawer result = null;
+
         SharedPreferences prefs = activity.getSharedPreferences("cache", Context.MODE_PRIVATE);
         String name = null;
         String email = null;
@@ -187,7 +188,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     withIcon(activity.getResources().getDrawable(R.drawable.logout)).
                                     withTextColor(activity.getResources().getColor(R.color.black))
 
-                            )
+                    )
                     .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                         @Override
                         public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
@@ -197,16 +198,22 @@ public class GlobalClass extends com.orm.SugarApp {
                                 case 0:
                                     intent = new Intent(activity, LandingPageActivity.class);
                                     activity.startActivity(intent);
+                                    activity.finish();
+
+
                                     break;
                                 case 2:
                                     intent = new Intent(activity, ComplaintsListActivity.class);
                                     activity.startActivity(intent);
+                                    activity.finish();
+
                                     break;
                                 case 4:
                                     Intent callIntent = new Intent(Intent.ACTION_DIAL);
                                     callIntent.setData(Uri.parse("tel:" + "08046665666"));
                                     callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(callIntent);
+                                    activity.finish();
                                     break;
                                 case 6:
                                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
@@ -218,6 +225,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                             "http://www.genieline.com/app/org_hemorvichampaneria_quadvision_mayur_Aptamitra.apk");
                                     shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(Intent.createChooser(shareIntent, "Share Aptamitra"));
+                                    activity.finish();
                                     break;
                                 case 8:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
@@ -239,7 +247,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.finish();
                                     break;
                                 case 14:
-                                    SharedPreferences.Editor editor=activity.getSharedPreferences("cache", MODE_PRIVATE).edit();
+                                    SharedPreferences.Editor editor = activity.getSharedPreferences("cache", MODE_PRIVATE).edit();
                                     editor.clear();
                                     editor.commit();
                                     intent = new Intent(activity, MainActivity.class);
@@ -253,6 +261,7 @@ public class GlobalClass extends com.orm.SugarApp {
                     .withDrawerGravity(Gravity.START)
                     .build();
 
+            result.setSelectionByIdentifier(1);
             return result;
 
 

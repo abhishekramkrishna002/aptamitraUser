@@ -161,8 +161,6 @@ public class RegisterAsyncTask extends AsyncTask<HashMap<String, String>, Intege
                         msg = msg.replace("\n", "");
                         String message = msg.substring(msg.lastIndexOf(":") + 1, msg.length());
                         Log.d("Received Message Body :", message.toString());
-                        //String pNumber = msg.substring(0,msg.lastIndexOf(":"));
-                        // Add it to the list or do whatever you wish to
 
                         StringTokenizer tokens = new StringTokenizer(message, ".");
                         tokens.nextToken();
