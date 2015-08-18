@@ -69,18 +69,7 @@ public class RegisterActivity extends ActionBarActivity {
 
     Typeface face, face2;
 
-<<<<<<< HEAD
 
-    private String[] state = {"Adugodi", "Austin Town", "Avenue Road", "Banaswadi", "Banashankari", "Balepet", "Bannerghatta Road",
-            "Basavanagudi", "Basaveshwara Nagar", "Bellandur", "Benson Town", "BrigadeRoad", "Brookefield", "BTM Layout", "Byatarayanapura",
-            "Chickpet", "Chikpet", "Church Street", "Commercial Street", "Cox Town", "Crescent Road", "Cunningham High Grounds", "C.V. Raman Nagar",
-            "Devanahalli", "Domlur Layout", "Dooravani Nagar","Electronics City", "Frazer Town", "Ganga Nagar", "Hebbal", "Hennur", "HRBR Layout",
-            "Hosur Road", "Indira Nagar", "Infantry Road", "ITPL Road", "Jalahalli", "Jayamahal Road", "Jaya Nagar", "Jeevan Bheema", "Kadugodi",
-            "Kanakapura", "Kodihalli", "Koramangala", "Krishnaraja Puram", "Kumara Krupa Road", "Kumaraswamy Layout", "Lady Curzon Road",
-            "Lavelle Road", "Magadi Road Palace", "Mahadevapura", "Mahatma Gandhi Road", "Marathahalli", "Mathikere","Old Airport Road",
-            "Ramamurthy", "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Sanjay Nagar", "Seshadri Road", "Shivajinagar",
-            "Sri Chatram Road", "Vasanth Nagar", "Vidyaranyapura", "Vittal Mallya Road", "Ulsoor", "Yelahanka", "Yeshwanthpur"};
-=======
     private String[] state = {"Bellandur", "BrigadeRoad", "Brookefield", "Byatarayanapura", "C.V. Raman Nagar", "Domlur Layout" +
             "Dooravani Nagar", "HRBR Layout", "Indira Nagar", "ITPL Road", "Jayamahal Road", "Jeevan Bheema", "Kadugodi", "Kodihalli",
             "Krishnaraja Puram", "Mahadevapura", "Marathahalli", "Old Airport Road", "Ramamurthy",
@@ -93,8 +82,6 @@ public class RegisterActivity extends ActionBarActivity {
             "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar", "Vidyaranyapura"};
 
 
-
->>>>>>> 3c1ad94b300ea8303755cd894a0a3c996aad9503
     private String[] city = {"Bengaluru", "Others"};
 
     @Override
@@ -105,7 +92,7 @@ public class RegisterActivity extends ActionBarActivity {
         activity = this;
         ArrayList<String> myList = new ArrayList<String>(Arrays.asList(state));
         Collections.sort(myList, String.CASE_INSENSITIVE_ORDER);
-        state=myList.toArray(new String[myList.size()]);
+        state = myList.toArray(new String[myList.size()]);
         setup();
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -374,8 +361,6 @@ public class RegisterActivity extends ActionBarActivity {
 
             }
         });
-
-
 
 
     }
