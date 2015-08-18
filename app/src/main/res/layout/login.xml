@@ -11,12 +11,28 @@
         android:layout_width="fill_parent"
         android:layout_height="100dp"
         android:layout_margin="40dp"
+        android:orientation="vertical"
         android:gravity="center">
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/aptalogo" />
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dip"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="APTAMITRA"/>
+
+        <!--<ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aptalogo" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -29,14 +45,14 @@
         <EditText
             android:id="@+id/login_email"
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:ems="10"
             android:hint="Email"
             android:ellipsize="start"
             android:paddingTop="10dp"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
-            android:background="@drawable/edit_text_bg_1"
+            android:background="@drawable/edit_text_design"
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
@@ -51,15 +67,26 @@
         <EditText
             android:id="@+id/login_password"
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:ems="10"
-            android:hint="password"
-            android:background="@drawable/edit_text_bg_1"
+            android:hint="Password"
+            android:background="@drawable/edit_text_design"
             android:inputType="textPassword"
             android:ellipsize="start"
             android:paddingTop="10dp"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal" />
+
+        <!--<Button
+            android:id="@+id/forgot"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="FORGOT PASSWORD?"
+            android:textStyle="bold"/>-->
     </LinearLayout>
 
     <LinearLayout
@@ -74,9 +101,11 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@color/orange"
+            android:background="@drawable/button_custom1"
             android:text="Login"
             android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
             android:layout_margin="10dp"
             android:fontFamily="sans-serif" />
 
@@ -85,9 +114,11 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@color/orange"
+            android:background="@drawable/button_custom1"
             android:textColor="@color/white"
             android:text="Register"
+            android:textStyle="bold"
+            android:textSize="16sp"
             android:layout_margin="10dp"
             android:fontFamily="sans-serif" />
     </LinearLayout>

@@ -67,6 +67,8 @@ public class RegisterActivity extends ActionBarActivity {
     @Bind(R.id.title)
     TextView titleTextView;
 
+    Typeface face, face2;
+
 
     private String[] state = {"Bellandur", "BrigadeRoad", "Brookefield", "Byatarayanapura", "C.V. Raman Nagar", "Domlur Layout" +
             "Dooravani Nagar", "HRBR Layout", "Indira Nagar", "ITPL Road", "Jayamahal Road", "Jeevan Bheema", "Kadugodi", "Kodihalli",
@@ -80,7 +82,6 @@ public class RegisterActivity extends ActionBarActivity {
             "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar", "Vidyaranyapura"};
 
 
-
     private String[] city = {"Bengaluru", "Others"};
 
     @Override
@@ -91,7 +92,7 @@ public class RegisterActivity extends ActionBarActivity {
         activity = this;
         ArrayList<String> myList = new ArrayList<String>(Arrays.asList(state));
         Collections.sort(myList, String.CASE_INSENSITIVE_ORDER);
-        state=myList.toArray(new String[myList.size()]);
+        state = myList.toArray(new String[myList.size()]);
         setup();
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -114,6 +115,18 @@ public class RegisterActivity extends ActionBarActivity {
         male = (Button) findViewById(R.id.gender_male);
         female = (Button) findViewById(R.id.gender_female);
         profileImage = (ImageView) findViewById(R.id.register_profile_image);
+//        mAwesomeValidation.addValidation(name, "[a-zA-Z\\s]+", "Type a human name");
+//        mAwesomeValidation.addValidation(pincode, "[0-9]{6}", "Enter proper pincode");
+
+        face = Typeface.createFromAsset(this.getAssets(), "TrajanPro_Regular.otf");
+        male.setTypeface(face);
+        female.setTypeface(face);
+        face2 = Typeface.createFromAsset(this.getAssets(), "Narkisim.ttf");
+        name.setTypeface(face2);
+        email.setTypeface(face2);
+        pincode.setTypeface(face2);
+        doornumber.setTypeface(face2);
+
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,10 +201,13 @@ public class RegisterActivity extends ActionBarActivity {
         s1 = (Spinner) findViewById(R.id.spinner1);
         s2 = (Spinner) findViewById(R.id.spinner2);
         mobile = (EditText) findViewById(R.id.editMobile);
+        mobile.setTypeface(face2);
         // mAwesomeValidation.addValidation(pincode, "[0-9]{10}", "Enter proper mobile number");
         address = (EditText) findViewById(R.id.editAddress);
+        address.setTypeface(face2);
 
         password = (EditText) findViewById(R.id.editTextPassword);
+        password.setTypeface(face2);
         ArrayAdapter<String> adapter_state = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, state);
         adapter_state
@@ -236,6 +252,7 @@ public class RegisterActivity extends ActionBarActivity {
 
 
         register = (Button) findViewById(R.id.register_submit_button);
+        register.setTypeface(face);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -344,8 +361,6 @@ public class RegisterActivity extends ActionBarActivity {
 
             }
         });
-
-
 
 
     }

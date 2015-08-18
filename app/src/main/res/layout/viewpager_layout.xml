@@ -71,7 +71,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:background="@color/orange"
+            android:background="@drawable/button_custom1"
             android:text="Get Started"/>
 
 

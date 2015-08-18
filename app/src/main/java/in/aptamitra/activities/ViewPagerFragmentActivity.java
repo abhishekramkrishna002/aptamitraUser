@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Vector;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -30,6 +31,9 @@ public class ViewPagerFragmentActivity extends FragmentActivity {
     ImageView img1, img2, img3, img4, img5;
     Button getStarted;
 
+    Typeface face;
+
+
 
 
     /* (non-Javadoc)
@@ -46,6 +50,10 @@ public class ViewPagerFragmentActivity extends FragmentActivity {
         img4 = (ImageView) findViewById(R.id.img4);
         img5 = (ImageView) findViewById(R.id.img5);
         getStarted=(Button)findViewById(R.id.get_started);
+
+        face = Typeface.createFromAsset(this.getAssets(), "TrajanPro_Regular.otf");
+        getStarted.setTypeface(face);
+
         getStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

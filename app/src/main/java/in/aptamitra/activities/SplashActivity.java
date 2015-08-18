@@ -5,11 +5,13 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import globalclass.GlobalClass;
 import in.aptamitra.R;
@@ -50,6 +52,7 @@ public class SplashActivity extends Activity implements AnimationListener {
             setContentView(R.layout.activity_splash);
 
             logo = (ImageView) findViewById(R.id.logo);
+
 
             // load the animation
             animZoomIn = AnimationUtils.loadAnimation(getApplicationContext(),

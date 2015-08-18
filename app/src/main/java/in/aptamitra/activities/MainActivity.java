@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaRecorder;
 import android.support.v4.app.FragmentTransaction;
@@ -57,6 +58,12 @@ public class MainActivity extends ActionBarActivity {
     @Bind(R.id.login_password)
     EditText password;
 
+    TextView titletext;
+
+    Button forgot;
+
+    Typeface face, face2;
+
 
     /*
     get all the view componnets:end
@@ -67,10 +74,24 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
             setContentView(R.layout.login);
+
+        /*face = Typeface.createFromAsset(this.getAssets(), "TrajanPro_Regular.otf");
+        loginButton.setTypeface(face);
+        registerTextView.setTypeface(face);*/
+
             ButterKnife.bind(this);
+
+        titletext = (TextView) findViewById(R.id.titletext);
+        //forgot = (Button) findViewById(R.id.forgot);
+        face = Typeface.createFromAsset(this.getAssets(), "TrajanPro_Regular.otf");
+        loginButton.setTypeface(face);
+        registerTextView.setTypeface(face);
+        titletext.setTypeface(face);
+        //forgot.setTypeface(face);
+        face2 = Typeface.createFromAsset(this.getAssets(), "Narkisim.ttf");
+        email.setTypeface(face2);
+        password.setTypeface(face2);
 
 
     }
