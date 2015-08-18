@@ -79,8 +79,7 @@ public class LandingPageActivity extends ActionBarActivity {
         activity = this;
         ButterKnife.bind(this);
         init();
-        Typeface typeface=Typeface.createFromAsset(getAssets(),"trajan_pro_bold.otf");
-        titleTextView.setTypeface(typeface);
+
         drawer = ((GlobalClass) getApplicationContext()).navigationDrawer(this);
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -123,15 +122,15 @@ public class LandingPageActivity extends ActionBarActivity {
         }
 
 
-        ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon_navigation);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (drawer != null) {
-                    drawer.openDrawer();
-                }
-            }
-        });
+//        ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon_navigation);
+//        imageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (drawer != null) {
+//                    drawer.openDrawer();
+//                }
+//            }
+//        });
 
 
 //        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_apps_white));
@@ -140,7 +139,18 @@ public class LandingPageActivity extends ActionBarActivity {
 //        setSupportActionBar(toolbar);
 //        ActionBar actionBar = getSupportActionBar();
 //        actionBar.setTitle("Aptamitra");
-
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_navigation));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(MainActivity.this,"you clicked",Toast.LENGTH_SHORT).show();
+                if (drawer != null) {
+                    drawer.openDrawer();
+                }
+            }
+        });
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
 
 
         searchBar.setClickable(true);
@@ -166,9 +176,8 @@ public class LandingPageActivity extends ActionBarActivity {
     public void init() {
         makeJsonDataForSearch();
         ArrayList<HorizontalScrollItem> horizontalScrollItems = new ArrayList<>();
-        String[] verticals=getResources().getStringArray(R.array.landing_page);
-        for(int i=0;i<verticals.length;i++)
-        {
+        String[] verticals = getResources().getStringArray(R.array.landing_page);
+        for (int i = 0; i < verticals.length; i++) {
             horizontalScrollItems.add(makeAdapter(verticals[i]));
         }
         LandingPageAdapter landingPageAdapter = new LandingPageAdapter(this, horizontalScrollItems);
@@ -178,8 +187,6 @@ public class LandingPageActivity extends ActionBarActivity {
         recyclerView.setLayoutManager(layoutManager);
 
     }
-
-
 
 
     private boolean checkPlayServices() {

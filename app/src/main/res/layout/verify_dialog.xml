@@ -6,8 +6,10 @@
 
     <EditText
         android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:ems="10"
         android:layout_height="wrap_content"
         android:id="@+id/otp_code_edit_text"
-        android:hint="otp code" />
+        android:hint="XXXX" />
 
 </LinearLayout>

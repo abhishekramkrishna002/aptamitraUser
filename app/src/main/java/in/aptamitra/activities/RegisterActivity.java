@@ -2,14 +2,17 @@ package in.aptamitra.activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,6 +31,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.squareup.picasso.Picasso;
+
+import java.io.InputStream;
 import java.util.HashMap;
 
 import async_tasks.RegisterAsyncTask;
@@ -56,16 +62,15 @@ public class RegisterActivity extends ActionBarActivity {
     Typeface face, face2;
 
 
-    private String[] state = {"Bellandur", "BrigadeRoad", "Brookefield", "Byatarayanapura", "C.V. Raman Nagar", "Domlur Layout" +
-            "Dooravani Nagar", "HRBR Layout", "Indira Nagar", "ITPL Road", "Jayamahal Road", "Jeevan Bheema", "Kadugodi", "Kodihalli",
-            "Krishnaraja Puram", "Mahadevapura", "Marathahalli", "Old Airport Road", "Ramamurthy",
-            "Adugodi", "Austin Town", "Avenue Road", "Balepet", "Basavanagudi", "Benson Town", "Chickpet",
-            "Chikpet", "Church Street", "Commercial Street", "Cox Town", "Crescent Road", "Cunningham High Grounds",
-            "Infantry Road", "Kumara Krupa Road", "Lady Curzon Road", "Lavelle Road", "Magadi Road Palace",
-            "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Seshadri Road", "Shivajinagar", "Sri Chatram Road", "Vasanth Nagar", "Vittal Mallya Road",
-            "Banaswadi", "Hebbal", "Frazer Town", "Devanahalli", "Yeshwanthpur", "Mathikere", "Ganga Nagar", "Sanjay Nagar", "Jalahalli",
-            "Hennur", "Yelahanka", "Mahatma Gandhi Road", "Electronics City", "Koramangala", "Bannerghatta Road", "Hosur Road", "Banashankari", "BTM Layout", "Ulsoor", "" +
-            "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar", "Vidyaranyapura"};
+    private String[] state = {"Adugodi", "Austin Town", "Avenue Road", "Banaswadi", "Banashankari", "Balepet", "Bannerghatta Road",
+            "Basavanagudi", "Basaveshwara Nagar", "Bellandur", "Benson Town", "BrigadeRoad", "Brookefield", "BTM Layout", "Byatarayanapura",
+            "Chickpet", "Chikpet", "Church Street", "Commercial Street", "Cox Town", "Crescent Road", "Cunningham High Grounds", "C.V. Raman Nagar",
+            "Devanahalli", "Domlur Layout", "Dooravani Nagar","Electronics City", "Frazer Town", "Ganga Nagar", "Hebbal", "Hennur", "HRBR Layout",
+            "Hosur Road", "Indira Nagar", "Infantry Road", "ITPL Road", "Jalahalli", "Jayamahal Road", "Jaya Nagar", "Jeevan Bheema", "Kadugodi",
+            "Kanakapura", "Kodihalli", "Koramangala", "Krishnaraja Puram", "Kumara Krupa Road", "Kumaraswamy Layout", "Lady Curzon Road",
+            "Lavelle Road", "Magadi Road Palace", "Mahadevapura", "Mahatma Gandhi Road", "Marathahalli", "Mathikere","Old Airport Road",
+            "Ramamurthy", "R.T. Nagar", "Rajaji Nagar", "Richmond Road", "Richmond Town", "Sanjay Nagar", "Seshadri Road", "Shivajinagar",
+            "Sri Chatram Road", "Vasanth Nagar", "Vidyaranyapura", "Vittal Mallya Road", "Ulsoor", "Yeshwanthpur", "Yelahanka"};
     private String[] city = {"Bengaluru", "Others"};
 
     @Override
@@ -79,8 +84,6 @@ public class RegisterActivity extends ActionBarActivity {
     }
 
     private void setup() {
-//        final AwesomeValidation mAwesomeValidation = new AwesomeValidation(ValidationStyle.UNDERLABEL);
-//        mAwesomeValidation.setContext(this);
         name = (EditText) findViewById(R.id.editTextName);
         email = (EditText) findViewById(R.id.editTextEmail);
         pincode = (EditText) findViewById(R.id.editPin);
@@ -100,7 +103,6 @@ public class RegisterActivity extends ActionBarActivity {
         pincode.setTypeface(face2);
         doornumber.setTypeface(face2);
 
-
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,35 +110,22 @@ public class RegisterActivity extends ActionBarActivity {
 
                 android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(activity);
                 builder.setTitle("Choose Image Source");
-                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
+//                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
+                builder.setItems(new CharSequence[]{"Camera"},
                         new DialogInterface.OnClickListener() {
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+
+
                                 switch (which) {
-                                    case 0:
-                                        if (Build.VERSION.SDK_INT < 19) {
-                                            Intent intent = new Intent();
-                                            intent.setType("image/*");
-                                            intent.setAction(Intent.ACTION_GET_CONTENT);
-                                            // startActivityForResult(Intent.createChooser(intent, "Select Picture",COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY));
-                                            startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-                                                    COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
-                                        } else {
-                                            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-                                            intent.addCategory(Intent.CATEGORY_OPENABLE);
-                                            intent.setType("image/*");
-                                            //startActivityForResult(intent, GALLERY_KITKAT_INTENT_CALLED);
-                                            startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
-                                        }
-//                                        Intent intent = new Intent();
-//                                        intent.setType("image/*");
-//                                        intent.setAction(Intent.ACTION_GET_CONTENT);
-//                                        startActivityForResult(Intent.createChooser(intent, "Select Picture"),
-//                                                COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
-                                        break;
                                     case 1:
-                                        Intent intent = new Intent(
+
+                                        Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                                        startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY);
+                                        break;
+                                    case 0:
+                                        intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE);
                                         break;
@@ -276,11 +265,6 @@ public class RegisterActivity extends ActionBarActivity {
                 data.put("city", cityText);
                 data.put("mobile", mobileText);
                 data.put("email", emailText);
-//                Toast.makeText(RegisterActivity.this,
-//                        nameText + " " + mobileText + " " + addressText + " " +
-//                                cityText + " " + emailText + " " + doorNumber, Toast.LENGTH_LONG).show();
-
-                //new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
 
                     /*
                     call the registe async task
@@ -340,7 +324,14 @@ public class RegisterActivity extends ActionBarActivity {
                     AlertDialog alert11 = builder1.create();
                     alert11.show();
                 } else {
-                    new RegisterAsyncTask(RegisterActivity.this, profileImageBitmap).execute(data);
+
+                    Drawable drawable = profileImage.getBackground();
+                    if (drawable != null) {
+
+                        new RegisterAsyncTask(RegisterActivity.this, drawableToBitmap(drawable)).execute(data);
+                    } else {
+                        new RegisterAsyncTask(RegisterActivity.this, null).execute(data);
+                    }
                 }
 
 
@@ -358,65 +349,70 @@ public class RegisterActivity extends ActionBarActivity {
 
     }
 
-    public void open() {
-        Intent intent = new Intent(
-                android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, 0);
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        Bitmap bitmap = null;
+
+        if (drawable instanceof BitmapDrawable) {
+            BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+            if (bitmapDrawable.getBitmap() != null) {
+                return bitmapDrawable.getBitmap();
+            }
+        }
+
+        if (drawable.getIntrinsicWidth() <= 0 || drawable.getIntrinsicHeight() <= 0) {
+            bitmap = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888); // Single color bitmap will be created of 1x1 pixel
+        } else {
+            bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        }
+
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+        drawable.draw(canvas);
+        return bitmap;
+    }
+
+    public static String getRealPathFromUri(Context context, Uri contentUri) {
+        Cursor cursor = null;
+        try {
+            String[] proj = {MediaStore.Images.Media.DATA};
+            cursor = context.getContentResolver().query(contentUri, proj, null, null, null);
+            int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+            cursor.moveToFirst();
+            return cursor.getString(column_index);
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+        }
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
         super.onActivityResult(requestCode, resultCode, data);
-//        profileImageBitmap = (Bitmap) data.getExtras().get("data");
-//        profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
-//        profileImage.setImageBitmap(profileImageBitmap);
 
         if (profileImageBitmap != null) {
             profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
         } else {
-            if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE) {
-                profileImageBitmap = (Bitmap) data.getExtras().get("data");
-                profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
-            } else if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY) {
-                Uri selectedImage = data.getData();
+            try {
+                if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE) {
+                    Log.d("image_camera", data.getData().toString());
+                    profileImageBitmap = (Bitmap) data.getExtras().get("data");
+                    profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
 
-                Log.i("image_gallery", data.toString());
+                } else if (resultCode != 0 && requestCode == COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY) {
 
-            /*
-            start processing
-             */
-                // Will return "image:x*"
-                String wholeID = DocumentsContract.getDocumentId(selectedImage);
 
-// Split at colon, use second item in the array
-                String id = wholeID.split(":")[1];
+                    Uri selectedImage = data.getData();
+                    Log.d("image_gallery", data.toString());
+                    InputStream input = getContentResolver().openInputStream(selectedImage);
+                    profileImageBitmap = BitmapFactory.decodeStream(input, null, null);
+                    profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
 
-                String[] column = {MediaStore.Images.Media.DATA};
 
-// where id is equal to
-                String sel = MediaStore.Images.Media._ID + "=?";
-
-                Cursor cursor = getContentResolver().
-                        query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-                                column, sel, new String[]{id}, null);
-
-                String filePath = "";
-
-                int columnIndex = cursor.getColumnIndex(column[0]);
-
-                if (cursor.moveToFirst()) {
-                    filePath = cursor.getString(columnIndex);
                 }
-
-                cursor.close();
-
-            /*
-            end processing
-             */
-
-                profileImageBitmap = BitmapFactory.decodeFile(filePath);
-                profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
 

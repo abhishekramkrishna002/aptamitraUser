@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:id="@+id/search_page_container"
     android:layout_width="match_parent"
     android:background="@drawable/searchbg"
     android:layout_height="match_parent">
@@ -40,10 +41,34 @@
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
 
-    <EditText
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/search_bar" />
+        android:id="@+id/search_container"
+        android:background="@color/blue">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/gray"
+            android:hint="What services do u need?"
+            android:ems="10"
+            android:background="@drawable/edit_text_bg_1" />
+
+    </LinearLayout>
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/search_bar" />-->
 
     <!--<ImageView
         android:layout_width="wrap_content"

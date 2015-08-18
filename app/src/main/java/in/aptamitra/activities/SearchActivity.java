@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -22,6 +23,8 @@ import java.util.Iterator;
 
 import adapters.SeearchAdapter;
 import async_tasks.SearchAsyncTask;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.aptamitra.R;
 
 
@@ -33,19 +36,21 @@ public class SearchActivity extends ActionBarActivity {
     EditText searchText = null;
     SeearchAdapter searchAdapter;
     private ArrayList<String> searches;
+    @Bind(R.id.search_page_container)
+    LinearLayout searchLinearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_layout);
+        ButterKnife.bind(this);
         searches = new ArrayList<>();
         makeJsonDataForSearch();
         makeList(searchJson, new String());
-//        new SearchAsyncTask(this).execute(new String[]{});
         listView = (ListView) findViewById(R.id.search_list);
 
         searchAdapter = new SeearchAdapter(this, R.layout.search_list_item, searches);
-        listView.setAdapter(searchAdapter);
+
 
         searchText = (EditText) findViewById(R.id.search_bar);
 
@@ -59,9 +64,18 @@ public class SearchActivity extends ActionBarActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                searchAdapter.getFilter().filter(s.toString().toLowerCase());
-                searchAdapter.notifyDataSetChanged();
 
+                Log.d("char sequence",s.toString());
+                if (s.toString().contentEquals("")) {
+                    listView.setAdapter(null);
+                    searchLinearLayout.setBackgroundDrawable(getResources().getDrawable(R.drawable.searchbg));
+
+                } else {
+                    listView.setAdapter(searchAdapter);
+                    searchAdapter.getFilter().filter(s.toString().toLowerCase());
+                    searchAdapter.notifyDataSetChanged();
+                    searchLinearLayout.setBackgroundColor(getResources().getColor(R.color.white));
+                }
             }
 
             @Override
@@ -94,9 +108,7 @@ public class SearchActivity extends ActionBarActivity {
                     if (obj.has("key")) {
                         tree = tree + " > " + obj.getString("key");
                         searches.add(tree);
-                    }
-
-                    else  if (obj.has("name")) {
+                    } else if (obj.has("name")) {
                         Iterator<String> keys = obj.keys();
                         while (keys.hasNext()) {
                             tree += ">" + obj.getString("address") + ">" + obj.getString("contact") + ">" + obj.getString("name");
