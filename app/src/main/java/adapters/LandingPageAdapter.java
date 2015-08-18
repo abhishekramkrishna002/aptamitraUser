@@ -85,11 +85,13 @@ public class LandingPageAdapter
                         ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;
                         intent.putExtra("data", data);
                         activity.startActivity(intent);
+                        activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                     } else if (position == 1) {
                         ((GlobalClass) activity.getApplicationContext()).mainMenu =
                                 ((TextView) v.findViewById(R.id.title)).getText().toString();
                         intent = new Intent(activity, BookServiceActivity.class);
                         activity.startActivity(intent);
+                        activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                     } else if (position == 2) {
 //                        intent = new Intent(activity, ChatActivity.class);
 //                        activity.startActivity(intent);
@@ -97,12 +99,15 @@ public class LandingPageAdapter
                                 ((TextView) v.findViewById(R.id.title)).getText().toString();
                         intent = new Intent(activity, BookDeliveryActivity.class);
                         activity.startActivity(intent);
+                        activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                     } else if (position == 3) {
                         intent = new Intent(activity, ServiceListActivity.class);
                         String data = ((TextView) v.findViewById(R.id.title)).getText().toString();
                         ((GlobalClass) (activity.getApplicationContext())).mainMenu = data;
                         intent.putExtra("data", data);
                         activity.startActivity(intent);
+                        activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
                     }
 
 

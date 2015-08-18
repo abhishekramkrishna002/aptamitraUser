@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
@@ -31,10 +32,11 @@ import in.aptamitra.activities.LandingPageActivity;
 public class LoginAsyncTask extends AsyncTask<String, Integer, String> {
     ProgressDialog progress = null;
     Activity activity;
-    public LoginAsyncTask(Activity activity)
-    {
-        this.activity=activity;
+
+    public LoginAsyncTask(Activity activity) {
+        this.activity = activity;
     }
+
     @Override
     protected String doInBackground(String... params) {
         publishProgress(0);
@@ -90,16 +92,16 @@ public class LoginAsyncTask extends AsyncTask<String, Integer, String> {
             String status = obj.getString("status");
 
             if (status.contentEquals("200")) {
-                SharedPreferences.Editor editor=activity.getSharedPreferences("cache",Context.MODE_PRIVATE).edit();
+                SharedPreferences.Editor editor = activity.getSharedPreferences("cache", Context.MODE_PRIVATE).edit();
 
-                editor.putString("profile",obj.getJSONObject("profile").toString());
+                editor.putString("profile", obj.getJSONObject("profile").toString());
                 editor.commit();
 
                 Intent intent = new Intent(activity, LandingPageActivity.class);
                 activity.startActivity(intent);
+                activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                 activity.finish();
-                }
-            else {
+            } else {
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(
                         activity);
                 builder1.setMessage("You entered wrong credentials.Try Again");
@@ -114,7 +116,6 @@ public class LoginAsyncTask extends AsyncTask<String, Integer, String> {
                 AlertDialog alert11 = builder1.create();
                 alert11.show();
             }
-
 
 
         } catch (JSONException e) {

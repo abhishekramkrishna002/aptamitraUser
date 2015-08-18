@@ -145,6 +145,7 @@ public class ComplaintSubTypeActivity extends ActionBarActivity {
             Intent intent = new Intent(this, RegisterComplaintActivity.class);
             intent.putExtra("data", header.getText());
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             finish();
         } else {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(

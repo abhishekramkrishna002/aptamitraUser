@@ -198,6 +198,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                 case 0:
                                     intent = new Intent(activity, LandingPageActivity.class);
                                     activity.startActivity(intent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
 
 
@@ -205,6 +206,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                 case 2:
                                     intent = new Intent(activity, ComplaintsListActivity.class);
                                     activity.startActivity(intent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
 
                                     break;
@@ -213,6 +215,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     callIntent.setData(Uri.parse("tel:" + "08046665666"));
                                     callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(callIntent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     break;
                                 case 6:
                                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
@@ -224,12 +227,14 @@ public class GlobalClass extends com.orm.SugarApp {
                                             "http://www.genieline.com/app/org_hemorvichampaneria_quadvision_mayur_Aptamitra.apk");
                                     shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(Intent.createChooser(shareIntent, "Share Aptamitra"));
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
                                     break;
                                 case 8:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, AboutusActivity.class);
                                     activity.startActivity(intent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
                                     break;
 
@@ -237,12 +242,14 @@ public class GlobalClass extends com.orm.SugarApp {
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, PrivacyActivity.class);
                                     activity.startActivity(intent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
                                     break;
                                 case 12:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, TermsActivity.class);
                                     activity.startActivity(intent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
                                     break;
                                 case 14:
@@ -251,6 +258,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     editor.commit();
                                     intent = new Intent(activity, MainActivity.class);
                                     activity.startActivity(intent);
+                                    activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                                     activity.finish();
                                     break;
                             }
