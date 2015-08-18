@@ -219,7 +219,6 @@ public class RegisterActivity extends ActionBarActivity {
                 s2.setSelection(position);
                 String selState = (String) s2.getSelectedItem();
 
-
             }
 
             @Override
