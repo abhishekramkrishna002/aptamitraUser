@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -18,6 +19,7 @@ import android.os.Bundle;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -33,7 +35,11 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 import async_tasks.RegisterAsyncTask;
 import butterknife.Bind;
@@ -55,8 +61,11 @@ public class RegisterActivity extends ActionBarActivity {
     String gender = new String("male");
     Bitmap profileImageBitmap;
     Spinner s1, s2;
-    ImageView backButton;
     boolean flagMale = false, flagFemale = false;
+    @Bind(R.id.app_bar)
+    Toolbar toolbar;
+    @Bind(R.id.title)
+    TextView titleTextView;
 
 
     private String[] state = {"Bellandur", "BrigadeRoad", "Brookefield", "Byatarayanapura", "C.V. Raman Nagar", "Domlur Layout" +
@@ -69,14 +78,30 @@ public class RegisterActivity extends ActionBarActivity {
             "Banaswadi", "Hebbal", "Frazer Town", "Devanahalli", "Yeshwanthpur", "Mathikere", "Ganga Nagar", "Sanjay Nagar", "Jalahalli",
             "Hennur", "Yelahanka", "Mahatma Gandhi Road", "Electronics City", "Koramangala", "Bannerghatta Road", "Hosur Road", "Banashankari", "BTM Layout", "Ulsoor", "" +
             "Kumaraswamy Layout", "Jaya Nagar", "Kanakapura", "Basaveshwara Nagar", "Vidyaranyapura"};
+
+
+
     private String[] city = {"Bengaluru", "Others"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
+        ButterKnife.bind(this);
         activity = this;
+        ArrayList<String> myList = new ArrayList<String>(Arrays.asList(state));
+        Collections.sort(myList, String.CASE_INSENSITIVE_ORDER);
+        state=myList.toArray(new String[myList.size()]);
         setup();
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
 
 
     }
@@ -320,13 +345,7 @@ public class RegisterActivity extends ActionBarActivity {
             }
         });
 
-        backButton = (ImageView) findViewById(R.id.icon_back);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
 
 
     }

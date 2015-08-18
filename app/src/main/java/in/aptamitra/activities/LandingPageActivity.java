@@ -122,23 +122,6 @@ public class LandingPageActivity extends ActionBarActivity {
         }
 
 
-//        ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon_navigation);
-//        imageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (drawer != null) {
-//                    drawer.openDrawer();
-//                }
-//            }
-//        });
-
-
-//        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_apps_white));
-//
-//        toolbar.setTitle("Aptamitra");
-//        setSupportActionBar(toolbar);
-//        ActionBar actionBar = getSupportActionBar();
-//        actionBar.setTitle("Aptamitra");
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_navigation));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

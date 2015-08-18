@@ -213,7 +213,6 @@ public class GlobalClass extends com.orm.SugarApp {
                                     callIntent.setData(Uri.parse("tel:" + "08046665666"));
                                     callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(callIntent);
-                                    activity.finish();
                                     break;
                                 case 6:
                                     Intent shareIntent = new Intent(Intent.ACTION_SEND);

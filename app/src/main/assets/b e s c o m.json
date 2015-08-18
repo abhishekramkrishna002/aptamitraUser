@@ -1,0 +1,133 @@
+{
+  "B E S C O M": [
+    {
+      "key": "Fuse of call, Line Breakdown, Pole Broken"
+    },
+    {
+      "key": "Voltage variation where no expantion or enhancement of network is involved"
+    },
+    {
+      "key": "Voltage variation where up-gradation of distribution systemis required"
+    },
+    {
+      "key": "Meter complaints"
+    },
+    {
+      "key": "Inspect and check correctness"
+    },
+    {
+      "key": "Replace slow creeping or stuck meters"
+    },
+    {
+      "key": "Replace Burnt meters if cause not attributable to consumer"
+    },
+    {
+      "key": "Billing issues"
+    },
+    {
+      "key": "Where field report is not requires"
+    },
+    {
+      "key": "allegations on staff"
+    },
+    {
+      "key": "Where field report is required"
+    },
+    {
+      "key": "Reconnection of supply following disconnection"
+    },
+    {
+      "key": "Safety issue"
+    },
+    {
+      "key": "Straighting of bent pole"
+    },
+    {
+      "key": "Replacement of damaged pole"
+    },
+    {
+      "key": "Shifting of poles"
+    },
+    {
+      "key": "Tree trimming"
+    },
+    {
+      "key": "TC Failure complaints"
+    },
+    {
+      "key": "Water supply"
+    },
+    {
+      "key": "domestic"
+    },
+    {
+      "key": "industry"
+    },
+    {
+      "key": "mixed load"
+    },
+    {
+      "key": "irrigation"
+    },
+    {
+      "key": "Theft"
+    },
+    {
+      "key": "Hooking under niranthara jothiyojane"
+    },
+    {
+      "key": "Allegations on staff"
+    },
+    {
+      "key": "New connection/additional load"
+    },
+    {
+      "key": "Release of supply where service is feasible from existing network"
+    },
+    {
+      "key": "Release of supply where network expansion/enhancement required for providing connection"
+    },
+    {
+      "key": "IP sets"
+    },
+    {
+      "key": "Phase conversion"
+    },
+    {
+      "key": "Conversion of LT single phase to LT 3 phase"
+    },
+    {
+      "key": "Conversion from LT to HT"
+    },
+    {
+      "key": "Transfer of ownership and conversion"
+    },
+    {
+      "key": "Title transfer of ownership"
+    },
+    {
+      "key": "Change of category"
+    },
+    {
+      "key": "Refund of deposits"
+    },
+    {
+      "key": "Issue of certificate"
+    },
+    {
+      "key": "Additional TC / Enhancement"
+    },
+    {
+      "key": "Additional TC"
+    },
+    {
+      "key": "Enhancement of TC"
+    },
+    {
+      "key": "General"
+    },
+    {
+      "key": "Complaints that is not covered under the above category"
+    }
+  ]
+}

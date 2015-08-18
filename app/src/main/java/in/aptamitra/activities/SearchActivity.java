@@ -1,6 +1,7 @@
 package in.aptamitra.activities;
 
 import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
@@ -11,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -38,6 +41,10 @@ public class SearchActivity extends ActionBarActivity {
     private ArrayList<String> searches;
     @Bind(R.id.search_page_container)
     LinearLayout searchLinearLayout;
+    @Bind(R.id.app_bar)
+    Toolbar toolbar;
+    @Bind(R.id.title)
+    TextView titleTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,12 +91,17 @@ public class SearchActivity extends ActionBarActivity {
 
             }
         });
-        ((ImageView) findViewById(R.id.icon_back)).setOnClickListener(new View.OnClickListener() {
+
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_back));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titleTextView.setTypeface(typeface);
+
 
 
     }

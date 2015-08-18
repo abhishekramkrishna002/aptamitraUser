@@ -32,7 +32,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:textColorHint="@color/gray"
-            android:hint="What services do u need?"
+            android:hint="@string/search_text"
             android:ems="10"
             android:background="@drawable/edit_text_bg_1" />
 

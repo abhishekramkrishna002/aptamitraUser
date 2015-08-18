@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AptamitraUser</string>
+    <string name="app_name">Aptamitra</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -73,5 +73,8 @@
         <item>My Delivery</item>
         <item>My Aptamitra</item>
     </string-array>
+
+
+    <string name="search_text">Who is your Mitra today?</string>
 
 </resources>
