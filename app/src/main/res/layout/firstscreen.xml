@@ -16,20 +16,9 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_launcher"
+        android:background="@drawable/aptalogo"
         android:layout_marginTop="20dip"
         android:layout_gravity="center"/>
-
-    <TextView
-        android:id="@+id/titletext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="-10dip"
-        android:text="APTAMITRA"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"/>
 
 <LinearLayout
     android:layout_width="wrap_content"

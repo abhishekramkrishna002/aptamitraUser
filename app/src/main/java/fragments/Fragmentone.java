@@ -28,11 +28,11 @@ public class Fragmentone extends Fragment {
         View rootView = inflater.inflate(R.layout.firstscreen, container, false);
 
         text1 = (TextView) rootView.findViewById(R.id.text1);
-        titletext = (TextView) rootView.findViewById(R.id.titletext);
+//        titletext = (TextView) rootView.findViewById(R.id.titletext);
         logo = (ImageView) rootView.findViewById(R.id.logo);
         face = Typeface.createFromAsset(getActivity().getAssets(), "TrajanPro_Regular.otf");
         text1.setTypeface(face);
-        titletext.setTypeface(face);
+//        titletext.setTypeface(face);
 
         return rootView;
 

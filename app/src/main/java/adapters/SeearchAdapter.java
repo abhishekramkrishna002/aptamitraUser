@@ -66,7 +66,7 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 .getLayoutInflater();
 
 
-        View row = inflater.inflate(itemLayout, parent,
+        final View row = inflater.inflate(itemLayout, parent,
                 false);
         try {
             String search = searches.get(position);
@@ -98,9 +98,8 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 row.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());
-                        globalClass.mainMenu = null;
-                        globalClass.mainMenu = (results[2]);
+
+                        ((GlobalClass) activity.getApplicationContext()).mainMenu = ((TextView) row.findViewById(R.id.service_name)).getText().toString();
 
                         Intent intent = new Intent(activity, BookServiceActivity.class);
                         activity.startActivity(intent);
@@ -113,9 +112,8 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                 row.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        GlobalClass globalClass = ((GlobalClass) activity.getApplicationContext());
-                        globalClass.mainMenu = null;
-                        globalClass.mainMenu = (results[2]);
+                        ((GlobalClass) activity.getApplicationContext()).mainMenu = ((TextView) row.findViewById(R.id.service_name)).getText().toString();
+
 
                         Intent intent = new Intent(activity, BookDeliveryActivity.class);
                         activity.startActivity(intent);

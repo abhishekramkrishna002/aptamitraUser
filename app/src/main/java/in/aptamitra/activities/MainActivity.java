@@ -82,12 +82,12 @@ public class MainActivity extends ActionBarActivity {
 
             ButterKnife.bind(this);
 
-        titletext = (TextView) findViewById(R.id.titletext);
+//        titletext = (TextView) findViewById(R.id.titletext);
         //forgot = (Button) findViewById(R.id.forgot);
         face = Typeface.createFromAsset(this.getAssets(), "TrajanPro_Regular.otf");
         loginButton.setTypeface(face);
         registerTextView.setTypeface(face);
-        titletext.setTypeface(face);
+//        titletext.setTypeface(face);
         //forgot.setTypeface(face);
         face2 = Typeface.createFromAsset(this.getAssets(), "Narkisim.ttf");
         email.setTypeface(face2);

@@ -14,24 +14,12 @@
         android:orientation="vertical"
         android:gravity="center">
 
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher" />
-
-        <TextView
-            android:id="@+id/titletext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:text="APTAMITRA"/>
-
-        <!--<ImageView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/aptalogo" />-->
+            android:src="@drawable/aptalogo" />
+
     </LinearLayout>
 
     <LinearLayout
