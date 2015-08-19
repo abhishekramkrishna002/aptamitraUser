@@ -224,6 +224,24 @@
                 android:fontFamily="sans-serif"
                 android:text="*Choose a password other than your email" />
 
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif"
+                android:text="I agree to terms and conditions"
+                android:id="@+id/accept_terms_conditions"/>
+            <TextView
+                android:id="@+id/view_terms_and_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/material_drawer_selected_text"
+                android:text="View Terms and Conditions"
+                android:clickable="true"/>
+
             <Button
                 android:id="@+id/register_submit_button"
                 android:layout_width="fill_parent"

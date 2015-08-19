@@ -170,12 +170,8 @@ public class MyGcmListenerService extends GcmListenerService {
                     .setSummaryText("New Complaint"))
                     .setSmallIcon(R.drawable.white_logo)
                     .setContentIntent(pendingIntent);
-
-
             NotificationManager notificationManager =
                     (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-
             notificationManager.notify(new Random().nextInt(5000) /* ID of notification */, notificationBuilder.build());
         } catch (Exception e) {
             e.printStackTrace();
