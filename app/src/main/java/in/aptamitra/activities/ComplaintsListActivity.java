@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -57,6 +58,8 @@ public class ComplaintsListActivity extends ActionBarActivity {
     Drawer drawer;
     @Bind(R.id.app_bar)
     Toolbar toolbar;
+    TextView title;
+    Typeface face, face2;
 
 
     Activity activity;
@@ -66,6 +69,10 @@ public class ComplaintsListActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complaints_list);
+
+        title=(TextView)findViewById(R.id.mycomplaints_title);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        title.setTypeface(typeface);
 
         activity = this;
         ButterKnife.bind(this);

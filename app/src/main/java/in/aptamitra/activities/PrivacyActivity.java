@@ -1,6 +1,7 @@
 package in.aptamitra.activities;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.mikepenz.materialdrawer.Drawer;
 
@@ -35,6 +37,8 @@ public class PrivacyActivity extends ActionBarActivity {
     Toolbar toolbar;
     Drawer drawer;
     private LayoutInflater layoutInflater;
+    TextView titletextview;
+    Typeface face, face2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,10 @@ public class PrivacyActivity extends ActionBarActivity {
                 drawer.openDrawer();
             }
         });
+
+        titletextview=(TextView)findViewById(R.id.title);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        titletextview.setTypeface(typeface);
 
         lv = (ExpandableListView) findViewById(R.id.lvExp);
 

@@ -23,6 +23,7 @@
 
 
             <TextView
+                android:id="@+id/profile_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -86,8 +87,8 @@
                     android:layout_margin="5dp"
                     android:id="@+id/name"
                     android:ems="10"
-                    android:hint="Abhishek Ramkrishna"
-                    android:textColorHint="@color/black" />
+                    android:hint="change name"
+                     />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -105,8 +106,8 @@
                     android:layout_margin="5dp"
                     android:ems="10"
                     android:id="@+id/email"
-                    android:hint="abhishek.ramkrishna002@gmail.com"
-                    android:textColorHint="@color/black" />
+                    android:hint="change email-id"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -124,8 +125,8 @@
                     android:layout_margin="5dp"
                     android:ems="10"
                     android:id="@+id/mobile"
-                    android:hint="8095764816"
-                    android:textColorHint="@color/black" />
+                    android:hint="change number"
+                    />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
