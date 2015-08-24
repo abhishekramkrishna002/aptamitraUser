@@ -25,6 +25,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -66,6 +68,16 @@ public class RegisterActivity extends ActionBarActivity {
     Toolbar toolbar;
     @Bind(R.id.title)
     TextView titleTextView;
+    @Bind(R.id.view_terms_and_conditions)
+    TextView termsAndConditions;
+    @Bind(R.id.accept_terms_conditions)
+    CheckBox checkBox;
+
+    @OnClick(R.id.view_terms_and_conditions)
+    public void viewTermsAndConditions(View v) {
+        Intent intent = new Intent(this, RegisterTermsActivity.class);
+        startActivityForResult(intent, 563);
+    }
 
     Typeface face, face2;
 
@@ -103,6 +115,20 @@ public class RegisterActivity extends ActionBarActivity {
         });
         Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
         titleTextView.setTypeface(typeface);
+        register.setEnabled(false);
+        register.setClickable(false);
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (register.isEnabled()) {
+                    register.setEnabled(false);
+                    register.setClickable(false);
+                } else {
+                    register.setEnabled(true);
+                    register.setClickable(true);
+                }
+            }
+        });
 
 
     }

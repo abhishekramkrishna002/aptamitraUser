@@ -222,9 +222,12 @@ public class GlobalClass extends com.orm.SugarApp {
 
                                     shareIntent.setType("text/plain");
                                     shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Aptamitra");
-                                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Hey! Check out Aptamitra. Make reservations, find products & more with just a " +
-                                            "message. Chat with your local stores now - " +
-                                            "http://www.genieline.com/app/org_hemorvichampaneria_quadvision_mayur_Aptamitra.apk");
+//                                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Hey! Check out Aptamitra. Make reservations, find products & more with just a " +
+//                                            "message. Chat with your local stores now - " +
+//                                            "http://www.genieline.com/app/org_hemorvichampaneria_quadvision_mayur_Aptamitra.apk");
+                                    shareIntent.putExtra(Intent.EXTRA_TEXT,
+                                            activity.getResources().getString(R.string.share_text) +"\n"+
+                                                    activity.getResources().getString(R.string.play_store_link));
                                     shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(Intent.createChooser(shareIntent, "Share Aptamitra"));
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);

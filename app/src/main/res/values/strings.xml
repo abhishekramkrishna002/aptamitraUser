@@ -67,6 +67,7 @@
     <string name="title8">"Policy updates"</string>
 
 
+
     <string-array name="landing_page">
         <item>My City</item>
         <item>My Booking</item>
@@ -76,5 +77,6 @@
 
 
     <string name="search_text">Who is your Mitra today?</string>
-
+    <string name="share_text">Dear Mitra, Namaste! Check out this must have app on your device.It is called as Aptamitra : Your Trusted Friend At Your Service.From resolving a streetlight issue to snake rescue, orFrom hiring a housemaid or repair professionals, to arranging a professional photographer for an event at home.Aptamitra connects you with the nearest professional service providers.They provide instant pick up and drop of anything all over Bengaluru.It can be keys, tiffin box, medicine,bill payment etc. Possibilities are endless.Basically they run errands for you. Just anything. Timings of service are 10 am to 11 pm.</string>
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=in.aptamitra&amp;hl=en</string>
 </resources>
