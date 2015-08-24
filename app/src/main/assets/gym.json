@@ -1,82 +1,12 @@
 [
     {
-        "name": "Haute Fitness",
-        "contact": "080 39627575",
-        "address": "No.40/1,Century Corbel Commercial Complex,2nd Floor, G Block, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Snap Fitness",
-        "address": "No.19, 2nd Floor, Diamond Arcade, 60 Feet Road, F Block, Sahakara Nagar, Bangalore - 560092",
-        "contact": "080 39557019"
-    },
-    {
-        "name": "Goodlife Fitness",
-        "address": "#490/8, 3 & 4th floor, F Block, Sahakara Nagar, Bangalore - 560092",
-        "contact": "33538183"
-    },
-    {
-        "name": "Sweat Health And Fitness Centre",
-        "address": "No.2256, Sahakara Ngr, Kodigehalli, Bangalore - 560092",
-        "contact": "33056944"
-    },
-    {
-        "name": "The Fitness Factory",
-        "address": "No.2386,1st Floor, 60 Feet Road, Sahakara Nagar, Bangalore - 560092, Opposite Freska & Next To Cavery School",
-        "contact": "080 33051968"
-    },
-    {
-        "name": "Smith Multi Gym",
-        "address": "1st Main Road, G Block, 60 Feet Road, Sahakara Nagar, Bangalore - 560092",
-        "contact": "9945137646"
-    },
-    {
-        "name": "Velu Gym",
-        "address": "#121, Amruthhalli, Jakkuru Main Road, Byatarayanapura, Bangalore, Karnataka, India 560092",
-        "contact": "9342719838"
-    },
-    {
-        "name": "Hunuman Gym",
-        "address": "41, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063",
-        "contact": "9900348792"
-    },
-    {
-        "name": "Olympic Gym",
-        "address": "80, Maruthi Nagar Main Road, Anna Street, Yelahanka Old Town, Bangalore, Karnataka, India 560063",
-        "contact": "9845978654"
-    },
-    {
-        "name": "Regent Gym & Fitness Centre",
-        "address": "Regent Chambers 7 Main 80 Feet Road Banaswadi, Thindlu main Road, Bangalore, Karnataka, India 560097",
-        "contact": "080 25455248"
-    },
-    {
-        "name": "Agni Steps Dance Academy",
-        "address": "No.39,SFS 707, 4th Phase, Yelahanka, Bangalore - 560064, Near Royal Mart,Above Malgudi Restaurant",
-        "contact": "080 39257795"
-    },
-    {
-        "name": "Heart Beat Fitness",
-        "address": "No.325, Amrutha Varhini, 1st Main A Sector, Yelahanka New Town, Bangalore - 560064",
-        "contact": "9901099976"
-    },
-    {
-        "name": "Flex N Fitnes",
-        "address": "No.99, 2nd Floor,1 A Cross,A Sector, Yelahanka New Town, Bangalore - 560064,",
-        "contact": "080 39257110"
-    },
-    {
-        "name": "Add Life Gym & Aerobics",
-        "address": "1st And 2nd Floor, Yelahanka, Bangalore - 560064, Opposite To Kendriya Vihar Apartment",
-        "contact": "9901605050"
-    },
-    {
         "name": "Cosmo fitness gym",
-        "address": "#969,kempaiah complex,4th main,BEL Layout above ICICI bank,2nd block,vidyaranyapura ban-97",
-        "contact": "42166635"
+        "contact": "42166635",
+        "address": "#969,kempaiah complex,4th main,BEL Layout above ICICI bank,2nd block,vidyaranyapura ban-97"
     },
     {
         "name": "Health track",
-        "address": "#708,lower ground floor,3rd block,BEL Layout,below adishwar electro world,vidyaranyapura main road,ban-97",
-        "contact": "9900540345/46"
+        "contact": "9900540345/46",
+        "address": "#708,lower ground floor,3rd block,BEL Layout,below adishwar electro world,vidyaranyapura main road,ban-97"
     }
 ]

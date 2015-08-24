@@ -123,7 +123,7 @@
             "image_link": "dance_classes.jpg"
         },
         {
-            "name": "Driving School",
+            "name": "Driving Class",
             "image_link": "driving_school.jpg"
         },
         {
@@ -386,7 +386,46 @@
          {
              "name": "Schools",
              "image_link": "schools.jpg"
-         }
-
+         },
+         {
+             "name":"clinics",
+             "image_link":"schools.jpg"
+         },
+         {
+             "name":"others",
+             "image_link":"others.jpg"
+         },
+         {
+              "name":"signages",
+              "image_link":"schools.jpg"
+         },
+          {
+               "name":"xerox",
+               "image_link":"schools.jpg"
+          },
+          {
+                "name":"cycle shop",
+                "image_link":"schools.jpg"
+         },
+         {
+              "name":"Vegitables and fruits",
+              "image_link":"schools.jpg"
+        },
+         {
+              "name":"Wood Works",
+              "image_link":"schools.jpg"
+          },
+          {
+              "name":"Provision stores",
+              "image_link":"schools.jpg"
+          },
+          {
+              "name":"Bakery and Condiments",
+              "image_link":"bakery.jpg"
+          },
+          {
+               "name":"Cement Shops",
+               "image_link":"bakery.jpg"
+           }
     ]
 }

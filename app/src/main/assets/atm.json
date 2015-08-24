@@ -1,474 +1,92 @@
 [
     {
-        "name": "HDFC Bank ATMs",
-        "address": "#360, Thalakaveri Layout, Amruthahalli Main Road, Near Reliance Fresh Amruthahalli Main Road Bengaluru 560092 Karnataka India",
-        "contact": "-----------------------------"
-    },
-    {
-        "name": "Indian Overseas Bank ATMs",
-        "address": "1, Ground Floor Balaji Layout 8th Cross, Kodigehalli Main Road Bangalore, Pincode: 560092, District: BANGALORE URBAN",
-        "contact": "-----------------------------"
-    },
-    {
-        "name": "Dhanlaxmi Bank ATMs",
-        "address": "17, Kodigehalli Main Roadm, (Bus Stop)Opp To Brigade Apartments.Bangalore - 560092",
-        "contact": "------------------------------"
-    },
-    {
-        "name": "HDFC Bank ATMs",
-        "address": " 360, Thalakaveri Layout, Amruthahalli Main Road, Near Reliance Fresh Amruthahalli Main Road Bengaluru 560092 Karnataka India",
-        "contact": "------------------------------"
-    },
-    {
-        "name": "Kotak Mahindra Bank ATMs",
-        "address": "A-Block, 13Th Main Road, Sahakaranagar, Bangalore 560 092",
-        "contact": "------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Branch Premises, Amruthahalli, No.384Tala Cauvery Buildingsamruthahalli Main Road, Bangalore, Karnataka 560092",
-        "contact": "------------------------------"
-    },
-    {
-        "name": "Union Bank Of India ATMs",
-        "address": "Dream Nest, 423, 5th Cross, Tata Nagar, Bangalore 560092",
-        "contact": "------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, # 6and7 Ground Floor, 60Feet Rd, Shakarnagar Bangalore-560 092, Bangalore, Karnataka, 560092",
-        "contact": "-------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": " ICICI Bank ATM, 360, Tala cavery layout, Amruthhalli road, Bytarany, Bangalore, Karnataka, 560092",
-        "contact": "-------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": " ICICI Bank ATM, 849, A -Block, 13th Main Road, Sahakar Nagar, Bangalore 560092, ",
-        "contact": "-------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": " ICICI Bank ATM, SMN Complex Kodigehalli main road Kodigehalli sahakara nagar post Bangalore 560092",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, Unit #1, 91/6, Ground Floor, Nagavara Palya, Old Madras Road, Bangalore-560092",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "Karnataka Bank ATMs",
-        "address": "No. 358/224, Shrinidhi, Shrigandh nagar, Main Road, Hegganahalli 560092",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "Karnataka Bank ATMs",
-        "address": "No.2257, E Block, Kodigehalli Main Road, Sahakarnagar, Bangalore 560092",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Sahakaranagar, Branch Atm No.19, 60 Feet Road., Sahakara Nagar, Bangalore 560092, Karnataka,",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Sahakarnagar, Bangalore, No.236 F Block Opp Cauvery Public School, Sahakarnagar, Bangalore,",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "State Bank of Mysore ATMs",
-        "address": "State Bank Of Mysore, Sahakari Nagar, No 2383 E Block Near Cauvery, Bangalore-560092, Bangalore-560092",
-        "contact": "--------------------------------"
-    },
-    {
-        "name": "UCO Bank ATMs",
-        "address": "Uco Bank, 170, Cqal Layout, 60Ft Main Road, Sahakarnagar, Bangalore 560 092",
-        "contact": "--------------------------------"
-    },
-
-    {
-        "name": "HDFC Bank ATMs",
-        "address": "1617, Kogilu Road, Maruthi Nagar, Yelahanka, Bengaluru 64 Bengaluru 560064 Karnataka India",
-        "contact": "---------------------------------"
-    },
-    {
-        "name": "HDFC Bank ATMs",
-        "address": "493, 17Th Cross, Jakkur Layout, Jakkur Bengaluru 560064 Karnataka India",
-        "contact": "---------------------------------"
-    },
-    {
-        "name": "Indian Overseas Bank ATMs",
-        "address": " 686,THIRD,A-CROSS,YELAHANKA,OPP SHESHADRIPURAM COLLEGE BANGALORE, Pincode: 560064",
-        "contact": "---------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Addnl Cd Sfs 208 House No.2 , 1 Main Rd , Sfs 208 , Yehlanka New Town , Bangalore 560064",
-        "contact": "----------------------------------"
-    },
-    {
-        "name": "Bank of Maharashtra ATMs",
-        "address": "Bank Of Maharastra, No 137, 3Rd Main, Sfs 407, 4Th Phase, New Town, Yalhanka, Bangalore 560 064",
-        "contact": "-----------------------------------"
-    },
-    {
-        "name": "Bank of Baroda ATMs",
-        "address": "Baroda Manipal School of Banking, North Bangalore Campus, 36, Chokkanahalli, Near Hedge Bridge Bangalore 560064",
-        "contact": "-----------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": " Branch Premises, 1 Yelahanka New Town Yelahanka, Bangalore, Karnataka 560 064",
-        "contact": "-----------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Branch Premises, D.N. 45/1 Apmc Yardtumkur Roadyeshwanthpur, Bangalore, Karnataka 560064",
-        "contact": "------------------------------------"
-    },
-    {
-        "name": "Citi Bank ATMs",
-        "address": "Building No. 1139, 16Th, B-Cross Road, Sector B, Bus Stand Road, Yelhanka New Town, Bengaluru 560 064",
-        "contact": "------------------------------------"
-    },
-    {
-        "name": "Corporation Bank ATMs",
-        "address": "Corporation Bank, Ground Floor, 441/395, Opp. Post Office, Bangalore Bellary Road, Bangalore 560 064",
-        "contact": "--------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Crpf, Yelahanka, Crpf Complex, Gate No. 2, Yelahanka, Bangalore, Karnataka 560064",
-        "contact": "--------------------------------------"
-    },
-    {
-        "name": "Union Bank Of India ATMs",
-        "address": "GO GO International No 6, KHB, Industrial Area, 2nd Cross, Yelahanka, Bangalore 560064",
-        "contact": "-------------------------------------"
-    },
-    {
-        "name": "Corporation Bank ATMs",
-        "address": "Ground Floor, 63, EWS, IV Phase, Yelahanka Extension, Yelahanka Satellite Town, Bangalore 560 064",
-        "contact": "--------------------------------------"
-    },
-    {
-        "name": "Kotak Mahindra Bank ATMs",
-        "address": "Ground Floor, Corporation No. 8/8/1, Jakkur Plantation, (Yeshoda Nagar), International Airport Road, Yelahanka Hobli, Bangalore 560 064",
-        "contact": "---------------------------------------"
-    },
-    {
-        "name": "Dhanlaxmi Bank ATMs",
-        "address": "Ground Floor, Door No. 1143 Mig, 16Th B Main Road Yelhanka New Town Bangalore - 560064",
-        "contact": "---------------------------------------"
-    },
-    {
-        "name": "Corporation Bank ATMs",
-        "address": "Ground floor, No.1, Jayaram Nagar, Jakkur, Bangalore 560 064",
-        "contact": "---------------------------------------"
-    },
-    {
-        "name": "HDFC Bank ATMs",
-        "address": " Hegdenagar Main Road Yelahanka Bengaluru Bengaluru 560064",
-        "contact": "---------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Highway Needs, Hp Petrol Pump, Bellary Road, Opp Jakkur, Yelahanka, Bangalore, Pin 560064, Bangalore, Karnataka",
-        "contact": "----------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": " ICICI Bank ATM, #2019-A, Sector B, 3Rd B Block, Yelahanka New Town, Bangalore 560064, Bangalore",
-        "contact": "-----------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, 1370, Jaya Complex, Old BB Road, Yelhanka, Opp: Indian, Bangalore, Karnataka, 560064",
-        "contact": "-----------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": " ICICI Bank ATM, 4th Phase, Yelahanka, bangalore, Bangalore, Karnataka, 560064",
-        "contact": "-----------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, 84, Vinayaka Layout, Prestige Monte Carlo Apartmen, Bangalore, Karnataka, 560064",
-        "contact": "------------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, Chowdeshwari Krupa, # 38/6, 38/7, MIG-707, SFS, Bangalore, Karnataka, 560064",
-        "contact": "------------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, ICICI Manipal Association, Chokkanahalli, Besides Diana College, Jaggur Post, Yelahanka, Banglore North-560064",
-        "contact": "------------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, Prestige Moute Carlo Apartments.Dodballapur, Bangalore, Karnataka, 560064",
-        "contact": "-------------------------------------------"
-    },
-    {
-        "name": "ICICI Bank ATMs",
-        "address": "ICICI Bank ATM, Samruddhi 57/35 1st Cross Jakkur Main Road Surabhi Layout Yelahanka Bangalore Karnataka",
-        "contact": "(91)-80-23646301, 23646302"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Judicial Lay Out No 1893 Judicial Layout Yelhanka Hobli Bangalore -560064, Bangalore, Karnataka",
-        "contact": "-------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Kogilu Main Road, Near Maruthinagar Pappanna Layout Yelahanka Bangalore -560064, Bangalore, Karnataka",
-        "contact": "-------------------------------------------"
-    },
-    {
-        "name": "HDFC Bank ATMs",
-        "address": "M/S Shankara Service Station, Avalahalli Singanayakanahalli Post, Yelahanka Doddaballapur Road Bengaluru 560064 Karnataka India",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "Central Bank of India ATMs",
-        "address": "Mr. S. Patalappa, No. 9, K.H.B. Shop, Puttenahalli, Yelahanka, Bangalore 560064",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Nitte Meenakshi Institute Of Technology, Govindapura, Gollahalli, P.B.No.6429, Yelahanka, Bangalore 560 064, Karnataka, Bangalore, Karnataka",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "Development Credit Bank ATMs",
-        "address": " No 2, Maruti Savanagar, Near Mukundha Theatre Muniga Layout, Banasawadi, Bangalore 560064",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "Karnataka Bank ATMs",
-        "address": "No.1234, 7th B Cross, Mother Dairy Road, Yelahanka New Town, Bangalore 560 064",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Karnataka Bank ATMs",
-        "address": " Reva Institute of Engineering & Technology Campus, Kattigenahalli, Yelahanka(PO), Bangalore 560064.",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Sfs 208 House No.2 , 1 Main Rd , Sfs 208 , Yehlanka New Town , Bangalore 560064 .. , Bangalore, Karnataka",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Kotak Mahindra Bank ATMs",
-        "address": "Shop No. 1, Nagarjuna Nilaya, 3Rd Phase, New Town, Yelahanka Extension, Bangalore 560 064",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Oriental Bank of Commerce ATMs",
-        "address": "Shop#03, 1145, Mig, 16Th B Cross, Ii Stage, Yelahanka New Town, Bangalore 560064",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Susrusha Nrsg Home Bellary Road , Yelahanka, Bangalore 560064., Bangalore, Karnataka",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Ratnakar Bank ATMs",
-        "address": "The Ratnakar Bank ATM Center, Yelahanka No.1217, 1st Phase, Yelahanka New Town, Bangalore 560 064",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Indian Bank ATMs",
-        "address": "Thirumanenahalli Kns Institute Of Technology Campusjakkur Post, Yelahanka Bangalore karnataka 560064",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "UCO Bank ATMs",
-        "address": "Uco Bank, Yelahanka Br., 198, Sfs 208 Ground Floor Fourth Phase, Near Mother Diary Crossing, New Town, Yelahanka, Bangalore 560064",
-        "contact": "----------------------------------------------"
-    },
-    {
-        "name": "Union Bank Of India ATMs",
-        "address": "Union Bank of India, SHOP NO 2, YELHANKHA MAIN ROAD, BAGLUR, BANGALORE NORTH, KARNATAKA 560064",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "Union Bank Of India ATMs",
-        "address": "Union Bank of India, Yelahanka Br., Y V K Complex, No. 249, Sector 'A', 1st Phase, Yelahanka New Town, Bangalore 560064",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "Union Bank Of India ATMs",
-        "address": "Union Bank of India, Yelhanka Branch, Site no 249, Y.V.K.Compex, MIGHS, Sector-1, 1st Phase, Yelhanka New Town Main Road, Bangalore 560064",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Wheel Axle Plant, Main Gate Wheel Rail Factory Yelahanka, Bangalore, Karnataka 560 064",
-        "contact": "---------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Yelahanka Branch No.688, Iii A Cross, Opp.Seshadripuram Colllege, Yehlanka, Bangalore 560064, Bangalore, Karnataka",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Yelahanka Branch Uti Bank Ltd, No.688, Iii A Cross, Opp.Seshadripuram Colllege, Yehlanka, Bangalore 560064. , Bangalore, Karnataka",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Yelahanka New Town, No.3 Mig 4Th Phase M 707 Near Air, 1St Main Road, Yelahanka New Town, Bangalore, Karnataka 560 064",
-        "contact": "-------------------------------------------"
-    },
-    {
-        "name": "Indian Bank ATMs",
-        "address": "Yelhanka New Town 692, Iii Phase, Sector Anew Town, Yelahanka Bangalore karnataka 560064",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Yeshwanthpur Circle I, Yeshwanthpur Circlebehind Petrol Bunkyeshwanthpur, Bangalore, Karnataka 560064",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "Axis Bank ATMs",
-        "address": "Air Force Stn Shop No.5, New Shopping Complex, Air Force Station, Yehlanka, Bangalore 560063, Bangalore, Karnataka",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Branch Premises, Nh 7Bellary Roadyelahanka, Bangalore, Karnataka 560 063",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": "Bsf Yelahanka, Border Security Force, Bellary Road Yelahanka, Bangalore, Karnataka 560063",
-        "contact": "--------------------------------------------"
-    },
-    {
-        "name": "State Bank of India ATMs",
-        "address": " Bsf Yelahanka, Bsf Yelahanka Near Delhi Public School, Bangalore, Karnataka 560063",
-        "contact": "--------------------------------------------"
-    },
-    {
         "name": "Indusind Bank Ltd - ATM",
-        "address": "No.703, 3rd Block, Bel Layout, Vidyaranyapura, Bangalore - 560097",
-        "contact": "--------------------------------------------"
+        "contact": "n/a",
+        "address": "No.703, 3rd Block, Bel Layout, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "Union Bank Of India - ATM",
-        "address": "No.34, Chikkabettalli, Vidyaranyapura, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.34, Chikkabettalli, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "Vijaya Bank - ATM",
-        "address": "No.735/51/2, Nanjappa Main Road, Vidyaranyapura, Bangalore - 560097",
-        "contact": "---------------------------------------------"
+        "contact": "n/a",
+        "address": "No.735/51/2, Nanjappa Main Road, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "Karnataka Bank Ltd - ATM",
-        "address": "No.704, HMT Layout, 5th Block, Vidyaranyapura, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.704, HMT Layout, 5th Block, Vidyaranyapura, Bangalore - 560097"
     },
     {
-        "name": "HDFC Bank Ltd ATM",
-        "address": "No.1209, Bel, 2nd Block, Vidyaranyapura, Bangalore - 560097",
-        "contact": "-----------------------------------------------"
-    },
-    {
-        "name": "HDFC Bank Ltd - ATM ",
-        "address": "No.19, 3rd Block, Jayalakshmamma Layout, Vidyaranyapura, Near Arch Doddbommasandra, Bangalore - 560097",
-        "contact": "-----------------------------------------------"
+        "name": "Syndicate Bank - ATM",
+        "contact": "n/a",
+        "address": "No.844, Vidyaranyapura, Opposite To Post Office, Near Bell Residents Welfare Associatio, Bangalore - 560097"
     },
     {
         "name": "HDFC Bank Ltd - ATM",
-        "address": "No.1209, Bel 2nd Block, Vidyaranyapura, Near TVS Servicing Motors, Bangalore - 560097",
-        "contact": "------------------------------------------------"
+        "contact": "n/a",
+        "address": "No.19, 3rd Block, Jayalakshmamma Layout, Vidyaranyapura, Near Arch Doddbommasandra, Bangalore - 560097"
     },
     {
         "name": "HDFC Bank Ltd - ATM",
-        "address": "No.21, Nti Employees Housing Co Operative Society Ltd, Narasipura, Vidyaranyapura, Opposite State Bank Of India.Behind Vidyaranyapura, Bangalore - 560097",
-        "contact": "------------------------------------------------"
+        "contact": "n/a",
+        "address": "No.1209, Bel 2nd Block, Vidyaranyapura, Near TVS Servicing Motors, Bangalore - 560097"
     },
     {
-        "name": "Syndicate Bank - ATM",
-        "address": "No.844, Vidyaranyapura, Opposite To Post Office, Near Bell Residents Welfare Associatio, Bangalore - 560097",
-        "contact": "------------------------------------------------"
-    },
-    {
-        "name": "Syndicate Bank - ATM",
-        "address": "No.844, 5th Block, Bel Layout, Vidyaranyapura, Opp Post Office, Bangalore - 560097",
-        "contact": "------------------------------------------------"
-    },
-    {
-        "name": "Syndicate Bank - ATM",
-        "address": "Vidyaranyapura Main Road, Vidyaranyapura, Near ammi biryani, Bangalore - 560097",
-        "contact": "------------------------------------------------"
+        "name": "HDFC Bank Ltd - ATM",
+        "contact": "n/a",
+        "address": "No.21, Nti Employees Housing Co Operative Society Ltd, Narasipura, Vidyaranyapura, Opposite State Bank Of India.Behind Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "State Bank Of India - ATM",
-        "address": "No.25, Nti Layout, Vidyaranyapura, Bangalore - 560097 ",
-        "contact": "------------------------------------------------"
-    },
-    {
-        "name": "State Bank Of India - ATM",
-        "address": "Global Village Tech Park, Vidyaranyapura, Bangalore - 560097 ",
-        "contact": "-------------------------------------------------"
+        "contact": "n/a",
+        "address": "No.25, Nti Layout, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "Ing vysa atm ",
-        "address": "Vidyaranyapura Main Road, Vidyaranyapura Block 4, Opp cafe coffe day, Bangalore - 560097",
-        "contact": "-------------------------------------------------"
+        "contact": "n/a",
+        "address": "Vidyaranyapura Main Road, Vidyaranyapura Block 4, Opp cafe coffe day, Bangalore - 560097"
     },
     {
         "name": "Karnataka Bank Ltd - ATM ",
-        "address": "No.704, HMT Layout, Main Road, Vidyaranyapura Block 5, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.704, HMT Layout, Main Road, Vidyaranyapura Block 5, Bangalore - 560097"
     },
-
     {
         "name": "Indian Overseas Bank ATM ",
-        "address": "No.570,Sri SAI Tower, HMT Layout, 1 Block, Main Road, Vidyaranyapura, Bangalore - 560097",
-        "contact": "-----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.570,Sri SAI Tower, HMT Layout, 1 Block, Main Road, Vidyaranyapura, Bangalore - 560097 "
     },
     {
         "name": "Axis Bank Ltd - ATM",
-        "address": "No.703, 3rd Block, Vidyaranyapura, Opposite To Canara Bank, Bangalore - 560097 ",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.703, 3rd Block, Vidyaranyapura, Opposite To Canara Bank, Bangalore - 560097 "
     },
     {
         "name": "Corporation Bank - ATM",
-        "address": "No.706, Suvarna Complex, Vidyaranyapura, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.706, Suvarna Complex, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "Canara Bank - ATM",
-        "address": "No.962, 2nd Block,Bel Layout, Vidyaranyapura, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.962, 2nd Block,Bel Layout, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "ICICI Bank Ltd - ATM",
-        "address": "No.591, HMT Layout, Vidyaranyapura, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.591, HMT Layout, Vidyaranyapura, Bangalore - 560097"
     },
     {
         "name": "Dhanlaxmi Bank Ltd - ATM",
-        "address": "Vinayakaiind Block, Nanjappa Main Road, Vidyaranyapura Block 1, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "Vinayakaiind Block, Nanjappa Main Road, Vidyaranyapura Block 1, Bangalore - 560097"
     },
     {
         "name": "Central Bank Of India - ATM",
-        "address": "No.G-4, SAI Complex, Marathi Layout, 9th Cromi, Vrupakashpure, Kodigehalli, Vidyaranyapura, Bangalore - 560097",
-        "contact": "----------------------------------------------"
+        "contact": "n/a",
+        "address": "No.G-4, SAI Complex, Marathi Layout, 9th Cromi, Vrupakashpure, Kodigehalli, Vidyaranyapura, Bangalore - 560097"
     }
 ]

@@ -21,6 +21,7 @@ import in.aptamitra.R;
 import in.aptamitra.activities.BookDeliveryActivity;
 import in.aptamitra.activities.BookServiceActivity;
 import in.aptamitra.activities.RegisterComplaintActivity;
+import in.aptamitra.activities.ServiceListActivity;
 
 
 /**
@@ -111,6 +112,19 @@ public class SeearchAdapter extends ArrayAdapter<String> implements Filterable {
                     public void onClick(View v) {
                         ((GlobalClass) activity.getApplicationContext()).mainMenu = ((TextView) row.findViewById(R.id.service_name)).getText().toString();
                         Intent intent = new Intent(activity, BookDeliveryActivity.class);
+                        activity.startActivity(intent);
+                        activity.finish();
+
+                    }
+                });
+
+            } else if (results[1].contains("my_aptamitra")) {
+                row.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        ((GlobalClass) activity.getApplicationContext()).mainMenu = ((TextView) row.findViewById(R.id.service_name)).getText().toString();
+                        Intent intent = new Intent(activity, ServiceListActivity.class);
+                        intent.putExtra("data",((GlobalClass) activity.getApplicationContext()).mainMenu.toLowerCase());
                         activity.startActivity(intent);
                         activity.finish();
 

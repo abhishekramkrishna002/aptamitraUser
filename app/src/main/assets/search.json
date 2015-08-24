@@ -37,6 +37,87 @@
             "key": "others"
         }
     ],
+     "my_aptamitra": [
+            {
+                "key": "Gym"
+            },
+            {
+                "key": "Bank"
+            },
+            {
+                "key": "Atm"
+            },
+            {
+                "key": "Music class"
+            },
+            {
+                "key": "Textiles"
+            },
+            {
+                "key": "Driving class"
+            },
+            {
+                "key": "Photo Studio"
+            },
+            {
+                "key": "Medical store"
+            },
+            {
+                "key": "Home Appliances"
+            },
+            {
+                "key": "Automobiles"
+            },
+            {
+                "key": "Ayurveda"
+            },
+            {
+                "key": "jewellery"
+            },
+            {
+                 "key": "Hospital"
+           },
+            {
+                 "key": "Stationary"
+           },
+             {
+                 "key": "PG for Men"
+             },
+            {
+                  "key": "PG for ladies"
+             },
+             {
+                  "key": "Opticals"
+             },
+             {
+                 "key": "Hardware"
+              },
+              {
+                 "key": "Beauty Parlour & Salon"
+              },
+              {
+                "key": "Furnitures"
+              },
+              {
+                 "key": "laundry"
+              },
+             {
+                 "key": "Footwears"
+              },
+              {
+                 "key": "Real estate"
+              },
+              {
+                "key": "Packers and movers"
+              },
+             {
+                "key": "Taxi services"
+              },
+             {
+                  "key": "Schools"
+              }
+        ],
+
     "services": [
         {
             "key": "house keeping"
@@ -182,29 +263,23 @@
             {
                 "key": "footpath"
             },
-            {
-                "key": "garbage"
-            },
+
             {
                 "key": "drainage"
             },
-            {
-                "key": "dead bird"
-            },
-            {
-                "key": "dead animal"
-            },
-            {
-                "key": "mosquitoes"
-            },
+
             {
                 "key": "Road Damage"
             },
-            {
-                "key": "Storm water drainage"
-            },
+
             {
                 "key": "Potholes"
+            },
+            {
+                "key": "Pavement is broken"
+            },
+            {
+                "key": "play ground maintenance"
             },
             {
                 "key": "Site Cleaning"
@@ -214,71 +289,16 @@
             },
             {
                 "key": "incomplete road repairs"
-            },
-            {
-                "key": "Pavement stone slab"
-            },
-            {
-                "key": "Debris of buildings"
-            },
-            {
-                "key": "Pavement is broken"
-            },
-            {
-                "key": "play ground maintenance"
-            },
-            {
-                "key": "Storm water drainage"
-            },
-            {
-                "key": "Potholes"
-            },
-            {
-                "key": "Site Cleaning"
-            },
-            {
-                "key": "Road asphalt"
-            },
-            {
-                "key": "incomplete road repairs"
-            },
-            {
-                "key": "Pavement stone slab"
-            },
-            {
-                "key": "Debris of buildings"
-            },
-            {
-                "key": "Pavement is broken"
-            },
-            {
-                "key": "play ground maintenance"
-            },
-            {
-                "key": "Storm water drainage"
             },
 
             {
-                "key": "Site Cleaning"
+                "key": "Debris of buildings"
             },
-            {
-                "key": "Road asphalt"
-            },
-            {
-                "key": "incomplete road repairs"
-            },
+
             {
                 "key": "Pavement stone slab"
             },
-            {
-                "key": "Debris of buildings"
-            },
-            {
-                "key": "Pavement is broken"
-            },
-            {
-                "key": "play ground maintenance"
-            },
+
             {
                 "key": "Food adulteration"
             },
@@ -315,36 +335,23 @@
             {
                 "key": "illegal advertisments"
             },
-            {
-                "key": "Property tax"
-            },
-            {
-                "key": "voter id"
-            },
+
+
             {
                 "key": "khatha transfer"
             },
             {
                 "key": "banner permissions"
             },
-            {
-                "key": "illegal banners"
-            },
-            {
-                "key": "illegal advertisments"
-            },
+
             {
                 "key": "Property tax"
             },
             {
                 "key": "voter id"
             },
-            {
-                "key": "khatha transfer"
-            },
-            {
-                "key": "banner permissions"
-            },
+
+
             {
                 "key": "illegal banners"
             },
@@ -473,26 +480,16 @@
             {
                 "key": "Blocked Storm Waterdrain"
             },
-            {
-                "key": "overflow of storm water drain"
-            },
+
             {
                 "key": "Water supply"
             },
             {
                 "key": "Underground drainage"
             },
-            {
-                "key": "Blocked Storm Waterdrain"
-            },
+
             {
                 "key": "overflow of storm waterdrain"
-            },
-            {
-                "key": "Water supply"
-            },
-            {
-                "key": "Underground drainage"
             },
             {
                 "key": "Meter"
@@ -515,9 +512,7 @@
                 "key": "Pipe damage"
             },
 
-            {
-                "key": "Sanitary man holedamage"
-            },
+
             {
                 "key": "sanitary pipe damage"
             },
@@ -671,7 +666,8 @@
             },
             {
                 "key": "General"
-            }
+            },
+
         ]
     }
 }

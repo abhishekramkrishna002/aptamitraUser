@@ -1,65 +1,5 @@
 [
     {
-        "name": "Om Driving School",
-        "contact": "9844377195 28567677 28562218",
-        "address": "Ho # 15, Hig, 1st A Main B Sector, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India560064"
-    },
-    {
-        "name": "Sri Bhavani Motor Driving School",
-        "contact": "9844474070",
-        "address": "B.B. Road, Ground Floor, Jamathi Complex, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Best New India Motor Driving School",
-        "contact": "080 23535757",
-        "address": "F Block, 513, 60th Road, Sahakar Nagar, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Bhavani Driving School",
-        "contact": "9448240795 23635479 23430045 23433045",
-        "address": "1st Floor B Road, ,Opp Bus Stop, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "New India Motor Driving School",
-        "contact": "080 23537575",
-        "address": "No.461, 60, Ft Road, 11th Main, F Block, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Sri Bhavani Motor Driving School",
-        "contact": "080 33082117",
-        "address": "No.1,Jamathi Complex, Yelahanka New Town, Bangalore - 56006"
-    },
-    {
-        "name": "Jai Maruthi Motor Driving School",
-        "contact": "080 33912181",
-        "address": "No.685/36,2nd Floor, Kogilu Main Road, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Rathod Motor Driving School",
-        "contact": "080 33723457",
-        "address": "No.13/A, Khb Complex, RTO Building, Yelahanka New Town, Bangalore - 560064"
-    },
-    {
-        "name": "Jai Maruthi Motor Driving School",
-        "contact": "080 33054058",
-        "address": "Shop No.6,Khb Complex, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Om Driving School",
-        "contact": "080 39626098",
-        "address": "No.803, MIG B Sector,Mother Dairy Road, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Sri Raghavendra Motor Training School",
-        "contact": "080 33100441",
-        "address": "No,7, Kodigehalli Main Road, Sahakara Nagar, Bangalore - 560092,"
-    },
-    {
-        "name": "Om Nandi Motor Driving Training School",
-        "contact": "080 33722286",
-        "address": "No.48, Kodigehalli Main Road,C Block, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
         "name": "United India Driving School ",
         "contact": "+(91)-80-28387700, +(91)-9845287846",
         "address": "No.1, Doddabommasandra, Vidyaranyapura, Bangalore - 560097"
@@ -67,21 +7,21 @@
     {
         "name": "SRI Krishna Motor Driving School",
         "contact": "+(91)-80-23642722, +(91)-9448988483",
-        "address": "No.956/1, 1st Floor, 5th Block, Bel Layout, Vidyaranyapura, Nxt to SBI atm, Bangalore - 560097"
+        "address": "No.956/1, 1st Floor, 5th Block, Bel Layout, Vidyaranyapura, Nxt to SBI atm, Bangalore - 560097 "
     },
     {
-        "name": "Jai Bharath Driving School",
-        "contact": "+(91)-9008014898, 9886030033",
+        "name": "Jai Bharath Driving School ",
+        "contact": " +(91)-9008014898, 9886030033",
         "address": " No.6, 6th Block, Bel Layout, Vidyaranyapura, Near Durgaparmeshwari Temple, Bangalore - 560097"
     },
     {
-        "name": "Mathru Driving School",
+        "name": "Mathru Driving School ",
         "contact": "+(91)-9535447375, 9663322888, 9886456741",
         "address": "Thindlu Main Road, Thindlu, Near Thindlu Circle, Bangalore - 560097"
     },
     {
         "name": "Jai Indian Motor Driving School ",
         "contact": "+(91)-80-49174937",
-        "address": "No.1,A B Complex, C B Halli,Hesaraghatta Main Road, Vidyaranyapura, Near Sambhram College, Bangalore - 560097"
+        "address": "No.1,A B Complex, C B Halli,Hesaraghatta Main Road, Vidyaranyapura, Near Sambhram College, Bangalore - 560097 "
     }
 ]
