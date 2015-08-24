@@ -1,6 +1,7 @@
 package in.aptamitra.activities;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.mikepenz.materialdrawer.Drawer;
 
@@ -30,17 +32,22 @@ public class TermsActivity extends ActionBarActivity {
     HashMap<String, List<String>> _listDataChild;
     ExpandableListView lv;
     Context con;
+    TextView title;
+    Typeface face,face2;
 
     @Bind(R.id.app_bar)
     Toolbar toolbar;
     Drawer drawer;
     private LayoutInflater layoutInflater;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.terms);
+
+        title=(TextView)findViewById(R.id.terms_title);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
+        title.setTypeface(typeface);
 
         drawer=((GlobalClass)getApplicationContext()).navigationDrawer(this);
         layoutInflater = LayoutInflater.from(this);
@@ -52,7 +59,7 @@ public class TermsActivity extends ActionBarActivity {
             }
         });
 
-         lv = (ExpandableListView) findViewById(R.id.lvExp);
+       lv = (ExpandableListView) findViewById(R.id.lvExp);
 
         //here setting all the values to Parent and child classes
         //      setDataValues();
@@ -73,7 +80,6 @@ public class TermsActivity extends ActionBarActivity {
         // testing purpose
         _listDataHeader = new ArrayList<String>();
         _listDataChild = new HashMap<String, List<String>>();
-
 
         // Adding child data
         _listDataHeader.add("Terms and Conditions");
@@ -172,5 +178,6 @@ public class TermsActivity extends ActionBarActivity {
         _listDataChild.put(_listDataHeader.get(12), objectionable);
         _listDataChild.put(_listDataHeader.get(13), indemnity);
         _listDataChild.put(_listDataHeader.get(14), termination);
+
     }
 }

@@ -56,7 +56,7 @@ public class RegisterActivity extends ActionBarActivity {
     final Integer COMPLAINT_IMAGE_ONE_REQUEST_CODE_GALLERY = 1;
     Activity activity;
 
-
+    final static int CAMERA_OUTPUT = 0;
     EditText name, email, mobile, address, pincode, doornumber, password;
     Button male, female, register;
     ImageView profileImage;
@@ -158,7 +158,7 @@ public class RegisterActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // open();
 
-                android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(activity);
+                /*android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(activity);
                 builder.setTitle("Choose Image Source");
 //                builder.setItems(new CharSequence[]{"Gallery", "Camera"},
                 builder.setItems(new CharSequence[]{"Camera"},
@@ -177,13 +177,16 @@ public class RegisterActivity extends ActionBarActivity {
                                     case 0:
                                         intent = new Intent(
                                                 android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+//                                       intent = new Intent("android.media.action.IMAGE_CAPTURE");
                                         startActivityForResult(intent, COMPLAINT_IMAGE_ONE_REQUEST_CODE_IMAGE);
                                         break;
                                 }
                             }
                         });
                 builder.show();
-
+*/
+                Intent i = new Intent("android.media.action.IMAGE_CAPTURE");
+                startActivityForResult(i, CAMERA_OUTPUT);
 
             }
         });
@@ -390,6 +393,7 @@ public class RegisterActivity extends ActionBarActivity {
 
     }
 
+
     public static Bitmap drawableToBitmap(Drawable drawable) {
         Bitmap bitmap = null;
 
@@ -428,11 +432,30 @@ public class RegisterActivity extends ActionBarActivity {
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+
+        if (resultCode == RESULT_OK) {
+            Bundle extras = intent.getExtras();
+            Bitmap bmp = (Bitmap) extras.get("data");
+            profileImage = (ImageView) findViewById(R.id.register_profile_image);
+            profileImage.setBackground(new BitmapDrawable(bmp));
+        }
+    }
+
+   /* @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (profileImageBitmap != null) {
+      *//*  if (resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap bmp = (Bitmap) extras.get("data");
+            profileImage = (ImageView) findViewById(R.id.register_profile_image);
+            profileImage.setImageBitmap(bmp);
+        }*//*
+
+       if (profileImageBitmap != null) {
             profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
         } else {
             try {
@@ -449,16 +472,15 @@ public class RegisterActivity extends ActionBarActivity {
                     InputStream input = getContentResolver().openInputStream(selectedImage);
                     profileImageBitmap = BitmapFactory.decodeStream(input, null, null);
                     profileImage.setBackground(new BitmapDrawable(profileImageBitmap));
-
-
                 }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
     }
-
+*/
     private void toggleButton(Button button, boolean flag) {
         if (flag) {
             button.setBackground(getResources().getDrawable(R.drawable.gray_border));
