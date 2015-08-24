@@ -405,6 +405,7 @@ public class RegisterActivity extends ActionBarActivity {
         }
     }
 
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
 

@@ -151,12 +151,12 @@
             "image_link": "web_designer.jpg"
         },
         {
-             "name":"Car Wash",
-             "image_link":"car_wash.jpg"
+            "name":"Car Wash",
+            "image_link":"car_wash.jpg"
         },
         {
-              "name":"Construction consultant",
-              "image_link":"construction_consultant.jpg"
+            "name":"Construction consultant",
+            "image_link":"construction_consultant.jpg"
         },
         {
               "name":"DTH service",
@@ -176,6 +176,10 @@
         },
         {
               "name":"Sump Cleaning",
+              "image_link":"sump_cleaning.jpg"
+        },
+        {
+              "name":"Pest Control",
               "image_link":"sump_cleaning.jpg"
         },
         {
@@ -218,10 +222,10 @@
               "name":"Badminton",
               "image_link":"badminton.jpg"
         },
-     {
-                   "name":"Others",
-                   "image_link":"others.jpg"
-             }
+        {
+              "name":"Others",
+              "image_link":"others.jpg"
+        }
     ],
     "My Delivery": [
         {
