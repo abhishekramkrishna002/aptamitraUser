@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">Aptamitra</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
     <!--
       generated Id's ::start
      -->
@@ -14,7 +12,6 @@
     <!--
     generated Id's ::end
     -->
-
     <!-- web services url-->
     <string name="login_user_url">http://aptamitra.in/service_app/login.php</string>
     <string name="register_user_url">http://aptamitra.in/service_app/register.php</string>
@@ -25,18 +22,14 @@
     <string name="chat_link">http://aptamitra.in/service_app/user_to_admin.php</string>
     <string name="verify_user">http://aptamitra.in/service_app/verify_user.php?otp=</string>
     <string name="search_db">http://aptamitra.in/service_app/search_db.php</string>
-
     <!-- How It Works Texts ::start -->
-
     <string name="text1">One Who makes his life better,\n by making others life better\n is an <b>Aptamitra</b></string>
     <string name="text2">Aptamitra will guide you to book\n the right professional for your\n essential needs.</string>
     <string name="text3">Aptamitra will bridge between\n the delivery network and your\n local favourite stores</string>
     <string name="text4">No More calls. Just message and\nGet more things accomplished with\na message via Aptamitra Near Me.</string>
     <string name="text5">My City is A Great Place to Live !\n with \n Aptamitra connecting your\ncivic issue to the right\npublic service professional</string>
     <!-- How It Works Texts ::end-->
-
     <!-- About Us Text-->
-
     <string name="abt1">We have found many people finding it difficult </string>
     <string name="abt2">1)	To know the right contact to report a civic issue. </string>
     <string name="abt3">2)	To find a plumber / electrician / carpenter who is reliable and can do a quality job. </string>
@@ -54,8 +47,6 @@
     <string name="ranklabel">"Rank : "</string>
     <string name="countrylabel">"Country : "</string>
     <string name="populationlabel">"Population : "</string>
-
-
     <!-- Privacy Policy Titles-->
     <string name="title1">"Your personal information"</string>
     <string name="title2">"What information is/may be collected from you?"</string>
@@ -65,18 +56,13 @@
     <string name="title6">"How do we safeguard your information?"</string>
     <string name="title7">"How can you update/correct inaccuracies in your information?"</string>
     <string name="title8">"Policy updates"</string>
-
-
-
     <string-array name="landing_page">
         <item>My City</item>
         <item>My Booking</item>
         <item>My Delivery</item>
         <item>My Aptamitra</item>
     </string-array>
-
-
     <string name="search_text">Who is your Mitra today?</string>
-    <string name="share_text">Dear Mitra, Namaste! Check out this must have app on your device.It is called as Aptamitra : Your Trusted Friend At Your Service.From resolving a streetlight issue to snake rescue, orFrom hiring a housemaid or repair professionals, to arranging a professional photographer for an event at home.Aptamitra connects you with the nearest professional service providers.They provide instant pick up and drop of anything all over Bengaluru.It can be keys, tiffin box, medicine,bill payment etc. Possibilities are endless.Basically they run errands for you. Just anything. Timings of service are 10 am to 11 pm.</string>
+    <string name="share_text">Dear Mitra, Namaste! Check out this must have app on your device . It is called as Aptamitra : Your Trusted Friend At Your Service . From resolving a streetlight issue to snake rescue, orFrom hiring a housemaid or repair professionals, to arranging a professional photographer for an event at home . Aptamitra connects you with the nearest professional service providers . They provide instant pick up and drop of anything all over Bengaluru . It can be keys, tiffin box, medicine,bill payment etc . Possibilities are endless . Basically they run errands for you . Just anything . Timings of service are 10 am to 11 pm . </string>
     <string name="play_store_link">https://play.google.com/store/apps/details?id=in.aptamitra&amp;hl=en</string>
 </resources>
