@@ -181,6 +181,12 @@
             android:windowSoftInputMode="stateHidden">
 
         </activity>
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
 
 
         <!-- gcm componenets ::start-->

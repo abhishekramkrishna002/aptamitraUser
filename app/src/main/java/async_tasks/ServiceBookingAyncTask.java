@@ -66,6 +66,9 @@ public class ServiceBookingAyncTask extends AsyncTask<HashMap<String, String>, I
             entityBuilder.addTextBody("profile_id", params[0].get("profile_id"));
             entityBuilder.addTextBody("profile_user", params[0].get("profile_user"));
             entityBuilder.addTextBody("mobile", params[0].get("mobile"));
+            entityBuilder.addTextBody("time", params[0].get("time"));
+            entityBuilder.addTextBody("date", params[0].get("date"));
+            entityBuilder.addTextBody("information", params[0].get("information"));
             HttpEntity entity = entityBuilder.build();
             post.setEntity(entity);
             HttpResponse response = client.execute(post);

@@ -37,6 +37,8 @@ import me.tittojose.www.timerangepicker_library.TimeRangePickerDialog;
  */
 public class BookServiceActivity extends ActionBarActivity implements DatePickerDialog.OnDateSetListener, TimeRangePickerDialog.OnTimeRangeSelectedListener {
 
+    @Bind(R.id.etInstructions)
+    EditText specialEditText;
     @Bind(R.id.continue_button)
     Button continueButton;
 
@@ -147,6 +149,7 @@ public class BookServiceActivity extends ActionBarActivity implements DatePicker
             params.put("mobile", ((EditText) findViewById(R.id.etNumber)).getText().toString());
             params.put("time", ettime.getText().toString());
             params.put("date", etdate.getText().toString());
+            params.put("information", specialEditText.getText().toString());
             if (etService.getText().toString().trim().contentEquals("") ||
                     ((EditText) findViewById(R.id.etNumber)).getText().toString().trim().contentEquals("") ||
                     ettime.getText().toString().trim().contentEquals("") ||
