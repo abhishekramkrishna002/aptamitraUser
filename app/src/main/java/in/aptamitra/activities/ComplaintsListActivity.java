@@ -83,7 +83,7 @@ public class ComplaintsListActivity extends ActionBarActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawer.openDrawer();
+               finish();
             }
         });
 

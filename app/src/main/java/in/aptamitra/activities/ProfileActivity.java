@@ -57,7 +57,7 @@ public class ProfileActivity extends ActionBarActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawer.openDrawer();
+                finish();
             }
         });
         SharedPreferences prefs = getSharedPreferences("cache", Context.MODE_PRIVATE);

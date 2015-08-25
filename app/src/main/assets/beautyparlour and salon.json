@@ -1,242 +1,92 @@
 [
     {
-        "name": "Belle Salon",
-        "contact": "080 39629702",
-        "address": "No.2, Ground Floor, Jamathi Complex, Yelahanka, Bangalore - 560064, Next Corporation Bank"
+        "name": "Sun Shine Unisex Saloon ",
+        "contact": "(91)-80-42274516, +(91)-9632181060",
+        "address": "No.1269/1, Bell Layout, Vidyaranyapura, Above More Super Market, Bangalore - 560097 View Map "
     },
     {
-        "name": " Lakme Salon",
-        "contact": "080 33619519",
-        "address": "No.5, 1st Floor, 1st A Main Road, Yelahanka, Bangalore - 560064, Opposite Canara Bank & Near Sharavati"
+        "name": "Naturals Unisex Salon & Spa  ",
+        "contact": "(91)-80-40956665, +(91)-9008608665",
+        "address": "No.27/23/26, Vidyaranyapura Main Road, Vidyaranyapura, Below Snap Fitness, Bangalore - 560097 View Map "
     },
     {
-        "name": "Aishwarya Beauty Salon And Spa",
-        "contact": "9845599267",
-        "address": "No.648, Yalamuri Complex, Hospital Road, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Chens Hair And Beauty Salon",
-        "contact": "080 33618796",
-        "address": "shop No.6, 1st Main, 4th Phase, Yelahanka New Town, Bangalore - 560064"
-    },
-    {
-        "name": "Style Waves Family Salon",
-        "contact": "080 33566446",
-        "address": "1st Floor,Yvn Swamy Complex, Jakkur Main Road,Surabhi Layout, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Savi Beauty Cuty Parlour And Training Centre",
-        "contact": "8553184717, 7899574884",
-        "address": "No.344, Maruthi Complex, 1st Floor, SFS 407, Khb ,4th Phase Main Road, Yelahanka New Town, Bangalore - 560064"
-    },
-    {
-        "name": "Flex Beauty Parlour",
-        "contact": "9886338131",
-        "address": "No. 803, Poorva Venezia, Attur Layout, K Block, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Eden Unisex Spa And Salon",
-        "contact": "8884488874",
-        "address": "NO 41&42 ,RMS Layout,FG Block, neat kotek mahendra bank, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Lakme Salon",
-        "contact": "080 33081459",
-        "address": "No 11 And 12,1st Floor, Bellary Main Road, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Nayana Beauty Parlour",
-        "contact": "9448631947 28566048",
-        "address": "#677 1st Floor Mother Dairy Cross, Near - Wheel And Axle, Yelahanka New Town, Bangalore, Karnataka, India560064"
-    },
-    {
-        "name": "Arjun Hair Style",
-        "contact": "9980451600",
-        "address": "280/9, K.H.B. Complex, New Town Area-B, Behind R.J.O., Yelahanka Old Town, Bangalore, Karnataka, India560063"
-    },
-    {
-        "name": "Ashwini Herbal Beauty Parlour",
-        "contact": "080 28568087",
-        "address": "Attur Layout, 1st Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Balu Hari Style",
-        "contact": "9343711991",
-        "address": "72, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India560063"
-    },
-    {
-        "name": "Charms Beauty Parlour",
-        "contact": "080 28562650",
-        "address": "New #2027, 1st A Main Road, New Town, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India560063"
-    },
-    {
-        "name": "Ganesh Hair dressers",
-        "contact": "9341067118",
-        "address": "B.B. Road, Gandhi Nagar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Hari Dresses",
-        "contact": "9986569789",
-        "address": "17/2, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Jyothishyala",
-        "contact": "9343087689",
-        "address": "333, K.H.B Complex Bhind R.T.O New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mani Hair Cut",
-        "contact": "9945027447",
-        "address": "B.B. Road, Opp. Hospital, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Maniraj Hair Style",
-        "contact": "080 25448275",
-        "address": "Kogilu Main Road, Near Maruthi Nagar Bus Stop, Yelahanka Old Town, Bangalore, Karnataka"
-    },
-    {
-        "name": "Mary Beauty Pourler",
-        "contact": "080 25430153",
-        "address": "294, K.H.B. Complex, New Town Area-B, Behind R.J.O., Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mayura Hair Dressers",
-        "contact": "080 41273573",
-        "address": "4th Cross, B.B.Road, Yelahanka Bazar, Opposite Vijay Jyothi School, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "M.R.N. Hair Style",
-        "contact": "080 41106463",
-        "address": "Kondappa Layout, Yelahanka Bazar, Near Bus Stop, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Priya Herbal Beauty Clinic",
-        "contact": "9980672542",
-        "address": "Hospital Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Rani Beauty Parlour",
-        "contact": "9342535686",
-        "address": "#34, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Rekha Beauty Parlour",
-        "contact": "9342947595",
-        "address": "BB Road, Sante Circle Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Rohan Hari Style",
-        "contact": "9845657890",
-        "address": "320, K.H.B. Complex Behind R.J.O. New Town Area-B, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Roushni Beauty Saloon",
-        "contact": "9964778836",
-        "address": "Kogilu Main Road, Kempaiah Complex, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sathiya Hari Dresses",
-        "contact": "9980136578",
-        "address": "11, Maruthi Nagar Yelahanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Seema Beauty Parlour",
-        "contact": "9901567890",
-        "address": "17, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Shaila Hari Style",
-        "contact": "080 25432160",
-        "address": "280/13, K.H.B. Complex, New Town Area-B, Behind R.J.O., Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Shakar Hari Dresses",
-        "contact": "9972053459",
-        "address": "40/1, Muslim Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Shamanna hair style",
-        "contact": "919972053459",
-        "address": "40/1, Muslim Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Shamanna hair style",
-        "contact": "9845490961",
-        "address": "#118, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sreyas Hair Cut",
-        "contact": "9342634811",
-        "address": "B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sri Bhagya Beauty Parlour",
-        "contact": "9739445106",
-        "address": "B.B. Road, Gandhi Nagar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Trishas The Beauty Paradise",
-        "contact": "9343711955",
-        "address": "No.2065, 1st Floor, 16th B Cross, New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sun Shine Unisex Saloon",
-        "contact": "-----------------------------------",
-        "address": "No.1269/1, Bell Layout, Vidyaranyapura, Above More Super Market, Bangalore - 560097"
-    },
-    {
-        "name": "Naturals Unisex Salon & Spa ",
-        "contact": "-----------------------------------",
-        "address": "No.27/23/26, Vidyaranyapura Main Road, Vidyaranyapura, Below Snap Fitness, Bangalore - 560097"
-    },
-    {
-        "name": "Spin unisex salon",
+        "name": "Spin unisex salon ",
         "contact": "9008883131",
         "address": "No 1243 1,st block, Vidyaranyapura, Above kanthi sweets, Bangalore - 560097 "
     },
     {
-        "name": "Rituals Unisex Salon Spa ",
-        "contact": "-----------------------------------",
-        "address": "#845,2nd Floor, Vidyaranyapura main Road, Vidyaranyapura, Above Ammis Biryani,Opp Post Office, Bangalore - 560097 "
+        "name": "Rituals Unisex Salon Spa  ",
+        "contact": "(91)-80-42143221, +(91)-8105825926",
+        "address": "#845,2nd Floor, Vidyaranyapura main Road, Vidyaranyapura, Above Ammis Biryani,Opp Post Office, Bangalore - 560097  "
     },
     {
-        "name": "Hitha Beauty Parlour ",
+        "name": "Hitha Beauty Parlour  ",
         "contact": "9620296806",
-        "address": "No.39, Ground Floor, Ganesha Block 1st Cross, Virupakshapura Kodigehalli, Kodigehalli, Near More And Railway Station, Bangalore - 560092"
+        "address": "No.39, Ground Floor, Ganesha Block 1st Cross, Virupakshapura Kodigehalli, Kodigehalli, Near More And Railway Station, Bangalore - 560092 "
     },
     {
-        "name": "ANAND BABU",
-        "contact": "9035880321",
-        "address": "NO : 455, balaji layout, lkr nagar, Kodigehalli, Bangalore - 560092 "
-    },
-    {
-        "name": "Royal hair style",
+        "name": "Royal hair style ",
         "contact": "9902341457",
-        "address": "------------------------------------"
+        "address": "Doddabommasandra, Bengaluru, Karnataka 560097 "
     },
     {
-        "name": "lovely hair style",
-        "contact": "7204938139",
-        "address": "------------------------------------"
+        "name": "Rising Style",
+        "contact": "080 4219 5434",
+        "address": " 959, 5th Block, BEL Layout, Near-Shakti Sampath Arcade, Vidyaranyapura, Bengaluru, Karnataka 560097"
     },
     {
-        "name": "All Men Beauty Parlour",
-        "contact": "9972488959",
-        "address": "------------------------------------"
+        "name": "Decent Beauty Hair Salon",
+        "contact": "99641 38454",
+        "address": "Chikkabettahelli, Near-M S Palya Circle, Vidyaranyapura, Bengaluru, Karnataka 560097"
     },
     {
-        "name": "Y.S.V Gents parlour",
-        "contact": "9590109093",
-        "address": "------------------------------------"
+        "name": "Victory Hair Style",
+        "contact": "96630 72955",
+        "address": "76/3, Vidyaranyapura Main Road, Near-St Philomenas School, Doddabommasandra, Bengaluru, Karnataka 560097"
     },
     {
-        "name": "Alankar mens saloon",
-        "contact": "8197680519",
-        "address": "------------------------------------"
+        "name": "Red Lips Beauty Care",
+        "contact": "95380 22665",
+        "address": "807 (Basement), 8th Main, Vidyaranyapura, Vidyaranyapura Main Rd, BEL Layout 4th Block, Vidyaranyapura, Bengaluru, Karnataka 560097"
     },
     {
-        "name": "Victory hair style",
-        "contact": "997445587",
-        "address": "------------------------------------"
+        "name": "Sindoor Beauty Parlour",
+        "contact": "080 2364 1904",
+        "address": "Vth Block, 51, 7th Main Rd, IEHCS Layout, Vidyaranyapura, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": "Vaishnavi Beauty Parlour",
+        "contact": "99808 74226",
+        "address": "455, 3rd Block, Hmt Layout, 12th Cross, Near-Durgaparameshwarai Arch, Vidyaranyapura, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": "Friends Men's Parlour",
+        "contact": "99006 93778",
+        "address": "Thindlu Main Road, Near-Rajarajeshwari English School, Vidyaranyapura Post, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": "Sonu Beauty Parlour",
+        "contact": "",
+        "address": "Nanjappa Chamundeswari Layout Jalahalli East, 44, Vidyaranyapura Main Rd, V S Layout, Nanjappa Layout,, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": "Sagarika Beauty Parlour",
+        "contact": "96205 44346",
+        "address": "Shop No 25/25, Benaka Arcade, 1st Block, Near-Post Office, Vidyaranyapura, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": "Ashiwarya Beauty Care",
+       "contact": "98459 64971",
+        "address": "1216, 1st Floor, Nanjappa Main Road, Above-Annapoorna Fast Food, Vidyaranyapura, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": "Anu Herbal Beauty Parlour",
+        "contact": "080 2364 5537",
+        "address": "No 1070 And 1071/1, 1st Floor, 2nd Block, BEL Layout, Nanjappa Main Road, Near-Vijaya Bank, Vidyaranyapura, Bengaluru, Karnataka 560097"
+    },
+    {
+        "name": " Smart Men's Beauty Saloon",
+        "contact": "95351 04533",
+        "address": " #954, 5Th Block, Sri Complex,, 1st Cross Rd, Vidyaranyapura, Bengaluru, Karnataka 560097"
     }
 ]

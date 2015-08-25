@@ -1,222 +1,42 @@
 [
     {
-        "name": "Geethanjali Jewelers",
-        "contact": "9886088020",
-        "address": "32, Yelahanka Main Road, New Town Businees, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Mangalore Jewelery Works",
-        "contact": "9845730797",
-        "address": "921, Ews, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Sneha Jewel Paradise",
-        "contact": "9845998473",
-        "address": "976/1, Lig 2nd Phase, 16 Th B Cross, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India560064"
-    },
-    {
-        "name": "Srinath Jewelers",
-        "contact": "9448513625 28462691",
-        "address": "1930/a 16 B Main Road, Lig 2nd Phase New Town Yelahanka, Lig 2nd Phase, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Govind Jewellery",
-        "contact": "9986001318",
-        "address": "69/8, Tippu Nagar Kogilu Layout Yelanhanka Main Road, Yelahanka Old Town, Bangalore, Karnataka, India560063"
-    },
-    {
-        "name": "Gurunvana Jewellery",
-        "contact": "9945810693",
-        "address": "#34, Hunasamaranahalli, Hosahalli Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Jain Jewellers",
-        "contact": "080 22971913",
-        "address": "New #774, Yelahanka Bazar, Near Yelahanka Bus Stand, Yelahanka Old Town, Bangalore, Karnataka, India560063"
-    },
-    {
-        "name": "Mahaveer Jewelers And Bankers",
-        "contact": "080 28565581",
-        "address": "975, 2nd Cross16th B Cross, Nw Town, Yelahanka, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mamatha Jeweller",
-        "contact": "9243484859",
-        "address": "17/21, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mandal Jewellery",
-        "contact": "9986469939",
-        "address": "22, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mathji Jewellery",
-        "contact": "9880124365",
-        "address": "79, Maruthi Nagar Main Road, Anna Street, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "M.Venkatagirapa Jewellery",
-        "contact": "9980658083",
-        "address": "#30, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Prapthana Jewellery",
-        "contact": "9845002913",
-        "address": "#84, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Rajputh jewellery",
-        "contact": "9886822590",
-        "address": "#88, Hunasamaranahalli, B.B. Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sumathi Jewelers",
-        "contact": "080 22971915",
-        "address": "B Road, Ylnk- , Wheel & Axle, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Videozone Jewellery",
-        "contact": "9885808365",
-        "address": "#57, Hunasamaranahalli, Suggatta Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Vishnu Jewellery",
-        "contact": "9900160485",
-        "address": "54, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Kalyan Jewellers",
-        "contact": "080 28561349",
-        "address": "No.13, B Main Road, Dairy Circle, Yelahanka New Town, Bangalore - 560064"
-    },
-    {
-        "name": "R R Gold Palace",
-        "contact": "------------",
-        "address": "Yelahanka Old Town, Bangalore - 560064, Near Yelahanka Market Circle"
-    },
-    {
-        "name": "Sri Krishna Jewellers",
-        "contact": "9880608832",
-        "address": "No.1931, MIG,16th B Cross, Yelahanka New Town, Bangalore - 560064, Opp New Town Bus Stand"
-    },
-    {
-        "name": "Sumathi Jewellers",
-        "contact": "080 33059591",
-        "address": "Plot No. 1224, Yelahanka Bus Stand, Govt Hospital Road, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Santhosh Jewellers",
-        "contact": "9341217645",
-        "address": "No.955, Lig 2nd Phase, 16th B Cross, Yelahanka New Town"
-    },
-    {
-        "name": "Sheetal Jewels",
-        "contact": "9743533903",
-        "address": "No.113, Attur Main Road, Yelahanka, Bangalore - 560064,"
-    },
-    {
-        "name": "Shree Shantinath Jewellers",
-        "contact": "9845374103 23637465",
-        "address": "Krishnappa Bldg, Tindlu Main Road, Sahakaranagar, Kodigehalli, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Mathaji Jewellers",
-        "contact": "080 25984517",
-        "address": "Jakkur Road (Konorappa Building), Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "National Jewellery",
-        "contact": "9945566990",
-        "address": "#183/1, 18th Cross, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "SK Jewellery",
-        "contact": "9448468916",
-        "address": "#79/2, 18th Cross, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Sri Devnarayan Jewellery",
-        "contact": "9704679384",
-        "address": "#157/1, Amruthhalli, Yelhanka Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "SriKanti Jewellery",
-        "contact": "9906587988",
-        "address": "#113, 18th Cross, Amruthhalli, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Sri Vinayaka Jewellery",
-        "contact": "9342718795",
-        "address": "#181/1, Amruthhalli, Yelhanka Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Vaibhav Jewels",
-        "contact": "9845879641",
-        "address": "No. 546, 14th cross, 14th main, F Block, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Shubham Jewellers",
-        "contact": "7795228717",
-        "address": "No.8, Sonne Gowda Complex, Kodigehalli Main Road, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Mahadev Jewellers",
-        "contact": "080 33055392",
-        "address": "No. 849/1, A Block, 13th Main Road, 80 Feet Road, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Shri Swathi Jewellers",
-        "contact": "9480774997, 9036085990, 9448343122",
-        "address": "No.325/8, 60 Feet Main Road, F Block, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Vinayaka Jewellers",
-        "contact": "9480774997, 9036085990, 9448343122",
-        "address": "No. 20, Sanjeevini Ngr, Byataranyanapura, Bangalore - 560092"
-    },
-    {
-        "name": "S K Jewellers",
-        "contact": "9480774997, 9036085990, 9448343122",
-        "address": "No.79/2, 18th Cross, Byataranyanapura, Bangalore - 560092"
-    },
-    {
         "name": "Pooja Jewellers & Bankers ",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "contact": "080-28380512",
         "address": "No.11, Vidyaranyapura Main Road, Vidyaranyapura, Near Sri Durga Parameshwari Temple, Bangalore - 560097"
     },
     {
         "name": "Sri Hari Jewellers ",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "contact": "+(91)-80-23459259, +(91)-9481194759",
         "address": "No.2 & 3, Ashwathappa Building, Dodda Bommasandra, Vidyaranyapura, Near Philomenas English School, Bangalore - 560097"
     },
     {
-        "name": "Rishab Jewellrs ",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "name": "Rishab Jewellers ",
+        "contact": "9900799512",
         "address": "Doddabomsandra, Vidyaranyapura, Bangalore - 560097"
     },
     {
-        "name": "nakshtra jewels",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "name": "nakshtra jewels ",
+        "contact": "+(91)-80-26744221, +(91)-8050505020",
         "address": "No. 59, krn complex, Bel layout., Vidyaranyapura Block 1, Opp.kanti sweets, Bangalore - 560097"
     },
     {
-        "name": "P K Jewellers & Bankers ",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "name": "P K Jewellers & Bankers",
+        "contact": "+(91)-80-23646560, +(91)-9844044203",
         "address": "No.138, Narasipura Layout, Vidyaranyapura, Last Bus Stop, Bangalore - 560097"
     },
     {
         "name": "M.D.Polish(gold n silver)",
-        "contact": "9480774997, 9036085990, 944834312",
+        "contact": "9901093979",
         "address": "#183,near P.K Jewellers near last bus stop narsipura layiut vidyaranyapura ban-97"
     },
     {
         "name": "Heera Jewellers & bangalore",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "contact": "9900258415",
         "address": "#52,narasipura layout,vidyaranyapura last bus stop bangalore-97"
     },
     {
         "name": "R.K.Jwellers",
-        "contact": "9480774997, 9036085990, 9448343122",
+        "contact": "9741188848 / 9916290430",
         "address": "#250,M.M Plaza,ground floor ,shop #3 narsipura layout vidyara.main road ban-97"
     }
 ]

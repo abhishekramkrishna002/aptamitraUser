@@ -1,12 +1,47 @@
 [
     {
-        "name": "Bangalore horiculture vegetible sales counter",
-        "contact": "9448764304",
-        "address": "----------"
+        "name": "Manjunatha fruit shop",
+        "contact": "9448916635",
+        "address": "vidyaranyapura main road b-97"
     },
     {
-        "name": "Manjunatha fruit shop",
-        "contact": "9916989609",
-        "address": "----------"
+        "name": "Sri maruthi fruit and coconut mandi",
+        "contact": "9738685351",
+        "address": "doddbommasandra vidyaranyapura b-97"
+    },
+    {
+        "name": "Sri nanjundeshwara fruit stall",
+        "contact": "9964230609",
+        "address": "no.745/1 vidyaranyapura main road opp caffee coffee day b-97"
+    },
+    {
+        "name": "Green fresh vegetable ",
+        "contact": "8951156027",
+        "address": "no.3 vidyaranyapura main road near ms palya circle vidyaranyapura b-97"
+    },
+    {
+        "name": "Vicky fruit stall",
+        "contact": "8892052727",
+        "address": "vidyaranyapura main road opp. Caffee coffee day b-97"
+    },
+    {
+        "name": "Nature fresh",
+        "contact": "7353949869/8722394035",
+        "address": "no.58 jnaneshwari layout vidyaranyaputra b-97 near balaji store"
+    },
+   {
+        "name": "Prathibha fruit shop",
+        "contact": "9731317358",
+        "address": "doddbommsandra opp vishal medical store b 97"
+    },
+    {
+        "name": "Sri vinayaka banana shop",
+        "contact": "9141203652",
+        "address": "Ranganna building hesrughatta main road vidyaranyapura b-97, near laxmipura cross"
+    },
+    {
+        "name": "Karnataka fruits and vegetable shop",
+        "contact": "8041610374",
+        "address": "no. 452 hmt layout vidyaranyapura b-97"
     }
 ]

@@ -55,7 +55,7 @@ public class TermsActivity extends ActionBarActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawer.openDrawer();
+                finish();
             }
         });
 

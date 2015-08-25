@@ -43,7 +43,7 @@ public class AboutusActivity extends ActionBarActivity {
         back.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        drawer.openDrawer();
+        finish();
     }
 });
 

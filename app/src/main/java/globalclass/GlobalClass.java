@@ -199,7 +199,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     intent = new Intent(activity, LandingPageActivity.class);
                                     activity.startActivity(intent);
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                    //activity.finish();
 
 
                                     break;
@@ -207,7 +207,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     intent = new Intent(activity, ComplaintsListActivity.class);
                                     activity.startActivity(intent);
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                   // activity.finish();
 
                                     break;
                                 case 4:
@@ -231,14 +231,14 @@ public class GlobalClass extends com.orm.SugarApp {
                                     shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     activity.startActivity(Intent.createChooser(shareIntent, "Share Aptamitra"));
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                   // activity.finish();
                                     break;
                                 case 8:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, AboutusActivity.class);
                                     activity.startActivity(intent);
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                   // activity.finish();
                                     break;
 
                                 case 10:
@@ -246,14 +246,14 @@ public class GlobalClass extends com.orm.SugarApp {
                                     intent = new Intent(activity, PrivacyActivity.class);
                                     activity.startActivity(intent);
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                   // activity.finish();
                                     break;
                                 case 12:
                                     activity.getSharedPreferences("cache", MODE_PRIVATE).edit().clear();
                                     intent = new Intent(activity, TermsActivity.class);
                                     activity.startActivity(intent);
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                    //activity.finish();
                                     break;
                                 case 14:
                                     SharedPreferences.Editor editor = activity.getSharedPreferences("cache", MODE_PRIVATE).edit();
@@ -262,7 +262,7 @@ public class GlobalClass extends com.orm.SugarApp {
                                     intent = new Intent(activity, MainActivity.class);
                                     activity.startActivity(intent);
                                     activity.overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                                    activity.finish();
+                                   // activity.finish();
                                     break;
                             }
                             return true;

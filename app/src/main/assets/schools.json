@@ -1,425 +1,5 @@
 [
     {
-        "name": "Parikrama Humanity Foundation",
-        "contact": "9341256495 23635225 23635782 23539147",
-        "address": "No.1846, 3rd Main, C Block, Sahakar Ngr, Kodigehalli, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Euro Kids",
-        "contact": "9886400307 65628074",
-        "address": "No.547/19, A Block, 1st Cross, 13th Main, 8th Block, Kodigehalli, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "The Canadian International School",
-        "contact": "080 23438414",
-        "address": "14/1, Kodigehalli Main Road, Sahakar Nagar, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Gvk High School",
-        "contact": "9845107779 23367483 23532984 28468313 65979122 65979133",
-        "address": "Champa Bldg, Kodigehalli Main Road, Sahakara Ngr, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "New Baldwin Public School",
-        "contact": "080 26757963",
-        "address": "9, 2nd Main Road, Mysore Road, Byatarayanapura New Extension, Behind Vijaya Talkies, Byatarayanapura,Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Amrutha Education Society",
-        "contact": "080 23337329",
-        "address": "Amruthahalli , Post, Bellary Road, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Godwin Public School",
-        "contact": "080 23535322",
-        "address": "#13 & 14 AMCO Layout, , Post, Kodigehalli, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Parikrama Center for Learning",
-        "contact": "080 23539147",
-        "address": "#4/3 Hossahatty Layout, Sahakarnagar Post, Kodigehally Yelahanka, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Silicon Valley School",
-        "contact": "080 23637260",
-        "address": "C Block, Kodigehalli, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Aakrithi Montessori House Of Children",
-        "contact": "080 23341450",
-        "address": "78, 15th Cross, Sahakar Nagar, Sahakara Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Aakar Montessori House Of Children",
-        "contact": "080 23430826",
-        "address": "964, D Block, Shankar Nagar, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Aavishkar Montessori School",
-        "contact": "9880516837 23431125",
-        "address": "7, 1st Cross, Amruthahalli Main Road, Snehanagar, Sneha Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Paripurna Play Home",
-        "contact": "9845491986 23621281",
-        "address": "#2560 E-Block Sahakar Nagar, Near - Anjaneya Temple, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Green Country Public School",
-        "contact": "080 23534259,  65704188",
-        "address": "414-106/ 7, Bellary Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Prestige Public School",
-        "contact": "080 23635576 23647488",
-        "address": "Virupakshipuram, Dhanalakshmi Layout, Near Maramma Temple, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "School Vivekananda",
-        "contact": "080 23433559 55313205",
-        "address": "A-Block, Sahakara Nagar, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "S.L.V. Vidyaniketan",
-        "contact": "080 23620036",
-        "address": "New #72, 3rd Cross, Amruthalli, Sahakara Nagar, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Sri Vinayaka Vidya Kendra Primary & High School",
-        "contact": "080 23431174",
-        "address": "Bellary Road, Byatarayanapura, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Green County Public School",
-        "contact": "080 23432549",
-        "address": "#106/7 Amruthihalli, Amruthahalli, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Aryabhatta Vidyaniketan",
-        "contact": "080 34024146",
-        "address": "#16 Jai Bharath Nagar, Banasawadi Main, Road, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Athena Public School",
-        "contact": "080 26675909",
-        "address": "361/3 5th Main, Road, Chamarajpet, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Aurobindo Vidya Mandir",
-        "contact": "080 23490843",
-        "address": "6/C 5th Main, West Of Chord Road, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Bharathiya Samskrithi Vidyapitha",
-        "contact": "080 26509169",
-        "address": "58 4th Main, Road, Chamarajpet, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Dav Public School",
-        "contact": "080 26666701",
-        "address": "# 6 Harini Building, Prashanthi Nagar, 10th Main, Vasanthpura Main, Road, IS, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Deccan International School",
-        "contact": "080 26393704",
-        "address": "Padmanabhanagar Uttarahalli Main, Road, Chikkallasandra, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Delhi Public School",
-        "contact": "080 26668581",
-        "address": "#19/1 11th KM Near Doddakalsnadra Konana Kunte Cross, Kanakapura Road, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Glitzy Public School",
-        "contact": "080 26321867",
-        "address": "# 18 2nd Cross, 2nd Main, Annapoorneshwari Layout, Chunchughatta Kothanu, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Holy Infant School",
-        "contact": "080 26668541",
-        "address": "#240B 100Ft Ring Road, 3rd Main, Ilyas Nagar, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Kasturba Public School ",
-        "contact": "080 26724889",
-        "address": "#4/5 Vaddarapalya Post, Kengeri Main, Road, Poorna Pragna Layout, Uttara, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Reliance Digital Retail Ltd",
-        "contact": "+(91)-80-23459923, +(91)-9591988244",
-        "address": "No 1254/46/3/1, Mars Enclave, Doddabommasandra Main Road, Vidyaranyapura, Bangalore - 560097 "
-    },
-    {
-        "name": "Lakshminarayanarao Educational Society",
-        "contact": "080 28602295",
-        "address": "#CA/3 12th Cross, 1st Main, 1st Stage, Ideal Homes Raja Rajeshwari Nagar, Amruth Nagar, Bangalore, Karnataka, India 560092"
-    },
-    {
-        "name": "Agragami Public School ",
-        "contact": "080 32922725",
-        "address": "51/1, 14th Cross, 13th Main,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "K Naidu School ",
-        "contact": "080 28096045",
-        "address": "32, 3rd Main, 4th Cross, Khb 5th Phase, ,Near 5th Phase Bus Stand, Yelahanka New Town, Bangalore,Karnataka, India 560064"
-    },
-    {
-        "name": "Mount Mary School ",
-        "contact": "9986056672 28563929",
-        "address": "112, 707, Yelahanka 4th Phase, ,Near Government School, Yelahanka New Town, Bangalore, Karnataka, India560064"
-    },
-    {
-        "name": "Agragami Public School ",
-        "contact": "080 28463102",
-        "address": "#517 14th Cross, 4th Main, 4th Ph, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Cambridge English High School",
-        "contact": "080 28460147",
-        "address": "NES Office, Yelahanka, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Seshadripuram Public School",
-        "contact": "080 28565431",
-        "address": "Mother Dairy Road,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Vidyashilpa Academy",
-        "contact": "080 28561824",
-        "address": "P B 6437 Shivanahalli Yelahanka, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "M.E.C High School",
-        "contact": "080 28460282",
-        "address": "New Town, Yelahanka, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mery Land High School",
-        "contact": "080 28461366 28910626 25911903",
-        "address": "No.170, S-208, New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sri Venkateshwara Public School",
-        "contact": "080 32507370",
-        "address": "Nh7, Vidya Nagar Cross, New Yelahanka , Air Force, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Vijay School",
-        "contact": "9901505323",
-        "address": "329, K.H.B Complex Bhind R.T.O New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "M.V.M. Suma Nursing School",
-        "contact": "080 28564885",
-        "address": "1, Yelahanka New Town, (State Bank Of India Building), Yelahanka Bazar, Yelahanka Old Town, Bangalore,Karnataka, India 560063"
-    },
-    {
-        "name": "Nagarjuna Vidhya Nikethan Prenursery School",
-        "contact": "080 28561885",
-        "address": "New #38/1, Ramagondanahalli, Yelahanka Bazar, varthur kere, Yelahanka Old Town, Bangalore, Karnataka,India 560063"
-    },
-    {
-        "name": "B.G. National Public School",
-        "contact": "080 23623031",
-        "address": "New #316/317, Jakkur Layout, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mount Mary School",
-        "contact": "080 28563929",
-        "address": "New #112/707, 2nd Cross, 6th A Main, Yelhanka New Town 4th Phase, Yelahanka Bazar, Yelahanka Old Town,Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sheshadripuram Public School",
-        "contact": "080 22856543",
-        "address": "22, Yelahanka New Town, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "CRN Vidyalaya",
-        "contact": "080 28564644",
-        "address": "786, Yelahanka New Town, Yelahanka Double Road, Yelahanka Bazar, Yelahanka Old Town, Bangalore,Karnataka, India 560063"
-    },
-    {
-        "name": "M.E.C. High School",
-        "contact": "080 28460282",
-        "address": "yelahanka New Town, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Pragathi High School",
-        "contact": "080 28562698",
-        "address": "New #274, 4th Cross, 1st D Main, Yelhanka New Town 4th Phase, Yelahanka Bazar, Yelahanka Old Town,Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Seshadripuram Evening School",
-        "contact": "080 23468360",
-        "address": "6/2, New Town, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Seshadripuram Institute Of Management Studies",
-        "contact": "080 9845645350 31877655",
-        "address": "Ca Site # 26, Sfgc Campus, Yelahanka, New Town, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Agragami Public School",
-        "contact": "080 32922725",
-        "address": "51/1, 14th Cross, 13th Main,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "K Naidu School",
-        "contact": "080 28096045",
-        "address": "32, 3rd Main, 4th Cross, Khb 5th Phase, ,Near 5th Phase Bus Stand, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Mount Mary School",
-        "contact": "9986056672 28563929",
-        "address": "112, 707, Yelahanka 4th Phase, ,Near Government School, Yelahanka New Town, Bangalore, Karnataka, India560064"
-    },
-    {
-        "name": "Agragami Public School",
-        "contact": "080 28463102",
-        "address": "#517 14th Cross, 4th Main, 4th Ph, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Seshadripuram Public School",
-        "contact": "080 28565431",
-        "address": "Mother Dairy Road,, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Vidyashilpa Academy",
-        "contact": "080 28561824",
-        "address": "P B 6437 Shivanahalli Yelahanka, Yelahanka New Town, Bangalore, Karnataka, India 560064"
-    },
-    {
-        "name": "Bharath English School",
-        "contact": "080 28920544",
-        "address": "Kamakshiamma Layout, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Canadian International School",
-        "contact": "9845012352 64514001 64514002 64514003 64514003 64514004 64514005 64514006 64514008",
-        "address": "#4 & 20, Manchenahalli Village, Near Kendriya Vihar Apartments, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Delhi Public School",
-        "contact": "9980153053",
-        "address": "51, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Goodwill English High School",
-        "contact": "080 28463239 28563011",
-        "address": "Tankbund Road,, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Harsha School",
-        "contact": "9845619405",
-        "address": "42, Maruthi Nagar Main Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Jawahar Navodaya Vidyalaya",
-        "contact": "080 28469363 28469745 7623364",
-        "address": "Bagalur Cross, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Kendriya Vidyalaya Yelahanka Airforce",
-        "contact": "080 28478744",
-        "address": "Airforce Station, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Kinto High School",
-        "contact": "080 28560809",
-        "address": "14/232, 1st Main Road, Gandhi Nagar, Yelahanka, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Oxford English School",
-        "contact": "080 28467013 28462864",
-        "address": "Santhe Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Poorna Prajna High School",
-        "contact": "080 28566999 28569065",
-        "address": "No.11, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Seshadripuram Public School",
-        "contact": "080 22955376",
-        "address": "No.CA-22, Mother Dairy Road, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sri Venkateshwara Public School",
-        "contact": "080 32507370",
-        "address": "Nh7, Vidya Nagar Cross, New Yelahanka , Air Force, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "St Marks School",
-        "contact": "080 28568297",
-        "address": "5th A Main, A Sector, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Vijay School",
-        "contact": "9901505323",
-        "address": "329, K.H.B Complex Bhind R.T.O New Town, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Vinayaka School",
-        "contact": "9886137228 28478301",
-        "address": "Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "M.V.M. Suma Nursing School",
-        "contact": "080 28564885",
-        "address": "Yelahanka New Town, (State Bank Of India Building), Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Nagarjuna Vidhya Nikethan Prenursery School",
-        "contact": "080 28561885",
-        "address": "New #38/1, Ramagondanahalli, Yelahanka Bazar, varthur kere, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "B.G. National Public School",
-        "contact": "080 23623031",
-        "address": "New #316/317, Jakkur Layout, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Nitte International School",
-        "contact": "972375240 080 32322014, 080 32322015",
-        "address": "No.12, Myllappanahalli, Heseragetta Hobli, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Aditi Mallya International School",
-        "contact": "080 28462506 28462508",
-        "address": "Post Box No. 6427, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "CRN Vidyalaya",
-        "contact": "080 28564644",
-        "address": "786, Yelahanka New Town, Yelahanka Double Road, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Lilly Rose English High School",
-        "contact": "080 26689154",
-        "address": "5A, 1st Cross, 3rd Main Road, Bismilla Nagar, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Seshadripuram Evening School",
-        "contact": "080 23468360",
-        "address": "6/2, New Town, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sree Swamy Vivekananda English School",
-        "contact": "080 28461419",
-        "address": "Attur Layout, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Sri Vinayaka Vidya Kendra",
-        "contact": "080 23433543 23434608",
-        "address": "Kodigehalli, Yelahanka Bazar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
-        "name": "Mathru Educational Trust For The Blind",
-        "contact": "9886032632 28463992",
-        "address": "No.38, 2nd Division, Maruthinagar, Yelahanka Old Town, Bangalore, Karnataka, India 560063"
-    },
-    {
         "name": "Mount Litera Zee School",
         "contact": "8066499051",
         "address": "No 9 1st main Ramanna garden vidaranyapura bangalore 560097"
@@ -435,68 +15,133 @@
         "address": "Sapthagiri layout thindlu vidyaranyapura post bangalore-560097"
     },
     {
-        "name": "Vyasa Interational School  ",
+        "name": "Vyasa Interational School",
         "contact": "8023454777/9741055990",
         "address": "No. 101/2 near Bel north gate dodda bommasandra vidyaranyapura bangalore-560097"
     },
     {
-        "name": "Sri Ravi Shankar Vidya mandir ",
+        "name": "Sri Ravi Shankar Vidya mandir",
         "contact": "08023641305/9986075219",
         "address": "No. 4 HMT , Hbcs layout thindlu vidyaranyapura Bangalore-560097"
     },
     {
-        "name": "MES Kishore kendra public school ",
+        "name": "MES Kishore kendra public school",
         "contact": "08023641565/23641567",
         "address": "3rd stage 4th main 11th cross vidyaranyapura bangalore-560097"
     },
     {
-        "name": "EORU Kids ",
+        "name": "EORU Kids",
         "contact": "8066497477",
         "address": "No. 802 near café coffee day 7th cross 7th main 4th block bel layout vidyaranyapura bangalore-560097"
     },
     {
-        "name": "Busy Brains ",
+        "name": "Busy Brains",
         "contact": "9036021560",
         "address": "No. 43/43 A near aswathkatte temple(near nagamma temple), 2nd main 3rd cross chamundeshwari layout vidyaranyapura bangalore-560097"
     },
     {
-        "name": "Vyasa International School  ",
+        "name": "Vyasa International School ",
         "contact": "(91)-80-23454777, +(91)-9741055990",
         "address": "No.101/2, Dodda Bommasandra, Vidyaranyapura, Nr Bel North Gate, Bangalore - 560097 "
     },
     {
-        "name": "Kidzee ",
+        "name": "Kidzee",
         "contact": "(91)-80-66491473",
-        "address": "No.7, 3rd Crs,SAI Ngr, Vidyaranyapura, Nr Sambram College, Bangalore - 560097"
+        "address": "No.7 3rdCrs SAINgr Vidyaranyapura NrSambramCollege Bangalore-560097"
     },
     {
-        "name": "Little Elly  ",
+        "name": "LittleElly",
         "contact": "(91)-9986052233, 9986074348",
-        "address": "No.22, Vriksha, Ramachandrapura Main Road, Vidyaranyapura, Near Mount Litera School, Bangalore - 560097"
+        "address": "No.22,Vriksha,RamachandrapuraMainRoad,Vidyaranyapura,NearMountLiteraSchool,Bangalore-560097"
     },
     {
-        "name": "Smartkidz Play School  ",
-        "contact": "(91)-80-66496346",
-        "address": "No.19, Gangamma Crl,Kalathur Lyt, Jalahalli, Nr Appollo Pharmacy, Bangalore - 560013"
+        "name": "DevaMathaCentralSchool",
+        "contact": "(91)-80-23643752,65478145",
+        "address": "DefenceLayout,Vidyaranyapura,Bangalore-560097"
     },
     {
-        "name": "Deva Matha Central School  ",
-        "contact": "(91)-80-23643752, 65478145",
-        "address": "Defence Layout, Vidyaranyapura, Bangalore - 560097"
-    },
-    {
-        "name": "ST.Philomena's English School ",
+        "name": "ST.Philomena'sEnglishSchool",
         "contact": "08023456443/41636086/23455794",
-        "address": "#3 , HMT Layout,behind BSNL office,vidyaranyapura ban-97"
+        "address": "#3, HMTLayout,behindBSNLoffice,vidyaranyapuraban-97"
     },
     {
-        "name": "Montessori teacher training course ",
+        "name": "Montessoriteachertrainingcourse",
         "contact": "9845133608",
-        "address": "C/O Beehive playschool,BEL Layout,vidyaranyapura,ban-97"
+        "address": "C/OBeehiveplayschool,BELLayout,vidyaranyapura,ban-97"
     },
     {
-        "name": "DEV-IN National school ",
+        "name": "DEV-INNationalschool",
         "contact": "8065651001",
-        "address": "#3/1,kodigehalli main road,next to cavery college,sahakarnagar ban-97"
+        "address": "#3/1,kodigehallimainroad,nexttocaverycollege,sahakarnagarban-97"
+    },
+    {
+        "name": "ChetanaPUCollege",
+        "contact": "18004194109",
+        "address": "no295thphaseKHBcolonyyelahankanewtownbangalore64"
+    },
+    {
+        "name": "Greencountrykindergarden",
+        "contact": "9482480397",
+        "address": "414-106/7ballaryroadnexttoIocpetrolbunkbangalore92"
+    },
+    {
+        "name": "L.E.T.Cpvtltd",
+        "contact": "080-32471288/23453597/9342580693",
+        "address": "no6kalathurbuildinggangammacirclebangalore13"
+    },
+    {
+        "name": "TheRegencyPublicSchool",
+        "contact": "08023642370",
+        "address": "No5/1AMSlayoutextensionvidyaranyapurabangalore560097"
+    },
+    {
+        "name": "OrientalEnglishHighSchool",
+        "contact": "08023641762",
+        "address": "AMSLayout,Vidyaranyapura,Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "LittleMillennium",
+        "contact": "9845014738",
+        "address": " Swathi,No.58,1stBlock, 10thMain,2ndCross,NTILayout,Vidyaranyapura,Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "LittleLillysEnglishPublicSchool",
+        "contact": "08033056978",
+        "address": "8thMainRd,BELLayout4thBlock,Vidyaranyapura,Bengaluru, Karnataka560097"
+    },
+    {
+        "name": "HELLOKIDS",
+        "contact": "9986378453",
+        "address": "979,2ndBlockBELLayout,BehindCanaraBank,Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "StPhilomenasSchool",
+        "contact": "08023456443",
+        "address": "VidyaranyapuraMainRoad,Near-PetrolBank, Doddabommasandra, Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "EKAAKSHARA-PLAYSCHOOL&DAYCAREIN ",
+        "contact": "09901805305",
+        "address": "143,3rd'A'Main6thBlock,NearVidyaranyapuraBusStop,Vidyaranyapura,Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "RajarajeshwariHighSchool",
+        "contact": "08023455522",
+        "address": "DoddaBommasandra,Vidyaranyapura, Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "NavodayaEducation&DevelopmentTrust",
+        "contact": "08023457629",
+        "address": " SriBaradarajasuuamyLayout, Sinagapura,NearM.SPalyaCircle,Vidyaranyapura,Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "SriChaitanyaTechnoSchool",
+        "contact": "9900023922",
+        "address": "#13/1,BesideAmbaBhavaniTemple,Doddabettahalli,Road,Vidyaranyapura,Bengaluru,Karnataka560097"
+    },
+    {
+        "name": "VidyaSpoorthi",
+        "contact": "08023645524",
+        "address": " KempeGowdaNagar,Bengaluru,Karnataka560097"
     }
 ]
