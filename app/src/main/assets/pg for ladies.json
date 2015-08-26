@@ -1,72 +1,23 @@
 [
+
     {
-        "name": "Customized PG Accomodation",
-        "contact": "9632035635",
-        "address": "60ft Rd, Sahakara Nagar, Bangalore - 560092, Nr Big Market"
-    },
-    {
-        "name": "Sandhya Paying Guest",
-        "contact": "9845430077",
-        "address": "No.93, Shrushti Nilaya, 8th Cross, G Block, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Classic PG",
-        "contact": "7411013016",
-        "address": "Classic, Ganesha, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Bangalore Inn",
-        "contact": "9945920277, 9945735755",
-        "address": "No.1629, C Block, 80 Feet Road,Railway Parllel Road, Sahakara Nagar, Bangalore - 560092"
-    },
-    {
-        "name": "Harani Ladies Pg",
-        "contact": "9448997201",
-        "address": "No. 90, Rama Shetty Layout, Byataranyanapura, Bangalore - 560092"
-    },
-    {
-        "name": "Kavitha Paying Guest",
-        "contact": "080 33094841",
-        "address": "No 2291,MIG, 3rd Stage,5th B Main Road, Yelahanka New Town, Bangalore - 560064"
-    },
-    {
-        "name": "St Marys Pg",
-        "contact": "080 33673342",
-        "address": "No.618, 12th B Cross,Dairy Circle, Yelahanka New Town, Bangalore - 560064"
-    },
-    {
-        "name": "Aporva Paying Guest For Women",
-        "contact": "080 30161073",
-        "address": "Door No.202,203,204,1st,2nd, And 3rd Floor, Muni Thimmaiha Layout, Kogilu Main Road, Maruthi Nagar, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Chaya Residency",
-        "contact": "080 33722436",
-        "address": "No.208, 1st Main,16th Cross,Venkatala Kogilu Cross,Maruthi Nagar, Yelahanka, Bangalore - 560064"
-    },
-    {
-        "name": "Jain Paying Guest",
-        "contact": "080 39558341",
-        "address": "Site No.301,G-2,Hig A Sector,Gvr Enclave, Yelahanka New Town, Bangalore - 560064,"
-    },
-    {
-        "name": "Vivek PG Accommodation ",
+        "name": "Vivek PG Accommodation",
         "contact": "9845323625",
-        "address": "No.252, 1st Main, 3rd Cross, Vidyaranyapura, Bangalore - 560097 "
+        "address": "No.252, 1st Main, 3rd Cross, Vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": "Spoorthi pg Acommodation",
         "contact": "+(91)-80-66955973, +(91)-9880214274",
-        "address": "No.503, 2nd Blk,9th Crs,HMT Lyt, Vidyaranyapura, Nr Food World, Bangalore - 560097"
+        "address": "No.503, 2nd Blk,9th Crs,HMT Lyt, Vidyaranyapura, Nr Food World,Bengaluru - 560097"
     },
     {
         "name": "Ladies PG",
         "contact": "+(91)-80-28383595, +(91)-9845214982",
-        "address": " Vidyaranyapura, Near Amiti Appartment, Bangalore - 560097"
+        "address": " Vidyaranyapura, Near Amiti Appartment,Bengaluru - 560097"
     },
     {
         "name": "Haarikas P G Accommodation",
         "contact": "49175172",
-        "address": "No.87, 3rd Cross, Nanjappa Layout, Vidyaranyapura, Near Krutika Hospital, Bangalore - 560097"
+        "address": "No.87, 3rd Cross, Nanjappa Layout, Vidyaranyapura, Near Krutika Hospital,Bengaluru - 560097"
     }
 ]

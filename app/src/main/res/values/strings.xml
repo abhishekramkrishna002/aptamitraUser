@@ -24,7 +24,7 @@
     <string name="search_db">http://aptamitra.in/service_app/search_db.php</string>
     <string name="forgot_password">http://aptamitra.in/service_app/forgot_password.php?email=</string>
     <!-- How It Works Texts ::start -->
-    <string name="text1">One Who makes his life better,\n by making others life better\n is an <b>Aptamitra</b></string>
+    <string name="text1">Who makes ones life better,\n by making others life better\n is an <b>Aptamitra</b></string>
     <string name="text2">Aptamitra will guide you to book\n the right professional for your\n essential needs.</string>
     <string name="text3">Aptamitra will bridge between\n the delivery network and your\n local favourite stores</string>
     <string name="text4">No More calls. Just message and\nGet more things accomplished with\na message via Aptamitra Near Me.</string>

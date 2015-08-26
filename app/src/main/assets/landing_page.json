@@ -223,6 +223,14 @@
               "image_link":"badminton.jpg"
         },
         {
+              "name":"CNC Routing",
+              "image_link":"badminton.jpg"
+        },
+        {
+              "name":"lights Coating",
+              "image_link":"badminton.jpg"
+        },
+        {
               "name":"Others",
               "image_link":"others.jpg"
         }
@@ -392,35 +400,35 @@
          },
          {
              "name":"Clinics",
-             "image_link":"schools.jpg"
+             "image_link":"clinic.jpg"
          },
          {
               "name":"Signages",
-              "image_link":"schools.jpg"
+              "image_link":"signages.jpg"
          },
          {
                "name":"Xerox and Printing",
-               "image_link":"schools.jpg"
+               "image_link":"xerox.jpg"
          },
          {
                 "name":"Cycle shop",
-                "image_link":"schools.jpg"
+                "image_link":"cycle_work.jpg"
          },
          {
               "name":"Vegitables and fruits",
-              "image_link":"schools.jpg"
+              "image_link":"veg_friuts.jpg"
          },
          {
               "name":"Meatshops",
-              "image_link":"bakery.jpg"
+              "image_link":"meat_shops.jpg"
          },
          {
               "name":"Wood Works",
-              "image_link":"schools.jpg"
+              "image_link":"wood_works.jpg"
          },
          {
               "name":"Provision stores",
-              "image_link":"schools.jpg"
+              "image_link":"provosion_store.jpg"
          },
          {
               "name":"Bakery and Condiments",
@@ -428,36 +436,37 @@
          },
          {
                "name":"Cement Shops",
-               "image_link":"bakery.jpg"
+               "image_link":"cement.jpg"
          },
          {
              "name":"Mobile phone dealer",
-             "image_link":"bakery.jpg"
+             "image_link":"mobile_dealer.jpg"
          },
          {
              "name":"Fancy Stores",
-             "image_link":"bakery.jpg"
+             "image_link":"fancy_store.jpg"
          },
          {
             "name":"Party Halls",
-            "image_link":"bakery.jpg"
+            "image_link":"party_hall.jpg"
          },
          {
            "name":"Newspapers",
-           "image_link":"bakery.jpg"
+           "image_link":"newspaper_agency.jpg"
          },
          {
                 "name":"Matrimonial",
-                "image_link":"bakery.jpg"
+                "image_link":"matrimony.jpg"
          },
          {
                "name":"UPS Battery shops",
-               "image_link":"bakery.jpg"
+               "image_link":"ups.jpg"
          },
          {
                "name":"Yoga Classes",
-               "image_link":"bakery.jpg"
+               "image_link":"yoga.jpg"
          },
+
          {
               "name":"others",
                "image_link":"others.jpg"
