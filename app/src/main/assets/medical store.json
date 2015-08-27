@@ -15,7 +15,7 @@
         "address": "No.383, M.s Palya Main Road,Vidyaranyapura Post,Bangalore : 560097, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Shri Rajarajeshwari Medical",
+        "name": "Shri Rajarajeshwari Medicals",
         "contact": "(91)-9880567917",
         "address": "No.459, Vidyaranyapura,Bengaluru - 560097"
     },
@@ -25,25 +25,29 @@
         "address": "No.226, Last Stop, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Krutharth Medicals ",
-        "contact": "",
-        "address": "No.25/A, 1st Cross, 8th Main Road, Iehcs Layout, Vidyaranyapura,Bengaluru - 560097"
-    },
-
-    {
-        "name": "Sri Vaari Medical ",
+        "name": "Sri Vaari Medicals",
         "contact": "(91)-9311261119",
         "address": "Thindlu Main Road, Thindlu, Vidyaranyapura, Near Bharath Petrolium Bunk,Bengaluru - 560097"
     },
     {
-        "name": "Sri Devi Medicals ",
+        "name": "Sri Devi Medicals",
         "contact": "(91)-80-41636557, +(91)-9880251005",
         "address": "No. 75/4, Doddabommasandra, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Pragathi Medicals And Gener",
+        "name": "Aveksha pharmacy",
+        "contact": "080-67590000",
+        "address": "No.122,Varadaraja swamy layout,MS palya,Singapura,Bengaluru - 560097"
+    },
+    {
+        "name": "Pragathi Medicals And General stores",
         "contact": "(91)-9980474285",
         "address": "Shop No.3,No.17, Nti Layout, Main Rd, Vidyaranyapura,Bengaluru - 560097"
+    },
+    {
+        "name": "Religare wellness pharmacy",
+        "contact": "080-40956719",
+        "address": "No. 956/2,BEl layout, Vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": "New Nakul pharma",
@@ -78,7 +82,7 @@
     {
         "name": "Vishal Medicals",
         "contact": "080 28386322",
-        "address": "Nio 14-1-4 Vidyaranyapura main road near st philomina school doddabommasandra, Bengaluru - 560097"
+        "address": "Nio 14-1-4, Vidyaranyapura main road near st philomina school, doddabommasandra, Bengaluru - 560097"
     },
     {
         "name": "Shree Ganesh Medicals",
@@ -91,12 +95,12 @@
         "address": " Nanjappa Main Road, 2nd Block, Near-Vijaya Bank, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": " Apollo Medicals",
+        "name": "Apollo Medicals",
         "contact": "080 2295 1529",
         "address": " NO.2,, Kodigehalli - Thindlu Rd, Kempe Gowda Nagar,Bengaluru - 560097"
     },
     {
-        "name": "Ankhitha Medical & General Store ",
+        "name": "Ankitha Medical & General Store",
         "contact": "99454 65669",
         "address": " No 676/4 - 6, Shop No 5, Thindlu Village, Near-Thindlu Bus Stop, Vidyaranyapura Post,Bengaluru - 560097"
     },
@@ -108,6 +112,6 @@
     {
         "name": "  Anjani Medicals",
         "contact": "99725 49002",
-        "address": "3 & 4, B R S Complex, Kodigehalli, Thindlu Main Road, Dhanalakshmi Layout, Near-Tennis Village, Vidyaranyapura Post,Bengaluru - 560097"
+        "address": "#3 & 4, B R S Complex, Kodigehalli, Thindlu Main Road, Dhanalakshmi Layout, Near-Tennis Village, Vidyaranyapura Post,Bengaluru - 560097"
     }
 ]

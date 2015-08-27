@@ -104,6 +104,7 @@ public class RegisterComplaintActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 finish();
+                overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             }
         });
         Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");

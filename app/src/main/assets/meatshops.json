@@ -2,7 +2,7 @@
     {
         "name": "Me Fresh",
         "contact": "9449861522",
-        "address": "no 212E 9th A Cross, kodigehalli,MainRoad,Vidyaranyapura,Near More Supermarket,Bengaluru - 560097"
+        "address": "# 212E 9th A Cross, kodigehalli,MainRoad,Vidyaranyapura,Near More Supermarket,Bengaluru - 560097"
     },
     {
         "name": "Bharath Mutton Stall",
@@ -33,5 +33,15 @@
         "name": "HKGN mutton stall",
         "contact": "9916698711",
         "address": "Ramachandrapura Vidyaranyapura,Near manjunatha theatre,Bengaluru - 560097"
-    }
+    },
+    {
+         "name": "Naveen chicken and Fish center",
+         "contact": "080-23454899",
+         "address": "nanjappa main road,near vijaya bank,Vidyaranyapura,Bengaluru - 560097"
+     },
+{
+         "name": "K J mutton and chicken stall",
+         "contact": "9986795559",
+         "address": "#158,Narasipura layout,Vidyaranyapura,Bengaluru - 560097"
+     }
 ]

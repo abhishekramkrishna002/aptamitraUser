@@ -65,7 +65,7 @@ public class MainActivity extends ActionBarActivity {
         loginButton.setTypeface(face);
         registerTextView.setTypeface(face);*/
 
-            ButterKnife.bind(this);
+        ButterKnife.bind(this);
 
 //        titletext = (TextView) findViewById(R.id.titletext);
         //forgot = (Button) findViewById(R.id.forgot);
@@ -78,8 +78,7 @@ public class MainActivity extends ActionBarActivity {
         email.setTypeface(face2);
         password.setTypeface(face2);
 
-
-    }
+ }
 
 
     @OnClick(R.id.register_text_view)

@@ -45,27 +45,23 @@
         "address": "No.801, Rajiv Gandhinagar, 2nd Phase, Sahakara Nagar, Bengaluru - 560097"
     },
     {
-        "name": "Ambica Ceramics",
+        "name": "Ambika Ceramics",
         "contact": "+(91)-80-28383398, +(91)-9060579679",
         "address": "No42/1,Siri Complex, Doddabommasandra, Vidyaranyapura, Opposite Reliance Digital,Near Indian Oil Petrol Bunk,Bengaluru - 560097"
     },
     {
         "name": "Kamdhenu Hardware",
         "contact": "80-28387017",
-        "address": "No. 53/3, 3rd Main Road, Vidyaranyapura, Near Kali Temple, Bangalore - 560097"
+        "address": "No. 53/3, 3rd Main Road, Vidyaranyapura, Near Kali Temple, Bengaluru - 560097"
     },
-    {
-        "name": "Ambika Hardware & Sanitary",
-        "contact": "+(91)-80-23453199, +(91)-9880943911",
-        "address": "No.555/3, Bn Complex, Doddabommasandra, Vidyaranyapura, Opposite Petrol Bunk Indian Oil,Bengaluru - 560097"
-    },
+
     {
         "name": "Aranya Glass & Plywoods ",
         "contact": "+(91)-80-28381501, +(91)-9448883157",
-        "address": "No.1/3, Vidyaranyapura Main Road, Vidyaranyapura, Doddabommasandra, Bangalore - 560097"
+        "address": "No.1/3, Vidyaranyapura Main Road, Vidyaranyapura, Doddabommasandra, Bengaluru - 560097"
     },
     {
-        "name": "Rohit Enterprises ",
+        "name": "Rohit Enterprises",
         "contact": "8904865606",
         "address": "No18, Thindlu Main Road,Near Nanjappa Circle, Vidyaranyapura, Near Canara Bank ,Bengaluru - 560097"
     },
@@ -74,40 +70,32 @@
         "contact": "+(91)-9739149299, 9986010063",
         "address": "#1/2& 3, Kodigehalli Main Road, Thindlu, Vidyaranyapura, Opposite Nethravathi Bar,Bengaluru - 560097"
     },
-    {
-        "name": "Mobile and computer services",
-        "contact": "9972861181",
-        "address": "---------------------------------------"
-    },
+
     {
         "name": "Girija hardware",
         "contact": "9916520159",
-        "address": "---------------------------------------"
+        "address": "#590 3rd block,HMT layout,Vidyaranyapura,opp. to Corporation bank,Bengaluru - 560097"
     },
     {
         "name": "Bright engineering",
         "contact": "9880063118",
         "address": "---------------------------------------"
     },
-    {
-        "name": "Bushra electricals, motor winding & plumbing works",
-        "contact": "9342262878",
-        "address": "---------------------------------------"
-    },
+
     {
         "name": "Deepika Engineering works",
-        "contact": "9845078950",
-        "address": "---------------------------------------"
+        "contact": "9845078950,9900457242",
+        "address": "Saptagiri layout,near Bescom office,Vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": "Sri Laxmi Electricals",
-        "contact": "9845144149",
-        "address": "---------------------------------------"
+        "contact": "080-28911651,9845144149",
+        "address": "#29 saptagiri layout,Tindlu main road,Vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": "Pooja electricals",
-        "contact": "8023455025",
-        "address": "---------------------------------------"
+        "contact": "080-23455025",
+        "address": "#16,Venkataswamappa building ground floor Nanjappa circle,Vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": "Ravi electricals",
@@ -120,9 +108,9 @@
         "address": "#28 , 1st main road,narasipura layout,vidyaranyapura last bus stop,Bengaluru - 560097"
     },
     {
-        "name": "Sri electronics ",
+        "name": "Sri electronics",
         "contact": "8748973969",
-        "address": "no 33/2 shop no 5 and 6 ramchandrapura main road, Bengaluru - 560097"
+        "address": "#33/2 shop no 5 and 6 ramchandrapura main road, Bengaluru - 560097"
     },
     {
         "name": "Karnataka Electricals",
@@ -135,40 +123,23 @@
         "address": "#17,D.B.Sandra,vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Ambar electricals n services",
+        "name": "Ambar electricals & services",
         "contact": "8277756772",
         "address": "opp to ST.Phinomenon school,vidyaranyapura road,D.B.Sandra,Bengaluru - 560097"
     },
+
     {
-        "name": "Goldmedal switches n systems",
-        "contact": "23453498",
-        "address": "#555,B.N.Complex,chikkabandappa layout,vidyaranyapura, Bengaluru - 560097"
-    },
-    {
-        "name": "Megha electronic n electrical services",
+        "name": "Megha electronic & electrical services",
         "contact": "9945088266",
         "address": "#1,veerana layout,thindlu main road,vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": "Chamundeshwari electrical",
         "contact": "9844604659",
-        "address": "Vrpura main road,D.B.Sandra,Bengaluru - 560097"
+        "address": "Vidyaranyapura main road,D.B.Sandra,Bengaluru - 560097"
     },
-    {
-        "name": "Sri electronics ",
-        "contact": "8748973969",
-        "address": "no 33/2 shop no 5 and 6 ramchandrapura main road, Bengaluru - 560097"
-    },
-    {
-        "name": "Quality care",
-        "contact": "9900239391/9741013567",
-        "address": "HMT main road mathikere, Bengaluru - 560097"
-    },
-    {
-        "name": "Ambar electricals n services",
-        "contact": "8277756772",
-        "address": "opp to ST.Phinomenon school,vidyaranyapura road,D.B.Sandra,Bengaluru - 560097"
-    },
+
+
     {
         "name": "Ganapathi Hardware and  Electricals ",
         "contact": "9449632570",
@@ -193,21 +164,6 @@
         "name": "Hindware sanitary ware",
         "contact": "9945356653",
         "address": "#42/1,siri complex,opp.petrol bunk,near reliance digital,vidyaranyapura main road ,D.B.Sandra,Bengaluru - 560097"
-    },
-    {
-        "name": "Ambika hardware",
-        "contact": "9060977614",
-        "address": "------------------------------------------"
-    },
-    {
-        "name": "Vectus",
-        "contact": "08041626032 / 28387017",
-        "address": "#63/3,nanjappa layout,vidyaranyapura,Bengaluru - 560097"
-    },
-    {
-        "name": "Gnapathi glass and plywood",
-        "contact": "9449632570/9986287314",
-        "address": "#116,1st main road,narsipura layput vidyaranyapura last bus stop, Bengaluru - 560097"
     },
     {
         "name": "Aranya glass and plywood",

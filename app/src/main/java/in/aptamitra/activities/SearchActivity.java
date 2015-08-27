@@ -97,15 +97,12 @@ public class SearchActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 finish();
+                overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             }
         });
         Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
         titleTextView.setTypeface(typeface);
-
-
-
     }
-
     public void makeList(Object object, String tree) {
         try {
         /*
@@ -125,9 +122,7 @@ public class SearchActivity extends ActionBarActivity {
                         while (keys.hasNext()) {
                             tree += ">" + obj.getString("address") + ">" + obj.getString("contact") + ">" + obj.getString("name");
                         }
-
                     }
-
                 }
                 return;
             }
@@ -182,12 +177,10 @@ public class SearchActivity extends ActionBarActivity {
 
     }
 
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
     }
-
 
 }

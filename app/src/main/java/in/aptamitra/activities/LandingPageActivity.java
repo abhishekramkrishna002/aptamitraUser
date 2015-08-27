@@ -134,8 +134,6 @@ public class LandingPageActivity extends ActionBarActivity {
         });
         Typeface typeface = Typeface.createFromAsset(getAssets(), "trajan_pro_bold.otf");
         titleTextView.setTypeface(typeface);
-
-
         searchBar.setClickable(true);
 
     }

@@ -6,7 +6,7 @@
     },
     {
         "name": " J . K. Mart",
-        "contact": "-------------------------------",
+        "contact": "080-33673874",
         "address": "Nanjappa Layout, Chamundeswari Layout, Vidyaranyapura,Bengaluru - 560097"
     },
     {
@@ -17,16 +17,28 @@
     {
         "name": " The Grow Wood Furniture",
         "contact": "098440 45715",
-        "address": "6, 8th Main, Shreenidhi Layout, Vidyaranya Pura, Vidyaranyapura, Vidyaranyapura,Bengaluru - 560097"
+        "address": "6, 8th Main, Shreenidhi Layout, Vidyaranyapura,Bengaluru - 560097"
     },
     {
         "name": " In Decor Furnitures",
-        "contact": "-------------------------------",
+        "contact": "9844501715",
         "address": "Nanjappa Cross, Near ,Vidyaranyapura, Bangalore, Kodigehalli - Thindlu Rd, Canara Bank Layout,Bengaluru - 560097"
     },
     {
-        "name": "Ananta Fine Arts Bangalore",
-        "contact": "99001 63423 ",
-        "address": "N0 91, 4th Cross, G Ramaiah enclave, Vidyaranapura Post, Bengaluru - 560097"
+        "name": "lakshmivenkateshwara wood works",
+        "contact": "9880908589",
+        "address": "Thindlu main road,near narayana Etechno school,Vidyaranyapura,Bengaluru - 560097"
+    },
+    {
+        "name": "Vishwa wood works",
+        "contact": "9342905397",
+        "address": "#1,MS palya,near Aveshka hospital,MS palya,Vidyaranyapura,Bengaluru - 560097"
+    },
+{
+        "name": "Jyothi wood works",
+        "contact": "9880023189",
+        "address": "Kodigehalli main road,Vidyaranyapura,Bengaluru - 560097"
     }
+
+
 ]

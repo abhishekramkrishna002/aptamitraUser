@@ -37,9 +37,9 @@
             "image_link": "mortuary.jpg"
         },
         {
-                "name": "Snake Rescue",
-                "image_link": "snake_rescue.jpg"
-       }
+            "name": "Snake Rescue",
+            "image_link": "snake_rescue.jpg"
+        }
     ],
     "My Booking": [
         {
@@ -99,7 +99,7 @@
             "image_link": "guitar.jpg"
         },
         {
-            "name": "Yoga Classes",
+            "name": "Yoga At Home Instructor",
             "image_link": "yoga.jpg"
         },
         {
@@ -180,7 +180,7 @@
         },
         {
               "name":"Pest Control",
-              "image_link":"sump_cleaning.jpg"
+              "image_link":"pests_control.jpg"
         },
         {
               "name":"Battery Management",
@@ -223,12 +223,12 @@
               "image_link":"badminton.jpg"
         },
         {
-              "name":"CNC Routing",
-              "image_link":"badminton.jpg"
+              "name":"CNC Laser Works",
+              "image_link":"leaser_cutting.jpg"
         },
         {
-              "name":"lights Coating",
-              "image_link":"badminton.jpg"
+              "name":"Decorative Lights",
+              "image_link":"light_decoration.jpg"
         },
         {
               "name":"Others",
@@ -410,22 +410,16 @@
                "name":"Xerox and Printing",
                "image_link":"xerox.jpg"
          },
+
          {
-                "name":"Cycle shop",
-                "image_link":"cycle_work.jpg"
-         },
-         {
-              "name":"Vegitables and fruits",
+              "name":"Vegetables and fruits",
               "image_link":"veg_friuts.jpg"
          },
          {
               "name":"Meatshops",
               "image_link":"meat_shops.jpg"
          },
-         {
-              "name":"Wood Works",
-              "image_link":"wood_works.jpg"
-         },
+
          {
               "name":"Provision stores",
               "image_link":"provosion_store.jpg"
@@ -439,7 +433,7 @@
                "image_link":"cement.jpg"
          },
          {
-             "name":"Mobile phone dealer",
+             "name":"Mobile phone dealer & repairs",
              "image_link":"mobile_dealer.jpg"
          },
          {

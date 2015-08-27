@@ -1,26 +1,26 @@
 [
     {
-        "name": "Suvarna Samphala Inn ",
+        "name": "Suvarna Samphala Inn",
         "contact": "+(91)-80-23646324, +(91)-8892395158",
         "address": "No 1, 8th Crs, Aditya Nagar, Major Sandeep Unni Krishna Rd, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Donne Biriyani mane ",
+        "name": "Donne Biriyani mane",
         "contact": "+(91)-9035500217, 9880780078",
         "address": "#15/b, Doddabaomasandra, Vidyaranyapura, Near indian oil petrol bunk,Bengaluru - 560097"
     },
     {
-        "name": "Gangotri Hotel ",
+        "name": "Gangotri Hotel",
         "contact": "9972293376",
         "address": "Kodigehalli Main Road, Vidyaranyapura, Thindlu,Bengaluru - 560097"
     },
     {
-        "name": "Spectrum hospitality ",
+        "name": "Spectrum hospitality",
         "contact": "+(91)-80-23646324, +(91)-8892395158",
         "address": "No 1, 8th cross, Aditiya nagara yelahanaka main road, Vidyaranyapura, Near MS Palya Circle,Bengaluru - 560097"
     },
     {
-        "name": "Hotel Ayesha ",
+        "name": "Hotel Ayesha",
         "contact": "9986859461",
         "address": "M S Palya Yelahanka Main Road, Vidyaranyapura,Bengaluru - 560097"
     },
@@ -71,12 +71,47 @@
     },
     {
         "name": "Durgashri Upahar",
-        "contact": "",
-        "address": "Vidyaranyapura Main Road, Najappa Layout,Bengaluru - 560097"
+        "contact": "7760609117,9538746883",
+        "address": "Vidyaranyapura Main Road, Nanjappa Layout,Bengaluru - 560097"
     },
     {
         "name": "Shri Krishna Upahar",
-        "contact": "",
-        "address": "16,, Vidyaranyapura Main Rd, Vidyaranyapura,Bengaluru - 560097"
-    }
+        "contact": "080-23643263",
+        "address": "#16, Vidyaranyapura Main Rd, Vidyaranyapura,Bengaluru - 560097"
+    },
+    {
+        "name": "Beijing Bites restaurant",
+        "contact": "8023417188,9886277646",
+        "address": "Vidyaranyapura,Above cafe coffie day,Bengaluru - 560097"
+    },
+    {
+              "name": "MR.Chef",
+              "contact": "080-33054805",
+              "address": "#1269/1,1st block,BEl layout,Vidyaranyapura,Above More Super market,Bengaluru - 560097"
+    },
+    {
+              "name": "Andhra Flavours",
+              "contact": "080-41268222,8951399297",
+              "address": "#588,HMT layout,opp Corporation bank,Vidyaranyapura,Bengaluru - 560097"
+    },
+    {
+              "name": "A2B veg restaurant",
+              "contact": "080-41155999,9902990811",
+              "address": "#703,HMT layout,5th block next to karnataka bank,Vidyaranyapura,Bengaluru - 560097"
+    },
+    {
+               "name": "Sindhu family restaurant",
+               "contact": "080-39200437",
+               "address": "#252,nanjappa layout, opp kethans hospitals,Vidyaranyapura,Bengaluru - 560097"
+     },
+    {
+               "name": "Panjabi Tadka",
+               "contact": "7411510669",
+               "address": "#982,2nd cross,2nd block BEL layoutm behind canara bank,Vidyaranyapura,Bengaluru - 560097"
+     },
+     {
+               "name": "Sri Annapoorneshwari Military hotel",
+               "contact": "9741193765",
+               "address": "Hesarghatta main road,near lakshmipura cross,Vidyaranyapura,Bengaluru - 560097"
+     }
 ]

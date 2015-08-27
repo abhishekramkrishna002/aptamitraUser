@@ -15,7 +15,7 @@
         "address": "No:574, Varan Giri, HMT Layout, Vidyaranyapura, Oppsite To Food World,Bengaluru - 560097"
     },
     {
-        "name": "Bhavani Fancy Stores ",
+        "name": "Bhavani Fancy Stores",
         "contact": "9141601243",
         "address": "M S Palya Singapura Main Road, Vidyaranyapura,Bengaluru - 560097"
     },
@@ -25,7 +25,7 @@
         "address": "No 138, Narsipura Layout, Vidyaranyapura, Last Bus Stop,Bengaluru - 560097"
     },
     {
-        "name": "Vijay fancy stores ",
+        "name": "Vijay fancy stores",
         "contact": "+(91)-9448565425",
         "address": "141/7, , Tindlu-nanjappa cross rd, Vidyaranyapura, Opp. Rajarajeshwari English school,Bengaluru - 560097"
     },
@@ -55,7 +55,7 @@
         "address": "No. 22, 2nd Main, 5th Cross, Chamundi Layout, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Bhagtalakshmi Fancy Store ",
+        "name": "Bhagyalakshmi Fancy Store ",
         "contact": "+(91)-9341926395",
         "address": "Doddabommasanddra, Vidyaranyapura,Bengaluru - 560097"
     },
@@ -70,22 +70,22 @@
         "address": "Singapura Main Road Bharath Nagar, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Lalithamba Bangles & Fancy Stores ",
+        "name": "Lalithamba Bangles & Fancy Stores",
         "contact": "+(91)-9035682550",
         "address": "Doddabommasandra, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "Shakti Fancy Stores ",
+        "name": "Shakti Fancy Stores",
         "contact": "+(91)-7795630315",
         "address": "D B Sandra Vidyaranyapura Main Road, Vidyaranyapura, Bangalore - 560097"
     },
     {
-        "name": "Asha fancy store ",
+        "name": "Asha fancy store",
         "contact": "+(91)-9817057499",
         "address": "Shop no2, Vidyaranyapura Main Road, Vidyaranyapura, Near Food World Super Market,Near Dominozz Pizza,Bengaluru - 560097"
     },
     {
-        "name": "Joythi textile ",
+        "name": "Joythi textile",
         "contact": "+(91)-8722917737, 9880605865",
         "address": "Sapthagiri layout, Vidyaranyapura, Near beacom office,Bengaluru - 560097"
     },
@@ -105,59 +105,9 @@
         "address": "No.590/4, HMT Lyt, 2nd Blk, Vidyaranyapura, Near Easy Day,Bengaluru - 560097"
     },
     {
-        "name": "Gv fancy store ",
+        "name": "Gv fancy store",
         "contact": "9632250251",
         "address": "#5, Venkataswamappa layout, Vidyaranyapura, Opp dwarka convention,Bengaluru - 560097"
-    },
-    {
-        "name": "mahadev fancy gift centre",
-        "contact": "8123574678",
-        "address": "--------"
-    },
-    {
-        "name": "Mayaa fancy and gift centre",
-        "contact": "9538695825",
-        "address": "--------"
-    },
-    {
-        "name": "Suprem fancy gifts",
-        "contact": "9446050422",
-        "address": "--------"
-    },
-    {
-        "name": "Sharada fancy and gifts",
-        "contact": "9964532764",
-        "address": "--------"
-    },
-    {
-        "name": "Sri Anjana fancy and gifts",
-        "contact": "8041610568",
-        "address": "--------"
-    },
-    {
-        "name": "Rangoli fancy store",
-        "contact": "9448241120",
-        "address": "--------"
-    },
-    {
-        "name": "Pooja fancy store",
-        "contact": "8892471821",
-        "address": "--------"
-    },
-    {
-        "name": "G.R gifts and cosmetics",
-        "contact": "9743886997",
-        "address": "---------"
-    },
-    {
-        "name": "Saleem fancy",
-        "contact": "8023456954",
-        "address": "---------"
-    },
-    {
-        "name": "Sri Bhagyalaxmi bangles",
-        "contact": "9035682550",
-        "address": "----------"
     },
     {
         "name": "Payal Novelties & Fancy stores",
@@ -165,8 +115,23 @@
         "address": "#52,narasipura layout,vidyaranyapura last bus stop,Bengaluru - 560097"
     },
     {
-        "name": "AAINmata fancy stores",
+        "name": "Aai Maata fancy stores",
         "contact": "9743256182",
         "address": "vidyaranyapura main road , D.B.Sandra,Bengaluru - 560097"
+    },
+ {
+         "name": "Ganesh fancy and gift center",
+         "contact": "9886083121",
+         "address": "#33/2,shop number 4,ramachandrapura main road,Bengaluru - 560097"
+     },
+{
+        "name": "Manisha stationary",
+        "contact": "7406036833,9632196983",
+        "address": "#765,D.B.Sandra,vidyaranyapura,Bengaluru - 560097"
+    },
+{
+        "name": "Surya fancy and gift center",
+        "contact": "080-33642244",
+        "address": "#139,vidyaranyapura main road near MedPlus medicals,Bengaluru - 560097"
     }
 ]

@@ -26,8 +26,13 @@
     },
     {
         "name": "Indian Bank",
-        "contact": "---------------------------------------------------------",
+        "contact": "080-22958865",
         "address": "No.164/7, Thindlu Main Road, Virupakshapura Entrance, Kodigehalli, Vidyaranyapura,Bengaluru - 560097"
+    },
+{
+        "name": "karnataka Bank",
+        "contact": "080-22955903, 22955904",
+        "address": "No.704, HMT layout 5th block , Vidyaranyapura,Bengaluru - 560097"
     },
 
     {
@@ -62,7 +67,7 @@
     },
     {
         "name": "Central Bank Of India",
-        "contact": "-----------------------------------------------------",
+        "contact": "080-23645364",
         "address": "No.20, Kempegowdanagar Road, Virupakshapura Post, Kodigehalli, Vidyaranyapura, Near Venugopal Flour Mill, Bengaluru - 560097"
     },
     {
@@ -86,8 +91,8 @@
         "address": "704, Hmt Layout, Near-Foodworld, Vidyaranyapura,Bengaluru - 560097"
     },
     {
-        "name": "1. Muthoot Fincorp Ltd",
-        "contact": "080 4163 6118",
+        "name": "Muthoot Fincorp Ltd",
+        "contact": "080-4163 6118",
         "address": "No 1, Mahesh Building, Vidyaranyapura Main Road, Chamundeshwari Layout, Near-Nanjappa Circle, Doddabommasandra,Bengaluru - 560097"
     }
 ]

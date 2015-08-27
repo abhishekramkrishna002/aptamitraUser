@@ -5,8 +5,18 @@
         "address": "No5, Nanjappa Road, Vidyaranyapura Main road, Vidyaranyapura, Next To Kehthams Hospital, Bengaluru - 560097"
     },
     {
-        "name": "Vidhyaranya Ayurvedalaya ",
+        "name": "Vidhyaranya Ayurvedalaya",
         "contact": "(91)-80-25981152, +(91)-9845754123",
         "address": "No.463/1, Durga Temple Arch, 3rd Block, HMT Layout, Vidyaranyapura, Inside Durga Temple Arch, Bengaluru - 560097"
+    },
+    {
+        "name": "Prashanti Ayurvedic Center",
+        "contact": "(91)-80-33722158",
+        "address": "No.706/1, Suvarna Complex, 3rd Block, Bell Layout, Bangalore - 560097, Near Canara Bank"
+    },
+    {
+        "name": "Kottakkal Arya Vaidya Sala",
+        "contact": "(91)-80-41610250, +(91)-9964790651",
+        "address": "No. 2, S N Building, 3rd Cross, Muneshwara Block, Doddabommasandra, Vidyaranyapura, Bangalore - 560097, Near MRF Tyres"
     }
 ]
